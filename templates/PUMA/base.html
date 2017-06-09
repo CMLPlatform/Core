@@ -1,0 +1,176 @@
+
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+<!--JQUERY-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--
+<script src="{% static 'js/bootstrap.min.css' %}"></script>
+-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>CML -- PUMA -- {% block title %}{% endblock %}</title>
+</head>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../">PUMA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+          <li class="active"><a href="../map">
+  <span class=" glyphicon glyphicon-search" aria-hidden="true" > Map</span></a>
+</li>
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+               </ul>
+               <ul class="nav">
+
+
+               </ul>
+           </div>
+           <!--/.nav-collapse -->
+       </div>
+<body>
+
+<div class="container"  style="padding-right: 6px;">
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+             <center>
+             <p><h2>
+ {% block category_title %}
+
+       {% endblock %}</h2></p>
+             </center>
+              {% block category_summary %}
+
+       {% endblock %}
+
+         </div></div></div>
+
+</div>
+
+<div class="container"  style="padding-right: 6px;">
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+             <p><legend>Iron & Steel</legend></p>
+
+ {% block iron %}
+
+       {% endblock %}
+
+         </div></div></div>
+
+</div>
+
+<div class="container"  style="padding-right: 6px;">
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+             <p><legend>Aluminium</legend></p>
+
+ {% block aluminium %}
+
+       {% endblock %}
+
+         </div></div></div>
+
+</div>
+
+<div class="container"  style="padding-right: 6px;">
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+             <p><legend>Copper</legend></p>
+
+
+ {% block copper %}
+
+       {% endblock %}
+         </div></div></div>
+
+</div>
+
+ {% block value %}
+
+       {% endblock %}
+
+
+
+<div class="container"  style="padding-right: 6px;">
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+             <p><legend>Notes & References</legend></p>
+ {% block notes %}
+
+       {% endblock %}
+
+         </div></div></div>
+
+</div>
+
+
+
+
+</body>
+
+<hr>
+<footer>
+    <div class="container">
+
+        <!--Add a picture and center it-->
+        <center>
+         <font color="black">&copy; IE Soft-Lab 2016</font> </center>
+    </div>
+</footer>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

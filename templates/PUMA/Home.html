@@ -1,0 +1,272 @@
+
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--
+<script src="{% static 'js/bootstrap.min.css' %}"></script>
+-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>CML -- {% block title %}PUMA{% endblock %}</title>
+</head>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">PUMA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+ {% if user.is_authenticated %}
+
+           <li class="active"><a href="#">
+  <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:green"> Logout</span></a>
+</li>
+{% else %} <li class="active"><a href="#">
+  <span class="glyphicon glyphicon-off" aria-hidden="true" style="color:red"> Login (disabled)</span></a>
+</li>{% endif %}
+
+          <li class="active"><a href="map">
+  <span class=" glyphicon glyphicon-search" aria-hidden="true" > Map</span></a>
+</li>
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+               </ul>
+               <ul class="nav">
+
+
+               </ul>
+           </div>
+           <!--/.nav-collapse -->
+       </div>
+
+<body>
+
+
+
+
+<div class="alert alert-warning">
+  <strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong> This application is work in progress and serves as a prototype for data visualizations for metal quantifications. It is not suitable for mobile devices yet, if you are using a tablet please use landscape mode.
+</div>
+
+
+<div class="container" style="padding-right: 6px;">
+
+   <div class="row">
+  <div class="col-xs-6 col-md-x">
+    <a class="thumbnail">
+         <div class="caption">
+      <center><h2>PUMA</h2>
+            <h4>Prospecting the Urban
+Mines of Amsterdam</h4>
+             <h6>
+
+
+Quantity, quality and accessibility of the urban mines of Amsterdam
+
+
+For iron, copper and aluminium
+
+
+not related to buildings</h6></center>
+             <hr>
+        <p><legend>Interactive Map</legend>
+           Click in the navigation bar on the <span class="glyphicon glyphicon-search" aria-hidden="true" > </span> icon to view the Amsterdam Interactive Map.
+             </p>
+             <p><legend>Interactive Graphs</legend>
+                All graphs viewed are interactive. Hover over them to see actual values, amounts are given in tonnes.
+                 </p>
+
+
+         </div>
+
+    </a>
+  </div><div class="col-xs-6 col-md-x">
+    <div class="thumbnail">
+         <div class="caption"><legend>Categories</legend>
+
+              <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+
+</div><br><br>
+
+
+             <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop2" type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Category data <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" > </span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a href="transport">Transport</a></li>
+              <li role="separator" class="divider"></li>
+         <li><a href="infrastructure">Infrastructure</a></li>
+               <li role="separator" class="divider"></li>
+        <li><a href="appliances">Household appliances</a></li>
+
+              <li role="separator" class="divider"></li>
+        <li><a href="commercial">Commercial goods</a></li>
+          <li role="separator" class="divider"></li>
+        <li><a href="industrial">Industrial goods</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="public">Public goods</a></li>
+
+
+    </div>
+  </div>
+</div>
+                              <br><br> <p><legend>Dataset</legend> <a type="button" href="../media/OverviewMetalsInAmsterdam.xlsx" class="btn btn-success btn-xs" download>Download set <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a><br><br><a type="button" href="../media/Report2.pdf" class="btn btn-success btn-xs" download>Download report  <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></p>
+</div></div>
+
+
+
+
+
+        </div>
+</div>
+
+
+    <div class="thumbnail">
+         <div class="caption"style="overflow-y: scroll;max-height: 300px;" ><legend>Posts</legend>
+             {% if user.is_authenticated %}
+
+<div class="alert alert-success">
+  <strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong> You are logged in! Comment  below on the dataset.
+</div>
+<a href="post" type="button"  class="btn btn-warning btn-xs">Add comment <span class="
+glyphicon glyphicon glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+             {% else %}
+ <div class="alert alert-info">
+  <strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong>  You are not logged in. Please login to comment on dataset.
+</div>
+             {% endif %}
+
+
+
+             <br>
+             <hr>
+             Total number of posts: {{ comments.count }}
+             <br>
+
+             Latest 10 posts:
+{% for comment in comments.all %}
+             {% if comment.approved_comment %}
+
+    <div class="comment">
+
+        <div class="date"><strong>&nbsp; Date: </strong>{{ comment.created_date }}</div>
+        <strong>&nbsp; Author: </strong>{{ comment.author }}<br>
+        <strong>&nbsp; Email: </strong>{{ comment.email }}<br>
+        <strong>&nbsp; Affiliation: </strong>{{ comment.affiliation }} <br>
+        <strong>&nbsp; Product: </strong>{{ comment.product }} <br>
+        <strong>&nbsp; Category: </strong>{{ comment.category }} <br>
+        <p><strong>&nbsp;&nbsp;Comment:</strong> <div class="container" style="max-width:400px; margin: 20px 0px 20px 20px;"> {{ comment.text|linebreaks }}</div></p>
+    </div>{% endif %}
+{% empty %}
+    <p>No comments here yet :(</p>
+{% endfor %}
+
+
+             </div></div>
+     <div class="thumbnail">
+         <div class="caption">
+             <p><legend>Distribution of metals in categories & regions</legend>  <br>
+
+<iframe width="534" height="330" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1901283450&amp;format=interactive"></iframe><iframe width="459" height="329" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1789506332&amp;format=interactive"></iframe>
+
+<br>
+             <iframe width="536" height="331" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=2112845384&amp;format=interactive"></iframe>             <iframe width="571" height="331" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1999783389&amp;format=interactive"></iframe>
+
+         <br>
+<iframe width="539" height="333" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=62273396&amp;format=interactive"></iframe>           
+
+         </div></div>
+    <div class="thumbnail">
+         <div class="caption">
+       <legend>Value of metals</legend> Prices are taken from Krommenhoek Metals: <li>Fe: 160 Euro/per tonnes</li><li>Al: 650 Euro/per tonnes</li><li>Cu: 3875 Euro/per tonnes</li><br> <iframe width="800" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=714518951&amp;format=interactive"></iframe>
+</div></div>
+
+
+<div class="thumbnail">
+         <div class="caption">
+       <legend>Stock outflows</legend>
+<centeR>
+             <img src="{% static 'images/outlfows.png' %}" alt="" /></centeR>
+             </div></div>
+              </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--/.fluid-container-->
+</div>
+<br>
+<hr>
+<footer>
+    <div class="container">
+
+        <!--Add a picture and center it-->
+        <center>
+         <font color="black">&copy; IE Soft-Lab 2016</font> </center>
+    </div>
+</footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

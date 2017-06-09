@@ -1,0 +1,140 @@
+
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--
+<script src="{% static 'js/bootstrap.min.css' %}"></script>
+-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>PUMA-
+    Map Information</title>
+</head>
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../">PUMA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+          <li class="active"><a href="../map">
+  <span class=" glyphicon glyphicon-search" aria-hidden="true" > Map</span></a>
+</li>
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+               </ul>
+
+<body>
+
+<div class="container"  style="padding-right: 6px;">
+
+
+             <center>
+             <p><h2>Map Information</h2></center>
+
+             <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+  <div class="thumbnail">
+         <div class="caption"><legend>General</legend>Web mapping directly maps specific geographic data to region-divided world maps. This technique is commonly used in Geographical Information Systems (GIS) with the use of standardized geographic data infrastructure and plotting mechanisms. Web mapping is only  part of the process of putting an interactive map accessible on the Internet. Web application development need for instance Web frameworks that assist in building (interactive) web pages. Web frameworks are designed to eliminate the overhead needed in web application development. In simple words without Web frameworks you have to explicitly code all aspects such as HTTP communication, and interaction of otherwise separate modules. Web development would take much more time and would be very difficult to achieve. The Web framework used in this project is called Django and is based upon the programming language Python [1].
+</div></div></div>
+              <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption">
+             <legend>Leaflet</legend>Leaflet is a JavaScript library for developing user-friendly interactive maps [2]. Whereas JavaScript in general is a way to program the behavior of web pages and to built dynamic pages [3]. Many libraries of JavaScript have been developed that are freely reusable by other developers, one of them is the Leaflet library specialized in the creation of interactive maps.
+             </div></div></div>
+     <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption"><legend>Django-leaflet</legend>Django-leaflet provides a way to easily embed the Leaflet library in the Django Web framework. Within the Django configurations, settings can be adjusted for Leaflet maps [4].
+</div></div></div>
+
+     <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption">
+             <legend>GeoJson</legend>GeoJson signifies geographical JSON objects. This means that it contains geographical data that can be used by the Leaflet JavaScript library [4]. JSON itself is officially called a language agnostic data-interchange format. It is inspired by data interchange in JavaScript through JavaScript objects. Basically there are for example occasions in which data needs to be shared in different applications. JSON objects provide ways for communication in between different applications.
+
+    </div></div></div>
+
+    <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption">
+    <legend>Django-geojson</legend>
+             Similar to Django-leaflet is Django-geojson an embedding of JavaScript assets in Django. Django-geojson is used to manipulate GeoJson objects that are shown on the interactive map.
+    </div></div></div>
+  <div class="col-xs-6 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption">
+             <legend>Datasets used for PUMA</legend>
+             All datasets used for the PUMA projects are from Esri Shape files, which are geospatial vector data that can be used by GIS software [5]. However in this project the Esri Shape files are converted to GeoJson objects by a software data convert tool called “ogr2ogr”.  These GeoJson objects contain more information than needed such as the infrastructure of bicycle pads in Amsterdam, hence Python scripts are developed to filter out data. Not only filtering is necessary, also adding additional data from our own research results are done with Python scripts.
+Amsterdam region data and metro line data were gathered from Amsterdam's Open Geo Data datasets [6]. Namely “Administrative Areas” for region data and “Plusnetworks infrastructure” for metro line data. Due to mixing of bus line with tram line data it was not possible to used the “Plusnetworks infrastructure” dataset for tram. In turn for the tram lines the dataset from Open OV was used [7]. For train line data the VU GeoPlaze dataset platform was used [8].
+</div></div></div>
+    <div class="col-xs-10 col-md-x"  style="padding-right: 6px;">
+<div class="thumbnail">
+         <div class="caption">
+    <legend>References</legend>
+          <li>  [1]https://www.djangoproject.com/</li>
+<li>[2] http://leafletjs.com/</li>
+<li>[3]http://www.w3schools.com/js/</li>
+<li>[4] http://fle.github.io/easy-webmapping-with-django-leaflet-and-django-geojson.html</li>
+<li>[5] https://www.esri.com/library/whitepapers/pdfs/shapefile.pdf</li>
+<li>[6] http://maps.amsterdam.nl/open_geodata/</li>
+<li>[7] http://openov.nl/</li>
+<li>[8]http://geoplaza.vu.nl/data/dataset/railway-stations-railway-tracks/resource/d1535055-b45b-4da2-ae22-bee0e529e880</li>
+    </div></div></div>
+
+
+                 </div></div></div>
+
+</div>
+
+
+</body>
+
+<hr>
+<footer>
+    <div class="container">
+
+        <!--Add a picture and center it-->
+        <center>
+         <font color="black">&copy; IE Soft-Lab 2016</font> </center>
+    </div>
+</footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

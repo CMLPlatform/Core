@@ -1,0 +1,73 @@
+{% extends 'PUMA/base.html' %}
+{% block title %} Transport {% endblock %}
+
+
+{% block category_title  %} Transport {% endblock %}
+
+
+{% block category_summary %}
+
+
+
+    <div class="thumbnail">
+         <div class="caption"><h4>Summary</h4>In transportation the following vehicles were taken into consideration: personal cars, business cars, business vans, business trucks, motorcycles, trams, bicycles, scooters, public buses, metro's. Only vehicles that were registered in Amsterdam were quantified. Data on registered vehicle amounts are retrieved from the Amsterdam's Research, Information And Statistics dataset (Gemeente Amsterdam, 2016). Lifetime data was used from various sources such as Van Beers, D., & Graedel, T. E. (2003), Nevada Department Of Taxation (Personal Property Manual, 2016) and Ducker Worldwide (2015).
+As expected it was found that in general, metal stock distribution is reflected by object amounts. In transportation in total 224353.5 tonnes of iron and steel, 31929.3 tonnes of aluminium,5675.4 tonnes of copper was calculated.  Results per district are shown in the figure below.<br> <center><iframe width="800" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1725244220&amp;format=interactive"></iframe></center><br>The districts nieuw-west and zuid have the largest metal stocks.  The amount of objects in these districts compared to other districts are in general larger, hence the relatively bigger contribution. In figures below a further breakdown of objects per metal type is shown.The sheer amount of registered personal cars in Amsterdam makes the metal stocks of personal cars the largest contributor in transportation (Fe:192100, Al:27214, Cu: 5031 tonnes).  In general aluminum contents may increase in transportation due energy savings by weight reduction as mentioned by the European Aluminum Association (EAA) (2011). </div></div></div>
+
+
+
+
+
+
+<br>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Total number of objects</th><th>Source object</th><th>Average lifetime</th><th>Source lifetime</th></tr></thead><tbody><tr><td>Personal cars </td><td>228691</td><td>Gemeente Amsterdam, 2016</td><td>14 years </td><td>Rauch et al. 2007</td></tr><tr><td>Business cars </td><td>2377</td><td>Gemeente Amsterdam, 2016</td><td>14 years </td><td>Rauch et al. 2007</td></tr><tr><td>Business vans</td><td>20009</td><td>Gemeente Amsterdam, 2016</td><td>7 years</td><td>Nevada Department of Taxation, 2011</td></tr><tr><td>Business trucks </td><td>1096</td><td>Gemeente Amsterdam, 2016</td><td>10 years </td><td>Ducker Worldwide (2015)</td></tr><tr><td>Motorcycles </td><td>18009</td><td>Gemeente Amsterdam, 2016</td><td>120700.8 km (≈ 20 years) </td><td>Chester, M., & Horvath, A. (2009)</td></tr><tr><td>Trams</td><td>211 (151 Combino/newer-type)</td><td>GVB, 2016</td><td>30 years </td><td>Nevada Department of Taxation, 2011 & GVB</td></tr><tr><td>Bicycles</td><td>≈ 800000 </td><td>IAmsterdam: cycling facts and figures</td><td>8 years </td><td>Rauch et al. 2007</td></tr><tr><td>Scooters</td><td>56253 (31.900 50cc, 908 E-scooter+mopeds, 23.445 >50cc) </td><td>Gemeente Amsterdam, 2016</td><td>50000 km (≈ 13 years)</td><td>Marianne Leuenberger & Rolf Frischknecht. (2010)</td></tr><tr><td>Public buses</td><td>172 (70 hybrid, 102 diesel) </td><td>GVB, 2016</td><td>15 years </td><td>Nevada Department of Taxation, 2011 & GVB</td></tr><tr><td>Metro's </td><td>90</td><td>GVB, 2016</td><td>30 years </td><td>Siemens AG. (2006) & GVB</td></tr></tbody></table></div>
+
+</div></div>
+
+{% endblock %}
+
+ {% block iron %}
+
+<center>
+<iframe width="586" height="361" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=912187326&amp;format=interactive"></iframe>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Iron/steel stock in tonnes</th><th>Average assumed weight in kg </th><th>Iron/steel content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Personal cars</td><td>192100</td><td>1300</td><td>60% (840 kg) </td><td>Factbox 2010</td></tr><tr><td>Business cars</td><td>1997</td><td>1300</td><td>60% (840 kg) </td><td>Factbox 2010</td></tr><tr><td>Business vans</td><td>16808</td><td>1300</td><td>60% (840 kg) </td><td>Factbox 2010</td></tr><tr><td>Business trucks</td><td>8549</td><td>10000</td><td>78% (7800 kg)</td><td>Rauch et al. 2007</td></tr><tr><td>Motorcycles</td><td>1891</td><td>190</td><td>55.4% (105 kg)</td><td>Tatemichi Y. & Yoshida T. 2001</td></tr><tr><td>Trams*</td><td>1381</td><td>34000</td><td>65% (22100 kg)</td><td>*assumed with GVB data</td></tr><tr><td>Bikes</td><td>4928</td><td>17</td><td>6.16 kg</td><td>Marianne Leuenberger & Rolf Frischknech 2010</td></tr><tr><td>Scooters</td><td>3009</td><td>E-scooter 106 kg conventional scooters 90kg</td><td>E-scooter  40.8 kg steel conventional scooters 53.7 kg</td><td>Tatemichi</td></tr><tr><td>Public buses</td><td>998</td><td>Not used</td><td>Conventional buses 6251 kg Hybrid 5142 kg"</td><td>Kärnä 2012</td></tr><tr><td>Metros</td><td>4024</td><td>62 objects 48 tonnes 28 objects 190 tonnes based on GVB data</td><td>48.5%</td><td>Struckl & Wimmer 2007</td></tr></tbody></table></div>
+
+{% endblock %}
+
+
+ {% block aluminium %}
+<center><iframe width="593" height="367" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=206192609&amp;format=interactive"></iframe></center>
+    <div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Aluminium stock in tonnes</th><th>Average assumed weight in kg </th><th>Aluminium content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Personal cars</td><td>27214</td><td>1300</td><td>119 kg average of small car & typical sedan </td><td>Ducker Worldwide</td></tr><tr><td>Business cars</td><td>283</td><td>1300</td><td>119 kg based on average of small car & typical sedan </td><td>Ducker Worldwide</td></tr><tr><td>Business vans</td><td>2481</td><td>1300</td><td>123.8 kg</td><td>Ducker Worldwide</td></tr><tr><td>Business trucks</td><td>288</td><td>10000</td><td>262.5 kg based on average of source</td><td>Rauch et al.2007</td></tr><tr><td>Motorcycles</td><td>810</td><td>190</td><td>45 kg</td><td>Tatemichi Y. & Yoshida T. 2001</td></tr><tr><td>Bikes</td><td>4376</td><td>17</td><td>5.47 kg based on average of the two sources</td><td>Rauch et al. 2007 Marianne Leuenberger & Rolf Frischknech 2010</td></tr><tr><td>Scooters</td><td>853</td><td>E-scooter 106 kg</td><td>conventional scooters 90kg E-scooter 25.1 kg conventional 15 kg</td><td>Marianne Leuenberger & Rolf Frischknech 2010</td></tr><tr><td>Metros</td><td>2555</td><td>62 objects 48 tonnes 28 objects 190 tonnes based on GVB data</td><td>30.8% of weight </td><td>Struckl & Wimmer 2007</td></tr></tbody></table></div>
+
+{% endblock %}
+
+
+
+ {% block copper %}
+<center><iframe width="581" height="359" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=303442768&amp;format=interactive"></iframe></center>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Copper stock in tonnes</th><th>Average assumed weight in kg </th><th>Copper content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Personal cars</td><td>5031</td><td>1300</td><td>22 kg  average based on source</td><td>European Copper Institute (2016)</td></tr><tr><td>Business cars</td><td>52</td><td>1300</td><td>22 kg  average  based on source</td><td>European Copper Institute (2016)</td></tr><tr><td>Business vans</td><td>440</td><td>1300</td><td>22 kg  average  based on source</td><td>European Copper Institute (2016)</td></tr><tr><td>Business trucks</td><td>22</td><td>10000</td><td>20 kg</td><td>Van Beers & Graedel 2003</td></tr><tr><td>Motorcycles</td><td>54</td><td>190</td><td>3 kg</td><td>Van Beers & Graedel 2003</td></tr><tr><td>Trams</td><td>218</td><td>34000</td><td>3% of weight</td><td>Siemens A. 2006</td></tr><tr><td>Bikes</td><td>0</td><td>17</td><td>0</td><td>Bicycles are considered to have negligible amounts of Copper.</td></tr><tr><td>Scooters</td><td>76</td><td>"E-scooter 106 kg</td><td>conventional scooters 90kg"</td><td>"50 cc 1.41 kg E- scooters 7.67 kg <50 cc 1.12 kg</td></tr><tr><td>Public buses</td><td>31</td><td>Not used</td><td>Conventional 163 kg  hybrids 212 kg</td><td>Kärnä 2012</td></tr><tr><td>Metros</td><td>216</td><td>"62 objects 48 tonnes 28 objects 190 tonnes based on GVB data"</td><td>2.6% of weight</td><td>Struckl & Wimme 2007</td></tr></tbody></table></div>
+
+{% endblock %}
+
+{% block notes %}
+<li> In general aluminum contents may increase in transportation due to energy savings by weight reduction as mentioned by the European Aluminum Association (EAA) [14].</li>
+<li> 26730 lost bicycles were found [1] in 2014 making in theory: approximately 165 tonnes Fe and 146 tonnes Al  available.</li>
+
+<br><br>
+<ul>
+<li>[1] http://www.ois.amsterdam.nl/</li>
+<li>[2] Beers, D., & Graedel, T. E. (2003)</li>
+<li>[3] http://www.clarkcountynv.gov/assessor/Documents/PP%20Manual%2011-12.pdf</li>
+<li>[4] http://www.ducker.com/</li>
+<li>[5] http://en.gvb.nl/</li>
+<li>[6] http://in.reuters.com/article/idINIndia-51665120100922</li>
+<li>[7] Rauch et al. (2007)</li>
+<li>[8] Tatemichi, Y., & Yoshida, T. (2001). Study on the Life Cycle Assesment Application to Motorcycles (No. 2001-01-1887). SAE Technical Paper.</li>
+<li>[9] Life Cycle Assessment of Two Wheel Vehicles, Marianne Leuenberger, Rolf Frischknecht</li>
+<li>[10] http://www.nrc.nl/handelsblad/2003/10/03/amsterdamse-combino-is-een-bouwdoos-7656405</li>
+<li>[11] Kärnä, P. (2012). Carbon footprint of the raw materials of an urban transit bus: case study: diesel, hybrid, electric and converted electric bus.</li>
+<li>[12] Struckl, W., & Wimmer, W. (2007).Green Line strategies for environmentally improved railway vehicles.In Advances in Life Cycle Engineering for Sustainable Manufacturing Businesses (pp. 77-82). Springer London.</li>
+<li>[13] http://copperalliance.eu/applications/transportation</li>
+<li>[14]:http://altairenlighten.com/wp-content/uploads/2011/12/EAA-Aluminium-in-Cars-Unlocking-the-light-weighting-potential.pdf</li>
+<li>[15]: Braconi, D. (2014). Green two wheeled mobility. Material hygiene and life cycle analysis of an electric scooter.</li>
+<li>[16]: https://www.allianz-pro-schiene.de/wp-content/uploads/2015/10/praesentation-stribersky.pdf</li>
+   </ul>    {% endblock %}

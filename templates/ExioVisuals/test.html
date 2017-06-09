@@ -1,0 +1,28 @@
+{% extends 'ExioVisuals/base.html' %}
+
+{% load static %}
+
+
+
+
+
+
+
+{% block body_block %}
+Distribution
+
+
+
+dsfs
+{{ form.media.css }}
+<form action="" method="POST">{% csrf_token %}
+  {{ form.as_p }}
+  <p><button type="submit">Submit</button></p>
+</form>
+
+
+
+
+
+{{ form.media.js }}
+{% endblock %}

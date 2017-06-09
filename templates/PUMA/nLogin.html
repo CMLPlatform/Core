@@ -1,0 +1,90 @@
+{% load nvd3_tags %}
+
+    {% include_chart_jscss %}
+
+
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+    <title>PUMA- Login</title>
+</head>
+<div>
+
+
+
+<body>
+<br>
+<br>
+<div class="container">
+
+
+<div class="jumbotron">
+
+<form id="login_form" method="post" action="./">
+            {% csrf_token %}
+
+
+                <legend>Login</legend>
+
+            Username: <br><input type="text" name="username" value="" size="30" />
+            <br />
+            Password: <br><input type="password" name="password" value="" size="30" />
+            <br />
+
+            <input type="submit" value="submit" />
+        </form>
+
+
+
+</div>
+</div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--/.fluid-container-->
+</div>
+<hr>
+<footer>
+    <div class="container">
+
+        <!--Add a picture and center it-->
+        <center>
+         <font color="black">&copy; IE Soft-Lab 2016</font> </center>
+    </div>
+</footer>
+    <script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

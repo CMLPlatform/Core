@@ -1,0 +1,162 @@
+{% extends 'PUMA/base.html' %}
+{% block title %} Appliances {% endblock %}
+
+
+{% block category_title  %} Household appliances {% endblock %}
+
+
+{% block category_summary %}
+
+  <div class="thumbnail">
+         <div class="caption"><h4>Summary</h4>The products taken into account in this category are assumed to be the most relevant in terms of metal contents in households and are the following: printers, cell phones, laptop computers, desktop computers, televisions, dishwashers, dryers, washing machines, hoovers, electric ovens, microwave ovens, and refrigerator/freezers.
+The amount of each product in Amsterdam was estimated using household data (StadIndex, 2014) in Amsterdam and each of its 8 district (Centrum, Noord, West-Poort, West, Nieuw-West, Zuid, Oost and Zuid-Oost). These estimations on the number of products per household was taken mostly from household appliance energy use studies in the Netherlands (Tselekis, 2013 ; Papachristos, 2015), or world statistics websites (NationMaster, 2016). This average data for the Netherlands has then been scaled down to the size of Amsterdam, relative to population size and number of households.</div></div></div><br> <center><iframe width="800" height="500" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=19007338&amp;format=interactive"></iframe></center><br>
+
+
+
+
+
+<br>
+
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object</th><th>Total number of objects</th><th>Source object</th><th>Average lifetime</th><th>Source lifetime</th></tr></thead><tbody><tr><td>Inkjet printers</td><td>289 849</td><td>Papachristos, 2015</td><td>8 years</td><td>estimation</td></tr><tr><td>Cellphones</td><td>834 925</td><td>Nation Master, 2016</td><td>3 years</td><td>Eugster et al., 2007</td></tr><tr><td>Laptop computer</td><td>718 133</td><td>Tselekis, 2012</td><td>5 years</td><td>Eugster et al., 2007</td></tr><tr><td>Desktop PC</td><td>216 305</td><td>Tselekis, 2012</td><td>8 years</td><td>Eugster et al., 2007</td></tr><tr><td>Television</td><td>423 958</td><td>Papachristos, 2015</td><td>15 years</td><td>Truttman & Rechberger, 2006</td></tr><tr><td>Dishwasher</td><td>203 327</td><td>Papachristos, 2015</td><td>10 years</td><td>Truttman & Rechberger, 2006</td></tr><tr><td>Dryer</td><td>255 240</td><td>Papachristos, 2015</td><td>10 years</td><td>Truttman & Rechberger, 2006</td></tr><tr><td>Washing machine</td><td>415 306</td><td>Papachristos, 2015</td><td>12 years</td><td>Eugster et al., 2007</td></tr><tr><td>Hoover</td><td>432 610</td><td>Tselekis, 2012</td><td>10 years</td><td>estimation</td></tr><tr><td>Electric oven</td><td>268 218</td><td>Papachristos, 2015</td><td>10 years</td><td>Truttman & Rechberger, 2006</td></tr><tr><td>Microwave oven</td><td>363 392</td><td>Papachristos, 2015</td><td>10 years</td><td>Truttman & Rechberger, 2006</td></tr><tr><td>Refrigerator/freezer</td><td>432 610</td><td>Papachristos, 2015</td><td>13 years</td><td>Eugster et al., 2007</td></tr></tbody></table></div>
+
+</div></div>
+{% endblock %}
+
+ {% block iron %}
+
+ <br><center>
+<iframe width="590" height="364" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1224147937&amp;format=interactive"></iframe>
+<div class="container" >
+   <table class="table table-hover" >
+      <thead>
+         <tr>
+            <th>Object </th>
+            <th>Iron/steel stock in tonnes</th>
+            <th>Average assumed weight in kg </th>
+            <th>Iron/steel content in kg or %</th>
+            <th>Source </th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Inkjet printers</td>
+            <td>275</td>
+            <td>5 kg</td>
+            <td>19% (0.95 kg)</td>
+            <td>Eco3e (2016)</td>
+         </tr>
+         <tr>
+            <td>Cellphones</td>
+            <td>20.8</td>
+            <td></td>
+            <td>25 g </td>
+            <td>Apple (2014)</td>
+         </tr>
+         <tr>
+            <td>Laptop computer</td>
+            <td>351.3</td>
+            <td></td>
+            <td>489 g</td>
+            <td>Sahni et al. (2010)</td>
+         </tr>
+         <tr>
+            <td>Desktop PC</td>
+            <td>612.4</td>
+            <td>9.9 kg (Eugster et al. 2007)</td>
+            <td>28.6% (2.8 kg)</td>
+            <td>EPA (2015) for WARM</td>
+         </tr>
+         <tr>
+            <td>Television</td>
+            <td>2 162</td>
+            <td>30 kg</td>
+            <td>17% (5.1 kg)</td>
+            <td>Truttman & Rechberger (2006)</td>
+         </tr>
+         <tr>
+            <td>Dishwasher</td>
+            <td>5 083</td>
+            <td>50 kg </td>
+            <td>50% (25 kg)</td>
+            <td>Truttman & Rechberger (2006)</td>
+         </tr>
+         <tr>
+            <td>Dryer</td>
+            <td>8 417</td>
+            <td>49 kg </td>
+            <td>67% (33 kg)</td>
+            <td>Oeko Institut (2011)</td>
+         </tr>
+         <tr>
+            <td>Washing machine</td>
+            <td>15 782</td>
+            <td>75 kg</td>
+            <td>51% (38 kg)</td>
+            <td>Truttman & Rechberger (2006)</td>
+         </tr>
+         <tr>
+            <td>Hoover</td>
+            <td>1 395</td>
+            <td>8 kg </td>
+            <td>40% (3.2 kg)</td>
+            <td>WRAP (2012)</td>
+         </tr>
+         <tr>
+            <td>Electric oven</td>
+            <td>19 312</td>
+            <td>100 kg </td>
+            <td>72% (72 kg) </td>
+            <td>Assumptions based on commercial oven </td>
+         </tr>
+         <tr>
+            <td>Microwave oven</td>
+            <td>3 886</td>
+            <td>15 kg</td>
+            <td>71% (10.7 kg)</td>
+            <td>Truttman & Rechberger (2006)</td>
+         </tr>
+         <tr>
+            <td>Refrigerator/freezer</td>
+            <td>22 279</td>
+            <td>84.5 kg</td>
+            <td>61% (51.5 kg)</td>
+            <td>Chul Kim et al. (2006)</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+{% endblock %}
+ {% block aluminium %}
+<center><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=86751591&amp;format=interactive"></iframe></center>
+    <div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Aluminium stock in tonnes</th><th>Average assumed weight in kg </th><th>Aluminium content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Inkjet printers</td><td>58</td><td>5 kg</td><td>4% (0.2 kg)</td><td>Eco-3e (2016)</td></tr><tr><td>Cellphones</td><td>21.7</td><td></td><td>26 g </td><td>Apple (2014)</td></tr><tr><td>Laptop computer</td><td>27.2</td><td></td><td>37.9 g</td><td>Sahni et al. (2010)</td></tr><tr><td>Desktop PC</td><td>203</td><td>9.9 kg (Eugster et al. 2007)</td><td>9.5% (0.94 kg)</td><td>EPA (2015) for WARM</td></tr><tr><td>Television</td><td>254</td><td>30 kg</td><td>2% (0.6 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Dishwasher</td><td>254</td><td>50 kg </td><td>2.5% (1.25 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Dryer</td><td>188</td><td>49 kg </td><td>1.5% (0.74 kg)</td><td>Oeko Institut (2011)</td></tr><tr><td>Washing machine</td><td>789</td><td></td><td>1.9 kg </td><td>Recalde et al. (2008)</td></tr><tr><td>Hoover</td><td>476</td><td>8 kg </td><td>14% (1.1 kg)</td><td>WRAP (2012)</td></tr><tr><td>Electric oven</td><td>536.4</td><td>100 kg </td><td>2%</td><td>Assumption based on commercial oven</td></tr><tr><td>Microwave oven</td><td>212</td><td>15 kg</td><td>4%</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Refrigerator/freezer</td><td>1 081</td><td>84.5 kg</td><td>3% (2.5 kg)</td><td>Eco-3e (2016)</td></tr></tbody></table></div>
+
+    {% endblock %}
+
+ {% block copper %}
+
+<center><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1685465602&amp;format=interactive"></iframe></center>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Copper stock in tonnes</th><th>Average assumed weight in kg </th><th>Copper content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Inkjet printers</td><td>14.5</td><td>5 kg</td><td>1%</td><td>Eco-3e (2016</td></tr><tr><td>Cellphones</td><td></td><td></td><td></td><td></td></tr><tr><td>Laptop computer</td><td>54</td><td></td><td>75 g</td><td>Sahni et al. (2010)</td></tr><tr><td>Desktop PC</td><td>141</td><td>9.9 kg (Eugster et al. 2007)</td><td>6.60%</td><td>EPA (2015) for WARM</td></tr><tr><td>Television</td><td>636</td><td>30 kg</td><td>5% (1.5 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Dishwasher</td><td>254</td><td>50 kg </td><td>2.5% (1.25 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Dryer</td><td>538</td><td>49 kg </td><td>4.30%</td><td>Oeko Institut (2011)</td></tr><tr><td>Washing machine</td><td>748</td><td>75 kg</td><td>2.4% (1.8 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Hoover</td><td>239</td><td>8 kg </td><td>6.92% (0.55 kg)</td><td>WRAP (2012)</td></tr><tr><td>Electric oven</td><td>53</td><td>100 kg </td><td>0.20%</td><td>Assumption based on commercial oven</td></tr><tr><td>Microwave oven</td><td>212</td><td>15 kg</td><td>3.9% (0.58 kg)</td><td>Truttman & Rechberger (2006)</td></tr><tr><td>Refrigerator/freezer</td><td>1 081</td><td>84.5 kg</td><td>3% (2.5 kg)</td><td>Eco-3e (2016)</td></tr></tbody></table></div>
+
+    {% endblock %}
+
+{% block notes %}
+
+<br><br>
+<ul>
+<li>[1] StadIndex, Netherlands statistics (2014). Retrieved in May 2016 from www.stadindex.nl/amsterdam</li>
+    <li>[2] Tselekis, K. (2013). Energy savings potential from simple standby reduction devices in the Netherlands.</li>
+    <li>[3] Papachristos, G. (2015). Household electricity consumption and CO 2 emissions in the Netherlands: A model-based analysis. Energy and Buildings, 86, 403-414.</li>
+    <li>[4] http://www.nationmaster.com/country-info/profiles/Netherlands/Media</li>
+    <li>[5] Eco-3e, Eco-design guide of WEEE compliance schemes (2016). Retrieved in May 2016 from http://eco3e.eu/products/printer/</li>
+    <li>[6] Apple,iPhone 6 Environmental Report (2014)</li>
+    <li>[7] Sahni, S., Boustani, A., Gutowski, T., & Graves, S. (2010). Personal computer remanufacturing and energy savings.</li>
+    <li>[8] US EPA, Waste Reduction Model (WARM) Version 13 (2015). Personal Computers.</li>
+    <li>[9] Eugster, M., Hischier, R., & Duan, H. (2007). Key Environmental Impacts of the Chinese EEE-Industry. report, EMPA Materials Science & Technology, St. Gallen.</li>
+    <li>[10] Truttmann, N., & Rechberger, H. (2006). Contribution to resource conservation by reuse of electrical and electronic household appliances. Resources, Conservation and Recycling, 48(3), 249-262.</li>
+    <li>[11] Öko-Institut .V., Institute for Applied Ecology, Germany & BIO Intelligence Service, France (2011). Preparatory Studies for Eco-design Requirements of Energy-using Products. Lot 24: Professional Washing Machines, Dryers and Dishwashers. </li>
+    <li>[12] Waber, U. (2001). Elektronikschrott in der Schweiz. Auftraggeber BUWAL.</li>
+    <li>[13] Waste & Resource Action Programme, WRAP (2012). Electrical product material composition.</li>
+    <li>[14]  European Commission - DG Energy (2011). Preparatory Study for Ecodesign Requirements of EuPs, Lot 22: Domestic and commercial ovens.  </li>
+    <li>[15] Kim, H. C., Keoleian, G. A., & Horie, Y. A. (2006). Optimal household refrigerator replacement policy for life cycle energy, greenhouse gas emissions, and cost. Energy Policy, 34(15), 2310-2323.</li>
+    <li>[16] Recalde, K., Wang, J., & Graedel, T. E. (2008). Aluminium in-use stocks in the state of Connecticut. Resources, Conservation and Recycling, 52(11), 1271-1282.</li>
+   </ul>    {% endblock %}

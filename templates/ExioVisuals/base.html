@@ -1,0 +1,366 @@
+
+{% load static %}
+{% load bootstrap %}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+<!-- dropdown functionalities -->
+<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+
+    <!--
+<script src="{% static 'js/bootstrap.min.css' %}"></script>
+-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!--js-cookie for storing cookie information of trees
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
+
+
+
+
+
+    <!-- special D3plus or nvd3 or leaflet-->
+    {% block speciality %}
+
+    {% endblock %}
+
+</head>
+
+    <title>CML -- ExioVisuals -- {% block title %}{% endblock %}</title>
+
+<!-- navigation bar-->
+
+<nav class="navbar navbar-default ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../">ExioVisuals</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+          <sub style="color:#5cb85c">Version 1.0-alpha</sub>
+
+        {% block navibar %}
+
+          {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </div><!-- /.navbar-collapse -->
+  </div>
+
+
+<hr style="padding: 0px;
+    margin: 0px; ">
+    <!-- HIGHLY EXPIREMENTAL FILTERING PART !!!! -->
+<a class="nav navbar-inverse pull-center navbar-fixed-left always-open">
+
+<!--MODE DROPDOWN -->
+       <ul class="nav nav-tabs2" style="float:left;
+     " >
+
+                                  <a class="dropdown-toggle" id="dl2DropDown" href="#" data-toggle="dropdown" type="button" > <span class="glyphicon glyphicon-option-vertical" aria-hidden="true" > Mode&nbsp;</span> </a>
+              <div class="dropdown-menu scrollable-menu" style="background-color:#e5e5e5;">
+<div align="right">
+                  <a href="#" class="download" >
+                        <h4><span class="glyphicon glyphicon-remove-sign" aria-hidden="true">
+                  </span>     </h4></a></div>
+
+                  {% block modeForms %}
+
+                  {% endblock %}
+
+
+              </div>
+    </ul>
+    <ul class="nav nav-tabs3" style="float:left;
+    " >
+
+                                  <a class="dropdown-toggle" id="dl3DropDown" href="#" data-toggle="dropdown" type="button" > <span class="
+glyphicon glyphicon-menu-hamburger" aria-hidden="true" > Indicator&nbsp;</span> </a>
+              <div class="dropdown-menu scrollable-menu" style="background-color:#e5e5e5;">
+<center> [Not Functional Yet] <br>
+                  <a href="#" class="download" style="color:red"> Close
+                        <h4><span class="glyphicon glyphicon-remove-sign" aria-hidden="true" style="color:red">
+                  </span></h4></a></center>
+
+                  {% block problemForms %}
+
+                  {% endblock %}
+
+
+              </div>
+    </ul>
+
+    {% block formType %}
+    {% endblock %}
+    <!--Filter DROPDOWN -->
+          <ul class="nav nav-tabs" style=" float:left;
+    ">
+
+
+            <a class="dropdown-toggle" id="dlDropDown" href="#" data-toggle="dropdown" type="button" > <span class="glyphicon glyphicon-filter" aria-hidden="true" > Filter&nbsp;</span> </a>
+
+
+              <div class="dropdown-menu scrollable-menu" style="background-color:#e5e5e5;">
+              <!--  form here -->
+                  <div align="right"> <a href="#" class="download">
+                        <h4><span class="glyphicon glyphicon-remove-sign" aria-hidden="true" >
+                  </span></h4></a></div>
+
+<div class="alert alert-info">
+  <strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></strong>  {{title}}
+</div>
+
+</center>
+
+<div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true" >
+
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Year
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        {% block body4 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Environmental Pressure
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+
+<div class="alert alert-danger">
+  <strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong>The input is not fully implemented yet, you can skip selection here.
+</div>
+        {% block body3 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSeven">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+           Region production
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+      <div class="panel-body">
+        {% block body7 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+     <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingEight">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+           Sector production
+        </a>
+      </h4>
+    </div>
+    <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+      <div class="panel-body">
+        {% block body8 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+
+    <div class="panel-heading" role="tab" id="headingTen">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          Region selling
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+      <div class="panel-body ">
+
+        {% block body10 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+
+
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingSix">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Product purchased
+        </a>
+      </h4>
+    </div>
+    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+      <div class="panel-body">
+        {% block body6 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Region consumption
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body ">
+
+        {% block body5 %} {% endblock %}
+          </div>
+    </div>
+  </div>
+
+
+
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingNine">
+      <h4 class="panel-title">
+        <a class="collapsed" style="color:#428bca" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+          <center>  Collapse <span class="glyphicon glyphicon-remove-sign" aria-hidden="true">
+                  </span></center>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight" >
+
+    </div>
+  </div>
+
+
+</div>
+
+<br>
+    <center>
+
+
+<!--
+            <input type="submit" class="btn btn-success" value="Visualize">
+            <span class="glyphicon glyphicon-menu-right" aria-hidden="true" >
+           </span></center>
+</form>
+
+-->
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+
+        {% block belowButtons %}</center>
+
+
+</form>{% endblock %}</center>
+            </div>
+          </li>
+        </ul><!-- /.container-fluid -->
+</div></a>
+</nav>
+
+
+
+<!-- body of page-->
+
+
+ {% block body_block %}
+
+
+       {% endblock %}
+
+<!-- Filter dropdown functionality-->
+
+
+
+
+<!--Hidden forms-->
+<div id="myId" class="hidden">
+
+<form id="tryit" class="form-inline" method="post" action="../distribution/">
+     {% csrf_token %}
+
+
+<button type="submit" class="btn btn-success btn-xs">Submit</button></p>
+
+    </form>
+</div>
+
+
+<!-- Footer -->
+<footer>
+
+
+     <center>
+
+
+    <!--Add a picture -->
+
+        <!--Add a picture and center it-->
+    <br>
+         <font color="black">&copy; IE Soft-Lab 2016</font>
+
+
+
+     </center>
+
+
+</footer>
+<Br>
+<br>
+
+
+
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+</html>

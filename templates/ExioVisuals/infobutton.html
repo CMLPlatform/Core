@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+
+
+    <title>IE Soft-Lab</title>
+</head>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../">ExioVisuals</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+          <li class="active" ><a href="../distribution" >
+              {% block ActiveDistribution %}
+  <span class="glyphicon glyphicon-scale" aria-hidden="true" > PieChart  </span></a>
+</li>
+          {% endblock %}
+          <li class="active"><a href="../timeseries">
+  <span class="glyphicon glyphicon-time" aria-hidden="true" > TimeSeries</span></a>
+</li>
+           <li class="active"><a href="../geo">
+  <span class="glyphicon glyphicon-globe" aria-hidden="true" > GeoRegion</span></a>
+</li>
+<li class="active"><a href="supplychain">
+  <span class="glyphicon glyphicon-link" aria-hidden="true" > SupplyChain</span></a>
+</li>
+            <li class="active"><a href="../treemap">
+  <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+
+
+               </ul>
+               <ul class="nav">
+
+
+               </ul>
+           </div>
+           <!--/.nav-collapse -->
+       </div>
+
+</nav>
+<body>
+
+
+   <!-- Some info on this app -->
+
+<div class="container">
+   <!-- Some info on this app -->
+   <div class="jumbotron">
+       <legend>Button information</legend>
+       All buttons correspond to the tree that is selected (e.g. region of consumption). In the case that single selection is in effect, the buttons select shown and select below will only select a single node. <br><br> <strong>Terminology:</strong> the  folder icon <span class="glyphicon glyphicon-folder-close" aria-hidden="true" > </span> represents a parent node, the file icon  <span class="glyphicon glyphicon-file" aria-hidden="true" > </span> represents a child node.
+       It is possible that a parent node contains sub-parents nodes and this is displayed as a folder icon as well.<br><br>
+       <strong >Select below</strong>: Allows for quick selections of specific sub-parents or children nodes. This button selects every sub parent or child node of the highlighted selection. If a node is highlighted it turns blue. If selected it turns green. <br><br>
+
+                <strong >Select shown</strong>: Allows for quick selections of many nodes at the same time. This button selects all children nodes, sub-parent or parent nodes that are visible/shown. It selects every node that is currently visible with the exception that it deselects any parent or sub parent node that those nodes may have. <br><br>
+  <strong >Deselect all</strong>: Deselects all nodes whether visible or not. <br><br>
+    <strong>Expand</strong>: Expands one level. <br><br>
+         <strong>Collapse</strong>: Collapse one level. <br><br>
+      <strong>Collapse all</strong>: Collapses all possible node selections to the highest level. <br><br>
+<strong>Visualize current & start session</strong>:Visualizes current selections and resets the filter selections while starting a session (empty selection canvas, but any selections at that point will be remembered) <br><br>
+<strong>Visualize in session</strong>:Remembers previous selections in filter <br><br>
+<strong>Visualize & reset session</strong>:Resets previous selections in filter <br><br>
+
+
+
+
+
+
+</div>
+</div>
+
+<!--/.fluid-container-->
+
+<hr>
+
+<footer>
+
+    <div class="container">
+     <center>
+            <div>
+    <!--Add a picture -->
+
+</div>
+        <!--Add a picture and center it-->
+           <font color="black"> IE Soft-Lab 2016</font> </center>
+
+    </div>
+</footer>
+   <script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
+
+

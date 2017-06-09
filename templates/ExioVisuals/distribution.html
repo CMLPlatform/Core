@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+{% extends 'ExioVisuals/base.html' %}
+{% load static %}
+
+{% load bootstrap %}
+
+
+{% block speciality %}
+<link href="{% static 'fancytree/skin-bootstrap-n/ui.fancytree.css' %}" rel="stylesheet" type="text/css"
+    class="skinswitcher">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.js' %}" type="text/javascript"></script>
+
+  <script src="{% static 'fancytree/src/jquery.fancytree.persist.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.dnd.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.edit.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.glyph.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.table.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.wide.js' %}" type="text/javascript"></script>
+  <script src="{% static 'fancytree/src/jquery.fancytree.childcounter.js' %}" type="text/javascript"></script>
+ <script src="{% static 'fancytree/src/jquery.fancytree.filter.js' %}" type="text/javascript"></script>
+
+{% if title %}
+    <script src="//d3plus.org/js/d3.js"></script>
+<script src="//d3plus.org/js/d3plus.js"></script>
+
+{% endif %}
+
+
+<!-- Add code to initialize the product tree when the document is loaded: -->
+{% include "ExioVisuals/myFancyTrees.html" %}
+
+<!--popup functionality-->
+{% if popup %}
+<script type="text/javascript">
+
+
+ $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+
+</script>
+{% endif %}
+
+{% endblock %}
+
+
+
+<!--Just stuff-->
+
+{% block navibar %}
+
+ <li class="active2" ><a href="../distribution" style="color: #428bca;">
+
+  <span class="glyphicon glyphicon-scale" aria-hidden="true" > PieChart  </span></a>
+</li>
+
+          <li class="active"><a href="../timeseries">
+
+  <span class="glyphicon glyphicon-time" aria-hidden="true" > TimeSeries</span></a>
+</li>
+
+           <li class="active"><a href="../geo">
+  <span class="glyphicon glyphicon-globe" aria-hidden="true" >  GeoRegion</u></span></a>
+</li>
+
+<li class="active"><a href="../supplychain">
+  <span class="glyphicon glyphicon-link" aria-hidden="true" > SupplyChain</span></a>
+</li>
+
+          <li class="active"><a href="../treemap">
+
+  <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
+</li>
+{% endblock %}
+
+{% block title %}
+PieChart
+{% endblock %}
+
+
+{% block body_block %}
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+         <div class="caption" ALIGN=justify>
+      <h3 ALIGN=center>{{title}}</h3>
+             {% if  title %}
+        <p> <p><center>Plotted in kgCO2eq</center></p>
+{% endif %}
+        </p>{% if not title %}{{desc|safe}}{% endif %}
+
+         </div>
+
+  </div>
+    </div>
+    </div>
+
+<center>
+<div id="viz" style="width:800px;height:400px;"></div>
+<script>
+     var data = {{pieChartData|safe}}
+  d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("pie")
+    .id("name")
+    .size("value")
+    .draw()
+
+
+</script>
+
+ <!--
+    Saving is tested in Chrome.
+    Saving might not work in FireFox.
+<a id="save" href="#" type="button" class="btn btn-primary btn-xs">export image</a>
+<canvas id="canvas1" width="1000" height="800" style="display:none">   </canvas>
+</center>
+
+
+
+<script type="text/javascript">
+
+ var svg1 = d3.select("#area1")
+                    .append("svg");
+
+
+d3.select("#save").on("click", function(){
+    var html = d3.select("svg")
+        .attr("version", 1.1)
+        .attr("xmlns", "http://www.w3.org/2000/svg")
+        .node().parentNode.innerHTML;
+
+ //console.log(html);
+var imgsrc = 'data:image/svg+xml;base64,'+ btoa(html);
+var img = '<img src="'+imgsrc+'">';
+
+//d3.select("#svgdataurl").html(img);
+var canvas = document.getElementById("canvas1"),
+context = canvas.getContext("2d");
+
+var image = new Image();
+image.src = imgsrc;
+
+image.onload = function() {
+    context.drawImage(image, 0, 0);
+
+    var canvasdata = canvas.toDataURL("image/png");
+
+    var pngimg = '<img src="'+canvasdata+'">';
+    //d3.select("#pngdataurl").html(pngimg);
+
+    var a = document.createElement("a");
+    a.download = "exio_image.png";
+    a.href = canvasdata;
+        document.body.appendChild(a);
+    a.click();
+};
+
+});
+
+</script>
+-->
+    {% if not desc %}
+<div class="row">
+    <div class="thumbnail">
+         <div class="caption">
+
+         <div class="caption" ALIGN=justify>
+    <center>
+    <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
+        {% if not default %}
+<form method="post">{% csrf_token %}
+    <input type="hidden" name="raw" value="{{titles}}">
+     <input type="hidden" name="raw2" value="{{plot}}">
+        <input type="submit" class="btn btn-primary btn-xs" value="Export raw data (CSV)">
+    </form>
+{% endif %}
+
+
+<canvas id="canvas2" width="1000" height="1000" style="display:none">   </canvas>
+<body onload="myFunction()"></body>
+
+<a id="link" type="button" class="btn btn-primary btn-xs">Export image by right-click (SVG)</a>
+</center>
+</div></div></div></div>{% endif %}
+
+    <script>
+//function for export image
+    var a = "world";
+setTimeout(function(){
+//alert("Hello " + a);
+
+
+
+
+var svg = document.getElementById("viz");
+//get svg element.
+
+
+//get svg source.
+var serializer = new XMLSerializer();
+var source = serializer.serializeToString(svg);
+
+//add name spaces.
+if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
+    source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+}
+if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
+    source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
+}
+
+//add xml declaration
+source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
+
+//convert svg source to URI data scheme.
+var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
+
+//set url value to a element's href attribute.
+document.getElementById("link").href = url;
+//you can download svg file by right click menu.
+
+
+
+
+
+//delay time before plot is finally rendered
+}, 5000);
+a = "Stack Overflow";
+
+
+
+
+</script>
+
+ {{description|safe}}
+
+
+
+<!--If there are forms from the reload, show a pop-up-->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <center>
+        <h4 class="modal-title">ExioVisuals</h4></center>
+      </div>
+      <div class="modal-body">
+        <p>Your filter interface has been updated according to your input.</p>
+          You selected the following decomposition:<br> <strong>{{userSelectMode}}</strong>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<!--end test -->
+ {% endblock %}
+
+<!--POPUP part and form-->
+<!--
+{% block body1 %}
+
+<form class="form-inline" method="post" action="../redirect/" >
+     {% csrf_token %}
+
+    {{selectionForm.management_form}}
+
+{% for f_form in selectionForm %}
+{{ f_form.selection|bootstrap }} <br>
+    {% endfor %}
+    <center>
+<button type="submit"  class="btn btn-warning btn-xs">Reload</button></center>
+    </form>
+
+{% endblock %}
+-->
+
+
+
+
+<!--Mode formsets-->
+{% block modeForms %}
+
+<div class="panel-body"  style="background-color:white;font-size: 12px;">
+
+<legend>Decomposition</legend>
+
+<form class="form-inline" method="post" action="../distribution/">
+    <input type="hidden" name="selectMode" value="{{ userSelectMode }}" >
+     {% csrf_token %}
+<fieldset class="inlineLabels">
+     Contribution footprint of consumption split by{{ modeForm }}
+</fieldset>
+<center>
+     <button id="reload" class="btn btn-lg btn-primary btn-sm" type="submit">Reload</button></center>
+ </form>
+   </div>
+                  {% endblock %}
+
+
+{% block formType %}
+<form  method="post" action="../distribution/"> {% csrf_token %}
+    {% endblock %}
+{% block body3 %}
+<!--Send the mode in this block (no specific reason-->
+<input type="hidden" name="selectMode" value="{{ userSelectMode }}" >
+
+Select pressures  for analysis:
+ <center>
+
+
+
+
+            <br>
+
+            <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus5" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll5">Select shown</button>
+    <button type="button" id="btnsExpandAll5" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel5" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll5">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll5" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree5" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+<!--
+<form class="form-signin" method="POST" id="MyForm" name="MyForm">
+
+    {% csrf_token %}
+    <input type="radio"  name="groupss" value="mode1" id="s"> Mode1<br>
+<input type="radio"  name="groupss" value="mode2" id="k" checked> Mode2<br>
+
+<hr>
+
+
+     <button id="reload" class="btn btn-lg btn-primary btn-block" type="submit">Reload</button>
+ </form>
+
+-->
+
+
+{% endblock %}
+
+
+{% block body4 %}
+    Select years  for analysis:
+{{warning_11|safe}}
+<br>
+    <center>
+         <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll7">Select all</button>
+                    <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsDeselectAll7">Deselect all</button>
+                    <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsCollapseAll7">Collapse all</button>
+
+    </div></center>
+<div id="tree7" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+
+ {% endblock %}
+{% block body5 %}
+{{warning_5|safe}}
+Select countries  for analysis:
+ <center>
+
+
+
+
+
+            <br>
+
+            <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus2" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll2">Select shown</button>
+    <button type="button" id="btnsExpandAll2" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel2" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll2">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll2" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree2" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+ {% endblock %}
+
+{% block body10 %}
+{{warning_10|safe}}
+Select countries  for analysis:
+ <center>
+
+
+
+
+            <br>
+  <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus6" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll6">Select shown</button>
+    <button type="button" id="btnsExpandAll6" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel6" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll6">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll6" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree6" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+ {% endblock %}
+
+{% block body6 %}
+{{warning_6|safe}}
+Select products for analysis:
+
+    <center>
+
+
+
+            <br>
+
+            <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll">Select shown</button>
+    <button type="button" id="btnsExpandAll" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+                    <br>
+		<label>Search products:</label>
+		<input name="search" placeholder="Products..." autocomplete="off" >
+		<button id="btnResetSearch" hidden="hidden">&times;</button>
+		<span id="matches"></span>
+	</p>
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+
+
+
+
+
+    {% endblock %}
+
+{% block body7 %}
+
+{{warning_7|safe}}
+Select countries for analysis:
+
+<center>
+
+
+
+            <br>
+
+            <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus3" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll3">Select shown</button>
+    <button type="button" id="btnsExpandAll3" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel3" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll3">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll3" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree3" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+            <center>
+			<h3>Countries</h3>
+                <hr>
+            <br>
+
+            <div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll2">Select all</button>
+  <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll2">Deselect all</button>
+    <button type="button" id="btnsExpandAll2" class="btn btn-primary btn-sm">Expand all</button>
+      <button  type="button" id="btnsCollapseAll2" class="btn btn-primary btn-sm">Collapse all</button>
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button></div>
+                <br>
+                <p>
+                    <br>
+
+	</p>
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree2" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+
+-->
+
+<center>
+
+{% endblock %}
+
+{% block body8 %}
+   {{warning_8|safe}}
+   Select products for analysis:
+<center>
+
+
+            <br>
+
+           <div class="btn-group" role="group" aria-label="...">
+                <button  type="button" id="btnsFocus4" class="btn btn-primary btn-sm">Select below</button>
+
+                <button type="button" class="btn btn-primary btn-sm"href="#" id="btnsSelectAll4">Select shown</button>
+    <button type="button" id="btnsExpandAll4" class="btn btn-primary btn-sm" onclick="upCount();">Expand</button>
+                                      <button  type="button" id="btnsCollapseLevel4" class="btn btn-primary btn-sm">Collapse</button>
+
+                <button type="button" class="btn btn-primary btn-sm" href="#" id="btnsDeselectAll4">Deselect all</button>
+      <button  type="button" id="btnsCollapseAll4" class="btn btn-primary btn-sm">Collapse all</button>
+
+      <button  type="button"  class="btn btn-primary btn-sm" style="background: transparent;border: none !important;
+    font-size:0;">Collapse all</button>
+ <li class="active"><a href="../infobutton">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > Info</span></a>
+</li>
+            </div>
+                <br>
+
+
+
+
+       <p>
+</center>
+
+
+		<div id="tree4" class="panel-body fancytree-colorize-hover fancytree-fade-expander">
+
+        </div>
+
+{% endblock %}
+
+{% block belowButtons %}
+{% if session %}
+    <button type="submit" class="btn btn-success btn-sm" value="Send data">Visualize in session</button>
+    <input type="hidden" name="session" value="session" >
+    <button type="submit" id="noSession2" class="btn btn-warning btn-sm" value="Send data">Visualize & reset session</button>
+
+    <!--send hidden data for setting session on!-->
+{% else %}
+<button type="submit" id="noSession" class="btn btn-primary btn-sm" value="Send data">Visualize current & start new session</button></p></center>
+    <!--Clear any cookie! by setting the id on clearcookie function-->
+        {% endif %}</form>
+ {% endblock %}

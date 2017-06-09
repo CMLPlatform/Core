@@ -1,0 +1,145 @@
+<!doctype html>
+{% extends 'CMLMasterProject/baseHome.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./">Home</a></li>
+
+
+                <li><a href="./">RaMa-Scene</a></li>
+                <li><a href="visuals">Viz projects</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+         <li><a href="./">Sign up</a></li>
+                <li><a href="./">Log in</a></li>
+            </ul>
+        </div>
+{% endblock %}
+
+
+{% block content %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" >
+    <div class="item active" >
+        <center>
+      <img src="{% static 'images/quality2.svg' %}" alt="Researchers"></center>
+        <br><br><br><br><br><br><br><br><br>
+      <div class="carousel-caption">
+        <h3 style="color: #3e3e3e;">Researchers</h3>
+        <p style="color: #3e3e3e;">As a researcher or student visualize and analyze various datasets</p>
+          <button type="button" class="btn btn-primary">SIGN UP</button>
+
+      </div>
+    </div>
+
+    <div class="item">
+         <center>
+      <img src="{% static 'images/decision-making2.svg' %}" alt="Decision-makers"></center>
+        <br><br><br><br><br><br><br><br><br>
+      <div class="carousel-caption" >
+        <h3 style="color: #3e3e3e;">Decision-makers & companies</h3>
+        <p style="color: #3e3e3e;">As a company or decision-maker analyze critical materials</p>
+          <button type="button" class="btn btn-primary">SIGN UP</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<hr>
+<div class="container-fluid">
+ <div class="row">
+     <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>Visualization Projects</b></h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?   </div>
+  <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>RaMa-Scene</b></h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </div>
+  <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>CML wiki</b></h5> Please refer for more information about the CML institute to the CML Wiki.  </div>
+</div>
+</div>
+<hr>
+    {% endblock %}
+
+{% block footer %}
+<div class="footer" style="background-color:#3e3e3e;">
+<!--footer start from here-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <div class="logofooter"> Logo</div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <p><i class="fa fa-map-pin"></i> 210, Einsteinweg, Leiden -2563AK, The Netherlands</p>
+        <p><i class="fa fa-phone"></i> Phone (Netherlands) : +6546323423</p>
+        <p><i class="fa fa-envelope"></i> E-mail : info@cml.com</p>
+
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">RESOURCES</h6>
+        <ul class="footer-ul">
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#"> RaMa-Scene</a></li>
+            <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> CML wiki</a></li>
+            <li><a href="visuals"> Viz projects</a></li>
+          <li><a href="#"> Frequently Ask Questions</a></li>
+        </ul>
+      </div>
+        <!--
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">LATEST POST</h6>
+        <div class="post">
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+        </div>
+      </div>
+      -->
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+            <blockquote cite="#"><a href="#">GitHub</a></blockquote>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--footer start from here-->
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>© 2017 - All Rights with CML</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Faq's</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+</div>
+{% endblock %}

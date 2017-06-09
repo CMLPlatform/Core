@@ -1,0 +1,71 @@
+{% extends 'PUMA/base.html' %}
+{% block title %} Industrial {% endblock %}
+
+
+{% block category_title  %} Industrial goods {% endblock %}
+
+
+{% block category_summary %}
+<div class="thumbnail">
+         <div class="caption"><h4>Summary</h4>The category industrial goods contains any machinery or objects to produce or process physical goods in industrial businesses. The generated list of types of goods is influenced by the findings of Recalde et al. (2008), Rauch et al. (2007), and Eckelman et al. (2007). The products that contain a significant amount of metal in commercial appliances included in this category are; tractors, agricultural machinery, construction vehicles, large and small cranes, construction/repair tools, forklifts, shelving, tanks, wind turbines, servers in datacenters, large and small industrial machinery.
+
+ The information used to quantify the specific types of products has been done by using the open geodata(available from the Amsterdam municipality website), internet research (e.g. Drimble and Datacentrumgids.nl), Google Earth and scaling findings from previously executed stock estimations. All lifetime estimations are  taken from a property manual from Nevada Department of Taxation (2010).</div></div></div>
+<center>
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1049913846&amp;format=interactive"></iframe>
+</center>
+
+
+<br>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Total number of objects</th><th>Source object</th><th>Average lifetime</th><th>Source lifetime</th></tr></thead><tbody><tr><td>Tractors</td><td>82</td><td>Drimble (2016) </td><td>15 years</td><td>Nevada Department of Taxation (2011)</td></tr><tr><td>Agricultural machinery</td><td>246</td><td>Drimble (2016) </td><td>15 years</td><td>“  </td></tr><tr><td>Construction vehicles</td><td>105</td><td>Gemeente Amsterdam (2016)</td><td>15 years </td><td>“ </td></tr><tr><td>Large cranes</td><td>42</td><td>Eckelman et al. (2007); Gemeente Amsterdam (2016)</td><td>20 years</td><td>“ </td></tr><tr><td>Small cranes</td><td>31</td><td>Eckelman et al. (2007); Gemeente Amsterdam (2016); Google Earth</td><td>20 years </td><td>“</td></tr><tr><td>Tools</td><td>21854</td><td>Eckelman et al. (2007); Gemeente Amsterdam (2016)</td><td>7 years </td><td>“</td></tr><tr><td>Forklifts</td><td>203</td><td>Eckelman et al. (2007); Drimble(2016); European Commision- Eurostat (2016)</td><td>15 years</td><td>“</td></tr><tr><td>Shelving</td><td>67713</td><td>Eckelman et al. (2007); Supply Chain Magazine (2007)</td><td>15 years</td><td>“</td></tr><tr><td>Tanks</td><td>640</td><td>Eckelman et al. (2007); Google Earth</td><td>15 years </td><td>“</td></tr><tr><td>Wind turbines</td><td>39</td><td>Gemeente Amsterdam (2016)</td><td>20 years </td><td>Windmeasurementinternational (no year)</td></tr><tr><td>Datacenters in 1m unit</td><td>21346</td><td>Datacentrumgids (2016)</td><td>5 years </td><td>Nevada Department of Taxation (2011)</td></tr><tr><td>Small machinery</td><td>1.7 kg aluminium /capita; 4.6 kg copper/capita; 67.6 kg iron&steel/capita</td><td>Eckelman et al. (2007); Rauch et al. (2007); Recalde et al. (2008); Gemeente Amsterdam (2016)</td><td>17 years</td><td>“</td></tr><tr><td>Large machinery</td><td>1.3 kg aluminium/capita; 3.5 copper kg/capita; 60.2 iron&steel kg/capita</td><td>Eckelman et al. (2007); Rauch et al. (2007); Recalde et al. (2008); Gemeente Amsterdam (2016)</td><td>15 years</td><td>“</td></tr></tbody></table></div>
+</div></div>
+{% endblock %}
+
+ {% block iron %}
+
+
+<br><center>
+      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1533963546&amp;format=interactive"></iframe></center>
+
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Iron/steel stock in tonnes</th><th>Average assumed weight in kg </th><th>Iron/steel content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Tractors</td><td>517</td><td>7000</td><td>90 %</td><td>Van Kampen (2003); Eckelman et al. (2007)</td></tr><tr><td>Agricultural machinery</td><td>261</td><td>1250</td><td>85 %</td><td>Devos Agri(2016); Eckelman et al. (2007)</td></tr><tr><td>Vehicles</td><td>2174</td><td>23000</td><td>90 %</td><td>Werktuigen.nl (2016);Eckelman et al. (2007) </td></tr><tr><td>Large cranes</td><td>9716</td><td>272155</td><td>85%</td><td>Eckelman et al. (2007)</td></tr><tr><td>Small cranes</td><td>2390</td><td>90718</td><td>85%</td><td>Eckelman et al. (2007)</td></tr><tr><td>Tools</td><td>261</td><td>22.6</td><td>90 %</td><td>Eckelman et al. (2007)</td></tr><tr><td>Forklifts</td><td>568</td><td>4000</td><td>70 %</td><td>Eckelman et al. (2007)</td></tr><tr><td>Shelving</td><td>4151</td><td>61.3</td><td>61.3 kg</td><td>#Ikea ##1 (2016)#</td></tr><tr><td>Tanks</td><td>343718</td><td>537059</td><td>100%</td><td>Eckelman et al. (2007); Google Earth</td></tr><tr><td>Wind turbines</td><td>9163</td><td>-</td><td>234961</td><td>Haapala & Prempreeda (2014_</td></tr><tr><td>Datacenters in 1m unit</td><td>5217</td><td>900</td><td>244</td><td>Datacentrumgids (2016); Meza et al. (2010)</td></tr><tr><td>Small machinery</td><td>56592</td><td>-</td><td>67.6</td><td>Eckelman et al. (2007)</td></tr><tr><td>Large machinery</td><td>50397</td><td>-</td><td>60.2</td><td>Eckelman et al. (2007)</td></tr></tbody></table></div>
+
+{% endblock %}
+
+
+ {% block aluminium %}
+
+<center><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=20057768&amp;format=interactive"></iframe></center>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Aluminium stock in tonnes</th><th>Average assumed weight in kg </th><th>Aluminium  content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Tractors</td><td>3</td><td>7000</td><td>0.5%</td><td>Van Kampen (2003); Recalde et al. (2008)</td></tr><tr><td>Agricultural machinery</td><td>3</td><td>1250</td><td>1%</td><td>Kim et al.(2006); Recalde et al. (2008)</td></tr><tr><td>Vehicles</td><td>12</td><td>23000</td><td>0.5 %</td><td>Werktuigen.nl (2016); Recalde et al (2008)</td></tr><tr><td>Large cranes</td><td>57</td><td>272155</td><td>0.5 %</td><td>Recalde et al. (2008)</td></tr><tr><td>Small cranes</td><td>14</td><td>90718</td><td>0.5%</td><td>Recalde et al. (2008)</td></tr><tr><td>Tools</td><td>1</td><td>22.6</td><td>0.2 %</td><td>Recalde et al. (2008)</td></tr><tr><td>Forklifts</td><td>6</td><td>4000</td><td>30 kg</td><td>Recalde et al. (2008)</td></tr><tr><td>Wind turbines</td><td>19</td><td>-</td><td>490 kg</td><td>Haapala & Prempreeda (2014_</td></tr><tr><td>Datacenters in 1m unit</td><td>3089</td><td>900</td><td>145 kg</td><td>Datacentrumgids (2016); Meza et al. (2010)</td></tr><tr><td>Small machinery</td><td>1423</td><td>-</td><td>1.7</td><td>Recalde et al. (2008)</td></tr><tr><td>Large machinery</td><td>1088</td><td>-</td><td>1.3</td><td>Recalde et al. (2008)</td></tr></tbody></table></div>
+
+{% endblock %}
+
+ {% block copper %}
+
+<center><iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1YvxRBPGpbFR8uUIIOFlArMz_5EiT8jjl84yldxBxFxg/pubchart?oid=1462217515&amp;format=interactive"></iframe></center>
+<div class="container" ><table class="table table-hover" ><thead><tr><th>Object </th><th>Copper stock in tonnes</th><th>Average assumed weight in kg </th><th>Copper content in kg or %</th><th>Source </th></tr></thead><tbody><tr><td>Tractors</td><td>2</td><td>7000</td><td>29 kg</td><td>Van Kampen(2003); Rauch et al. (2007)</td></tr><tr><td>Agricultural machinery</td><td>7</td><td>1250</td><td>29 kg</td><td>Werktuigen.nl (2016); Rauch et al. (2007)</td></tr><tr><td>Vehicles</td><td>12</td><td>23000</td><td>0.5 %</td><td>Rauch et al. (2007)</td></tr><tr><td>Large cranes</td><td>441</td><td>272155</td><td>10500</td><td>Rauch et al. (2007)</td></tr><tr><td>Small cranes</td><td>109</td><td>90718</td><td>3500</td><td>Rauch et al. (2007)</td></tr><tr><td>Forklifts</td><td>13</td><td>4000</td><td>63 kg</td><td>Rauch et al. (2007)</td></tr><tr><td>Wind turbines</td><td>83</td><td>-</td><td>2123</td><td>Haapala & Prempreeda (2014_</td></tr><tr><td>Datacenters in 1m unit</td><td>2660</td><td>900</td><td>125 kg</td><td>Datacentrumgids (2016); Meza et al. (2010)</td></tr><tr><td>Small machinery</td><td>3865</td><td>-</td><td>4.6</td><td>Rauch et al. (2007)</td></tr><tr><td>Large machinery</td><td>2915</td><td>-</td><td>3.5</td><td>Rauch et al. (2007)</td></tr></tbody></table></div>
+
+{% endblock %}
+
+{% block notes %}
+
+<br><br>
+<ul>
+<li>[1] Recalde, K., Wang, J., Graedel, T.E., Aluminium in-use stocks in the state of Connecticut</li>
+<li>[2] M., Rauch, J., Eckelman, M., Gordon, R., ‘In-Use Stocks of Copper in the State of Connecticut, USA’ (2008)</li>
+<li>[3] Eckelman, M., Rauch, J., Gordon, R., ‘In-Use Stocks of Iron in the State of Connecticut, USA’ (2007)</li>
+<li>[4] Open geo data and interactive maps of the municipality of Amsterdam: maps.amsterdam.nl  and http://www.ois.amsterdam.nl/visualisatie/dashboard_kerncijfers.html </li>
+<li>[5] Drimble (company register website): http://drimble.nl/bedrijf/noord-holland/amsterdam/01/ </li>
+<li>[7] Nevada Department of Taxation, ‘Personal Property Manual’ (2011). Retrieved from: http://www.clarkcountynv.gov/assessor/Documents/PP%20Manual%2011-12.pdf </li>
+<li>[8] Van Kampen, L.T.B., ‘Het ledig gewicht van motorvoertuigen’, figure 6.1, retrieved from: http://www.swov.nl/rapport/r-2003-35.pdf</li>
+<li>[9] Agricultural machine product catalogue, retrieved from: http://www.devosagri.com/nl/taxonomy/term/3</li>
+<li>[10] https://www.werktuigen.nl/bouwmachines/bulldozers/gewicht-25000-kg-1044.html</li>
+<li>[11] http://drimble.nl/bedrijf/noord-holland/amsterdam/52109/</li>
+<li>[12] http://ec.europa.eu/eurostat/statistics-explained/index.php/Warehousing_and_transport_support_services_statistics_-_NACE_Rev._2
+</li>
+<li>[13] http://www.ask.com/science/much-forklift-weigh-70ff2e44cb62f1a0 </li>
+<li>[14] http://www.ikea.com/us/en/catalog/products/S79932536/</li>
+<li>[15] http://www.supplychainmagazine.nl/wp-content/uploads/2009/12/SCM05-070-071-Westpoort-1.pdf </li>
+<li>[16] http://www.datacentrumgids.nl/overzicht/nederland/amsterdam?page=1</li>
+<li>[17] http://www.42u.com/42U-cabinets.htm</li>
+    <li>[18] http://www.ourenergypolicy.org/wp-content/uploads/2014/06/turbines.pdf</li>
+    <li>[19] http://www.hpl.hp.com/techreports/2010/HPL-2010-117.pdf</li>
+   </ul>    {% endblock %}
