@@ -1,0 +1,46 @@
+var url = 'https://api.myjson.com/bins/17iu7x';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+           
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+         
+          var new_Json = adjustJsonJP(Json, selectedEffect3);
+          var newValues = adjustValuesJP(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+            'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+          ], selectedEffect3);
+          var new_GAS_RS_Json = adjustJsonJP(GAS_RS_Json, selectedEffect3);
+          var newValues2 = adjustValuesJP(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+            'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+            'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+          ], selectedEffect3);
+
+          console.log(newValues);
+
+          chart.load({
+            unload: true,
+            json: new_Json,
+            keys: {
+              x: 'date',
+              value: newValues
+            }
+          });
+          chart2.load({
+            unload: true,
+            json: new_GAS_RS_Json,
+            keys: {
+              x: 'date',
+              value: newValues2
+            }
+          });
+          },
+
+            error: function(e) {
+alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });

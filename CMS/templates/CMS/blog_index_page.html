@@ -1,0 +1,58 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogindexpage{% endblock %}
+{% block title %}CMS -- News{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li><a href="../../">Home</a></li>
+
+
+                <li><a href="../../">Modeling tools</a></li>
+                <li><a href="../../exploratory">Exploratory tools</a></li>
+                 <li  class="active"><a href="/research">Research</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+
+
+{% endblock %}
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../">  General</a></li>
+   <li><a style="color: #e0e0eb;" href="./"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>News</a></li>
+   <li><a href="../tools-index">IE Tools & Databases</a></li>
+   <li><a href="../microvis/">IV CML</a></li>
+  </ul>
+</div>
+<div class="container" >
+    <h3>{{ page.title }}</h3>
+
+    <div class="intro">{{ page.intro|richtext }}</div>
+
+    {% for post in blogpages %}
+    <hr>
+    {% with post=post.specific %}
+    <div class="container-fluid" >
+        <h4><a href="{% pageurl post %}">{{ post.title }}</a></h4>
+
+        {% with post.main_image as main_image %}
+            {% if main_image %}{% image main_image fill-100x40 %}{% endif %}
+        {% endwith %}
+
+        <p>{{ post.intro }}</p>
+       <!-- {{ post.body|richtext }} -->
+    {% endwith %}
+        </div>
+    <hr>
+{% endfor %}
+
+</div>
+{% endblock %}

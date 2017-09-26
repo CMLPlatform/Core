@@ -1,0 +1,48 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<script src="{% static 'js/books.js' %}"></script>
+  <h1 class="page-header">Books</h1>
+!-- BUTTON TO TRIGGER THE ACTION -->
+  <p>
+    <button type="button"
+            class="btn btn-primary js-create-book"
+            data-url="{% url 'book_create' %}">
+      <span class="glyphicon glyphicon-plus"></span>
+      New book
+    </button>
+  </p>
+ <table class="table" id="book-table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Type</th>
+      <th>Publication date</th>
+      <th>Pages</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+     {% include 'books/partial_book_list.html' %}
+  </tbody>
+</table>
+<!-- THE MODAL WE WILL BE USING -->
+  <div class="modal fade" id="modal-book">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+<!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+{% endblock %}
+
+

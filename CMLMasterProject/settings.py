@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
+from YamJam import yamjam
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_ROOT = os.path.abspath(
@@ -23,11 +23,14 @@ PROJECT_ROOT = os.path.abspath(
 SETTINGS_DIR = os.path.dirname(__file__)
 #Go one level up to retrieve the projects directory
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+#for server!!
+#PROJECT_PATH = os.path.join(SETTINGS_DIR +"platform/", os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 #create the actual template link to tell the project were the template is
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 #get the static directory for images etc
 STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
+
 STATIC_URL = '/static/'
 
 # Additional locations of static files
@@ -36,19 +39,31 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     STATIC_PATH,
+    os.path.join(BASE_DIR, 'assets'),
+
 )
 
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'bundles/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
+    }
+}
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '&h-9wo-tlw5^3p4_1sk&2mjfqph2%@(d99kgr###^%p$ly!+f@'
-
+SECRET_KEY = yamjam()['CMLMasterProject']['django-secret-key']
+AUTHENTICATION_KEY_RESEARCH = yamjam()['CMLMasterProject']['cml-research-key']
+AUTHENTICATION_KEY_STUDENT = yamjam()['CMLMasterProject']['cml-student-key']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['127.0.0.1']
-
+#on server
+#DEBUG = False
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '132.229.201.25']
+#on server
+#ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -64,6 +79,31 @@ INSTALLED_APPS = [
     'djgeojson',
     'ExioVisuals',
 'bootstrapform',
+'CMLMasterProject',
+    #wigtail CMS apps
+'wagtail.wagtailforms',
+'wagtail.wagtailredirects',
+'wagtail.wagtailembeds',
+'wagtail.wagtailsites',
+'wagtail.wagtailusers',
+'wagtail.wagtailsnippets',
+'wagtail.wagtaildocs',
+'wagtail.wagtailimages',
+'wagtail.wagtailsearch',
+'wagtail.wagtailadmin',
+'wagtail.wagtailcore',
+
+'modelcluster',
+'taggit',
+    'CMS',
+"wagtail.contrib.table_block",
+    'MicroVis',
+    'books',
+'widget_tweaks',
+    'rest_framework',
+    'snippets.apps.SnippetsConfig',
+    'webpack_loader',
+    'ramascene'
 
 ]
 
@@ -75,6 +115,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #wigtail CMS
+'wagtail.wagtailcore.middleware.SiteMiddleware',
+'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+
 ]
 
 ROOT_URLCONF = 'CMLMasterProject.urls'
@@ -103,8 +147,8 @@ WSGI_APPLICATION = 'CMLMasterProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': yamjam()['CMLMasterProject']['database']['engine'],
+        'NAME': os.path.join(BASE_DIR, yamjam()['CMLMasterProject']['database']['name']),
     }
 }
 
@@ -162,7 +206,17 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = '../../media/'
-
+MEDIA_URL = '/media/'
+#for server!!
+#MEDIA_URL = '/platform/media/'
 #exiovisuals
 PATH_HDF5 = "/home/sidney/exiovis_db_original/exiovis/"
+#temp on server
+#PATH_HDF5 = "/home/exiovisuals_user/datahdf5/exiovis/"
+
+#login -> redirect to home
+LOGIN_REDIRECT_URL = '/'
+#for server !!
+#LOGIN_REDIRECT_URL = '/platform/'
+#wagtail site name of dashboard admin
+WAGTAIL_SITE_NAME = 'CML\'s'

@@ -2,6 +2,7 @@ from django.conf.urls import url
 import ExioVisuals.views as views
 
 urlpatterns = [
+
        # url(r'^$', views.ExioVisuals, name='ExioVisuals'),
         url(r'^$', views.home, name='home'),
         url(r'^distribution/$', views.distributionView, name='distribution'),

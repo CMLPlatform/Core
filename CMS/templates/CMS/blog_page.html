@@ -1,0 +1,60 @@
+{% extends "CMLMasterProject/baseHome.html" %}
+{% load wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-blogpage{% endblock %}
+{% block title %}CMS -- News{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+
+
+                <li><a href="/">Modeling tools</a></li>
+                <li><a href="/exploratory">Exploratory tools</a></li>
+                 <li  class="active"><a href="/research">Research</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+
+
+{% endblock %}
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../../">  General</a></li>
+   <li><a style="color: #e0e0eb;" href="./"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>News</a></li>
+   <li><a href="../../tools-index">IE Tools & Databases</a></li>
+   <li><a href="../../microvis/">IV CML</a></li>
+  </ul>
+</div>
+<div class="container">
+    <h3>{{ page.title }}</h3>
+    <p class="meta">{{ page.date }}</p>
+
+    <div class="intro">{{ page.intro }}</div>
+
+    {{ page.body|richtext }}
+
+    {% for item in page.gallery_images.all %}
+
+            {% image item.image fill-200x120 %}
+            <p>{{ item.caption }}</p>
+
+    {% endfor %}
+    {% if page.tags.all.count %}
+    <div class="tags">
+        <h3>Tags</h3>
+        {% for tag in page.tags.all %}
+            <a href="{% slugurl 'tags' %}?tag={{ tag }}"><button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> {{ tag }}</button></a>
+        {% endfor %}
+    </div>
+{% endif %}
+
+    <p><a href="{{ page.get_parent.url }}">Return to News index</a></p>
+</div>
+{% endblock %}
+

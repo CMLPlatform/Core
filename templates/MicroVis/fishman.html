@@ -1,0 +1,1758 @@
+{% extends 'MicroVis/base.html' %}
+  {% block speciality %}
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
+  <script>
+        function deselect(e) {
+  $('.pop').slideFadeToggle(function() {
+    e.removeClass('selected');
+  });
+}
+
+$(function() {
+  $('#contact').on('click', function() {
+    if($(this).hasClass('selected')) {
+      deselect($(this));
+    } else {
+      $(this).addClass('selected');
+      $('.pop').slideFadeToggle();
+    }
+    return false;
+  });
+
+  $('.close').on('click', function() {
+    deselect($('#contact'));
+    return false;
+  });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};
+    </script>
+<style>
+  //button styling
+  .toggler {
+    width: 500px;
+    height: 200px;
+  }
+
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #5cb85c;
+  }
+
+  #button:hover {
+    background-color: #52a552 !important;
+  }
+
+  #save_value {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #428bca;
+  }
+
+  #save_value:hover {
+    background-color: #275379 !important;
+  }
+
+  .c3-region-0 {
+    #fill: #deeee1;
+    border: 12px;
+    border-color: black;
+  }
+
+  .c3-chart-lines .c3-circles .c3-circle {
+    display: none;
+  }
+
+  .c3-spline {
+    stroke-width: 3px;
+  }
+
+  .loader {
+    display: inline-block;
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #chart {
+    min-height: 400px;
+    min-width: 400px;
+  }
+
+  #chart2 {
+    min-height: 600px;
+    min-width: 400px;
+  }
+
+</style>
+    {% endblock %}
+
+
+
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../../">  General</a></li>
+   <li><a  href="../../blog">News</a></li>
+   <li><a href="../../tools-index">IE Tools & Databases</a></li>
+   <li><a style="color: #e0e0eb;" href="../"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
+  </ul>
+</div>
+
+<br>
+<div class="container">
+    <legend>Material stock and flows (US and Japan)</legend>
+    <div class="messagepop pop" >
+
+    <h4>General info</h4>
+        <p><b>Unit:</b> tonnes</p>
+        <p><b>Original article:</b> Fishman, T., Schandl, H., Tanikawa, H., Walker, P., & Krausmann, F. (2014).<br> Accounting for the material stock of nations. Journal of industrial ecology, 18(3), 407-420.</p>
+        <p><b>Viz. info:</b> This visualization is created with C3.js and D3.js.</p>
+    <a class="close" href="/">Cancel</a></p>
+
+</div>
+
+<a href="/contact" id="contact">More info &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
+<br><br><br>
+<!--
+Button switch
+-->
+<!--
+Button switch
+-->
+<div class="container">
+
+
+  <h3>
+Select dataset </h3>
+  <hr>
+  <select name="effects" id="effectTypes">
+    <option value="US">US data</option>
+    <option value="JAPAN">Japan data</option>
+  </select>
+  <select name="effects" id="effectTypes2">
+    <option value="absolute">Absolute values</option>
+    <option value="cap">Per capita</option>
+    <option value="gdp">Per gdp</option>
+    <option value="percent">Percent</option>
+    <option value="growth">Growth rates</option>
+  </select>
+  <select name="effects" id="effectTypes3">
+    <option value="sc1">Materials scenario 1</option>
+    <option value="sc2">Materials scenario 2</option>
+    <option value="totals">Scenario comparison (totals only)</option>
+  </select>
+  <button id="button" class="ui-state-default ui-corner-all">Load selection</button>
+
+
+  <!--
+end of Button switch
+-->
+
+
+  <!--checkbox for deselecting many values at once-->
+
+  <br>
+  <hr>
+  <h3>
+Filter on materials</h3>
+
+
+  <hr>
+
+  <input name="selector[]" id="ad_Checkbox1" class="ads_Checkbox" type="checkbox" value="timber" />Timber
+  <input name="selector[]" id="ad_Checkbox2" class="ads_Checkbox" type="checkbox" value="other" /> Other Metals
+  <input name="selector[]" id="ad_Checkbox3" class="ads_Checkbox" type="checkbox" value="minerals" /> Minerals
+  <input name="selector[]" id="ad_Checkbox4" class="ads_Checkbox" type="checkbox" value="iron" /> Iron
+  <input type="button" id="save_value" name="save_value" value="Filter" />
+  <!--
+<p>
+
+
+
+<div class="loader"></div><sub>[Due to large number of datapoints (de)selecting can take a few seconds depending on computer performance]
+  </sub>
+</p>
+-->
+  <!--chart element-->
+  <div id="chart"></div>
+
+
+
+  <div id="chart2"></div>
+
+
+</div>
+
+
+
+<script>
+var formatYaxis = d3.format("s");
+
+var US_Json = [];
+GAS_RS_Json = [];
+//ajax function for default plotting
+var url = 'https://api.myjson.com/bins/1cp2p1';
+$.ajax({
+  type: 'GET',
+  url: url,
+  contentType: "application/json",
+  dataType: 'json',
+  success: function(data) {
+    US_Json = (JSON.stringify(data["1"]));
+    GAS_RS_Json = (JSON.stringify(data["2"]));
+    iDependOnMyParameter(US_Json, GAS_RS_Json);
+  },
+
+  error: function(e) {
+    alert("Data cannot be loaded: Ajax service not responsive");
+    console.log(e);
+  }
+});
+
+function iDependOnMyParameter(US_Json, GAS_RS_Json) {
+  // You should do your work here that depends on the result of the request!
+  //make a copy object (usually tricky in JS)
+
+  var US_Json_new = JSON.parse(US_Json);
+  var GAS_RS_Json_new = JSON.parse(GAS_RS_Json);
+  //delete scenario 2 (this is only used for the default graph)
+  for (var i in US_Json_new) {
+    var key = i;
+    var val = US_Json_new[i];
+    //console.log(val);
+    for (var j in val) {
+      var sub_key = j;
+      var sub_val = val[j]
+      delete US_Json_new[i]['MS_minerals_sc2'];
+      delete US_Json_new[i]['MS_timber_sc2'];
+      delete US_Json_new[i]['MS_other_sc2'];
+      delete US_Json_new[i]['MS_iron_sc2'];
+    }
+  }
+  for (var i in GAS_RS_Json_new) {
+    var key = i;
+    var val = GAS_RS_Json_new[i];
+    //console.log(val);
+    for (var j in val) {
+      var sub_key = j;
+      var sub_val = val[j]
+      delete GAS_RS_Json_new[i]['GS_minerals_sc2'];
+      delete GAS_RS_Json_new[i]['GS_timber_sc2'];
+      delete GAS_RS_Json_new[i]['GS_other_sc2'];
+      delete GAS_RS_Json_new[i]['GS_iron_sc2'];
+      delete GAS_RS_Json_new[i]['RS_minerals_sc2'];
+      delete GAS_RS_Json_new[i]['RS_timber_sc2'];
+      delete GAS_RS_Json_new[i]['RS_other_sc2'];
+      delete GAS_RS_Json_new[i]['RS_iron_sc2'];
+    }
+  }
+
+
+
+  //element chart to be used in HTML as the location of the plot, we use c3 and d3 for vis.
+  var chart = c3.generate({
+    data: {
+      //data input
+      json: US_Json_new,
+      //if user hovers over datapoints in chart1 (this chart) address chart3 to show a tooltip on the same index
+      onmouseover: function(d) {
+        var index = d.index;
+        chart2.tooltip.show({
+          index: index
+        });
+      },
+      //remove if the hover has ended
+      onmouseout: function(d) {
+        var index = d.index;
+        chart2.tooltip.hide({
+          index: index
+        });
+      },
+      colors: {
+        MS_minerals_hist: '#074976',
+        MS_minerals_sc1: '#83a4ba',
+        MS_minerals_sc2: '#cddae3',
+        MS_iron_hist: '#92231c',
+        MS_iron_sc1: '#49110e',
+        MS_iron_sc2: '#f4e9e8',
+        MS_other_hist: '#f5c73d',
+        MS_other_sc1: '#fbe8b1',
+        MS_other_sc2: '#937724',
+        MS_timber_hist: '#4c9619',
+        MS_timber_sc1: '#264b0c',
+        MS_timber_sc2: '#c9dfba',
+        MS_total_hist: '#074976',
+        MS_total_sc1: '#92231c',
+        MS_total_sc2: '#c9dfba',
+        MS_minerals_hist_jp: '#074976',
+        MS_minerals_sc1_jp: '#83a4ba',
+        MS_minerals_sc2_jp: '#cddae3',
+        MS_iron_hist_jp: '#92231c',
+        MS_iron_sc1_jp: '#49110e',
+        MS_iron_sc2_jp: '#f4e9e8',
+        MS_other_hist_jp: '#f5c73d',
+        MS_other_sc1_jp: '#fbe8b1',
+        MS_other_sc2_jp: '#937724',
+        MS_timber_hist_jp: '#4c9619',
+        MS_timber_sc1_jp: '#264b0c',
+        MS_timber_sc2_jp: '#c9dfba',
+        MS_total_hist_jp: '#074976',
+        MS_total_sc1_jp: '#92231c',
+        MS_total_sc2_jp: '#c9dfba',
+
+
+
+      },
+      names: {
+        MS_timber_hist: 'MS Timber Historical Series (US)',
+        MS_iron_hist: 'MS Iron Historical Series (US)',
+        MS_other_hist: 'MS Other Metals Historical Series (US)',
+        MS_minerals_hist: 'MS Minerals Historical Series (US)',
+        MS_timber_sc1: 'MS Timber Scenario 1 (US)',
+        MS_iron_sc1: 'MS Iron Scenario 1 (US)',
+        MS_other_sc1: 'MS Other Metals Scenario 1 (US)',
+        MS_minerals_sc1: 'MS Minerals Scenario 1 (US)',
+        MS_timber_sc2: 'MS Timber Scenario 2 (US)',
+        MS_iron_sc2: 'MS Iron Metals Scenario 2 (US)',
+        MS_other_sc2: 'MS Other Scenario 2 (US)',
+        MS_minerals_sc2: 'MS Minerals Scenario 2 (US)',
+        MS_total_hist: 'MS Total Historical Series (US)',
+        MS_total_sc1: 'MS Total Scenario 1 (US)',
+        MS_total_sc2: 'MS Total Scenario 2 (US)',
+        MS_timber_hist_jp: 'MS Timber Historical Series (JP)',
+        MS_iron_hist_jp: 'MS Iron Historical Series (JP)',
+        MS_other_hist_jp: 'MS Other Metals Historical Series (JP)',
+        MS_minerals_hist_jp: 'MS Minerals Historical Series (JP)',
+        MS_timber_sc1_jp: 'MS Timber Scenario 1 (JP)',
+        MS_iron_sc1_jp: 'MS Iron Scenario 1 (JP)',
+        MS_other_sc1_jp: 'MS Other Metals Scenario 1 (JP)',
+        MS_minerals_sc1_jp: 'MS Minerals Scenario 1 (JP)',
+        MS_timber_sc2_jp: 'MS Timber Scenario 2 (JP)',
+        MS_iron_sc2_jp: 'MS Iron Metals Scenario 2 (JP)',
+        MS_other_sc2_jp: 'MS Other Scenario 2 (JP)',
+        MS_minerals_sc2_jp: 'MS Minerals Scenario 2 (JP)',
+        MS_total_hist_jp: 'MS Total Historical Series (JP)',
+        MS_total_sc1_jp: 'MS Total Scenario 1 (JP)',
+        MS_total_sc2_jp: 'MS Total Scenario 2 (JP)',
+
+
+      },
+      types: {
+        MS_timber_hist: 'area-spline',
+        MS_iron_hist: 'area-spline',
+        MS_other_hist: 'area-spline',
+        MS_minerals_hist: 'area-spline',
+        MS_timber_sc1: 'area-spline',
+        MS_iron_sc1: 'area-spline',
+        MS_other_sc1: 'area-spline',
+        MS_minerals_sc1: 'area-spline',
+        MS_timber_sc2: 'area-spline',
+        MS_iron_sc2: 'area-spline',
+        MS_other_sc2: 'area-spline',
+        MS_minerals_sc2: 'area-spline',
+        MS_timber_hist_jp: 'area-spline',
+        MS_iron_hist_jp: 'area-spline',
+        MS_other_hist_jp: 'area-spline',
+        MS_minerals_hist_jp: 'area-spline',
+        MS_timber_sc1_jp: 'area-spline',
+        MS_iron_sc1_jp: 'area-spline',
+        MS_other_sc1_jp: 'area-spline',
+        MS_minerals_sc1_jp: 'area-spline',
+        MS_timber_sc2_jp: 'area-spline',
+        MS_iron_sc2_jp: 'area-spline',
+        MS_other_sc2_jp: 'area-spline',
+        MS_minerals_sc2_jp: 'area-spline',
+        MS_total_hist_jp: 'area-spline',
+        MS_total_sc1_jp: 'area-spline',
+        MS_total_sc2_jp: 'area-spline',
+        MS_total_hist: 'area-spline',
+        MS_total_sc1: 'area-spline',
+        MS_total_sc2: 'area-spline',
+        // 'line', 'spline', 'step', 'area', 'area-step' are also available to stack
+      },
+
+      groups: [
+        ['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist'],
+        ['MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1'],
+        ['MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'],
+        ['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp'],
+        ['MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp'],
+        ['MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2_jp']
+      ],
+
+
+      keys: {
+        x: 'date',
+        value: ['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1', ],
+
+      }
+    },
+    //set for the region after 2005 a background so we can deduce these are just projections
+    regions: [
+      //{start:'2005-01-01', end:'2050-01-01'},
+
+    ],
+    //set line for scenarios
+    grid: {
+      x: {
+        lines: [{
+          value: '2005-01-01'
+        }, ]
+      },
+    },
+    //set x axis according to the years
+    axis: {
+      x: {
+        type: 'timeseries',
+
+        tick: {
+          format: function(x) {
+            return x.getFullYear();
+          }
+        }
+      },
+      y: {
+
+        tick: {
+          //format the y-axis label accordingly
+          format: function formatAbbreviation(x) {
+            var s = formatYaxis(x);
+            switch (s[s.length - 1]) {
+              case "G":
+                return s.slice(0, -1) + "";
+            }
+            return s;
+          },
+
+
+
+
+
+        }
+      }
+    },
+
+    //format the tooltip values according to a set specific
+    tooltip: {
+      format: {
+        value: function(value) {
+          var test = d3.format(".5s")(value).replace('.', ' ').replace(/,/g, '.').replace(' ', '.')
+          var s = test;
+          switch (s[s.length - 1]) {
+            case "G":
+              return s.slice(0, -1) + "BT";
+          }
+          var k = d3.format(",.3f")(s)
+          return test;
+
+
+        }
+      }
+    },
+
+    //if a user hovers over the legend in chart1 we want to highlight lines in chart 3 as well
+    legend: {
+
+      item: {
+        //disable legend clickable option
+        onclick: function() {},
+        onmouseover: function(id) {
+          //highlight chart 1 (default)
+          chart.focus(id);
+
+          //remove the MS characters from the string in chart 1 so we can match it with RS and GAS scenarios
+          var hoverSelect = id.substring(3);
+          chart2.focus(["RS_" + hoverSelect, "GAS_" + hoverSelect]);
+          //chart3.focus();
+
+        },
+        //revert back to have everything "focused"
+        onmouseout: function(id) {
+          //highlight chart 1 (default)
+          chart.focus();
+          chart2.focus();
+          //chart3.focus();
+
+        }
+      }
+    },
+    transition: {
+      duration: 0
+    },
+
+    //identify c3 chart
+    bindto: '#chart'
+  });
+
+  //element chart to be used in HTML as the location of the plot, we use c3 and d3 for vis.
+  var chart2 = c3.generate({
+    data: {
+      //data input
+      json: GAS_RS_Json_new,
+
+      colors: {
+        GS_minerals_hist: '#074976',
+        GS_minerals_sc1: '#83a4ba',
+        GS_minerals_sc2: '#cddae3',
+        GS_iron_hist: '#92231c',
+        GS_iron_sc1: '#49110e',
+        GS_iron_sc2: '#f4e9e8',
+        GS_other_hist: '#f5c73d',
+        GS_other_sc1: '#fbe8b1',
+        GS_other_sc2: '#937724',
+        GS_timber_hist: '#4c9619',
+        GS_timber_sc1: '#264b0c',
+        GS_timber_sc2: '#c9dfba',
+        GS_total_hist: '#074976',
+        GS_total_sc1: '#92231c',
+        GS_total_sc2: '#c9dfba',
+        GS_total_hist_jp: '#074976',
+        GS_total_sc1_jp: '#92231c',
+        GS_total_sc2_jp: '#c9dfba',
+
+        GS_minerals_hist_jp: '#074976',
+        GS_minerals_sc1_jp: '#83a4ba',
+        GS_minerals_sc2_jp: '#cddae3',
+        GS_iron_hist_jp: '#92231c',
+        GS_iron_sc1_jp: '#49110e',
+        GS_iron_sc2_jp: '#f4e9e8',
+        GS_other_hist_jp: '#f5c73d',
+        GS_other_sc1_jp: '#fbe8b1',
+        GS_other_sc2_jp: '#937724',
+        GS_timber_hist_jp: '#4c9619',
+        GS_timber_sc1_jp: '#264b0c',
+        GS_timber_sc2_jp: '#c9dfba',
+        RS_minerals_hist: '#042b46',
+        RS_minerals_sc1: '#5b7282',
+        RS_minerals_sc2: '#8f989e',
+        RS_iron_hist: '#571510',
+        RS_iron_sc1: '#2b0a08',
+        RS_iron_sc2: '#928b8b',
+        RS_other_hist: '#937724',
+        RS_other_sc1: '#968b6a',
+        RS_other_sc2: '#584715',
+        RS_timber_hist: '#2d5a0f',
+        RS_timber_sc1: '#162d07',
+        RS_timber_sc2: '#78856f',
+        RS_minerals_hist_jp: '#042b46',
+        RS_minerals_sc1_jp: '#5b7282',
+        RS_minerals_sc2_jp: '#8f989e',
+        RS_iron_hist_jp: '#571510',
+        RS_iron_sc1_jp: '#2b0a08',
+        RS_iron_sc2_jp: '#928b8b',
+        RS_other_hist_jp: '#937724',
+        RS_other_sc1_jp: '#968b6a',
+        RS_other_sc2_jp: '#584715',
+        RS_timber_hist_jp: '#2d5a0f',
+        RS_timber_sc1_jp: '#162d07',
+        RS_timber_sc2_jp: '#78856f',
+        RS_total_hist: '#78856f',
+        RS_total_sc1: '#584715',
+        RS_total_sc2: '#928b8b',
+        RS_total_hist_jp: '#78856f',
+        RS_total_sc1_jp: '#584715',
+        RS_total_sc2_jp: '#928b8b',
+
+
+
+      },
+      names: {
+        GS_timber_hist: 'GAS Timber Historical Series (US)',
+        GS_iron_hist: 'GAS Iron Historical Series (US)',
+        GS_other_hist: 'GAS Other Metals Historical Series (US)',
+        GS_minerals_hist: 'GAS Minerals Historical Series (US)',
+        GS_timber_sc1: 'GAS Timber Scenario 1 (US)',
+        GS_iron_sc1: 'GAS Iron Scenario 1 (US)',
+        GS_other_sc1: 'GAS Other Metals Scenario 1 (US)',
+        GS_minerals_sc1: 'GAS Minerals Scenario 1 (US)',
+        GS_timber_sc2: 'GAS Timber Scenario 2 (US)',
+        GS_iron_sc2: 'GAS Iron Metals Scenario 2 (US)',
+        GS_other_sc2: 'GAS Other Scenario 2 (US)',
+        GS_minerals_sc2: 'GAS Minerals Scenario 2 (US)',
+        GS_timber_hist_jp: 'GAS Timber Historical Series (JP)',
+        GS_iron_hist_jp: 'GAS Iron Historical Series (JP)',
+        GS_other_hist_jp: 'GAS Other Metals Historical Series (JP)',
+        GS_minerals_hist_jp: 'GAS Minerals Historical Series (JP)',
+        GS_timber_sc1_jp: 'GAS Timber Scenario 1 (JP)',
+        GS_iron_sc1_jp: 'GAS Iron Scenario 1 (JP)',
+        GS_other_sc1_jp: 'GAS Other Metals Scenario 1 (JP)',
+        GS_minerals_sc1_jp: 'GAS Minerals Scenario 1 (JP)',
+        GS_timber_sc2_jp: 'GAS Timber Scenario 2 (JP)',
+        GS_iron_sc2_jp: 'GAS Iron Metals Scenario 2 (JP)',
+        GS_other_sc2_jp: 'GAS Other Scenario 2 (JP)',
+        GS_minerals_sc2_jp: 'GAS Minerals Scenario 2 (JP)',
+        RS_timber_hist: 'RS Timber Historical Series (US)',
+        RS_iron_hist: 'RS Iron Historical Series (US)',
+        RS_other_hist: 'RS Other Metals Historical Series (US)',
+        RS_minerals_hist: 'RS Minerals Historical Series (US)',
+        RS_timber_sc1: 'RS Timber Scenario 1 (US)',
+        RS_iron_sc1: 'RS Iron Scenario 1 (US)',
+        RS_other_sc1: 'RS Other Metals Scenario 1 (US)',
+        RS_minerals_sc1: 'RS Minerals Scenario 1 (US)',
+        RS_timber_sc2: 'RS Timber Scenario 2 (US)',
+        RS_iron_sc2: 'RS Iron Metals Scenario 2 (US)',
+        RS_other_sc2: 'RS Other Scenario 2 (US)',
+        RS_minerals_sc2: 'RS Minerals Scenario 2 (US)',
+        RS_timber_hist_jp: 'RS Timber Historical Series (JP)',
+        RS_iron_hist_jp: 'RS Iron Historical Series (JP)',
+        RS_other_hist_jp: 'RS Other Metals Historical Series (JP)',
+        RS_minerals_hist_jp: 'RS Minerals Historical Series (JP)',
+        RS_timber_sc1_jp: 'RS Timber Scenario 1 (JP)',
+        RS_iron_sc1_jp: 'RS Iron Scenario 1 (JP)',
+        RS_other_sc1_jp: 'RS Other Metals Scenario 1 (JP)',
+        RS_minerals_sc1_jp: 'RS Minerals Scenario 1 (JP)',
+        RS_timber_sc2_jp: 'RS Timber Scenario 2 (JP)',
+        RS_iron_sc2_jp: 'RS Iron Metals Scenario 2 (JP)',
+        RS_other_sc2_jp: 'RS Other Scenario 2 (JP)',
+        RS_minerals_sc2_jp: 'RS Minerals Scenario 2 (JP)',
+        RS_total_hist_jp: 'RS Total Historical Series (JP)',
+        RS_total_sc1_jp: 'RS Total Scenario 1 (JP)',
+        RS_total_sc2_jp: 'RS Total Scenario 2 (JP)',
+        GS_total_hist_jp: 'GS Total Historical Series (JP)',
+        GS_total_sc1_jp: 'GS Total Scenario 1 (JP)',
+        GS_total_sc2_jp: 'GS Total Scenario 2 (JP)',
+        RS_total_hist: 'RS Total Historical Series (US)',
+        RS_total_sc1: 'RS Total Scenario 1 (US)',
+        RS_total_sc2: 'RS Total Scenario 2 (US)',
+        GS_total_hist: 'GS Total Historical Series (US)',
+        GS_total_sc1: 'GS Total Scenario 1 (US)',
+        GS_total_sc2: 'GS Total Scenario 2 (US)',
+
+      },
+      types: {
+        GS_timber_hist: 'line',
+        GS_iron_hist: 'line',
+        GS_other_hist: 'line',
+        GS_minerals_hist: 'line',
+        GS_timber_sc1: 'line',
+        GS_iron_sc1: 'line',
+        GS_other_sc1: 'line',
+        GS_minerals_sc1: 'line',
+        GS_timber_sc2: 'line',
+        GS_iron_sc2: 'line',
+        GS_other_sc2: 'line',
+        GS_minerals_sc2: 'line',
+        GS_timber_hist_jp: 'line',
+        GS_iron_hist_jp: 'line',
+        GS_other_hist_jp: 'line',
+        GS_minerals_hist_jp: 'line',
+        GS_timber_sc1_jp: 'line',
+        GS_iron_sc1_jp: 'line',
+        GS_other_sc1_jp: 'line',
+        GS_minerals_sc1_jp: 'line',
+        GS_timber_sc2_jp: 'line',
+        GS_iron_sc2_jp: 'line',
+        GS_other_sc2_jp: 'line',
+        GS_minerals_sc2_jp: 'line',
+        RS_timber_hist: 'spline',
+        RS_iron_hist: 'spline',
+        RS_other_hist: 'spline',
+        RS_minerals_hist: 'spline',
+        RS_timber_sc1: 'spline',
+        RS_iron_sc1: 'spline',
+        RS_other_sc1: 'spline',
+        RS_minerals_sc1: 'spline',
+        RS_timber_sc2: 'spline',
+        RS_iron_sc2: 'spline',
+        RS_other_sc2: 'spline',
+        RS_minerals_sc2: 'spline',
+        RS_timber_hist_jp: 'spline',
+        RS_iron_hist_jp: 'spline',
+        RS_other_hist_jp: 'spline',
+        RS_minerals_hist_jp: 'spline',
+        RS_timber_sc1_jp: 'spline',
+        RS_iron_sc1_jp: 'spline',
+        RS_other_sc1_jp: 'spline',
+        RS_minerals_sc1_jp: 'spline',
+        RS_timber_sc2_jp: 'spline',
+        RS_iron_sc2_jp: 'spline',
+        RS_other_sc2_jp: 'spline',
+        RS_minerals_sc2_jp: 'spline',
+        RS_total_hist_jp: 'spline',
+        RS_total_sc1_jp: 'spline',
+        RS_total_sc2_jp: 'spline',
+        GS_total_hist_jp: 'line',
+        GS_total_sc1_jp: 'line',
+        GS_total_sc2_jp: 'line',
+        RS_total_hist: 'spline',
+        RS_total_sc1: 'spline',
+        RS_total_sc2: 'spline',
+        GS_total_hist: 'line',
+        GS_total_sc1: 'line',
+        GS_total_sc2: 'line',
+
+        // 'line', 'spline', 'step', 'area', 'area-step' are also available to stack
+      },
+      /*
+      groups: [
+        ['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist'],
+        ['GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1'],
+        ['GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'],
+        ['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp'],
+        ['GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp'],
+        ['GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'],
+        ['RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist'],
+        ['RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1'],
+        ['RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2'],
+        ['RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp'],
+        ['RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp'],
+        ['RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp']
+      ],
+
+*/
+      keys: {
+        x: 'date',
+        value: ['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+          'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1',
+
+        ]
+      }
+    },
+
+    //set line for scenarios
+    grid: {
+      x: {
+        lines: [{
+          value: '2005-01-01'
+        }, ]
+      },
+    },
+    //set x axis according to the years
+    axis: {
+      x: {
+        type: 'timeseries',
+
+        tick: {
+          format: function(x) {
+            return x.getFullYear();
+          }
+        }
+      },
+
+      y: {
+
+        tick: {
+          //format the y-axis label accordingly
+          format: function formatAbbreviation(x) {
+            var s = formatYaxis(x);
+            switch (s[s.length - 1]) {
+              case "G":
+                return s.slice(0, -1) + "";
+            }
+            return s;
+          },
+
+
+
+
+
+        }
+      }
+
+    },
+
+    //format the tooltip values according to a set specific
+    tooltip: {
+      format: {
+        value: function(value) {
+          var test = d3.format(".5s")(value).replace('.', ' ').replace(/,/g, '.').replace(' ', '.')
+          var s = test;
+          switch (s[s.length - 1]) {
+            case "G":
+              return s.slice(0, -1) + "BT";
+          }
+          var k = d3.format(",.3f")(s)
+          return test;
+
+
+        }
+      }
+    },
+    legend: {
+      item: {
+        onclick: function() {}
+      }
+    },
+    transition: {
+      duration: 0
+    },
+
+    //identify c3 chart
+    bindto: '#chart2'
+  });
+
+
+  //user button selections
+  $(function() {
+    // run the currently selected effect
+    function runEffect() {
+      //set checkboxes to true
+      $('.ads_Checkbox').prop('checked', true);
+      // get effect type from
+      var selectedEffect = $("#effectTypes").val();
+      var selectedEffect2 = $("#effectTypes2").val();
+      var selectedEffect3 = $("#effectTypes3").val();
+      chart.show();
+      chart2.show();
+      chart.resize();
+      chart2.resize();
+
+      //differentiate between the totals scenario comparison as opposed to materials
+      if (selectedEffect3 == "totals") {
+        if (selectedEffect === "US" && selectedEffect2 === "absolute") {
+          var url = 'https://api.myjson.com/bins/1cp2p1';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              US_Json_total = (JSON.stringify(data["3"]));
+              var new_US_Json_total = adjustJson(US_Json_total, selectedEffect3);
+              US_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_US_Json_total_RSGS = adjustJson(US_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_US_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist', 'MS_total_sc1', 'MS_total_sc2'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_US_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist', 'GS_total_sc1', 'GS_total_sc2', 'RS_total_hist', 'RS_total_sc1', 'RS_total_sc2'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "cap") {
+          var url = 'https://api.myjson.com/bins/ectal';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              US_Json_total = (JSON.stringify(data["3"]));
+              var new_US_Json_total = adjustJson(US_Json_total, selectedEffect3);
+              US_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_US_Json_total_RSGS = adjustJson(US_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_US_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist', 'MS_total_sc1', 'MS_total_sc2'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_US_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist', 'GS_total_sc1', 'GS_total_sc2', 'RS_total_hist', 'RS_total_sc1', 'RS_total_sc2'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "cap") {
+          var url = 'https://api.myjson.com/bins/h84fh';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json_total = (JSON.stringify(data["3"]));
+              var new_JP_Json_total = adjustJson(JP_Json_total, selectedEffect3);
+              JP_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_JP_Json_total_RSGS = adjustJson(JP_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist_jp', 'MS_total_sc1_jp', 'MS_total_sc2_jp'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist_jp', 'GS_total_sc1_jp', 'GS_total_sc2_jp', 'RS_total_hist_jp', 'RS_total_sc1_jp', 'RS_total_sc2_jp'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "gdp") {
+          var url = 'https://api.myjson.com/bins/efllp';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json_total = (JSON.stringify(data["3"]));
+              var new_JP_Json_total = adjustJson(JP_Json_total, selectedEffect3);
+              JP_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_JP_Json_total_RSGS = adjustJson(JP_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist_jp', 'MS_total_sc1_jp', 'MS_total_sc2_jp'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist_jp', 'GS_total_sc1_jp', 'GS_total_sc2_jp', 'RS_total_hist_jp', 'RS_total_sc1_jp', 'RS_total_sc2_jp'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+
+        } else if (selectedEffect === "US" && selectedEffect2 === "gdp") {
+          var url = 'https://api.myjson.com/bins/m9vn1';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              US_Json_total = (JSON.stringify(data["3"]));
+              var new_US_Json_total = adjustJson(US_Json_total, selectedEffect3);
+              US_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_US_Json_total_RSGS = adjustJson(US_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_US_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist', 'MS_total_sc1', 'MS_total_sc2'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_US_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist', 'GS_total_sc1', 'GS_total_sc2', 'RS_total_hist', 'RS_total_sc1', 'RS_total_sc2'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "percent") {
+          chart.hide();
+          chart2.hide();
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "percent") {
+          chart.hide();
+          chart2.hide();
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "growth") {
+          var url = 'https://api.myjson.com/bins/12hifx';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json_total = (JSON.stringify(data["3"]));
+              var new_JP_Json_total = adjustJson(JP_Json_total, selectedEffect3);
+              JP_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_JP_Json_total_RSGS = adjustJson(JP_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist_jp', 'MS_total_sc1_jp', 'MS_total_sc2_jp'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist_jp', 'GS_total_sc1_jp', 'GS_total_sc2_jp', 'RS_total_hist_jp', 'RS_total_sc1_jp', 'RS_total_sc2_jp'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "growth") {
+          var url = 'https://api.myjson.com/bins/mcg8d';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              US_Json_total = (JSON.stringify(data["3"]));
+              var new_US_Json_total = adjustJson(US_Json_total, selectedEffect3);
+              US_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_US_Json_total_RSGS = adjustJson(US_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_US_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist', 'MS_total_sc1', 'MS_total_sc2'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_US_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist', 'GS_total_sc1', 'GS_total_sc2', 'RS_total_hist', 'RS_total_sc1', 'RS_total_sc2'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "absolute") {
+          var url = 'https://api.myjson.com/bins/17iu7x';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json_total = (JSON.stringify(data["3"]));
+              var new_JP_Json_total = adjustJson(JP_Json_total, selectedEffect3);
+              JP_Json_total_RSGS = (JSON.stringify(data["4"]));
+              var new_JP_Json_total_RSGS = adjustJson(JP_Json_total_RSGS, selectedEffect3);
+
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json_total,
+                keys: {
+                  x: 'date',
+                  value: ['MS_total_hist_jp', 'MS_total_sc1_jp', 'MS_total_sc2_jp'],
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_Json_total_RSGS,
+                keys: {
+                  x: 'date',
+                  value: ['GS_total_hist_jp', 'GS_total_sc1_jp', 'GS_total_sc2_jp', 'RS_total_hist_jp', 'RS_total_sc1_jp', 'RS_total_sc2_jp'],
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        }
+      } else {
+        if (selectedEffect === "US" && selectedEffect2 === "gdp") {
+          var url = 'https://api.myjson.com/bins/m9vn1';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_Json = adjustJson(Json, selectedEffect3);
+              var newValues = adjustValues(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+                'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_GAS_RS_Json = adjustJson(GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValues(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "absolute") {
+          var url = 'https://api.myjson.com/bins/1cp2p1';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_Json = adjustJson(Json, selectedEffect3);
+              var newValues = adjustValues(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+                'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_GAS_RS_Json = adjustJson(GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValues(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "cap") {
+          var url = 'https://api.myjson.com/bins/ectal';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_Json = adjustJson(Json, selectedEffect3);
+              var newValues = adjustValues(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+                'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_GAS_RS_Json = adjustJson(GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValues(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "percent") {
+          var url = 'https://api.myjson.com/bins/9crt9';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_Json = adjustJson(Json, selectedEffect3);
+              var newValues = adjustValues(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+                'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_GAS_RS_Json = adjustJson(GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValues(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "US" && selectedEffect2 === "growth") {
+          var url = 'https://api.myjson.com/bins/mcg8d';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              Json = (JSON.stringify(data["1"]));
+
+              GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_Json = adjustJson(Json, selectedEffect3);
+              var newValues = adjustValues(['MS_timber_hist', 'MS_iron_hist', 'MS_other_hist', 'MS_minerals_hist', 'MS_timber_sc1', 'MS_iron_sc1', 'MS_other_sc1', 'MS_minerals_sc1',
+                'MS_timber_sc2', 'MS_iron_sc2', 'MS_other_sc2', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_GAS_RS_Json = adjustJson(GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValues(['GS_timber_hist', 'GS_iron_hist', 'GS_other_hist', 'GS_minerals_hist', 'GS_timber_sc1', 'GS_iron_sc1', 'GS_other_sc1', 'GS_minerals_sc1',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2', 'RS_timber_hist', 'RS_iron_hist', 'RS_other_hist', 'RS_minerals_hist', 'RS_timber_sc1', 'RS_iron_sc1', 'RS_other_sc1', 'RS_minerals_sc1', 'RS_timber_sc2', 'RS_iron_sc2', 'RS_other_sc2', 'RS_minerals_sc2',
+                'GS_timber_sc2', 'GS_iron_sc2', 'GS_other_sc2', 'GS_minerals_sc2'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "absolute") {
+          var url = 'https://api.myjson.com/bins/17iu7x';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json = (JSON.stringify(data["1"]));
+
+              JP_GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_JP_Json = adjustJsonJP(JP_Json, selectedEffect3);
+              var newValues = adjustValuesJP(['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp', 'MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp',
+                'MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_JP_GAS_RS_Json = adjustJsonJP(JP_GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValuesJP(['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp', 'GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp', 'RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp', 'RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp', 'RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "cap") {
+          var url = 'https://api.myjson.com/bins/h84fh';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json = (JSON.stringify(data["1"]));
+
+              JP_GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_JP_Json = adjustJsonJP(JP_Json, selectedEffect3);
+              var newValues = adjustValuesJP(['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp', 'MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp',
+                'MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_JP_GAS_RS_Json = adjustJsonJP(JP_GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValuesJP(['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp', 'GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp', 'RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp', 'RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp', 'RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "gdp") {
+          var url = 'https://api.myjson.com/bins/efllp';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json = (JSON.stringify(data["1"]));
+
+              JP_GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_JP_Json = adjustJsonJP(JP_Json, selectedEffect3);
+              var newValues = adjustValuesJP(['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp', 'MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp',
+                'MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_JP_GAS_RS_Json = adjustJsonJP(JP_GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValuesJP(['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp', 'GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp', 'RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp', 'RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp', 'RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "percent") {
+          var url = 'https://api.myjson.com/bins/m8dml';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json = (JSON.stringify(data["1"]));
+
+              JP_GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_JP_Json = adjustJsonJP(JP_Json, selectedEffect3);
+              var newValues = adjustValuesJP(['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp', 'MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp',
+                'MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_JP_GAS_RS_Json = adjustJsonJP(JP_GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValuesJP(['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp', 'GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp', 'RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp', 'RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp', 'RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        } else if (selectedEffect === "JAPAN" && selectedEffect2 === "growth") {
+          var url = 'https://api.myjson.com/bins/12hifx';
+          $.ajax({
+            type: 'GET',
+            url: url,
+            contentType: "application/json",
+            dataType: 'json',
+            success: function(data) {
+              JP_Json = (JSON.stringify(data["1"]));
+
+              JP_GAS_RS_Json = (JSON.stringify(data["2"]));
+
+              var new_JP_Json = adjustJsonJP(JP_Json, selectedEffect3);
+              var newValues = adjustValuesJP(['MS_timber_hist_jp', 'MS_iron_hist_jp', 'MS_other_hist_jp', 'MS_minerals_hist_jp', 'MS_timber_sc1_jp', 'MS_iron_sc1_jp', 'MS_other_sc1_jp', 'MS_minerals_sc1_jp',
+                'MS_timber_sc2_jp', 'MS_iron_sc2_jp', 'MS_other_sc2_jp', 'MS_minerals_sc2'
+              ], selectedEffect3);
+              var new_JP_GAS_RS_Json = adjustJsonJP(JP_GAS_RS_Json, selectedEffect3);
+              var newValues2 = adjustValuesJP(['GS_timber_hist_jp', 'GS_iron_hist_jp', 'GS_other_hist_jp', 'GS_minerals_hist_jp', 'GS_timber_sc1_jp', 'GS_iron_sc1_jp', 'GS_other_sc1_jp', 'GS_minerals_sc1_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp', 'RS_timber_hist_jp', 'RS_iron_hist_jp', 'RS_other_hist_jp', 'RS_minerals_hist_jp', 'RS_timber_sc1_jp', 'RS_iron_sc1_jp', 'RS_other_sc1_jp', 'RS_minerals_sc1_jp', 'RS_timber_sc2_jp', 'RS_iron_sc2_jp', 'RS_other_sc2_jp', 'RS_minerals_sc2_jp',
+                'GS_timber_sc2_jp', 'GS_iron_sc2_jp', 'GS_other_sc2_jp', 'GS_minerals_sc2_jp'
+              ], selectedEffect3);
+
+              console.log(newValues);
+
+              chart.load({
+                unload: true,
+                json: new_JP_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues
+                }
+              });
+              chart2.load({
+                unload: true,
+                json: new_JP_GAS_RS_Json,
+                keys: {
+                  x: 'date',
+                  value: newValues2
+                }
+              });
+            },
+
+            error: function(e) {
+              alert("Data cannot be loaded: Ajax service not responsive");
+              console.log(e);
+            }
+          });
+        }
+      }
+    };
+
+    // Set effect from select menu value
+    $("#button").on("click", function() {
+      runEffect();
+    });
+  });
+  //set checkboxes to true
+  $('.ads_Checkbox').prop('checked', true);
+
+
+  //fancy function to filter data
+  $(function() {
+    $('#save_value').click(function() {
+      var val = [];
+      $(':checkbox:checked').each(function(i) {
+        val[i] = $(this).val();
+      });
+      var hideObjects = [];
+      var showObjects = [];
+      var showObjects2 = [];
+
+      var arrayLength = val.length;
+      for (var i = 0; i < arrayLength; i++) {
+        for (var x in chart.data.names()) {
+          var myChoices = (x.split("_"));
+
+          //if the selection matches with the chart objects -> get the chart object names
+          if (myChoices[1] == val[i]) {
+
+            showObjects.push(x);
+          }
+
+          //Do something
+        }
+        for (var x in chart2.data.names()) {
+          var myChoices = (x.split("_"));
+          //if the selection matches with the chart objects -> get the chart object names
+          if (myChoices[1] == val[i]) {
+
+            showObjects2.push(x);
+          }
+
+          //Do something
+        }
+      }
+
+      chart.hide();
+      chart2.hide();
+      //console.log(showObjects);
+      chart.show(showObjects);
+      chart2.show(showObjects2);
+      console.log(val);
+    });
+  });
+
+
+  //function to delete certain scenarios from the dataset(for clarity)
+  function adjustJson(myJson, scenarioSel) {
+    //flip the scenarios selection for deletion
+    if (scenarioSel == "sc1") {
+      scenarioSel = "sc2";
+    } else {
+      scenarioSel = "sc1";
+    }
+    //make a copy object (usually tricky in JS)
+    var myJson_new = JSON.parse(myJson);
+    console.log(scenarioSel);
+    //delete scenario
+    for (var i in myJson_new) {
+      var key = i;
+      var val = myJson_new[i];
+      //console.log(val);
+      for (var j in val) {
+        var sub_key = j;
+        var sub_val = val[j]
+        delete myJson_new[i]['MS_minerals_' + scenarioSel];
+        delete myJson_new[i]['MS_timber_' + scenarioSel];
+        delete myJson_new[i]['MS_other_' + scenarioSel];
+        delete myJson_new[i]['MS_iron_' + scenarioSel];
+      }
+    }
+
+    return myJson_new; // The function returns the product of p1 and p2
+  }
+
+  //function to delete certain scenarios from the legend(for clarity)
+  function adjustValues(myValues, scenarioSel) {
+    var arrayLength = myValues.length;
+    var returnArray = [];
+    for (var i = 0; i < arrayLength; i++) {
+      var tempArray = myValues[i].split("_");
+      if (tempArray[2] === scenarioSel || tempArray[2] === "hist") {
+        returnArray.push(tempArray[0] + "_" + tempArray[1] + "_" + tempArray[2]);
+      }
+      //Do something
+    }
+    return returnArray; // The function returns the product of p1 and p2
+  }
+
+  //function to delete certain scenarios from the dataset(for clarity)
+  function adjustJsonJP(myJson, scenarioSel) {
+    //flip the scenarios selection for deletion
+    if (scenarioSel == "sc1") {
+      scenarioSel = "sc2";
+    } else {
+      scenarioSel = "sc1";
+    }
+    //make a copy object (usually tricky in JS)
+    var myJson_new = JSON.parse(myJson);
+    console.log(scenarioSel);
+    //delete scenario
+    for (var i in myJson_new) {
+      var key = i;
+      var val = myJson_new[i];
+      //console.log(val);
+      for (var j in val) {
+        var sub_key = j;
+        var sub_val = val[j]
+        delete myJson_new[i]['MS_minerals_' + scenarioSel + "_jp"];
+        delete myJson_new[i]['MS_timber_' + scenarioSel + "_jp"];
+        delete myJson_new[i]['MS_other_' + scenarioSel + "_jp"];
+        delete myJson_new[i]['MS_iron_' + scenarioSel + "_jp"];
+      }
+    }
+
+    return myJson_new; // The function returns the product of p1 and p2
+  }
+
+  //function to delete certain scenarios from the legend(for clarity)
+  function adjustValuesJP(myValues, scenarioSel) {
+    var arrayLength = myValues.length;
+    var returnArray = [];
+    for (var i = 0; i < arrayLength; i++) {
+      var tempArray = myValues[i].split("_");
+      if (tempArray[2] === scenarioSel || tempArray[2] === "hist") {
+        returnArray.push(tempArray[0] + "_" + tempArray[1] + "_" + tempArray[2] + "_jp");
+      }
+      //Do something
+    }
+    return returnArray; // The function returns the product of p1 and p2
+  }
+
+} //end of callback function
+
+</script>
+
+
+    </div>
+   {% endblock %}
+

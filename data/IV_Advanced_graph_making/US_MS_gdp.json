@@ -1,0 +1,534 @@
+[
+  {
+    "date": "1930-01-01",
+    "MS_timber_hist": 38487.6578085917,
+    "MS_iron_hist": 3083.4998985472,
+    "MS_other_hist": 2915.0141309164,
+    "MS_minerals_hist": 55060.8019976118
+  },
+  {
+    "date": "1931-01-01",
+    "MS_timber_hist": 38177.042921934,
+    "MS_iron_hist": 3091.5966481275,
+    "MS_other_hist": 2955.9835755759,
+    "MS_minerals_hist": 56794.3028733039
+  },
+  {
+    "date": "1932-01-01",
+    "MS_timber_hist": 35079.272138786,
+    "MS_iron_hist": 2848.7825984054,
+    "MS_other_hist": 2754.3682175108,
+    "MS_minerals_hist": 53815.7222318897
+  },
+  {
+    "date": "1933-01-01",
+    "MS_timber_hist": 31862.1633971982,
+    "MS_iron_hist": 2600.7651067966,
+    "MS_other_hist": 2533.2042108555,
+    "MS_minerals_hist": 50171.883891811
+  },
+  {
+    "date": "1934-01-01",
+    "MS_timber_hist": 31734.5212865475,
+    "MS_iron_hist": 2608.161403239,
+    "MS_other_hist": 2559.0120973862,
+    "MS_minerals_hist": 51492.1428640371
+  },
+  {
+    "date": "1935-01-01",
+    "MS_timber_hist": 30889.5130881442,
+    "MS_iron_hist": 2557.3457851721,
+    "MS_other_hist": 2528.2060677542,
+    "MS_minerals_hist": 51472.8700435496
+  },
+  {
+    "date": "1936-01-01",
+    "MS_timber_hist": 28885.9458135037,
+    "MS_iron_hist": 2425.3744701665,
+    "MS_other_hist": 2407.1621523493,
+    "MS_minerals_hist": 49901.9371005249
+  },
+  {
+    "date": "1937-01-01",
+    "MS_timber_hist": 27680.6983693508,
+    "MS_iron_hist": 2379.3260196063,
+    "MS_other_hist": 2361.1867510032,
+    "MS_minerals_hist": 49533.8984199567
+  },
+  {
+    "date": "1938-01-01",
+    "MS_timber_hist": 25951.8784253709,
+    "MS_iron_hist": 2240.8655746369,
+    "MS_other_hist": 2255.531337338,
+    "MS_minerals_hist": 48134.6956739518
+  },
+  {
+    "date": "1939-01-01",
+    "MS_timber_hist": 22479.7617288825,
+    "MS_iron_hist": 1964.7487518976,
+    "MS_other_hist": 1997.7765640809,
+    "MS_minerals_hist": 43283.3202985399
+  },
+  {
+    "date": "1940-01-01",
+    "MS_timber_hist": 21923.0924260647,
+    "MS_iron_hist": 1952.8864496546,
+    "MS_other_hist": 2003.5678556663,
+    "MS_minerals_hist": 43774.9289288083
+  },
+  {
+    "date": "1941-01-01",
+    "MS_timber_hist": 21788.6137504784,
+    "MS_iron_hist": 1988.8073645758,
+    "MS_other_hist": 2045.2821007955,
+    "MS_minerals_hist": 45313.4678096381
+  },
+  {
+    "date": "1942-01-01",
+    "MS_timber_hist": 22063.148426788,
+    "MS_iron_hist": 2072.4361259392,
+    "MS_other_hist": 2131.8596193627,
+    "MS_minerals_hist": 47816.5068838641
+  },
+  {
+    "date": "1943-01-01",
+    "MS_timber_hist": 21852.4220731399,
+    "MS_iron_hist": 2110.1237533547,
+    "MS_other_hist": 2175.589236528,
+    "MS_minerals_hist": 48933.4857454101
+  },
+  {
+    "date": "1944-01-01",
+    "MS_timber_hist": 22920.5036777073,
+    "MS_iron_hist": 2268.1664872007,
+    "MS_other_hist": 2344.3598530531,
+    "MS_minerals_hist": 52740.4071025536
+  },
+  {
+    "date": "1945-01-01",
+    "MS_timber_hist": 45878.4607021015,
+    "MS_iron_hist": 4657.1185366297,
+    "MS_other_hist": 4822.8244714551,
+    "MS_minerals_hist": 108745.641462063
+  },
+  {
+    "date": "1946-01-01",
+    "MS_timber_hist": 42413.945882074,
+    "MS_iron_hist": 4367.2272347246,
+    "MS_other_hist": 4522.7537694155,
+    "MS_minerals_hist": 104111.555082466
+  },
+  {
+    "date": "1947-01-01",
+    "MS_timber_hist": 39504.7565436001,
+    "MS_iron_hist": 4155.7028341006,
+    "MS_other_hist": 4304.3878017692,
+    "MS_minerals_hist": 100763.116477169
+  },
+  {
+    "date": "1948-01-01",
+    "MS_timber_hist": 34618.8912980083,
+    "MS_iron_hist": 3727.2101253955,
+    "MS_other_hist": 3845.5871455873,
+    "MS_minerals_hist": 91744.2979621831
+  },
+  {
+    "date": "1949-01-01",
+    "MS_timber_hist": 32537.0385959425,
+    "MS_iron_hist": 3576.2591499663,
+    "MS_other_hist": 3689.6462701538,
+    "MS_minerals_hist": 89727.8718030553
+  },
+  {
+    "date": "1950-01-01",
+    "MS_timber_hist": 30033.1135365416,
+    "MS_iron_hist": 3371.9570610005,
+    "MS_other_hist": 3476.381035494,
+    "MS_minerals_hist": 86144.6556766076
+  },
+  {
+    "date": "1951-01-01",
+    "MS_timber_hist": 26900.521342324,
+    "MS_iron_hist": 3102.4555096898,
+    "MS_other_hist": 3169.3838067709,
+    "MS_minerals_hist": 80452.4970258202
+  },
+  {
+    "date": "1952-01-01",
+    "MS_timber_hist": 24275.7773315254,
+    "MS_iron_hist": 2848.1021057639,
+    "MS_other_hist": 2908.7796222611,
+    "MS_minerals_hist": 75718.1045709359
+  },
+  {
+    "date": "1953-01-01",
+    "MS_timber_hist": 22767.1651026342,
+    "MS_iron_hist": 2737.2503176351,
+    "MS_other_hist": 2783.2697570179,
+    "MS_minerals_hist": 73973.5613172366
+  },
+  {
+    "date": "1954-01-01",
+    "MS_timber_hist": 21688.5157447553,
+    "MS_iron_hist": 2637.8974481752,
+    "MS_other_hist": 2698.1645041437,
+    "MS_minerals_hist": 73789.4802592665
+  },
+  {
+    "date": "1955-01-01",
+    "MS_timber_hist": 20129.9237213306,
+    "MS_iron_hist": 2493.5783299017,
+    "MS_other_hist": 2548.3630237851,
+    "MS_minerals_hist": 71904.4348284653
+  },
+  {
+    "date": "1956-01-01",
+    "MS_timber_hist": 18896.085303972,
+    "MS_iron_hist": 2378.3693910195,
+    "MS_other_hist": 2433.5271436947,
+    "MS_minerals_hist": 70814.6833644878
+  },
+  {
+    "date": "1957-01-01",
+    "MS_timber_hist": 17707.9007684894,
+    "MS_iron_hist": 2277.9807728394,
+    "MS_other_hist": 2324.3674910364,
+    "MS_minerals_hist": 69593.4270642434
+  },
+  {
+    "date": "1958-01-01",
+    "MS_timber_hist": 16821.5909108803,
+    "MS_iron_hist": 2185.5838493125,
+    "MS_other_hist": 2243.6140629181,
+    "MS_minerals_hist": 69270.8244545561
+  },
+  {
+    "date": "1959-01-01",
+    "MS_timber_hist": 15541.6432684739,
+    "MS_iron_hist": 2034.6495917819,
+    "MS_other_hist": 2087.9177928453,
+    "MS_minerals_hist": 66977.8827727132
+  },
+  {
+    "date": "1960-01-01",
+    "MS_timber_hist": 13825.6876138308,
+    "MS_iron_hist": 1836.8094636321,
+    "MS_other_hist": 1883.8628666379,
+    "MS_minerals_hist": 62225.8244105962
+  },
+  {
+    "date": "1961-01-01",
+    "MS_timber_hist": 12398.9310296757,
+    "MS_iron_hist": 1660.2138201389,
+    "MS_other_hist": 1722.1375826628,
+    "MS_minerals_hist": 58144.6072698733
+  },
+  {
+    "date": "1962-01-01",
+    "MS_timber_hist": 11456.2100056164,
+    "MS_iron_hist": 1548.2227752532,
+    "MS_other_hist": 1619.4571526004,
+    "MS_minerals_hist": 55902.2775369693
+  },
+  {
+    "date": "1963-01-01",
+    "MS_timber_hist": 10625.6196640235,
+    "MS_iron_hist": 1449.2973999135,
+    "MS_other_hist": 1528.5629400099,
+    "MS_minerals_hist": 54075.8979234495
+  },
+  {
+    "date": "1964-01-01",
+    "MS_timber_hist": 9590.3746328945,
+    "MS_iron_hist": 1323.9970568748,
+    "MS_other_hist": 1403.6226274855,
+    "MS_minerals_hist": 50839.412368499
+  },
+  {
+    "date": "1965-01-01",
+    "MS_timber_hist": 9145.0954669941,
+    "MS_iron_hist": 1279.395588859,
+    "MS_other_hist": 1361.0581392894,
+    "MS_minerals_hist": 50466.3866725549
+  },
+  {
+    "date": "1966-01-01",
+    "MS_timber_hist": 8347.9955443001,
+    "MS_iron_hist": 1183.1691179118,
+    "MS_other_hist": 1262.8249488193,
+    "MS_minerals_hist": 47894.6809286405
+  },
+  {
+    "date": "1967-01-01",
+    "MS_timber_hist": 7582.0146129072,
+    "MS_iron_hist": 1086.9737372698,
+    "MS_other_hist": 1155.3955905909,
+    "MS_minerals_hist": 45094.9515748126
+  },
+  {
+    "date": "1968-01-01",
+    "MS_timber_hist": 6785.1389258298,
+    "MS_iron_hist": 983.9582656392,
+    "MS_other_hist": 1046.9197179321,
+    "MS_minerals_hist": 41805.4427345075
+  },
+  {
+    "date": "1969-01-01",
+    "MS_timber_hist": 6094.0737181692,
+    "MS_iron_hist": 891.1903313211,
+    "MS_other_hist": 957.9876267769,
+    "MS_minerals_hist": 38865.7914598
+  },
+  {
+    "date": "1970-01-01",
+    "MS_timber_hist": 5558.460295666,
+    "MS_iron_hist": 820.0711484579,
+    "MS_other_hist": 891.101988411,
+    "MS_minerals_hist": 36673.7886902751
+  },
+  {
+    "date": "1971-01-01",
+    "MS_timber_hist": 5367.1602248782,
+    "MS_iron_hist": 797.56262517,
+    "MS_other_hist": 873.5219355907,
+    "MS_minerals_hist": 36582.7017531073
+  },
+  {
+    "date": "1972-01-01",
+    "MS_timber_hist": 5002.4224337034,
+    "MS_iron_hist": 746.9291388404,
+    "MS_other_hist": 830.9073692222,
+    "MS_minerals_hist": 35225.3012080408
+  },
+  {
+    "date": "1973-01-01",
+    "MS_timber_hist": 4680.1487688276,
+    "MS_iron_hist": 703.6501708254,
+    "MS_other_hist": 793.2309266625,
+    "MS_minerals_hist": 34113.3552904823
+  },
+  {
+    "date": "1974-01-01",
+    "MS_timber_hist": 4784.7865740702,
+    "MS_iron_hist": 725.0528922985,
+    "MS_other_hist": 825.2435037706,
+    "MS_minerals_hist": 36018.8084313494
+  },
+  {
+    "date": "1975-01-01",
+    "MS_timber_hist": 4669.7036798077,
+    "MS_iron_hist": 714.0795599273,
+    "MS_other_hist": 818.9537710883,
+    "MS_minerals_hist": 36111.7057540723
+  },
+  {
+    "date": "1976-01-01",
+    "MS_timber_hist": 4532.2175893591,
+    "MS_iron_hist": 697.3619910854,
+    "MS_other_hist": 806.8716382827,
+    "MS_minerals_hist": 35845.6656778587
+  },
+  {
+    "date": "1977-01-01",
+    "MS_timber_hist": 4382.6946618832,
+    "MS_iron_hist": 674.590771905,
+    "MS_other_hist": 790.2957257604,
+    "MS_minerals_hist": 35488.7583486713
+  },
+  {
+    "date": "1978-01-01",
+    "MS_timber_hist": 4214.2895212776,
+    "MS_iron_hist": 649.5270616383,
+    "MS_other_hist": 768.3940113364,
+    "MS_minerals_hist": 34933.4996146617
+  },
+  {
+    "date": "1979-01-01",
+    "MS_timber_hist": 4042.9565819204,
+    "MS_iron_hist": 623.6063419977,
+    "MS_other_hist": 745.9581821865,
+    "MS_minerals_hist": 34281.350040091
+  },
+  {
+    "date": "1980-01-01",
+    "MS_timber_hist": 3967.1026882256,
+    "MS_iron_hist": 610.2915607106,
+    "MS_other_hist": 738.1238308316,
+    "MS_minerals_hist": 34292.7926094219
+  },
+  {
+    "date": "1981-01-01",
+    "MS_timber_hist": 3876.463541238,
+    "MS_iron_hist": 597.0912990549,
+    "MS_other_hist": 731.0707600192,
+    "MS_minerals_hist": 34024.8827675371
+  },
+  {
+    "date": "1982-01-01",
+    "MS_timber_hist": 3782.88090157,
+    "MS_iron_hist": 578.3212907165,
+    "MS_other_hist": 720.315319853,
+    "MS_minerals_hist": 33689.0374526464
+  },
+  {
+    "date": "1983-01-01",
+    "MS_timber_hist": 3731.5682895854,
+    "MS_iron_hist": 564.1359249388,
+    "MS_other_hist": 714.1714417095,
+    "MS_minerals_hist": 33673.7694804041
+  },
+  {
+    "date": "1984-01-01",
+    "MS_timber_hist": 3632.8916339858,
+    "MS_iron_hist": 544.3541747039,
+    "MS_other_hist": 696.0487665921,
+    "MS_minerals_hist": 33217.7874312303
+  },
+  {
+    "date": "1985-01-01",
+    "MS_timber_hist": 3518.1356339313,
+    "MS_iron_hist": 522.0547078233,
+    "MS_other_hist": 674.1100861094,
+    "MS_minerals_hist": 32642.0839134909
+  },
+  {
+    "date": "1986-01-01",
+    "MS_timber_hist": 3465.8654218525,
+    "MS_iron_hist": 506.53623973,
+    "MS_other_hist": 661.6380222875,
+    "MS_minerals_hist": 32535.6328211246
+  },
+  {
+    "date": "1987-01-01",
+    "MS_timber_hist": 3376.7446325944,
+    "MS_iron_hist": 486.0968010161,
+    "MS_other_hist": 642.0881134736,
+    "MS_minerals_hist": 32107.9090617682
+  },
+  {
+    "date": "1988-01-01",
+    "MS_timber_hist": 3221.1350737295,
+    "MS_iron_hist": 458.732033906,
+    "MS_other_hist": 613.6400370239,
+    "MS_minerals_hist": 31067.3702239798
+  },
+  {
+    "date": "1989-01-01",
+    "MS_timber_hist": 3113.1109313625,
+    "MS_iron_hist": 437.8001796234,
+    "MS_other_hist": 594.405426585,
+    "MS_minerals_hist": 30385.1004668775
+  },
+  {
+    "date": "1990-01-01",
+    "MS_timber_hist": 3001.5776464492,
+    "MS_iron_hist": 416.5410073051,
+    "MS_other_hist": 574.9975133685,
+    "MS_minerals_hist": 29632.8336416375
+  },
+  {
+    "date": "1991-01-01",
+    "MS_timber_hist": 2932.1730371337,
+    "MS_iron_hist": 402.3057519404,
+    "MS_other_hist": 564.9920348052,
+    "MS_minerals_hist": 29279.5363520971
+  },
+  {
+    "date": "1992-01-01",
+    "MS_timber_hist": 2935.2327696228,
+    "MS_iron_hist": 397.64954061,
+    "MS_other_hist": 568.8994274254,
+    "MS_minerals_hist": 29602.2312821409
+  },
+  {
+    "date": "1993-01-01",
+    "MS_timber_hist": 2962.5837740982,
+    "MS_iron_hist": 396.1499952978,
+    "MS_other_hist": 577.4524639723,
+    "MS_minerals_hist": 30183.2339434024
+  },
+  {
+    "date": "1994-01-01",
+    "MS_timber_hist": 2966.2615013462,
+    "MS_iron_hist": 392.7699405752,
+    "MS_other_hist": 581.3014675372,
+    "MS_minerals_hist": 30554.490696717
+  },
+  {
+    "date": "1995-01-01",
+    "MS_timber_hist": 2941.8204681334,
+    "MS_iron_hist": 385.3963577096,
+    "MS_other_hist": 580.4328376478,
+    "MS_minerals_hist": 30649.4162876007
+  },
+  {
+    "date": "1996-01-01",
+    "MS_timber_hist": 2876.6057361644,
+    "MS_iron_hist": 373.4770606046,
+    "MS_other_hist": 571.7188530544,
+    "MS_minerals_hist": 30314.3045052635
+  },
+  {
+    "date": "1997-01-01",
+    "MS_timber_hist": 2860.5621559804,
+    "MS_iron_hist": 367.9097894,
+    "MS_other_hist": 572.5220126668,
+    "MS_minerals_hist": 30504.8785183683
+  },
+  {
+    "date": "1998-01-01",
+    "MS_timber_hist": 2983.8239319546,
+    "MS_iron_hist": 381.0144466039,
+    "MS_other_hist": 601.3416679103,
+    "MS_minerals_hist": 32214.4291530163
+  },
+  {
+    "date": "1999-01-01",
+    "MS_timber_hist": 3025.1490115084,
+    "MS_iron_hist": 382.4638847342,
+    "MS_other_hist": 611.586184332,
+    "MS_minerals_hist": 33069.6852152699
+  },
+  {
+    "date": "2000-01-01",
+    "MS_timber_hist": 2975.5437850133,
+    "MS_iron_hist": 373.1568523337,
+    "MS_other_hist": 601.0559678858,
+    "MS_minerals_hist": 32941.5871516019
+  },
+  {
+    "date": "2001-01-01",
+    "MS_timber_hist": 3001.3101950163,
+    "MS_iron_hist": 371.4860537987,
+    "MS_other_hist": 606.384911248,
+    "MS_minerals_hist": 33645.3215539498
+  },
+  {
+    "date": "2002-01-01",
+    "MS_timber_hist": 3025.2577748897,
+    "MS_iron_hist": 369.9329915494,
+    "MS_other_hist": 609.4655128653,
+    "MS_minerals_hist": 34283.532527926
+  },
+  {
+    "date": "2003-01-01",
+    "MS_timber_hist": 3003.7321367159,
+    "MS_iron_hist": 361.7012841434,
+    "MS_other_hist": 601.8707979321,
+    "MS_minerals_hist": 34393.0992497322
+  },
+  {
+    "date": "2004-01-01",
+    "MS_timber_hist": 2966.3937787151,
+    "MS_iron_hist": 352.7137585769,
+    "MS_other_hist": 590.2685906061,
+    "MS_minerals_hist": 34344.4351777709
+  },
+  {
+    "date": "2005-01-01",
+    "MS_timber_hist": 2942.9532662478,
+    "MS_iron_hist": 344.8851975418,
+    "MS_other_hist": 581.2562532486,
+    "MS_minerals_hist": 34471.5877353759
+  }
+]

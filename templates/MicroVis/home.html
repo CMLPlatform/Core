@@ -1,0 +1,81 @@
+{% extends 'MicroVis/base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../">  General</a></li>
+   <li><a  href="../blog">News</a></li>
+   <li><a href="../tools-index">IE Tools & Databases</a></li>
+   <li><a style="color: #e0e0eb;" href="./"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
+  </ul>
+</div>
+<br>
+
+<div class="container">
+
+    <h3>Interactive Visualisations - MicroVis</h3>
+    <p>Sets of different interactive visualisation developed at CML</p>
+    <p>Click on any image to view the interactive visualisation</p>
+<table class="table table-striped">
+
+
+
+<tbody>
+
+<tr class="listview">
+    <legend>Material flows</legend>
+
+<td>
+<a href="fishman" title="">
+<img src="{% static 'images/usflow.jpg' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+
+
+
+
+     </tr>
+</tbody>
+</table>
+    <table class="table table-striped">
+        <tbody>
+<tr class="listview">
+    <legend>GIS IV's</legend>
+    <td>
+<a href="tailing" title="">
+<img src="{% static 'images/tailing.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+</tr>
+<!--
+
+    <td>
+
+<a href="xy" title="">
+
+<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+<td>
+<a href="xy" title="">
+<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+<td>
+<a href="xy" title="">
+<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+</tr>
+-->
+</tbody>
+
+</table>
+
+
+
+
+</div>
+
+    {% endblock %}

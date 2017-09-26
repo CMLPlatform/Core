@@ -1,0 +1,61 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+
+{% load wagtailcore_tags %}
+
+{% block title %}CMS -- Tools & Databases{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li><a href="../../">Home</a></li>
+
+
+                <li><a href="../../">Modeling tools</a></li>
+                <li><a href="../../exploratory">Exploratory tools</a></li>
+                 <li  class="active"><a href="/research">Research</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+
+
+{% endblock %}
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../../">  General</a></li>
+   <li><a  href="../../blog">News</a></li>
+   <li><a style="color: #e0e0eb;" href="../"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IE Tools & Databases</a></li>
+   <li><a href="../../microvis">IV CML</a></li>
+  </ul>
+</div>
+<br><br>
+<div class="container">
+    <h3>{{ page.title }}</h3>
+    <p class="meta">{{ page.date }}</p>
+
+    <div class="intro">{{ page.intro }}</div>
+
+    {{ page.body|richtext }}
+
+    {% for block in page.content %}
+                {% for element in block.value.data %}
+    <div class="table-responsive">
+    <table class="table table-hover"><tr>
+
+                  {% for el in element %}
+        <td>{{el}}</td>
+
+{% endfor %}
+    </tr></table></div>
+        {% endfor %}
+      {% endfor %}
+
+
+<p><a href="{{ page.get_parent.url }}">Return to tools & databases index</a></p>
+
+
+
+</div>
+{% endblock %}

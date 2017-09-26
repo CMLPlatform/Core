@@ -1,6 +1,7 @@
 
 from django.shortcuts import render_to_response, HttpResponse, HttpResponseRedirect, render
 from django.contrib.auth.decorators import login_required
+
 from django.template import RequestContext
 from django.http import JsonResponse
 
@@ -69,7 +70,7 @@ def home(request):
   ]
     }
     #print(data)
-    return render_to_response('ExioVisuals/home.html', data, context)
+    return render(request,'ExioVisuals/home.html', data)
 
 
 
@@ -2834,11 +2835,13 @@ def retrieveData():
         pre = list(t)
         #print(pre)
         #print("bla")
+        '''
         pre.pop(-1)
         pre.pop(-1)
         pre.pop(-1)
         pre.pop(-1)
         pre.pop(-1)
+        '''
         countryNames =[]
         absData = []
         for x in pre:

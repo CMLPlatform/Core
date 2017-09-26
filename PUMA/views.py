@@ -27,7 +27,8 @@ def home(request):
     #last_ten = Comment.objects.filter.order_by('created_date')[:10]
     #retrieve last 10 comments from database
     comments = Comment.objects.order_by('created_date')[:10]
-
+    # do a force logout
+    logout(request)
     return render(request,'PUMA/Home.html', {"comments":comments})
 
 @login_required(redirect_field_name='my_redirect_field', login_url='/puma/register/')

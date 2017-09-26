@@ -1,0 +1,3986 @@
+{
+  "1": [
+    {
+      "date": "1930-01-01",
+      "MS_timber_hist_jp": 1,
+      "MS_iron_hist_jp": 1,
+      "MS_other_hist_jp": 1,
+      "MS_minerals_hist_jp": 1
+    },
+    {
+      "date": "1931-01-01",
+      "MS_timber_hist_jp": 1,
+      "MS_iron_hist_jp": 1.1,
+      "MS_other_hist_jp": 1,
+      "MS_minerals_hist_jp": 1
+    },
+    {
+      "date": "1932-01-01",
+      "MS_timber_hist_jp": 1,
+      "MS_iron_hist_jp": 1.2,
+      "MS_other_hist_jp": 1.1,
+      "MS_minerals_hist_jp": 1.1
+    },
+    {
+      "date": "1933-01-01",
+      "MS_timber_hist_jp": 1.1,
+      "MS_iron_hist_jp": 1.3,
+      "MS_other_hist_jp": 1.1,
+      "MS_minerals_hist_jp": 1.1
+    },
+    {
+      "date": "1934-01-01",
+      "MS_timber_hist_jp": 1.1,
+      "MS_iron_hist_jp": 1.4,
+      "MS_other_hist_jp": 1.1,
+      "MS_minerals_hist_jp": 1.2
+    },
+    {
+      "date": "1935-01-01",
+      "MS_timber_hist_jp": 1.1,
+      "MS_iron_hist_jp": 1.4,
+      "MS_other_hist_jp": 1.2,
+      "MS_minerals_hist_jp": 1.3
+    },
+    {
+      "date": "1936-01-01",
+      "MS_timber_hist_jp": 1.1,
+      "MS_iron_hist_jp": 1.5,
+      "MS_other_hist_jp": 1.2,
+      "MS_minerals_hist_jp": 1.3
+    },
+    {
+      "date": "1937-01-01",
+      "MS_timber_hist_jp": 1.2,
+      "MS_iron_hist_jp": 1.5,
+      "MS_other_hist_jp": 1.3,
+      "MS_minerals_hist_jp": 1.4
+    },
+    {
+      "date": "1938-01-01",
+      "MS_timber_hist_jp": 1.2,
+      "MS_iron_hist_jp": 1.6,
+      "MS_other_hist_jp": 1.3,
+      "MS_minerals_hist_jp": 1.5
+    },
+    {
+      "date": "1939-01-01",
+      "MS_timber_hist_jp": 1.3,
+      "MS_iron_hist_jp": 1.7,
+      "MS_other_hist_jp": 1.4,
+      "MS_minerals_hist_jp": 1.6
+    },
+    {
+      "date": "1940-01-01",
+      "MS_timber_hist_jp": 1.3,
+      "MS_iron_hist_jp": 1.8,
+      "MS_other_hist_jp": 1.4,
+      "MS_minerals_hist_jp": 1.6
+    },
+    {
+      "date": "1941-01-01",
+      "MS_timber_hist_jp": 1.4,
+      "MS_iron_hist_jp": 1.9,
+      "MS_other_hist_jp": 1.5,
+      "MS_minerals_hist_jp": 1.7
+    },
+    {
+      "date": "1942-01-01",
+      "MS_timber_hist_jp": 1.4,
+      "MS_iron_hist_jp": 2,
+      "MS_other_hist_jp": 1.6,
+      "MS_minerals_hist_jp": 1.8
+    },
+    {
+      "date": "1943-01-01",
+      "MS_timber_hist_jp": 1.5,
+      "MS_iron_hist_jp": 2.1,
+      "MS_other_hist_jp": 1.6,
+      "MS_minerals_hist_jp": 1.8
+    },
+    {
+      "date": "1944-01-01",
+      "MS_timber_hist_jp": 1.6,
+      "MS_iron_hist_jp": 2.2,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.8
+    },
+    {
+      "date": "1945-01-01",
+      "MS_timber_hist_jp": 1.6,
+      "MS_iron_hist_jp": 2.3,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.8
+    },
+    {
+      "date": "1946-01-01",
+      "MS_timber_hist_jp": 1.6,
+      "MS_iron_hist_jp": 2.3,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.9
+    },
+    {
+      "date": "1947-01-01",
+      "MS_timber_hist_jp": 1.6,
+      "MS_iron_hist_jp": 2.3,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.9
+    },
+    {
+      "date": "1948-01-01",
+      "MS_timber_hist_jp": 1.7,
+      "MS_iron_hist_jp": 2.4,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.9
+    },
+    {
+      "date": "1949-01-01",
+      "MS_timber_hist_jp": 1.7,
+      "MS_iron_hist_jp": 2.4,
+      "MS_other_hist_jp": 1.7,
+      "MS_minerals_hist_jp": 1.9
+    },
+    {
+      "date": "1950-01-01",
+      "MS_timber_hist_jp": 1.8,
+      "MS_iron_hist_jp": 2.6,
+      "MS_other_hist_jp": 1.8,
+      "MS_minerals_hist_jp": 2
+    },
+    {
+      "date": "1951-01-01",
+      "MS_timber_hist_jp": 1.9,
+      "MS_iron_hist_jp": 2.7,
+      "MS_other_hist_jp": 1.8,
+      "MS_minerals_hist_jp": 2.1
+    },
+    {
+      "date": "1952-01-01",
+      "MS_timber_hist_jp": 1.9,
+      "MS_iron_hist_jp": 3,
+      "MS_other_hist_jp": 1.9,
+      "MS_minerals_hist_jp": 2.2
+    },
+    {
+      "date": "1953-01-01",
+      "MS_timber_hist_jp": 2,
+      "MS_iron_hist_jp": 3.2,
+      "MS_other_hist_jp": 1.9,
+      "MS_minerals_hist_jp": 2.3
+    },
+    {
+      "date": "1954-01-01",
+      "MS_timber_hist_jp": 2.1,
+      "MS_iron_hist_jp": 3.4,
+      "MS_other_hist_jp": 2,
+      "MS_minerals_hist_jp": 2.4
+    },
+    {
+      "date": "1955-01-01",
+      "MS_timber_hist_jp": 2.2,
+      "MS_iron_hist_jp": 3.7,
+      "MS_other_hist_jp": 2,
+      "MS_minerals_hist_jp": 2.6
+    },
+    {
+      "date": "1956-01-01",
+      "MS_timber_hist_jp": 2.3,
+      "MS_iron_hist_jp": 4,
+      "MS_other_hist_jp": 2.1,
+      "MS_minerals_hist_jp": 2.7
+    },
+    {
+      "date": "1957-01-01",
+      "MS_timber_hist_jp": 2.4,
+      "MS_iron_hist_jp": 4.4,
+      "MS_other_hist_jp": 2.2,
+      "MS_minerals_hist_jp": 2.9
+    },
+    {
+      "date": "1958-01-01",
+      "MS_timber_hist_jp": 2.5,
+      "MS_iron_hist_jp": 4.7,
+      "MS_other_hist_jp": 2.3,
+      "MS_minerals_hist_jp": 3.1
+    },
+    {
+      "date": "1959-01-01",
+      "MS_timber_hist_jp": 2.6,
+      "MS_iron_hist_jp": 5.2,
+      "MS_other_hist_jp": 2.4,
+      "MS_minerals_hist_jp": 3.3
+    },
+    {
+      "date": "1960-01-01",
+      "MS_timber_hist_jp": 2.7,
+      "MS_iron_hist_jp": 5.7,
+      "MS_other_hist_jp": 2.5,
+      "MS_minerals_hist_jp": 3.7
+    },
+    {
+      "date": "1961-01-01",
+      "MS_timber_hist_jp": 2.8,
+      "MS_iron_hist_jp": 6.5,
+      "MS_other_hist_jp": 2.7,
+      "MS_minerals_hist_jp": 4
+    },
+    {
+      "date": "1962-01-01",
+      "MS_timber_hist_jp": 3,
+      "MS_iron_hist_jp": 7.3,
+      "MS_other_hist_jp": 2.8,
+      "MS_minerals_hist_jp": 4.4
+    },
+    {
+      "date": "1963-01-01",
+      "MS_timber_hist_jp": 3.1,
+      "MS_iron_hist_jp": 8.2,
+      "MS_other_hist_jp": 2.9,
+      "MS_minerals_hist_jp": 4.8
+    },
+    {
+      "date": "1964-01-01",
+      "MS_timber_hist_jp": 3.2,
+      "MS_iron_hist_jp": 9.2,
+      "MS_other_hist_jp": 3.1,
+      "MS_minerals_hist_jp": 5.3
+    },
+    {
+      "date": "1965-01-01",
+      "MS_timber_hist_jp": 3.4,
+      "MS_iron_hist_jp": 10.3,
+      "MS_other_hist_jp": 3.3,
+      "MS_minerals_hist_jp": 5.8
+    },
+    {
+      "date": "1966-01-01",
+      "MS_timber_hist_jp": 3.6,
+      "MS_iron_hist_jp": 11.7,
+      "MS_other_hist_jp": 3.4,
+      "MS_minerals_hist_jp": 6.3
+    },
+    {
+      "date": "1967-01-01",
+      "MS_timber_hist_jp": 3.8,
+      "MS_iron_hist_jp": 13.5,
+      "MS_other_hist_jp": 3.7,
+      "MS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1968-01-01",
+      "MS_timber_hist_jp": 4,
+      "MS_iron_hist_jp": 15.4,
+      "MS_other_hist_jp": 3.9,
+      "MS_minerals_hist_jp": 7.7
+    },
+    {
+      "date": "1969-01-01",
+      "MS_timber_hist_jp": 4.2,
+      "MS_iron_hist_jp": 17.6,
+      "MS_other_hist_jp": 4.2,
+      "MS_minerals_hist_jp": 8.6
+    },
+    {
+      "date": "1970-01-01",
+      "MS_timber_hist_jp": 4.4,
+      "MS_iron_hist_jp": 20.2,
+      "MS_other_hist_jp": 4.5,
+      "MS_minerals_hist_jp": 9.5
+    },
+    {
+      "date": "1971-01-01",
+      "MS_timber_hist_jp": 4.6,
+      "MS_iron_hist_jp": 22.9,
+      "MS_other_hist_jp": 4.9,
+      "MS_minerals_hist_jp": 10.5
+    },
+    {
+      "date": "1972-01-01",
+      "MS_timber_hist_jp": 4.8,
+      "MS_iron_hist_jp": 25.6,
+      "MS_other_hist_jp": 5.2,
+      "MS_minerals_hist_jp": 11.6
+    },
+    {
+      "date": "1973-01-01",
+      "MS_timber_hist_jp": 5,
+      "MS_iron_hist_jp": 28.8,
+      "MS_other_hist_jp": 5.5,
+      "MS_minerals_hist_jp": 13
+    },
+    {
+      "date": "1974-01-01",
+      "MS_timber_hist_jp": 5.2,
+      "MS_iron_hist_jp": 32,
+      "MS_other_hist_jp": 5.8,
+      "MS_minerals_hist_jp": 14.3
+    },
+    {
+      "date": "1975-01-01",
+      "MS_timber_hist_jp": 5.4,
+      "MS_iron_hist_jp": 34.9,
+      "MS_other_hist_jp": 6.1,
+      "MS_minerals_hist_jp": 15.4
+    },
+    {
+      "date": "1976-01-01",
+      "MS_timber_hist_jp": 5.6,
+      "MS_iron_hist_jp": 37.6,
+      "MS_other_hist_jp": 6.4,
+      "MS_minerals_hist_jp": 16.5
+    },
+    {
+      "date": "1977-01-01",
+      "MS_timber_hist_jp": 5.8,
+      "MS_iron_hist_jp": 40.2,
+      "MS_other_hist_jp": 6.7,
+      "MS_minerals_hist_jp": 17.7
+    },
+    {
+      "date": "1978-01-01",
+      "MS_timber_hist_jp": 6,
+      "MS_iron_hist_jp": 42.6,
+      "MS_other_hist_jp": 7,
+      "MS_minerals_hist_jp": 19.1
+    },
+    {
+      "date": "1979-01-01",
+      "MS_timber_hist_jp": 6.1,
+      "MS_iron_hist_jp": 45.4,
+      "MS_other_hist_jp": 7.3,
+      "MS_minerals_hist_jp": 20.5
+    },
+    {
+      "date": "1980-01-01",
+      "MS_timber_hist_jp": 6.3,
+      "MS_iron_hist_jp": 48.3,
+      "MS_other_hist_jp": 7.6,
+      "MS_minerals_hist_jp": 21.9
+    },
+    {
+      "date": "1981-01-01",
+      "MS_timber_hist_jp": 6.4,
+      "MS_iron_hist_jp": 50.9,
+      "MS_other_hist_jp": 7.8,
+      "MS_minerals_hist_jp": 23.3
+    },
+    {
+      "date": "1982-01-01",
+      "MS_timber_hist_jp": 6.6,
+      "MS_iron_hist_jp": 53.5,
+      "MS_other_hist_jp": 8.1,
+      "MS_minerals_hist_jp": 24.5
+    },
+    {
+      "date": "1983-01-01",
+      "MS_timber_hist_jp": 6.7,
+      "MS_iron_hist_jp": 55.7,
+      "MS_other_hist_jp": 8.3,
+      "MS_minerals_hist_jp": 25.7
+    },
+    {
+      "date": "1984-01-01",
+      "MS_timber_hist_jp": 6.8,
+      "MS_iron_hist_jp": 58.4,
+      "MS_other_hist_jp": 8.5,
+      "MS_minerals_hist_jp": 26.8
+    },
+    {
+      "date": "1985-01-01",
+      "MS_timber_hist_jp": 6.9,
+      "MS_iron_hist_jp": 60.9,
+      "MS_other_hist_jp": 8.8,
+      "MS_minerals_hist_jp": 28
+    },
+    {
+      "date": "1986-01-01",
+      "MS_timber_hist_jp": 7,
+      "MS_iron_hist_jp": 63.3,
+      "MS_other_hist_jp": 9,
+      "MS_minerals_hist_jp": 29.1
+    },
+    {
+      "date": "1987-01-01",
+      "MS_timber_hist_jp": 7.1,
+      "MS_iron_hist_jp": 65.7,
+      "MS_other_hist_jp": 9.1,
+      "MS_minerals_hist_jp": 30.3
+    },
+    {
+      "date": "1988-01-01",
+      "MS_timber_hist_jp": 7.2,
+      "MS_iron_hist_jp": 68.6,
+      "MS_other_hist_jp": 9.3,
+      "MS_minerals_hist_jp": 31.6
+    },
+    {
+      "date": "1989-01-01",
+      "MS_timber_hist_jp": 7.3,
+      "MS_iron_hist_jp": 71.7,
+      "MS_other_hist_jp": 9.5,
+      "MS_minerals_hist_jp": 32.9
+    },
+    {
+      "date": "1990-01-01",
+      "MS_timber_hist_jp": 7.4,
+      "MS_iron_hist_jp": 74.7,
+      "MS_other_hist_jp": 9.7,
+      "MS_minerals_hist_jp": 34.3
+    },
+    {
+      "date": "1991-01-01",
+      "MS_timber_hist_jp": 7.5,
+      "MS_iron_hist_jp": 77.9,
+      "MS_other_hist_jp": 9.9,
+      "MS_minerals_hist_jp": 35.7
+    },
+    {
+      "date": "1992-01-01",
+      "MS_timber_hist_jp": 7.6,
+      "MS_iron_hist_jp": 80.4,
+      "MS_other_hist_jp": 10.1,
+      "MS_minerals_hist_jp": 37.1
+    },
+    {
+      "date": "1993-01-01",
+      "MS_timber_hist_jp": 7.6,
+      "MS_iron_hist_jp": 82.8,
+      "MS_other_hist_jp": 10.2,
+      "MS_minerals_hist_jp": 38.5
+    },
+    {
+      "date": "1994-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 85.3,
+      "MS_other_hist_jp": 10.3,
+      "MS_minerals_hist_jp": 39.8
+    },
+    {
+      "date": "1995-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 87.9,
+      "MS_other_hist_jp": 10.5,
+      "MS_minerals_hist_jp": 41.1
+    },
+    {
+      "date": "1996-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 90.4,
+      "MS_other_hist_jp": 10.6,
+      "MS_minerals_hist_jp": 42.4
+    },
+    {
+      "date": "1997-01-01",
+      "MS_timber_hist_jp": 7.8,
+      "MS_iron_hist_jp": 92.9,
+      "MS_other_hist_jp": 10.8,
+      "MS_minerals_hist_jp": 43.7
+    },
+    {
+      "date": "1998-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 95.1,
+      "MS_other_hist_jp": 10.9,
+      "MS_minerals_hist_jp": 44.9
+    },
+    {
+      "date": "1999-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 97.1,
+      "MS_other_hist_jp": 11,
+      "MS_minerals_hist_jp": 46.1
+    },
+    {
+      "date": "2000-01-01",
+      "MS_timber_hist_jp": 7.7,
+      "MS_iron_hist_jp": 99.5,
+      "MS_other_hist_jp": 11.1,
+      "MS_minerals_hist_jp": 47.3
+    },
+    {
+      "date": "2001-01-01",
+      "MS_timber_hist_jp": 7.6,
+      "MS_iron_hist_jp": 101.5,
+      "MS_other_hist_jp": 11.2,
+      "MS_minerals_hist_jp": 48.3
+    },
+    {
+      "date": "2002-01-01",
+      "MS_timber_hist_jp": 7.6,
+      "MS_iron_hist_jp": 103.4,
+      "MS_other_hist_jp": 11.3,
+      "MS_minerals_hist_jp": 49.3
+    },
+    {
+      "date": "2003-01-01",
+      "MS_timber_hist_jp": 7.5,
+      "MS_iron_hist_jp": 105.3,
+      "MS_other_hist_jp": 11.4,
+      "MS_minerals_hist_jp": 50.1
+    },
+    {
+      "date": "2004-01-01",
+      "MS_timber_hist_jp": 7.5,
+      "MS_iron_hist_jp": 107.3,
+      "MS_other_hist_jp": 11.5,
+      "MS_minerals_hist_jp": 50.9
+    },
+    {
+      "date": "2005-01-01",
+      "MS_timber_hist_jp": 7.4,
+      "MS_iron_hist_jp": 109.3,
+      "MS_other_hist_jp": 11.6,
+      "MS_minerals_hist_jp": 51.7,
+      "MS_timber_sc1_jp": 7.4,
+      "MS_iron_sc1_jp": 109.3,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 51.7,
+      "MS_timber_sc2_jp": 7.4,
+      "MS_iron_sc2_jp": 109.3,
+      "MS_other_sc2_jp": 11.6,
+      "MS_minerals_sc2_jp": 51.7
+    },
+    {
+      "date": "2006-01-01",
+      "MS_timber_sc1_jp": 7.4,
+      "MS_iron_sc1_jp": 111.1,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 52.7,
+      "MS_timber_sc2_jp": 7.4,
+      "MS_iron_sc2_jp": 111.2,
+      "MS_other_sc2_jp": 11.6,
+      "MS_minerals_sc2_jp": 52.5
+    },
+    {
+      "date": "2007-01-01",
+      "MS_timber_sc1_jp": 7.3,
+      "MS_iron_sc1_jp": 112.9,
+      "MS_other_sc1_jp": 11.7,
+      "MS_minerals_sc1_jp": 53.6,
+      "MS_timber_sc2_jp": 7.3,
+      "MS_iron_sc2_jp": 113,
+      "MS_other_sc2_jp": 11.7,
+      "MS_minerals_sc2_jp": 53.3
+    },
+    {
+      "date": "2008-01-01",
+      "MS_timber_sc1_jp": 7.3,
+      "MS_iron_sc1_jp": 114.7,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 54.5,
+      "MS_timber_sc2_jp": 7.2,
+      "MS_iron_sc2_jp": 114.8,
+      "MS_other_sc2_jp": 11.8,
+      "MS_minerals_sc2_jp": 54
+    },
+    {
+      "date": "2009-01-01",
+      "MS_timber_sc1_jp": 7.2,
+      "MS_iron_sc1_jp": 116.4,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 55.3,
+      "MS_timber_sc2_jp": 7.1,
+      "MS_iron_sc2_jp": 116.5,
+      "MS_other_sc2_jp": 11.8,
+      "MS_minerals_sc2_jp": 54.7
+    },
+    {
+      "date": "2010-01-01",
+      "MS_timber_sc1_jp": 7.1,
+      "MS_iron_sc1_jp": 118,
+      "MS_other_sc1_jp": 11.9,
+      "MS_minerals_sc1_jp": 56.2,
+      "MS_timber_sc2_jp": 7.1,
+      "MS_iron_sc2_jp": 118.1,
+      "MS_other_sc2_jp": 11.9,
+      "MS_minerals_sc2_jp": 55.4
+    },
+    {
+      "date": "2011-01-01",
+      "MS_timber_sc1_jp": 7.1,
+      "MS_iron_sc1_jp": 119.6,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 57,
+      "MS_timber_sc2_jp": 7,
+      "MS_iron_sc2_jp": 119.7,
+      "MS_other_sc2_jp": 11.9,
+      "MS_minerals_sc2_jp": 56
+    },
+    {
+      "date": "2012-01-01",
+      "MS_timber_sc1_jp": 7,
+      "MS_iron_sc1_jp": 121.1,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 57.8,
+      "MS_timber_sc2_jp": 6.9,
+      "MS_iron_sc2_jp": 121.2,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 56.7
+    },
+    {
+      "date": "2013-01-01",
+      "MS_timber_sc1_jp": 6.9,
+      "MS_iron_sc1_jp": 122.6,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 58.5,
+      "MS_timber_sc2_jp": 6.8,
+      "MS_iron_sc2_jp": 122.7,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 57.3
+    },
+    {
+      "date": "2014-01-01",
+      "MS_timber_sc1_jp": 6.9,
+      "MS_iron_sc1_jp": 123.9,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 59.2,
+      "MS_timber_sc2_jp": 6.7,
+      "MS_iron_sc2_jp": 124.1,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 57.8
+    },
+    {
+      "date": "2015-01-01",
+      "MS_timber_sc1_jp": 6.8,
+      "MS_iron_sc1_jp": 125.3,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 59.9,
+      "MS_timber_sc2_jp": 6.6,
+      "MS_iron_sc2_jp": 125.4,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 58.4
+    },
+    {
+      "date": "2016-01-01",
+      "MS_timber_sc1_jp": 6.7,
+      "MS_iron_sc1_jp": 126.5,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 60.6,
+      "MS_timber_sc2_jp": 6.5,
+      "MS_iron_sc2_jp": 126.6,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 58.8
+    },
+    {
+      "date": "2017-01-01",
+      "MS_timber_sc1_jp": 6.6,
+      "MS_iron_sc1_jp": 127.7,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 61.2,
+      "MS_timber_sc2_jp": 6.4,
+      "MS_iron_sc2_jp": 127.8,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 59.3
+    },
+    {
+      "date": "2018-01-01",
+      "MS_timber_sc1_jp": 6.6,
+      "MS_iron_sc1_jp": 128.9,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 61.8,
+      "MS_timber_sc2_jp": 6.4,
+      "MS_iron_sc2_jp": 128.9,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 59.7
+    },
+    {
+      "date": "2019-01-01",
+      "MS_timber_sc1_jp": 6.5,
+      "MS_iron_sc1_jp": 129.9,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 62.4,
+      "MS_timber_sc2_jp": 6.3,
+      "MS_iron_sc2_jp": 129.9,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 60.1
+    },
+    {
+      "date": "2020-01-01",
+      "MS_timber_sc1_jp": 6.4,
+      "MS_iron_sc1_jp": 130.9,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 62.9,
+      "MS_timber_sc2_jp": 6.2,
+      "MS_iron_sc2_jp": 130.8,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 60.5
+    },
+    {
+      "date": "2021-01-01",
+      "MS_timber_sc1_jp": 6.3,
+      "MS_iron_sc1_jp": 131.9,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 63.5,
+      "MS_timber_sc2_jp": 6.1,
+      "MS_iron_sc2_jp": 131.7,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 60.8
+    },
+    {
+      "date": "2022-01-01",
+      "MS_timber_sc1_jp": 6.3,
+      "MS_iron_sc1_jp": 132.8,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 63.9,
+      "MS_timber_sc2_jp": 6,
+      "MS_iron_sc2_jp": 132.5,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 61.1
+    },
+    {
+      "date": "2023-01-01",
+      "MS_timber_sc1_jp": 6.2,
+      "MS_iron_sc1_jp": 133.6,
+      "MS_other_sc1_jp": 12.2,
+      "MS_minerals_sc1_jp": 64.4,
+      "MS_timber_sc2_jp": 5.9,
+      "MS_iron_sc2_jp": 133.3,
+      "MS_other_sc2_jp": 12.1,
+      "MS_minerals_sc2_jp": 61.4
+    },
+    {
+      "date": "2024-01-01",
+      "MS_timber_sc1_jp": 6.1,
+      "MS_iron_sc1_jp": 134.4,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 64.8,
+      "MS_timber_sc2_jp": 5.8,
+      "MS_iron_sc2_jp": 133.9,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 61.6
+    },
+    {
+      "date": "2025-01-01",
+      "MS_timber_sc1_jp": 6.1,
+      "MS_iron_sc1_jp": 135.1,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 65.2,
+      "MS_timber_sc2_jp": 5.7,
+      "MS_iron_sc2_jp": 134.5,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 61.8
+    },
+    {
+      "date": "2026-01-01",
+      "MS_timber_sc1_jp": 6,
+      "MS_iron_sc1_jp": 135.7,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 65.6,
+      "MS_timber_sc2_jp": 5.6,
+      "MS_iron_sc2_jp": 135,
+      "MS_other_sc2_jp": 12,
+      "MS_minerals_sc2_jp": 61.9
+    },
+    {
+      "date": "2027-01-01",
+      "MS_timber_sc1_jp": 5.9,
+      "MS_iron_sc1_jp": 136.4,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 66,
+      "MS_timber_sc2_jp": 5.5,
+      "MS_iron_sc2_jp": 135.5,
+      "MS_other_sc2_jp": 11.9,
+      "MS_minerals_sc2_jp": 62.1
+    },
+    {
+      "date": "2028-01-01",
+      "MS_timber_sc1_jp": 5.9,
+      "MS_iron_sc1_jp": 136.9,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 66.3,
+      "MS_timber_sc2_jp": 5.5,
+      "MS_iron_sc2_jp": 135.9,
+      "MS_other_sc2_jp": 11.9,
+      "MS_minerals_sc2_jp": 62.2
+    },
+    {
+      "date": "2029-01-01",
+      "MS_timber_sc1_jp": 5.8,
+      "MS_iron_sc1_jp": 137.4,
+      "MS_other_sc1_jp": 12.1,
+      "MS_minerals_sc1_jp": 66.6,
+      "MS_timber_sc2_jp": 5.4,
+      "MS_iron_sc2_jp": 136.2,
+      "MS_other_sc2_jp": 11.8,
+      "MS_minerals_sc2_jp": 62.2
+    },
+    {
+      "date": "2030-01-01",
+      "MS_timber_sc1_jp": 5.8,
+      "MS_iron_sc1_jp": 137.9,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 66.9,
+      "MS_timber_sc2_jp": 5.3,
+      "MS_iron_sc2_jp": 136.5,
+      "MS_other_sc2_jp": 11.8,
+      "MS_minerals_sc2_jp": 62.3
+    },
+    {
+      "date": "2031-01-01",
+      "MS_timber_sc1_jp": 5.7,
+      "MS_iron_sc1_jp": 138.3,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 67.1,
+      "MS_timber_sc2_jp": 5.2,
+      "MS_iron_sc2_jp": 136.7,
+      "MS_other_sc2_jp": 11.8,
+      "MS_minerals_sc2_jp": 62.3
+    },
+    {
+      "date": "2032-01-01",
+      "MS_timber_sc1_jp": 5.7,
+      "MS_iron_sc1_jp": 138.7,
+      "MS_other_sc1_jp": 12,
+      "MS_minerals_sc1_jp": 67.3,
+      "MS_timber_sc2_jp": 5.2,
+      "MS_iron_sc2_jp": 136.8,
+      "MS_other_sc2_jp": 11.7,
+      "MS_minerals_sc2_jp": 62.3
+    },
+    {
+      "date": "2033-01-01",
+      "MS_timber_sc1_jp": 5.6,
+      "MS_iron_sc1_jp": 139.1,
+      "MS_other_sc1_jp": 11.9,
+      "MS_minerals_sc1_jp": 67.6,
+      "MS_timber_sc2_jp": 5.1,
+      "MS_iron_sc2_jp": 136.9,
+      "MS_other_sc2_jp": 11.6,
+      "MS_minerals_sc2_jp": 62.2
+    },
+    {
+      "date": "2034-01-01",
+      "MS_timber_sc1_jp": 5.6,
+      "MS_iron_sc1_jp": 139.4,
+      "MS_other_sc1_jp": 11.9,
+      "MS_minerals_sc1_jp": 67.7,
+      "MS_timber_sc2_jp": 5,
+      "MS_iron_sc2_jp": 137,
+      "MS_other_sc2_jp": 11.6,
+      "MS_minerals_sc2_jp": 62.1
+    },
+    {
+      "date": "2035-01-01",
+      "MS_timber_sc1_jp": 5.5,
+      "MS_iron_sc1_jp": 139.6,
+      "MS_other_sc1_jp": 11.9,
+      "MS_minerals_sc1_jp": 67.9,
+      "MS_timber_sc2_jp": 5,
+      "MS_iron_sc2_jp": 137,
+      "MS_other_sc2_jp": 11.5,
+      "MS_minerals_sc2_jp": 62.1
+    },
+    {
+      "date": "2036-01-01",
+      "MS_timber_sc1_jp": 5.5,
+      "MS_iron_sc1_jp": 139.9,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 68.1,
+      "MS_timber_sc2_jp": 4.9,
+      "MS_iron_sc2_jp": 136.9,
+      "MS_other_sc2_jp": 11.5,
+      "MS_minerals_sc2_jp": 61.9
+    },
+    {
+      "date": "2037-01-01",
+      "MS_timber_sc1_jp": 5.4,
+      "MS_iron_sc1_jp": 140.1,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 68.2,
+      "MS_timber_sc2_jp": 4.8,
+      "MS_iron_sc2_jp": 136.8,
+      "MS_other_sc2_jp": 11.4,
+      "MS_minerals_sc2_jp": 61.8
+    },
+    {
+      "date": "2038-01-01",
+      "MS_timber_sc1_jp": 5.4,
+      "MS_iron_sc1_jp": 140.3,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 68.3,
+      "MS_timber_sc2_jp": 4.8,
+      "MS_iron_sc2_jp": 136.7,
+      "MS_other_sc2_jp": 11.4,
+      "MS_minerals_sc2_jp": 61.6
+    },
+    {
+      "date": "2039-01-01",
+      "MS_timber_sc1_jp": 5.4,
+      "MS_iron_sc1_jp": 140.5,
+      "MS_other_sc1_jp": 11.8,
+      "MS_minerals_sc1_jp": 68.5,
+      "MS_timber_sc2_jp": 4.7,
+      "MS_iron_sc2_jp": 136.5,
+      "MS_other_sc2_jp": 11.3,
+      "MS_minerals_sc2_jp": 61.5
+    },
+    {
+      "date": "2040-01-01",
+      "MS_timber_sc1_jp": 5.4,
+      "MS_iron_sc1_jp": 140.6,
+      "MS_other_sc1_jp": 11.7,
+      "MS_minerals_sc1_jp": 68.6,
+      "MS_timber_sc2_jp": 4.7,
+      "MS_iron_sc2_jp": 136.2,
+      "MS_other_sc2_jp": 11.2,
+      "MS_minerals_sc2_jp": 61.3
+    },
+    {
+      "date": "2041-01-01",
+      "MS_timber_sc1_jp": 5.3,
+      "MS_iron_sc1_jp": 140.7,
+      "MS_other_sc1_jp": 11.7,
+      "MS_minerals_sc1_jp": 68.6,
+      "MS_timber_sc2_jp": 4.6,
+      "MS_iron_sc2_jp": 135.9,
+      "MS_other_sc2_jp": 11.2,
+      "MS_minerals_sc2_jp": 61
+    },
+    {
+      "date": "2042-01-01",
+      "MS_timber_sc1_jp": 5.3,
+      "MS_iron_sc1_jp": 140.8,
+      "MS_other_sc1_jp": 11.7,
+      "MS_minerals_sc1_jp": 68.7,
+      "MS_timber_sc2_jp": 4.6,
+      "MS_iron_sc2_jp": 135.6,
+      "MS_other_sc2_jp": 11.1,
+      "MS_minerals_sc2_jp": 60.8
+    },
+    {
+      "date": "2043-01-01",
+      "MS_timber_sc1_jp": 5.3,
+      "MS_iron_sc1_jp": 140.9,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 68.8,
+      "MS_timber_sc2_jp": 4.5,
+      "MS_iron_sc2_jp": 135.3,
+      "MS_other_sc2_jp": 11,
+      "MS_minerals_sc2_jp": 60.6
+    },
+    {
+      "date": "2044-01-01",
+      "MS_timber_sc1_jp": 5.3,
+      "MS_iron_sc1_jp": 141,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 68.8,
+      "MS_timber_sc2_jp": 4.5,
+      "MS_iron_sc2_jp": 134.9,
+      "MS_other_sc2_jp": 11,
+      "MS_minerals_sc2_jp": 60.3
+    },
+    {
+      "date": "2045-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.1,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 68.9,
+      "MS_timber_sc2_jp": 4.4,
+      "MS_iron_sc2_jp": 134.5,
+      "MS_other_sc2_jp": 10.9,
+      "MS_minerals_sc2_jp": 60
+    },
+    {
+      "date": "2046-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.1,
+      "MS_other_sc1_jp": 11.6,
+      "MS_minerals_sc1_jp": 68.9,
+      "MS_timber_sc2_jp": 4.4,
+      "MS_iron_sc2_jp": 134.1,
+      "MS_other_sc2_jp": 10.8,
+      "MS_minerals_sc2_jp": 59.7
+    },
+    {
+      "date": "2047-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.1,
+      "MS_other_sc1_jp": 11.5,
+      "MS_minerals_sc1_jp": 69,
+      "MS_timber_sc2_jp": 4.3,
+      "MS_iron_sc2_jp": 133.6,
+      "MS_other_sc2_jp": 10.8,
+      "MS_minerals_sc2_jp": 59.4
+    },
+    {
+      "date": "2048-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.2,
+      "MS_other_sc1_jp": 11.5,
+      "MS_minerals_sc1_jp": 69,
+      "MS_timber_sc2_jp": 4.3,
+      "MS_iron_sc2_jp": 133.1,
+      "MS_other_sc2_jp": 10.7,
+      "MS_minerals_sc2_jp": 59.1
+    },
+    {
+      "date": "2049-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.2,
+      "MS_other_sc1_jp": 11.5,
+      "MS_minerals_sc1_jp": 69,
+      "MS_timber_sc2_jp": 4.3,
+      "MS_iron_sc2_jp": 132.6,
+      "MS_other_sc2_jp": 10.6,
+      "MS_minerals_sc2_jp": 58.8
+    },
+    {
+      "date": "2050-01-01",
+      "MS_timber_sc1_jp": 5.2,
+      "MS_iron_sc1_jp": 141.2,
+      "MS_other_sc1_jp": 11.5,
+      "MS_minerals_sc1_jp": 69,
+      "MS_timber_sc2_jp": 4.2,
+      "MS_iron_sc2_jp": 132,
+      "MS_other_sc2_jp": 10.6,
+      "MS_minerals_sc2_jp": 58.5
+    }
+  ],
+  "2": [
+    {
+      "date": "1930-01-01",
+      "GS_timber_hist_jp": 1.0,
+      "GS_iron_hist_jp": 1.0,
+      "GS_other_hist_jp": 1.0,
+      "GS_minerals_hist_jp": 1.0,
+      "RS_timber_hist_jp": 1.0,
+      "RS_iron_hist_jp": 1.0,
+      "RS_other_hist_jp": 1.0,
+      "RS_minerals_hist_jp": 1.0
+    },
+    {
+      "date": "1931-01-01",
+      "GS_timber_hist_jp": 1.0,
+      "GS_iron_hist_jp": 0.8,
+      "GS_other_hist_jp": 1.0,
+      "GS_minerals_hist_jp": 0.8,
+      "RS_timber_hist_jp": 1.0,
+      "RS_iron_hist_jp": 1.1,
+      "RS_other_hist_jp": 1.1,
+      "RS_minerals_hist_jp": 1.1
+    },
+    {
+      "date": "1932-01-01",
+      "GS_timber_hist_jp": 1.0,
+      "GS_iron_hist_jp": 0.9,
+      "GS_other_hist_jp": 1.0,
+      "GS_minerals_hist_jp": 0.8,
+      "RS_timber_hist_jp": 1.1,
+      "RS_iron_hist_jp": 1.3,
+      "RS_other_hist_jp": 1.2,
+      "RS_minerals_hist_jp": 1.1
+    },
+    {
+      "date": "1933-01-01",
+      "GS_timber_hist_jp": 1.1,
+      "GS_iron_hist_jp": 1.1,
+      "GS_other_hist_jp": 1.0,
+      "GS_minerals_hist_jp": 0.9,
+      "RS_timber_hist_jp": 1.1,
+      "RS_iron_hist_jp": 1.4,
+      "RS_other_hist_jp": 1.3,
+      "RS_minerals_hist_jp": 1.2
+    },
+    {
+      "date": "1934-01-01",
+      "GS_timber_hist_jp": 1.2,
+      "GS_iron_hist_jp": 0.4,
+      "GS_other_hist_jp": 1.1,
+      "GS_minerals_hist_jp": 0.9,
+      "RS_timber_hist_jp": 1.1,
+      "RS_iron_hist_jp": 1.5,
+      "RS_other_hist_jp": 1.3,
+      "RS_minerals_hist_jp": 1.3
+    },
+    {
+      "date": "1935-01-01",
+      "GS_timber_hist_jp": 1.2,
+      "GS_iron_hist_jp": 0.5,
+      "GS_other_hist_jp": 1.2,
+      "GS_minerals_hist_jp": 1.1,
+      "RS_timber_hist_jp": 1.2,
+      "RS_iron_hist_jp": 1.7,
+      "RS_other_hist_jp": 1.4,
+      "RS_minerals_hist_jp": 1.4
+    },
+    {
+      "date": "1936-01-01",
+      "GS_timber_hist_jp": 1.3,
+      "GS_iron_hist_jp": 0.6,
+      "GS_other_hist_jp": 1.2,
+      "GS_minerals_hist_jp": 1.2,
+      "RS_timber_hist_jp": 1.2,
+      "RS_iron_hist_jp": 1.9,
+      "RS_other_hist_jp": 1.5,
+      "RS_minerals_hist_jp": 1.5
+    },
+    {
+      "date": "1937-01-01",
+      "GS_timber_hist_jp": 1.4,
+      "GS_iron_hist_jp": 0.6,
+      "GS_other_hist_jp": 1.3,
+      "GS_minerals_hist_jp": 1.2,
+      "RS_timber_hist_jp": 1.2,
+      "RS_iron_hist_jp": 2.2,
+      "RS_other_hist_jp": 1.6,
+      "RS_minerals_hist_jp": 1.6
+    },
+    {
+      "date": "1938-01-01",
+      "GS_timber_hist_jp": 1.6,
+      "GS_iron_hist_jp": 0.7,
+      "GS_other_hist_jp": 1.4,
+      "GS_minerals_hist_jp": 1.2,
+      "RS_timber_hist_jp": 1.2,
+      "RS_iron_hist_jp": 2.4,
+      "RS_other_hist_jp": 1.8,
+      "RS_minerals_hist_jp": 1.7
+    },
+    {
+      "date": "1939-01-01",
+      "GS_timber_hist_jp": 2.0,
+      "GS_iron_hist_jp": 0.7,
+      "GS_other_hist_jp": 1.6,
+      "GS_minerals_hist_jp": 1.3,
+      "RS_timber_hist_jp": 1.3,
+      "RS_iron_hist_jp": 2.7,
+      "RS_other_hist_jp": 1.9,
+      "RS_minerals_hist_jp": 1.8
+    },
+    {
+      "date": "1940-01-01",
+      "GS_timber_hist_jp": 2.0,
+      "GS_iron_hist_jp": 0.7,
+      "GS_other_hist_jp": 1.7,
+      "GS_minerals_hist_jp": 1.2,
+      "RS_timber_hist_jp": 1.3,
+      "RS_iron_hist_jp": 3.0,
+      "RS_other_hist_jp": 2.0,
+      "RS_minerals_hist_jp": 2.0
+    },
+    {
+      "date": "1941-01-01",
+      "GS_timber_hist_jp": 2.2,
+      "GS_iron_hist_jp": 0.8,
+      "GS_other_hist_jp": 1.7,
+      "GS_minerals_hist_jp": 1.2,
+      "RS_timber_hist_jp": 1.3,
+      "RS_iron_hist_jp": 3.3,
+      "RS_other_hist_jp": 2.1,
+      "RS_minerals_hist_jp": 2.1
+    },
+    {
+      "date": "1942-01-01",
+      "GS_timber_hist_jp": 1.8,
+      "GS_iron_hist_jp": 1.0,
+      "GS_other_hist_jp": 1.9,
+      "GS_minerals_hist_jp": 0.9,
+      "RS_timber_hist_jp": 1.4,
+      "RS_iron_hist_jp": 3.6,
+      "RS_other_hist_jp": 2.3,
+      "RS_minerals_hist_jp": 2.2
+    },
+    {
+      "date": "1943-01-01",
+      "GS_timber_hist_jp": 2.5,
+      "GS_iron_hist_jp": 1.1,
+      "GS_other_hist_jp": 2.0,
+      "GS_minerals_hist_jp": 0.8,
+      "RS_timber_hist_jp": 1.4,
+      "RS_iron_hist_jp": 4.0,
+      "RS_other_hist_jp": 2.4,
+      "RS_minerals_hist_jp": 2.4
+    },
+    {
+      "date": "1944-01-01",
+      "GS_timber_hist_jp": 2.3,
+      "GS_iron_hist_jp": 1.2,
+      "GS_other_hist_jp": 1.9,
+      "GS_minerals_hist_jp": 0.6,
+      "RS_timber_hist_jp": 1.4,
+      "RS_iron_hist_jp": 4.4,
+      "RS_other_hist_jp": 2.5,
+      "RS_minerals_hist_jp": 2.5
+    },
+    {
+      "date": "1945-01-01",
+      "GS_timber_hist_jp": 1.0,
+      "GS_iron_hist_jp": 0.6,
+      "GS_other_hist_jp": 0.8,
+      "GS_minerals_hist_jp": 0.3,
+      "RS_timber_hist_jp": 1.5,
+      "RS_iron_hist_jp": 4.8,
+      "RS_other_hist_jp": 2.7,
+      "RS_minerals_hist_jp": 2.6
+    },
+    {
+      "date": "1946-01-01",
+      "GS_timber_hist_jp": 1.3,
+      "GS_iron_hist_jp": 0.3,
+      "GS_other_hist_jp": 0.3,
+      "GS_minerals_hist_jp": 0.3,
+      "RS_timber_hist_jp": 1.5,
+      "RS_iron_hist_jp": 5.2,
+      "RS_other_hist_jp": 2.8,
+      "RS_minerals_hist_jp": 2.8
+    },
+    {
+      "date": "1947-01-01",
+      "GS_timber_hist_jp": 1.4,
+      "GS_iron_hist_jp": 0.3,
+      "GS_other_hist_jp": 0.4,
+      "GS_minerals_hist_jp": 0.3,
+      "RS_timber_hist_jp": 1.5,
+      "RS_iron_hist_jp": 5.7,
+      "RS_other_hist_jp": 2.9,
+      "RS_minerals_hist_jp": 3.0
+    },
+    {
+      "date": "1948-01-01",
+      "GS_timber_hist_jp": 1.5,
+      "GS_iron_hist_jp": 0.5,
+      "GS_other_hist_jp": 0.6,
+      "GS_minerals_hist_jp": 0.5,
+      "RS_timber_hist_jp": 1.6,
+      "RS_iron_hist_jp": 6.3,
+      "RS_other_hist_jp": 3.1,
+      "RS_minerals_hist_jp": 3.1
+    },
+    {
+      "date": "1949-01-01",
+      "GS_timber_hist_jp": 1.7,
+      "GS_iron_hist_jp": 1.0,
+      "GS_other_hist_jp": 0.8,
+      "GS_minerals_hist_jp": 0.8,
+      "RS_timber_hist_jp": 1.6,
+      "RS_iron_hist_jp": 6.9,
+      "RS_other_hist_jp": 3.3,
+      "RS_minerals_hist_jp": 3.3
+    },
+    {
+      "date": "1950-01-01",
+      "GS_timber_hist_jp": 2.2,
+      "GS_iron_hist_jp": 1.0,
+      "GS_other_hist_jp": 1.0,
+      "GS_minerals_hist_jp": 1.1,
+      "RS_timber_hist_jp": 1.6,
+      "RS_iron_hist_jp": 7.5,
+      "RS_other_hist_jp": 3.4,
+      "RS_minerals_hist_jp": 3.5
+    },
+    {
+      "date": "1951-01-01",
+      "GS_timber_hist_jp": 3.0,
+      "GS_iron_hist_jp": 1.6,
+      "GS_other_hist_jp": 1.4,
+      "GS_minerals_hist_jp": 1.5,
+      "RS_timber_hist_jp": 1.7,
+      "RS_iron_hist_jp": 8.2,
+      "RS_other_hist_jp": 3.6,
+      "RS_minerals_hist_jp": 3.7
+    },
+    {
+      "date": "1952-01-01",
+      "GS_timber_hist_jp": 2.9,
+      "GS_iron_hist_jp": 2.2,
+      "GS_other_hist_jp": 1.6,
+      "GS_minerals_hist_jp": 1.6,
+      "RS_timber_hist_jp": 1.7,
+      "RS_iron_hist_jp": 8.9,
+      "RS_other_hist_jp": 3.8,
+      "RS_minerals_hist_jp": 3.9
+    },
+    {
+      "date": "1953-01-01",
+      "GS_timber_hist_jp": 3.3,
+      "GS_iron_hist_jp": 2.0,
+      "GS_other_hist_jp": 1.8,
+      "GS_minerals_hist_jp": 2.0,
+      "RS_timber_hist_jp": 1.8,
+      "RS_iron_hist_jp": 9.6,
+      "RS_other_hist_jp": 3.9,
+      "RS_minerals_hist_jp": 4.1
+    },
+    {
+      "date": "1954-01-01",
+      "GS_timber_hist_jp": 3.1,
+      "GS_iron_hist_jp": 2.3,
+      "GS_other_hist_jp": 1.9,
+      "GS_minerals_hist_jp": 2.4,
+      "RS_timber_hist_jp": 1.8,
+      "RS_iron_hist_jp": 10.4,
+      "RS_other_hist_jp": 4.1,
+      "RS_minerals_hist_jp": 4.4
+    },
+    {
+      "date": "1955-01-01",
+      "GS_timber_hist_jp": 3.3,
+      "GS_iron_hist_jp": 2.4,
+      "GS_other_hist_jp": 2.1,
+      "GS_minerals_hist_jp": 2.4,
+      "RS_timber_hist_jp": 1.9,
+      "RS_iron_hist_jp": 11.2,
+      "RS_other_hist_jp": 4.3,
+      "RS_minerals_hist_jp": 4.6
+    },
+    {
+      "date": "1956-01-01",
+      "GS_timber_hist_jp": 3.5,
+      "GS_iron_hist_jp": 3.2,
+      "GS_other_hist_jp": 2.6,
+      "GS_minerals_hist_jp": 2.8,
+      "RS_timber_hist_jp": 1.9,
+      "RS_iron_hist_jp": 12.2,
+      "RS_other_hist_jp": 4.4,
+      "RS_minerals_hist_jp": 4.9
+    },
+    {
+      "date": "1957-01-01",
+      "GS_timber_hist_jp": 3.7,
+      "GS_iron_hist_jp": 3.7,
+      "GS_other_hist_jp": 3.0,
+      "GS_minerals_hist_jp": 3.3,
+      "RS_timber_hist_jp": 2.0,
+      "RS_iron_hist_jp": 13.1,
+      "RS_other_hist_jp": 4.6,
+      "RS_minerals_hist_jp": 5.1
+    },
+    {
+      "date": "1958-01-01",
+      "GS_timber_hist_jp": 3.4,
+      "GS_iron_hist_jp": 3.2,
+      "GS_other_hist_jp": 2.7,
+      "GS_minerals_hist_jp": 3.3,
+      "RS_timber_hist_jp": 2.0,
+      "RS_iron_hist_jp": 14.1,
+      "RS_other_hist_jp": 4.8,
+      "RS_minerals_hist_jp": 5.4
+    },
+    {
+      "date": "1959-01-01",
+      "GS_timber_hist_jp": 3.5,
+      "GS_iron_hist_jp": 4.0,
+      "GS_other_hist_jp": 3.2,
+      "GS_minerals_hist_jp": 3.9,
+      "RS_timber_hist_jp": 2.1,
+      "RS_iron_hist_jp": 15.2,
+      "RS_other_hist_jp": 5.0,
+      "RS_minerals_hist_jp": 5.7
+    },
+    {
+      "date": "1960-01-01",
+      "GS_timber_hist_jp": 3.7,
+      "GS_iron_hist_jp": 5.3,
+      "GS_other_hist_jp": 3.5,
+      "GS_minerals_hist_jp": 5.0,
+      "RS_timber_hist_jp": 2.2,
+      "RS_iron_hist_jp": 16.4,
+      "RS_other_hist_jp": 5.2,
+      "RS_minerals_hist_jp": 6.0
+    },
+    {
+      "date": "1961-01-01",
+      "GS_timber_hist_jp": 3.8,
+      "GS_iron_hist_jp": 6.9,
+      "GS_other_hist_jp": 3.8,
+      "GS_minerals_hist_jp": 5.5,
+      "RS_timber_hist_jp": 2.2,
+      "RS_iron_hist_jp": 17.7,
+      "RS_other_hist_jp": 5.4,
+      "RS_minerals_hist_jp": 6.3
+    },
+    {
+      "date": "1962-01-01",
+      "GS_timber_hist_jp": 4.6,
+      "GS_iron_hist_jp": 7.5,
+      "GS_other_hist_jp": 3.9,
+      "GS_minerals_hist_jp": 6.6,
+      "RS_timber_hist_jp": 2.3,
+      "RS_iron_hist_jp": 19.0,
+      "RS_other_hist_jp": 5.6,
+      "RS_minerals_hist_jp": 6.7
+    },
+    {
+      "date": "1963-01-01",
+      "GS_timber_hist_jp": 5.0,
+      "GS_iron_hist_jp": 8.2,
+      "GS_other_hist_jp": 4.1,
+      "GS_minerals_hist_jp": 7.0,
+      "RS_timber_hist_jp": 2.4,
+      "RS_iron_hist_jp": 20.4,
+      "RS_other_hist_jp": 5.7,
+      "RS_minerals_hist_jp": 7.0
+    },
+    {
+      "date": "1964-01-01",
+      "GS_timber_hist_jp": 4.9,
+      "GS_iron_hist_jp": 9.8,
+      "GS_other_hist_jp": 4.6,
+      "GS_minerals_hist_jp": 7.8,
+      "RS_timber_hist_jp": 2.5,
+      "RS_iron_hist_jp": 22.0,
+      "RS_other_hist_jp": 5.9,
+      "RS_minerals_hist_jp": 7.4
+    },
+    {
+      "date": "1965-01-01",
+      "GS_timber_hist_jp": 5.2,
+      "GS_iron_hist_jp": 10.2,
+      "GS_other_hist_jp": 4.7,
+      "GS_minerals_hist_jp": 7.9,
+      "RS_timber_hist_jp": 2.6,
+      "RS_iron_hist_jp": 23.6,
+      "RS_other_hist_jp": 6.1,
+      "RS_minerals_hist_jp": 7.7
+    },
+    {
+      "date": "1966-01-01",
+      "GS_timber_hist_jp": 5.7,
+      "GS_iron_hist_jp": 12.1,
+      "GS_other_hist_jp": 5.3,
+      "GS_minerals_hist_jp": 8.3,
+      "RS_timber_hist_jp": 2.6,
+      "RS_iron_hist_jp": 25.4,
+      "RS_other_hist_jp": 6.3,
+      "RS_minerals_hist_jp": 8.1
+    },
+    {
+      "date": "1967-01-01",
+      "GS_timber_hist_jp": 6.3,
+      "GS_iron_hist_jp": 16.5,
+      "GS_other_hist_jp": 7.4,
+      "GS_minerals_hist_jp": 10.5,
+      "RS_timber_hist_jp": 2.7,
+      "RS_iron_hist_jp": 27.6,
+      "RS_other_hist_jp": 6.6,
+      "RS_minerals_hist_jp": 8.6
+    },
+    {
+      "date": "1968-01-01",
+      "GS_timber_hist_jp": 6.5,
+      "GS_iron_hist_jp": 17.2,
+      "GS_other_hist_jp": 6.7,
+      "GS_minerals_hist_jp": 11.8,
+      "RS_timber_hist_jp": 2.8,
+      "RS_iron_hist_jp": 29.6,
+      "RS_other_hist_jp": 6.8,
+      "RS_minerals_hist_jp": 9.1
+    },
+    {
+      "date": "1969-01-01",
+      "GS_timber_hist_jp": 6.6,
+      "GS_iron_hist_jp": 19.9,
+      "GS_other_hist_jp": 7.4,
+      "GS_minerals_hist_jp": 13.0,
+      "RS_timber_hist_jp": 2.9,
+      "RS_iron_hist_jp": 32.0,
+      "RS_other_hist_jp": 7.0,
+      "RS_minerals_hist_jp": 9.5
+    },
+    {
+      "date": "1970-01-01",
+      "GS_timber_hist_jp": 7.1,
+      "GS_iron_hist_jp": 24.4,
+      "GS_other_hist_jp": 8.5,
+      "GS_minerals_hist_jp": 14.6,
+      "RS_timber_hist_jp": 3.1,
+      "RS_iron_hist_jp": 34.8,
+      "RS_other_hist_jp": 7.2,
+      "RS_minerals_hist_jp": 10.1
+    },
+    {
+      "date": "1971-01-01",
+      "GS_timber_hist_jp": 6.9,
+      "GS_iron_hist_jp": 24.5,
+      "GS_other_hist_jp": 9.3,
+      "GS_minerals_hist_jp": 15.6,
+      "RS_timber_hist_jp": 3.2,
+      "RS_iron_hist_jp": 37.5,
+      "RS_other_hist_jp": 7.5,
+      "RS_minerals_hist_jp": 10.6
+    },
+    {
+      "date": "1972-01-01",
+      "GS_timber_hist_jp": 7.1,
+      "GS_iron_hist_jp": 23.9,
+      "GS_other_hist_jp": 8.6,
+      "GS_minerals_hist_jp": 17.6,
+      "RS_timber_hist_jp": 3.3,
+      "RS_iron_hist_jp": 40.3,
+      "RS_other_hist_jp": 7.7,
+      "RS_minerals_hist_jp": 11.2
+    },
+    {
+      "date": "1973-01-01",
+      "GS_timber_hist_jp": 7.6,
+      "GS_iron_hist_jp": 29.4,
+      "GS_other_hist_jp": 9.1,
+      "GS_minerals_hist_jp": 21.0,
+      "RS_timber_hist_jp": 3.4,
+      "RS_iron_hist_jp": 43.9,
+      "RS_other_hist_jp": 7.9,
+      "RS_minerals_hist_jp": 11.9
+    },
+    {
+      "date": "1974-01-01",
+      "GS_timber_hist_jp": 7.0,
+      "GS_iron_hist_jp": 28.8,
+      "GS_other_hist_jp": 9.0,
+      "GS_minerals_hist_jp": 20.2,
+      "RS_timber_hist_jp": 3.6,
+      "RS_iron_hist_jp": 47.3,
+      "RS_other_hist_jp": 8.2,
+      "RS_minerals_hist_jp": 12.6
+    },
+    {
+      "date": "1975-01-01",
+      "GS_timber_hist_jp": 5.9,
+      "GS_iron_hist_jp": 26.4,
+      "GS_other_hist_jp": 8.2,
+      "GS_minerals_hist_jp": 17.8,
+      "RS_timber_hist_jp": 3.7,
+      "RS_iron_hist_jp": 50.9,
+      "RS_other_hist_jp": 8.5,
+      "RS_minerals_hist_jp": 13.3
+    },
+    {
+      "date": "1976-01-01",
+      "GS_timber_hist_jp": 7.9,
+      "GS_iron_hist_jp": 24.7,
+      "GS_other_hist_jp": 8.2,
+      "GS_minerals_hist_jp": 17.9,
+      "RS_timber_hist_jp": 3.9,
+      "RS_iron_hist_jp": 54.9,
+      "RS_other_hist_jp": 8.7,
+      "RS_minerals_hist_jp": 14.0
+    },
+    {
+      "date": "1977-01-01",
+      "GS_timber_hist_jp": 5.6,
+      "GS_iron_hist_jp": 24.8,
+      "GS_other_hist_jp": 8.5,
+      "GS_minerals_hist_jp": 19.1,
+      "RS_timber_hist_jp": 4.0,
+      "RS_iron_hist_jp": 59.4,
+      "RS_other_hist_jp": 9.0,
+      "RS_minerals_hist_jp": 14.9
+    },
+    {
+      "date": "1978-01-01",
+      "GS_timber_hist_jp": 6.5,
+      "GS_iron_hist_jp": 21.7,
+      "GS_other_hist_jp": 7.7,
+      "GS_minerals_hist_jp": 21.4,
+      "RS_timber_hist_jp": 4.2,
+      "RS_iron_hist_jp": 64.0,
+      "RS_other_hist_jp": 9.3,
+      "RS_minerals_hist_jp": 15.8
+    },
+    {
+      "date": "1979-01-01",
+      "GS_timber_hist_jp": 6.8,
+      "GS_iron_hist_jp": 25.8,
+      "GS_other_hist_jp": 8.1,
+      "GS_minerals_hist_jp": 22.2,
+      "RS_timber_hist_jp": 4.4,
+      "RS_iron_hist_jp": 69.7,
+      "RS_other_hist_jp": 9.7,
+      "RS_minerals_hist_jp": 16.8
+    },
+    {
+      "date": "1980-01-01",
+      "GS_timber_hist_jp": 6.3,
+      "GS_iron_hist_jp": 26.9,
+      "GS_other_hist_jp": 8.3,
+      "GS_minerals_hist_jp": 22.7,
+      "RS_timber_hist_jp": 4.5,
+      "RS_iron_hist_jp": 75.7,
+      "RS_other_hist_jp": 10.0,
+      "RS_minerals_hist_jp": 17.9
+    },
+    {
+      "date": "1981-01-01",
+      "GS_timber_hist_jp": 5.2,
+      "GS_iron_hist_jp": 24.8,
+      "GS_other_hist_jp": 7.6,
+      "GS_minerals_hist_jp": 21.5,
+      "RS_timber_hist_jp": 4.7,
+      "RS_iron_hist_jp": 81.9,
+      "RS_other_hist_jp": 10.3,
+      "RS_minerals_hist_jp": 19.0
+    },
+    {
+      "date": "1982-01-01",
+      "GS_timber_hist_jp": 5.5,
+      "GS_iron_hist_jp": 24.1,
+      "GS_other_hist_jp": 7.3,
+      "GS_minerals_hist_jp": 19.6,
+      "RS_timber_hist_jp": 4.9,
+      "RS_iron_hist_jp": 88.8,
+      "RS_other_hist_jp": 10.7,
+      "RS_minerals_hist_jp": 20.2
+    },
+    {
+      "date": "1983-01-01",
+      "GS_timber_hist_jp": 5.4,
+      "GS_iron_hist_jp": 21.0,
+      "GS_other_hist_jp": 6.7,
+      "GS_minerals_hist_jp": 19.3,
+      "RS_timber_hist_jp": 5.1,
+      "RS_iron_hist_jp": 96.2,
+      "RS_other_hist_jp": 11.1,
+      "RS_minerals_hist_jp": 21.6
+    },
+    {
+      "date": "1984-01-01",
+      "GS_timber_hist_jp": 5.3,
+      "GS_iron_hist_jp": 25.1,
+      "GS_other_hist_jp": 7.3,
+      "GS_minerals_hist_jp": 19.0,
+      "RS_timber_hist_jp": 5.4,
+      "RS_iron_hist_jp": 104.8,
+      "RS_other_hist_jp": 11.6,
+      "RS_minerals_hist_jp": 23.0
+    },
+    {
+      "date": "1985-01-01",
+      "GS_timber_hist_jp": 5.4,
+      "GS_iron_hist_jp": 24.3,
+      "GS_other_hist_jp": 7.2,
+      "GS_minerals_hist_jp": 18.3,
+      "RS_timber_hist_jp": 5.6,
+      "RS_iron_hist_jp": 113.9,
+      "RS_other_hist_jp": 12.0,
+      "RS_minerals_hist_jp": 24.6
+    },
+    {
+      "date": "1986-01-01",
+      "GS_timber_hist_jp": 5.3,
+      "GS_iron_hist_jp": 22.7,
+      "GS_other_hist_jp": 6.3,
+      "GS_minerals_hist_jp": 18.8,
+      "RS_timber_hist_jp": 5.8,
+      "RS_iron_hist_jp": 123.6,
+      "RS_other_hist_jp": 12.5,
+      "RS_minerals_hist_jp": 26.3
+    },
+    {
+      "date": "1987-01-01",
+      "GS_timber_hist_jp": 5.7,
+      "GS_iron_hist_jp": 23.4,
+      "GS_other_hist_jp": 5.7,
+      "GS_minerals_hist_jp": 19.8,
+      "RS_timber_hist_jp": 6.1,
+      "RS_iron_hist_jp": 134.4,
+      "RS_other_hist_jp": 13.0,
+      "RS_minerals_hist_jp": 28.2
+    },
+    {
+      "date": "1988-01-01",
+      "GS_timber_hist_jp": 5.5,
+      "GS_iron_hist_jp": 28.1,
+      "GS_other_hist_jp": 6.4,
+      "GS_minerals_hist_jp": 21.5,
+      "RS_timber_hist_jp": 6.3,
+      "RS_iron_hist_jp": 146.4,
+      "RS_other_hist_jp": 13.5,
+      "RS_minerals_hist_jp": 30.2
+    },
+    {
+      "date": "1989-01-01",
+      "GS_timber_hist_jp": 5.7,
+      "GS_iron_hist_jp": 29.5,
+      "GS_other_hist_jp": 6.5,
+      "GS_minerals_hist_jp": 21.7,
+      "RS_timber_hist_jp": 6.6,
+      "RS_iron_hist_jp": 159.2,
+      "RS_other_hist_jp": 14.1,
+      "RS_minerals_hist_jp": 32.4
+    },
+    {
+      "date": "1990-01-01",
+      "GS_timber_hist_jp": 5.4,
+      "GS_iron_hist_jp": 29.9,
+      "GS_other_hist_jp": 6.4,
+      "GS_minerals_hist_jp": 22.6,
+      "RS_timber_hist_jp": 6.9,
+      "RS_iron_hist_jp": 172.9,
+      "RS_other_hist_jp": 14.7,
+      "RS_minerals_hist_jp": 34.8
+    },
+    {
+      "date": "1991-01-01",
+      "GS_timber_hist_jp": 5.1,
+      "GS_iron_hist_jp": 30.7,
+      "GS_other_hist_jp": 6.6,
+      "GS_minerals_hist_jp": 24.4,
+      "RS_timber_hist_jp": 7.2,
+      "RS_iron_hist_jp": 187.8,
+      "RS_other_hist_jp": 15.4,
+      "RS_minerals_hist_jp": 37.3
+    },
+    {
+      "date": "1992-01-01",
+      "GS_timber_hist_jp": 4.5,
+      "GS_iron_hist_jp": 25.4,
+      "GS_other_hist_jp": 5.8,
+      "GS_minerals_hist_jp": 23.6,
+      "RS_timber_hist_jp": 7.4,
+      "RS_iron_hist_jp": 203.2,
+      "RS_other_hist_jp": 16.0,
+      "RS_minerals_hist_jp": 40.0
+    },
+    {
+      "date": "1993-01-01",
+      "GS_timber_hist_jp": 4.7,
+      "GS_iron_hist_jp": 24.8,
+      "GS_other_hist_jp": 5.7,
+      "GS_minerals_hist_jp": 22.7,
+      "RS_timber_hist_jp": 7.7,
+      "RS_iron_hist_jp": 220.1,
+      "RS_other_hist_jp": 16.8,
+      "RS_minerals_hist_jp": 42.9
+    },
+    {
+      "date": "1994-01-01",
+      "GS_timber_hist_jp": 4.6,
+      "GS_iron_hist_jp": 25.1,
+      "GS_other_hist_jp": 5.3,
+      "GS_minerals_hist_jp": 22.9,
+      "RS_timber_hist_jp": 8.0,
+      "RS_iron_hist_jp": 238.3,
+      "RS_other_hist_jp": 17.5,
+      "RS_minerals_hist_jp": 46.1
+    },
+    {
+      "date": "1995-01-01",
+      "GS_timber_hist_jp": 4.5,
+      "GS_iron_hist_jp": 27.1,
+      "GS_other_hist_jp": 5.8,
+      "GS_minerals_hist_jp": 22.7,
+      "RS_timber_hist_jp": 8.3,
+      "RS_iron_hist_jp": 257.8,
+      "RS_other_hist_jp": 18.3,
+      "RS_minerals_hist_jp": 49.4
+    },
+    {
+      "date": "1996-01-01",
+      "GS_timber_hist_jp": 4.4,
+      "GS_iron_hist_jp": 26.1,
+      "GS_other_hist_jp": 5.7,
+      "GS_minerals_hist_jp": 23.2,
+      "RS_timber_hist_jp": 8.6,
+      "RS_iron_hist_jp": 278.4,
+      "RS_other_hist_jp": 19.1,
+      "RS_minerals_hist_jp": 53.0
+    },
+    {
+      "date": "1997-01-01",
+      "GS_timber_hist_jp": 4.3,
+      "GS_iron_hist_jp": 27.4,
+      "GS_other_hist_jp": 5.8,
+      "GS_minerals_hist_jp": 23.1,
+      "RS_timber_hist_jp": 9.0,
+      "RS_iron_hist_jp": 300.4,
+      "RS_other_hist_jp": 20.0,
+      "RS_minerals_hist_jp": 56.7
+    },
+    {
+      "date": "1998-01-01",
+      "GS_timber_hist_jp": 3.3,
+      "GS_iron_hist_jp": 23.8,
+      "GS_other_hist_jp": 5.4,
+      "GS_minerals_hist_jp": 21.6,
+      "RS_timber_hist_jp": 9.3,
+      "RS_iron_hist_jp": 323.3,
+      "RS_other_hist_jp": 20.9,
+      "RS_minerals_hist_jp": 60.7
+    },
+    {
+      "date": "1999-01-01",
+      "GS_timber_hist_jp": 3.5,
+      "GS_iron_hist_jp": 23.3,
+      "GS_other_hist_jp": 5.4,
+      "GS_minerals_hist_jp": 21.7,
+      "RS_timber_hist_jp": 9.6,
+      "RS_iron_hist_jp": 347.7,
+      "RS_other_hist_jp": 21.8,
+      "RS_minerals_hist_jp": 64.9
+    },
+    {
+      "date": "2000-01-01",
+      "GS_timber_hist_jp": 3.5,
+      "GS_iron_hist_jp": 26.6,
+      "GS_other_hist_jp": 5.8,
+      "GS_minerals_hist_jp": 22.3,
+      "RS_timber_hist_jp": 9.9,
+      "RS_iron_hist_jp": 373.7,
+      "RS_other_hist_jp": 22.8,
+      "RS_minerals_hist_jp": 69.4
+    },
+    {
+      "date": "2001-01-01",
+      "GS_timber_hist_jp": 3.0,
+      "GS_iron_hist_jp": 23.7,
+      "GS_other_hist_jp": 5.4,
+      "GS_minerals_hist_jp": 20.4,
+      "RS_timber_hist_jp": 10.2,
+      "RS_iron_hist_jp": 400.5,
+      "RS_other_hist_jp": 23.8,
+      "RS_minerals_hist_jp": 74.1
+    },
+    {
+      "date": "2002-01-01",
+      "GS_timber_hist_jp": 3.0,
+      "GS_iron_hist_jp": 22.8,
+      "GS_other_hist_jp": 5.2,
+      "GS_minerals_hist_jp": 19.3,
+      "RS_timber_hist_jp": 10.4,
+      "RS_iron_hist_jp": 428.7,
+      "RS_other_hist_jp": 24.8,
+      "RS_minerals_hist_jp": 79.0
+    },
+    {
+      "date": "2003-01-01",
+      "GS_timber_hist_jp": 3.0,
+      "GS_iron_hist_jp": 24.2,
+      "GS_other_hist_jp": 5.2,
+      "GS_minerals_hist_jp": 18.1,
+      "RS_timber_hist_jp": 10.7,
+      "RS_iron_hist_jp": 458.2,
+      "RS_other_hist_jp": 25.9,
+      "RS_minerals_hist_jp": 84.1
+    },
+    {
+      "date": "2004-01-01",
+      "GS_timber_hist_jp": 3.1,
+      "GS_iron_hist_jp": 24.8,
+      "GS_other_hist_jp": 5.5,
+      "GS_minerals_hist_jp": 17.6,
+      "RS_timber_hist_jp": 11.0,
+      "RS_iron_hist_jp": 488.9,
+      "RS_other_hist_jp": 27.0,
+      "RS_minerals_hist_jp": 89.4
+    },
+    {
+      "date": "2005-01-01",
+      "GS_timber_hist_jp": 3.0,
+      "GS_iron_hist_jp": 24.9,
+      "GS_other_hist_jp": 5.4,
+      "GS_minerals_hist_jp": 18.2,
+      "GS_timber_sc1_jp": 3.0,
+      "GS_iron_sc1_jp": 24.9,
+      "GS_other_sc1_jp": 5.4,
+      "GS_minerals_sc1_jp": 18.2,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.9,
+      "GS_other_sc2_jp": 3.0,
+      "GS_minerals_sc2_jp": 18.2,
+      "RS_timber_hist_jp": 11.3,
+      "RS_iron_hist_jp": 520.6,
+      "RS_other_hist_jp": 28.1,
+      "RS_minerals_hist_jp": 95.0,
+      "RS_timber_sc1_jp": 11.3,
+      "RS_iron_sc1_jp": 520.6,
+      "RS_other_sc1_jp": 28.1,
+      "RS_minerals_sc1_jp": 18.2,
+      "RS_timber_sc2_jp": 11.3,
+      "RS_iron_sc2_jp": 520.6,
+      "RS_other_sc2_jp": 28.1,
+      "RS_minerals_sc2_jp": 95.0
+    },
+    {
+      "date": "2006-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 25.0,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.3,
+      "RS_timber_sc1_jp": 11.5,
+      "RS_iron_sc1_jp": 553.4,
+      "RS_other_sc1_jp": 29.2,
+      "RS_minerals_sc1_jp": 100.8,
+      "RS_timber_sc2_jp": 11.5,
+      "RS_iron_sc2_jp": 553.4,
+      "RS_other_sc2_jp": 29.2,
+      "RS_minerals_sc2_jp": 100.7
+    },
+    {
+      "date": "2007-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 25.0,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.3,
+      "RS_timber_sc1_jp": 11.7,
+      "RS_iron_sc1_jp": 587.2,
+      "RS_other_sc1_jp": 30.4,
+      "RS_minerals_sc1_jp": 106.8,
+      "RS_timber_sc2_jp": 11.7,
+      "RS_iron_sc2_jp": 587.2,
+      "RS_other_sc2_jp": 30.4,
+      "RS_minerals_sc2_jp": 106.7
+    },
+    {
+      "date": "2008-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 25.0,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.3,
+      "RS_timber_sc1_jp": 11.9,
+      "RS_iron_sc1_jp": 621.9,
+      "RS_other_sc1_jp": 31.5,
+      "RS_minerals_sc1_jp": 112.9,
+      "RS_timber_sc2_jp": 11.9,
+      "RS_iron_sc2_jp": 621.9,
+      "RS_other_sc2_jp": 31.5,
+      "RS_minerals_sc2_jp": 112.8
+    },
+    {
+      "date": "2009-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.9,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.2,
+      "RS_timber_sc1_jp": 12.1,
+      "RS_iron_sc1_jp": 657.4,
+      "RS_other_sc1_jp": 32.7,
+      "RS_minerals_sc1_jp": 119.2,
+      "RS_timber_sc2_jp": 12.1,
+      "RS_iron_sc2_jp": 657.4,
+      "RS_other_sc2_jp": 32.7,
+      "RS_minerals_sc2_jp": 119.1
+    },
+    {
+      "date": "2010-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.9,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.2,
+      "RS_timber_sc1_jp": 12.3,
+      "RS_iron_sc1_jp": 693.6,
+      "RS_other_sc1_jp": 33.9,
+      "RS_minerals_sc1_jp": 125.7,
+      "RS_timber_sc2_jp": 12.3,
+      "RS_iron_sc2_jp": 693.6,
+      "RS_other_sc2_jp": 33.9,
+      "RS_minerals_sc2_jp": 125.6
+    },
+    {
+      "date": "2011-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.9,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.2,
+      "RS_timber_sc1_jp": 12.5,
+      "RS_iron_sc1_jp": 730.5,
+      "RS_other_sc1_jp": 35.0,
+      "RS_minerals_sc1_jp": 132.3,
+      "RS_timber_sc2_jp": 12.5,
+      "RS_iron_sc2_jp": 730.5,
+      "RS_other_sc2_jp": 35.0,
+      "RS_minerals_sc2_jp": 132.2
+    },
+    {
+      "date": "2012-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.8,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.2,
+      "RS_timber_sc1_jp": 12.6,
+      "RS_iron_sc1_jp": 767.8,
+      "RS_other_sc1_jp": 36.2,
+      "RS_minerals_sc1_jp": 139.1,
+      "RS_timber_sc2_jp": 12.6,
+      "RS_iron_sc2_jp": 767.9,
+      "RS_other_sc2_jp": 36.2,
+      "RS_minerals_sc2_jp": 138.9
+    },
+    {
+      "date": "2013-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.8,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.1,
+      "RS_timber_sc1_jp": 12.7,
+      "RS_iron_sc1_jp": 805.6,
+      "RS_other_sc1_jp": 37.3,
+      "RS_minerals_sc1_jp": 145.9,
+      "RS_timber_sc2_jp": 12.7,
+      "RS_iron_sc2_jp": 805.6,
+      "RS_other_sc2_jp": 37.3,
+      "RS_minerals_sc2_jp": 145.7
+    },
+    {
+      "date": "2014-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.7,
+      "GS_other_sc2_jp": 5.4,
+      "GS_minerals_sc2_jp": 18.1,
+      "RS_timber_sc1_jp": 12.8,
+      "RS_iron_sc1_jp": 843.6,
+      "RS_other_sc1_jp": 38.4,
+      "RS_minerals_sc1_jp": 152.9,
+      "RS_timber_sc2_jp": 12.8,
+      "RS_iron_sc2_jp": 843.6,
+      "RS_other_sc2_jp": 38.4,
+      "RS_minerals_sc2_jp": 152.6
+    },
+    {
+      "date": "2015-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.7,
+      "GS_other_sc2_jp": 5.3,
+      "GS_minerals_sc2_jp": 18.1,
+      "RS_timber_sc1_jp": 12.9,
+      "RS_iron_sc1_jp": 881.8,
+      "RS_other_sc1_jp": 39.5,
+      "RS_minerals_sc1_jp": 159.9,
+      "RS_timber_sc2_jp": 12.9,
+      "RS_iron_sc2_jp": 881.8,
+      "RS_other_sc2_jp": 39.5,
+      "RS_minerals_sc2_jp": 159.6
+    },
+    {
+      "date": "2016-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 3.0,
+      "GS_iron_sc2_jp": 24.6,
+      "GS_other_sc2_jp": 5.3,
+      "GS_minerals_sc2_jp": 18.0,
+      "RS_timber_sc1_jp": 12.9,
+      "RS_iron_sc1_jp": 920.0,
+      "RS_other_sc1_jp": 40.6,
+      "RS_minerals_sc1_jp": 166.9,
+      "RS_timber_sc2_jp": 12.9,
+      "RS_iron_sc2_jp": 920.0,
+      "RS_other_sc2_jp": 40.6,
+      "RS_minerals_sc2_jp": 166.6
+    },
+    {
+      "date": "2017-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.5,
+      "GS_other_sc2_jp": 5.3,
+      "GS_minerals_sc2_jp": 17.9,
+      "RS_timber_sc1_jp": 13.0,
+      "RS_iron_sc1_jp": 958.1,
+      "RS_other_sc1_jp": 41.7,
+      "RS_minerals_sc1_jp": 174.0,
+      "RS_timber_sc2_jp": 13.0,
+      "RS_iron_sc2_jp": 958.1,
+      "RS_other_sc2_jp": 41.6,
+      "RS_minerals_sc2_jp": 173.6
+    },
+    {
+      "date": "2018-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.4,
+      "GS_other_sc2_jp": 5.3,
+      "GS_minerals_sc2_jp": 17.9,
+      "RS_timber_sc1_jp": 13.0,
+      "RS_iron_sc1_jp": 996.0,
+      "RS_other_sc1_jp": 42.7,
+      "RS_minerals_sc1_jp": 181.0,
+      "RS_timber_sc2_jp": 13.0,
+      "RS_iron_sc2_jp": 996.0,
+      "RS_other_sc2_jp": 42.7,
+      "RS_minerals_sc2_jp": 180.6
+    },
+    {
+      "date": "2019-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.3,
+      "GS_other_sc2_jp": 5.3,
+      "GS_minerals_sc2_jp": 17.8,
+      "RS_timber_sc1_jp": 13.0,
+      "RS_iron_sc1_jp": 1033.5,
+      "RS_other_sc1_jp": 43.6,
+      "RS_minerals_sc1_jp": 188.1,
+      "RS_timber_sc2_jp": 12.9,
+      "RS_iron_sc2_jp": 1033.6,
+      "RS_other_sc2_jp": 43.6,
+      "RS_minerals_sc2_jp": 187.6
+    },
+    {
+      "date": "2020-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.3,
+      "GS_other_sc2_jp": 5.2,
+      "GS_minerals_sc2_jp": 17.7,
+      "RS_timber_sc1_jp": 12.9,
+      "RS_iron_sc1_jp": 1070.6,
+      "RS_other_sc1_jp": 44.5,
+      "RS_minerals_sc1_jp": 195.1,
+      "RS_timber_sc2_jp": 12.9,
+      "RS_iron_sc2_jp": 1070.6,
+      "RS_other_sc2_jp": 44.5,
+      "RS_minerals_sc2_jp": 194.5
+    },
+    {
+      "date": "2021-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.1,
+      "GS_other_sc2_jp": 5.2,
+      "GS_minerals_sc2_jp": 17.7,
+      "RS_timber_sc1_jp": 12.9,
+      "RS_iron_sc1_jp": 1107.1,
+      "RS_other_sc1_jp": 45.4,
+      "RS_minerals_sc1_jp": 202.0,
+      "RS_timber_sc2_jp": 12.9,
+      "RS_iron_sc2_jp": 1107.1,
+      "RS_other_sc2_jp": 45.4,
+      "RS_minerals_sc2_jp": 201.4
+    },
+    {
+      "date": "2022-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 24.0,
+      "GS_other_sc2_jp": 5.2,
+      "GS_minerals_sc2_jp": 17.6,
+      "RS_timber_sc1_jp": 12.8,
+      "RS_iron_sc1_jp": 1142.9,
+      "RS_other_sc1_jp": 46.2,
+      "RS_minerals_sc1_jp": 208.9,
+      "RS_timber_sc2_jp": 12.8,
+      "RS_iron_sc2_jp": 1142.9,
+      "RS_other_sc2_jp": 46.2,
+      "RS_minerals_sc2_jp": 208.1
+    },
+    {
+      "date": "2023-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 23.9,
+      "GS_other_sc2_jp": 5.2,
+      "GS_minerals_sc2_jp": 17.5,
+      "RS_timber_sc1_jp": 12.7,
+      "RS_iron_sc1_jp": 1177.9,
+      "RS_other_sc1_jp": 47.0,
+      "RS_minerals_sc1_jp": 215.7,
+      "RS_timber_sc2_jp": 12.7,
+      "RS_iron_sc2_jp": 1177.9,
+      "RS_other_sc2_jp": 47.0,
+      "RS_minerals_sc2_jp": 214.7
+    },
+    {
+      "date": "2024-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.9,
+      "GS_iron_sc2_jp": 23.8,
+      "GS_other_sc2_jp": 5.2,
+      "GS_minerals_sc2_jp": 17.4,
+      "RS_timber_sc1_jp": 12.6,
+      "RS_iron_sc1_jp": 1212.0,
+      "RS_other_sc1_jp": 47.7,
+      "RS_minerals_sc1_jp": 222.3,
+      "RS_timber_sc2_jp": 12.6,
+      "RS_iron_sc2_jp": 1211.9,
+      "RS_other_sc2_jp": 47.7,
+      "RS_minerals_sc2_jp": 221.2
+    },
+    {
+      "date": "2025-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.7,
+      "GS_other_sc2_jp": 5.1,
+      "GS_minerals_sc2_jp": 17.3,
+      "RS_timber_sc1_jp": 12.5,
+      "RS_iron_sc1_jp": 1245.1,
+      "RS_other_sc1_jp": 48.4,
+      "RS_minerals_sc1_jp": 228.8,
+      "RS_timber_sc2_jp": 12.4,
+      "RS_iron_sc2_jp": 1245.0,
+      "RS_other_sc2_jp": 48.4,
+      "RS_minerals_sc2_jp": 227.6
+    },
+    {
+      "date": "2026-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.5,
+      "GS_other_sc2_jp": 5.1,
+      "GS_minerals_sc2_jp": 17.2,
+      "RS_timber_sc1_jp": 12.4,
+      "RS_iron_sc1_jp": 1277.1,
+      "RS_other_sc1_jp": 49.0,
+      "RS_minerals_sc1_jp": 235.1,
+      "RS_timber_sc2_jp": 12.3,
+      "RS_iron_sc2_jp": 1277.0,
+      "RS_other_sc2_jp": 49.0,
+      "RS_minerals_sc2_jp": 233.7
+    },
+    {
+      "date": "2027-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.4,
+      "GS_other_sc2_jp": 5.1,
+      "GS_minerals_sc2_jp": 17.1,
+      "RS_timber_sc1_jp": 12.2,
+      "RS_iron_sc1_jp": 1307.9,
+      "RS_other_sc1_jp": 49.5,
+      "RS_minerals_sc1_jp": 241.3,
+      "RS_timber_sc2_jp": 12.2,
+      "RS_iron_sc2_jp": 1307.8,
+      "RS_other_sc2_jp": 49.5,
+      "RS_minerals_sc2_jp": 239.7
+    },
+    {
+      "date": "2028-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.3,
+      "GS_other_sc2_jp": 5.0,
+      "GS_minerals_sc2_jp": 17.0,
+      "RS_timber_sc1_jp": 12.1,
+      "RS_iron_sc1_jp": 1337.6,
+      "RS_other_sc1_jp": 50.0,
+      "RS_minerals_sc1_jp": 247.2,
+      "RS_timber_sc2_jp": 12.0,
+      "RS_iron_sc2_jp": 1337.4,
+      "RS_other_sc2_jp": 50.0,
+      "RS_minerals_sc2_jp": 245.4
+    },
+    {
+      "date": "2029-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.1,
+      "GS_other_sc2_jp": 5.0,
+      "GS_minerals_sc2_jp": 16.9,
+      "RS_timber_sc1_jp": 11.9,
+      "RS_iron_sc1_jp": 1366.0,
+      "RS_other_sc1_jp": 50.4,
+      "RS_minerals_sc1_jp": 253.0,
+      "RS_timber_sc2_jp": 11.8,
+      "RS_iron_sc2_jp": 1365.7,
+      "RS_other_sc2_jp": 50.4,
+      "RS_minerals_sc2_jp": 250.9
+    },
+    {
+      "date": "2030-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.8,
+      "GS_iron_sc2_jp": 23.0,
+      "GS_other_sc2_jp": 5.0,
+      "GS_minerals_sc2_jp": 16.8,
+      "RS_timber_sc1_jp": 11.7,
+      "RS_iron_sc1_jp": 1393.1,
+      "RS_other_sc1_jp": 50.8,
+      "RS_minerals_sc1_jp": 258.5,
+      "RS_timber_sc2_jp": 11.6,
+      "RS_iron_sc2_jp": 1392.7,
+      "RS_other_sc2_jp": 50.7,
+      "RS_minerals_sc2_jp": 256.2
+    },
+    {
+      "date": "2031-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.7,
+      "GS_iron_sc2_jp": 22.8,
+      "GS_other_sc2_jp": 4.9,
+      "GS_minerals_sc2_jp": 16.7,
+      "RS_timber_sc1_jp": 11.6,
+      "RS_iron_sc1_jp": 1418.8,
+      "RS_other_sc1_jp": 51.1,
+      "RS_minerals_sc1_jp": 263.8,
+      "RS_timber_sc2_jp": 11.4,
+      "RS_iron_sc2_jp": 1418.4,
+      "RS_other_sc2_jp": 51.0,
+      "RS_minerals_sc2_jp": 261.2
+    },
+    {
+      "date": "2032-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.7,
+      "GS_iron_sc2_jp": 22.7,
+      "GS_other_sc2_jp": 4.9,
+      "GS_minerals_sc2_jp": 16.6,
+      "RS_timber_sc1_jp": 11.4,
+      "RS_iron_sc1_jp": 1443.2,
+      "RS_other_sc1_jp": 51.4,
+      "RS_minerals_sc1_jp": 268.9,
+      "RS_timber_sc2_jp": 11.2,
+      "RS_iron_sc2_jp": 1442.6,
+      "RS_other_sc2_jp": 51.3,
+      "RS_minerals_sc2_jp": 265.9
+    },
+    {
+      "date": "2033-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.7,
+      "GS_iron_sc2_jp": 22.5,
+      "GS_other_sc2_jp": 4.9,
+      "GS_minerals_sc2_jp": 16.5,
+      "RS_timber_sc1_jp": 11.2,
+      "RS_iron_sc1_jp": 1466.2,
+      "RS_other_sc1_jp": 51.6,
+      "RS_minerals_sc1_jp": 273.7,
+      "RS_timber_sc2_jp": 11.0,
+      "RS_iron_sc2_jp": 1465.4,
+      "RS_other_sc2_jp": 51.5,
+      "RS_minerals_sc2_jp": 270.4
+    },
+    {
+      "date": "2034-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.7,
+      "GS_iron_sc2_jp": 22.4,
+      "GS_other_sc2_jp": 4.8,
+      "GS_minerals_sc2_jp": 16.4,
+      "RS_timber_sc1_jp": 11.0,
+      "RS_iron_sc1_jp": 1487.8,
+      "RS_other_sc1_jp": 51.7,
+      "RS_minerals_sc1_jp": 278.3,
+      "RS_timber_sc2_jp": 10.8,
+      "RS_iron_sc2_jp": 1486.9,
+      "RS_other_sc2_jp": 51.6,
+      "RS_minerals_sc2_jp": 274.6
+    },
+    {
+      "date": "2035-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.7,
+      "GS_iron_sc2_jp": 22.2,
+      "GS_other_sc2_jp": 4.8,
+      "GS_minerals_sc2_jp": 16.2,
+      "RS_timber_sc1_jp": 10.9,
+      "RS_iron_sc1_jp": 1508.0,
+      "RS_other_sc1_jp": 51.8,
+      "RS_minerals_sc1_jp": 282.7,
+      "RS_timber_sc2_jp": 10.6,
+      "RS_iron_sc2_jp": 1506.9,
+      "RS_other_sc2_jp": 51.7,
+      "RS_minerals_sc2_jp": 278.5
+    },
+    {
+      "date": "2036-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.6,
+      "GS_iron_sc2_jp": 22.0,
+      "GS_other_sc2_jp": 4.8,
+      "GS_minerals_sc2_jp": 16.1,
+      "RS_timber_sc1_jp": 10.7,
+      "RS_iron_sc1_jp": 1526.8,
+      "RS_other_sc1_jp": 51.8,
+      "RS_minerals_sc1_jp": 286.7,
+      "RS_timber_sc2_jp": 10.4,
+      "RS_iron_sc2_jp": 1525.4,
+      "RS_other_sc2_jp": 51.7,
+      "RS_minerals_sc2_jp": 282.1
+    },
+    {
+      "date": "2037-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.6,
+      "GS_iron_sc2_jp": 21.9,
+      "GS_other_sc2_jp": 4.7,
+      "GS_minerals_sc2_jp": 16.0,
+      "RS_timber_sc1_jp": 10.5,
+      "RS_iron_sc1_jp": 1544.2,
+      "RS_other_sc1_jp": 51.8,
+      "RS_minerals_sc1_jp": 290.6,
+      "RS_timber_sc2_jp": 10.2,
+      "RS_iron_sc2_jp": 1542.6,
+      "RS_other_sc2_jp": 51.7,
+      "RS_minerals_sc2_jp": 285.4
+    },
+    {
+      "date": "2038-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.6,
+      "GS_iron_sc2_jp": 21.7,
+      "GS_other_sc2_jp": 4.7,
+      "GS_minerals_sc2_jp": 15.9,
+      "RS_timber_sc1_jp": 10.3,
+      "RS_iron_sc1_jp": 1560.4,
+      "RS_other_sc1_jp": 51.8,
+      "RS_minerals_sc1_jp": 294.1,
+      "RS_timber_sc2_jp": 10.0,
+      "RS_iron_sc2_jp": 1558.5,
+      "RS_other_sc2_jp": 51.6,
+      "RS_minerals_sc2_jp": 288.5
+    },
+    {
+      "date": "2039-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.6,
+      "GS_iron_sc2_jp": 21.5,
+      "GS_other_sc2_jp": 4.7,
+      "GS_minerals_sc2_jp": 15.8,
+      "RS_timber_sc1_jp": 10.2,
+      "RS_iron_sc1_jp": 1575.2,
+      "RS_other_sc1_jp": 51.7,
+      "RS_minerals_sc1_jp": 297.5,
+      "RS_timber_sc2_jp": 9.8,
+      "RS_iron_sc2_jp": 1572.9,
+      "RS_other_sc2_jp": 51.5,
+      "RS_minerals_sc2_jp": 291.2
+    },
+    {
+      "date": "2040-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.6,
+      "GS_iron_sc2_jp": 21.4,
+      "GS_other_sc2_jp": 4.6,
+      "GS_minerals_sc2_jp": 15.6,
+      "RS_timber_sc1_jp": 10.0,
+      "RS_iron_sc1_jp": 1588.8,
+      "RS_other_sc1_jp": 51.6,
+      "RS_minerals_sc1_jp": 300.6,
+      "RS_timber_sc2_jp": 9.6,
+      "RS_iron_sc2_jp": 1586.1,
+      "RS_other_sc2_jp": 51.4,
+      "RS_minerals_sc2_jp": 293.6
+    },
+    {
+      "date": "2041-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.5,
+      "GS_iron_sc2_jp": 21.2,
+      "GS_other_sc2_jp": 4.6,
+      "GS_minerals_sc2_jp": 15.5,
+      "RS_timber_sc1_jp": 9.8,
+      "RS_iron_sc1_jp": 1601.2,
+      "RS_other_sc1_jp": 51.5,
+      "RS_minerals_sc1_jp": 303.4,
+      "RS_timber_sc2_jp": 9.4,
+      "RS_iron_sc2_jp": 1598.0,
+      "RS_other_sc2_jp": 51.2,
+      "RS_minerals_sc2_jp": 295.8
+    },
+    {
+      "date": "2042-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.5,
+      "GS_iron_sc2_jp": 21.0,
+      "GS_other_sc2_jp": 4.6,
+      "GS_minerals_sc2_jp": 15.4,
+      "RS_timber_sc1_jp": 9.7,
+      "RS_iron_sc1_jp": 1612.5,
+      "RS_other_sc1_jp": 51.3,
+      "RS_minerals_sc1_jp": 306.0,
+      "RS_timber_sc2_jp": 9.3,
+      "RS_iron_sc2_jp": 1608.7,
+      "RS_other_sc2_jp": 51.0,
+      "RS_minerals_sc2_jp": 297.7
+    },
+    {
+      "date": "2043-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.5,
+      "GS_iron_sc2_jp": 20.9,
+      "GS_other_sc2_jp": 4.5,
+      "GS_minerals_sc2_jp": 15.3,
+      "RS_timber_sc1_jp": 9.5,
+      "RS_iron_sc1_jp": 1622.6,
+      "RS_other_sc1_jp": 51.1,
+      "RS_minerals_sc1_jp": 308.4,
+      "RS_timber_sc2_jp": 9.1,
+      "RS_iron_sc2_jp": 1618.2,
+      "RS_other_sc2_jp": 50.8,
+      "RS_minerals_sc2_jp": 299.3
+    },
+    {
+      "date": "2044-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.5,
+      "GS_iron_sc2_jp": 20.7,
+      "GS_other_sc2_jp": 4.5,
+      "GS_minerals_sc2_jp": 15.1,
+      "RS_timber_sc1_jp": 9.4,
+      "RS_iron_sc1_jp": 1631.7,
+      "RS_other_sc1_jp": 50.9,
+      "RS_minerals_sc1_jp": 310.6,
+      "RS_timber_sc2_jp": 8.9,
+      "RS_iron_sc2_jp": 1626.6,
+      "RS_other_sc2_jp": 50.6,
+      "RS_minerals_sc2_jp": 300.7
+    },
+    {
+      "date": "2045-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.5,
+      "GS_iron_sc2_jp": 20.5,
+      "GS_other_sc2_jp": 4.4,
+      "GS_minerals_sc2_jp": 15.0,
+      "RS_timber_sc1_jp": 9.3,
+      "RS_iron_sc1_jp": 1639.8,
+      "RS_other_sc1_jp": 50.7,
+      "RS_minerals_sc1_jp": 312.5,
+      "RS_timber_sc2_jp": 8.7,
+      "RS_iron_sc2_jp": 1633.9,
+      "RS_other_sc2_jp": 50.3,
+      "RS_minerals_sc2_jp": 301.8
+    },
+    {
+      "date": "2046-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.4,
+      "GS_iron_sc2_jp": 20.3,
+      "GS_other_sc2_jp": 4.4,
+      "GS_minerals_sc2_jp": 14.9,
+      "RS_timber_sc1_jp": 9.2,
+      "RS_iron_sc1_jp": 1646.9,
+      "RS_other_sc1_jp": 50.5,
+      "RS_minerals_sc1_jp": 314.3,
+      "RS_timber_sc2_jp": 8.6,
+      "RS_iron_sc2_jp": 1640.1,
+      "RS_other_sc2_jp": 50.0,
+      "RS_minerals_sc2_jp": 302.6
+    },
+    {
+      "date": "2047-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.4,
+      "GS_iron_sc2_jp": 20.2,
+      "GS_other_sc2_jp": 4.4,
+      "GS_minerals_sc2_jp": 14.8,
+      "RS_timber_sc1_jp": 9.0,
+      "RS_iron_sc1_jp": 1653.3,
+      "RS_other_sc1_jp": 50.2,
+      "RS_minerals_sc1_jp": 315.9,
+      "RS_timber_sc2_jp": 8.4,
+      "RS_iron_sc2_jp": 1645.5,
+      "RS_other_sc2_jp": 49.8,
+      "RS_minerals_sc2_jp": 303.3
+    },
+    {
+      "date": "2048-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.4,
+      "GS_iron_sc2_jp": 20.0,
+      "GS_other_sc2_jp": 4.3,
+      "GS_minerals_sc2_jp": 14.6,
+      "RS_timber_sc1_jp": 8.9,
+      "RS_iron_sc1_jp": 1658.8,
+      "RS_other_sc1_jp": 50.0,
+      "RS_minerals_sc1_jp": 317.3,
+      "RS_timber_sc2_jp": 8.3,
+      "RS_iron_sc2_jp": 1649.8,
+      "RS_other_sc2_jp": 49.5,
+      "RS_minerals_sc2_jp": 303.7
+    },
+    {
+      "date": "2049-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.4,
+      "GS_iron_sc2_jp": 19.8,
+      "GS_other_sc2_jp": 4.3,
+      "GS_minerals_sc2_jp": 14.5,
+      "RS_timber_sc1_jp": 8.9,
+      "RS_iron_sc1_jp": 1663.5,
+      "RS_other_sc1_jp": 49.7,
+      "RS_minerals_sc1_jp": 318.5,
+      "RS_timber_sc2_jp": 8.2,
+      "RS_iron_sc2_jp": 1653.4,
+      "RS_other_sc2_jp": 49.2,
+      "RS_minerals_sc2_jp": 303.9
+    },
+    {
+      "date": "2050-01-01",
+      "GS_timber_sc1_jp": 3.4,
+      "GS_iron_sc1_jp": 24.8,
+      "GS_other_sc1_jp": 5.5,
+      "GS_minerals_sc1_jp": 20.6,
+      "GS_timber_sc2_jp": 2.4,
+      "GS_iron_sc2_jp": 19.7,
+      "GS_other_sc2_jp": 4.3,
+      "GS_minerals_sc2_jp": 14.4,
+      "RS_timber_sc1_jp": 8.8,
+      "RS_iron_sc1_jp": 1667.6,
+      "RS_other_sc1_jp": 49.5,
+      "RS_minerals_sc1_jp": 319.6,
+      "RS_timber_sc2_jp": 8.0,
+      "RS_iron_sc2_jp": 1656.1,
+      "RS_other_sc2_jp": 48.8,
+      "RS_minerals_sc2_jp": 303.9
+    }
+  ],
+  "3": [
+    {
+      "date": "1930-01-01",
+      "MS_total_hist_jp": 1.0
+    },
+    {
+      "date": "1931-01-01",
+      "MS_total_hist_jp": 1.0
+    },
+    {
+      "date": "1932-01-01",
+      "MS_total_hist_jp": 1.1
+    },
+    {
+      "date": "1933-01-01",
+      "MS_total_hist_jp": 1.1
+    },
+    {
+      "date": "1934-01-01",
+      "MS_total_hist_jp": 1.2
+    },
+    {
+      "date": "1935-01-01",
+      "MS_total_hist_jp": 1.2
+    },
+    {
+      "date": "1936-01-01",
+      "MS_total_hist_jp": 1.3
+    },
+    {
+      "date": "1937-01-01",
+      "MS_total_hist_jp": 1.4
+    },
+    {
+      "date": "1938-01-01",
+      "MS_total_hist_jp": 1.4
+    },
+    {
+      "date": "1939-01-01",
+      "MS_total_hist_jp": 1.5
+    },
+    {
+      "date": "1940-01-01",
+      "MS_total_hist_jp": 1.6
+    },
+    {
+      "date": "1941-01-01",
+      "MS_total_hist_jp": 1.6
+    },
+    {
+      "date": "1942-01-01",
+      "MS_total_hist_jp": 1.7
+    },
+    {
+      "date": "1943-01-01",
+      "MS_total_hist_jp": 1.7
+    },
+    {
+      "date": "1944-01-01",
+      "MS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1945-01-01",
+      "MS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1946-01-01",
+      "MS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1947-01-01",
+      "MS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1948-01-01",
+      "MS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1949-01-01",
+      "MS_total_hist_jp": 1.9
+    },
+    {
+      "date": "1950-01-01",
+      "MS_total_hist_jp": 1.9
+    },
+    {
+      "date": "1951-01-01",
+      "MS_total_hist_jp": 2.0
+    },
+    {
+      "date": "1952-01-01",
+      "MS_total_hist_jp": 2.1
+    },
+    {
+      "date": "1953-01-01",
+      "MS_total_hist_jp": 2.2
+    },
+    {
+      "date": "1954-01-01",
+      "MS_total_hist_jp": 2.4
+    },
+    {
+      "date": "1955-01-01",
+      "MS_total_hist_jp": 2.5
+    },
+    {
+      "date": "1956-01-01",
+      "MS_total_hist_jp": 2.6
+    },
+    {
+      "date": "1957-01-01",
+      "MS_total_hist_jp": 2.8
+    },
+    {
+      "date": "1958-01-01",
+      "MS_total_hist_jp": 3.0
+    },
+    {
+      "date": "1959-01-01",
+      "MS_total_hist_jp": 3.2
+    },
+    {
+      "date": "1960-01-01",
+      "MS_total_hist_jp": 3.4
+    },
+    {
+      "date": "1961-01-01",
+      "MS_total_hist_jp": 3.7
+    },
+    {
+      "date": "1962-01-01",
+      "MS_total_hist_jp": 4.1
+    },
+    {
+      "date": "1963-01-01",
+      "MS_total_hist_jp": 4.5
+    },
+    {
+      "date": "1964-01-01",
+      "MS_total_hist_jp": 4.9
+    },
+    {
+      "date": "1965-01-01",
+      "MS_total_hist_jp": 5.3
+    },
+    {
+      "date": "1966-01-01",
+      "MS_total_hist_jp": 5.7
+    },
+    {
+      "date": "1967-01-01",
+      "MS_total_hist_jp": 6.3
+    },
+    {
+      "date": "1968-01-01",
+      "MS_total_hist_jp": 6.9
+    },
+    {
+      "date": "1969-01-01",
+      "MS_total_hist_jp": 7.6
+    },
+    {
+      "date": "1970-01-01",
+      "MS_total_hist_jp": 8.4
+    },
+    {
+      "date": "1971-01-01",
+      "MS_total_hist_jp": 9.2
+    },
+    {
+      "date": "1972-01-01",
+      "MS_total_hist_jp": 10.2
+    },
+    {
+      "date": "1973-01-01",
+      "MS_total_hist_jp": 11.3
+    },
+    {
+      "date": "1974-01-01",
+      "MS_total_hist_jp": 12.3
+    },
+    {
+      "date": "1975-01-01",
+      "MS_total_hist_jp": 13.2
+    },
+    {
+      "date": "1976-01-01",
+      "MS_total_hist_jp": 14.2
+    },
+    {
+      "date": "1977-01-01",
+      "MS_total_hist_jp": 15.2
+    },
+    {
+      "date": "1978-01-01",
+      "MS_total_hist_jp": 16.2
+    },
+    {
+      "date": "1979-01-01",
+      "MS_total_hist_jp": 17.4
+    },
+    {
+      "date": "1980-01-01",
+      "MS_total_hist_jp": 18.5
+    },
+    {
+      "date": "1981-01-01",
+      "MS_total_hist_jp": 19.6
+    },
+    {
+      "date": "1982-01-01",
+      "MS_total_hist_jp": 20.6
+    },
+    {
+      "date": "1983-01-01",
+      "MS_total_hist_jp": 21.5
+    },
+    {
+      "date": "1984-01-01",
+      "MS_total_hist_jp": 22.5
+    },
+    {
+      "date": "1985-01-01",
+      "MS_total_hist_jp": 23.4
+    },
+    {
+      "date": "1986-01-01",
+      "MS_total_hist_jp": 24.3
+    },
+    {
+      "date": "1987-01-01",
+      "MS_total_hist_jp": 25.2
+    },
+    {
+      "date": "1988-01-01",
+      "MS_total_hist_jp": 26.3
+    },
+    {
+      "date": "1989-01-01",
+      "MS_total_hist_jp": 27.3
+    },
+    {
+      "date": "1990-01-01",
+      "MS_total_hist_jp": 28.4
+    },
+    {
+      "date": "1991-01-01",
+      "MS_total_hist_jp": 29.6
+    },
+    {
+      "date": "1992-01-01",
+      "MS_total_hist_jp": 30.7
+    },
+    {
+      "date": "1993-01-01",
+      "MS_total_hist_jp": 31.7
+    },
+    {
+      "date": "1994-01-01",
+      "MS_total_hist_jp": 32.8
+    },
+    {
+      "date": "1995-01-01",
+      "MS_total_hist_jp": 33.8
+    },
+    {
+      "date": "1996-01-01",
+      "MS_total_hist_jp": 34.8
+    },
+    {
+      "date": "1997-01-01",
+      "MS_total_hist_jp": 35.8
+    },
+    {
+      "date": "1998-01-01",
+      "MS_total_hist_jp": 36.7
+    },
+    {
+      "date": "1999-01-01",
+      "MS_total_hist_jp": 37.7
+    },
+    {
+      "date": "2000-01-01",
+      "MS_total_hist_jp": 38.6
+    },
+    {
+      "date": "2001-01-01",
+      "MS_total_hist_jp": 39.4
+    },
+    {
+      "date": "2002-01-01",
+      "MS_total_hist_jp": 40.1
+    },
+    {
+      "date": "2003-01-01",
+      "MS_total_hist_jp": 40.8
+    },
+    {
+      "date": "2004-01-01",
+      "MS_total_hist_jp": 41.4
+    },
+    {
+      "date": "2005-01-01",
+      "MS_total_hist_jp": 42.0
+    },
+    {
+      "date": "2005-01-01",
+      "MS_total_hist_jp": 42.0,
+      "MS_total_sc1_jp": 42.0,
+      "MS_total_sc2_jp": 42.0
+    },
+    {
+      "date": "2006-01-01",
+      "MS_total_sc1_jp": 42.7,
+      "MS_total_sc2_jp": 42.6
+    },
+    {
+      "date": "2007-01-01",
+      "MS_total_sc1_jp": 43.4,
+      "MS_total_sc2_jp": 43.2
+    },
+    {
+      "date": "2008-01-01",
+      "MS_total_sc1_jp": 44.1,
+      "MS_total_sc2_jp": 43.7
+    },
+    {
+      "date": "2009-01-01",
+      "MS_total_sc1_jp": 44.7,
+      "MS_total_sc2_jp": 44.3
+    },
+    {
+      "date": "2010-01-01",
+      "MS_total_sc1_jp": 45.4,
+      "MS_total_sc2_jp": 44.8
+    },
+    {
+      "date": "2011-01-01",
+      "MS_total_sc1_jp": 46.0,
+      "MS_total_sc2_jp": 45.3
+    },
+    {
+      "date": "2012-01-01",
+      "MS_total_sc1_jp": 46.6,
+      "MS_total_sc2_jp": 45.7
+    },
+    {
+      "date": "2013-01-01",
+      "MS_total_sc1_jp": 47.2,
+      "MS_total_sc2_jp": 46.2
+    },
+    {
+      "date": "2014-01-01",
+      "MS_total_sc1_jp": 47.7,
+      "MS_total_sc2_jp": 46.6
+    },
+    {
+      "date": "2015-01-01",
+      "MS_total_sc1_jp": 48.2,
+      "MS_total_sc2_jp": 47.0
+    },
+    {
+      "date": "2016-01-01",
+      "MS_total_sc1_jp": 48.7,
+      "MS_total_sc2_jp": 47.4
+    },
+    {
+      "date": "2017-01-01",
+      "MS_total_sc1_jp": 49.2,
+      "MS_total_sc2_jp": 47.7
+    },
+    {
+      "date": "2018-01-01",
+      "MS_total_sc1_jp": 49.6,
+      "MS_total_sc2_jp": 48.0
+    },
+    {
+      "date": "2019-01-01",
+      "MS_total_sc1_jp": 50.1,
+      "MS_total_sc2_jp": 48.3
+    },
+    {
+      "date": "2020-01-01",
+      "MS_total_sc1_jp": 50.5,
+      "MS_total_sc2_jp": 48.6
+    },
+    {
+      "date": "2021-01-01",
+      "MS_total_sc1_jp": 50.9,
+      "MS_total_sc2_jp": 48.8
+    },
+    {
+      "date": "2022-01-01",
+      "MS_total_sc1_jp": 51.2,
+      "MS_total_sc2_jp": 49.0
+    },
+    {
+      "date": "2023-01-01",
+      "MS_total_sc1_jp": 51.6,
+      "MS_total_sc2_jp": 49.2
+    },
+    {
+      "date": "2024-01-01",
+      "MS_total_sc1_jp": 51.9,
+      "MS_total_sc2_jp": 49.3
+    },
+    {
+      "date": "2025-01-01",
+      "MS_total_sc1_jp": 52.2,
+      "MS_total_sc2_jp": 49.5
+    },
+    {
+      "date": "2026-01-01",
+      "MS_total_sc1_jp": 52.5,
+      "MS_total_sc2_jp": 49.6
+    },
+    {
+      "date": "2027-01-01",
+      "MS_total_sc1_jp": 52.7,
+      "MS_total_sc2_jp": 49.7
+    },
+    {
+      "date": "2028-01-01",
+      "MS_total_sc1_jp": 53.0,
+      "MS_total_sc2_jp": 49.7
+    },
+    {
+      "date": "2029-01-01",
+      "MS_total_sc1_jp": 53.2,
+      "MS_total_sc2_jp": 49.8
+    },
+    {
+      "date": "2030-01-01",
+      "MS_total_sc1_jp": 53.4,
+      "MS_total_sc2_jp": 49.8
+    },
+    {
+      "date": "2031-01-01",
+      "MS_total_sc1_jp": 53.6,
+      "MS_total_sc2_jp": 49.8
+    },
+    {
+      "date": "2032-01-01",
+      "MS_total_sc1_jp": 53.7,
+      "MS_total_sc2_jp": 49.7
+    },
+    {
+      "date": "2033-01-01",
+      "MS_total_sc1_jp": 53.9,
+      "MS_total_sc2_jp": 49.7
+    },
+    {
+      "date": "2034-01-01",
+      "MS_total_sc1_jp": 54.0,
+      "MS_total_sc2_jp": 49.6
+    },
+    {
+      "date": "2035-01-01",
+      "MS_total_sc1_jp": 54.1,
+      "MS_total_sc2_jp": 49.5
+    },
+    {
+      "date": "2036-01-01",
+      "MS_total_sc1_jp": 54.3,
+      "MS_total_sc2_jp": 49.4
+    },
+    {
+      "date": "2037-01-01",
+      "MS_total_sc1_jp": 54.4,
+      "MS_total_sc2_jp": 49.3
+    },
+    {
+      "date": "2038-01-01",
+      "MS_total_sc1_jp": 54.5,
+      "MS_total_sc2_jp": 49.2
+    },
+    {
+      "date": "2039-01-01",
+      "MS_total_sc1_jp": 54.5,
+      "MS_total_sc2_jp": 49.0
+    },
+    {
+      "date": "2040-01-01",
+      "MS_total_sc1_jp": 54.6,
+      "MS_total_sc2_jp": 48.8
+    },
+    {
+      "date": "2041-01-01",
+      "MS_total_sc1_jp": 54.7,
+      "MS_total_sc2_jp": 48.7
+    },
+    {
+      "date": "2042-01-01",
+      "MS_total_sc1_jp": 54.7,
+      "MS_total_sc2_jp": 48.5
+    },
+    {
+      "date": "2043-01-01",
+      "MS_total_sc1_jp": 54.8,
+      "MS_total_sc2_jp": 48.3
+    },
+    {
+      "date": "2044-01-01",
+      "MS_total_sc1_jp": 54.8,
+      "MS_total_sc2_jp": 48.1
+    },
+    {
+      "date": "2045-01-01",
+      "MS_total_sc1_jp": 54.8,
+      "MS_total_sc2_jp": 47.8
+    },
+    {
+      "date": "2046-01-01",
+      "MS_total_sc1_jp": 54.9,
+      "MS_total_sc2_jp": 47.6
+    },
+    {
+      "date": "2047-01-01",
+      "MS_total_sc1_jp": 54.9,
+      "MS_total_sc2_jp": 47.4
+    },
+    {
+      "date": "2048-01-01",
+      "MS_total_sc1_jp": 54.9,
+      "MS_total_sc2_jp": 47.1
+    },
+    {
+      "date": "2049-01-01",
+      "MS_total_sc1_jp": 54.9,
+      "MS_total_sc2_jp": 46.9
+    },
+    {
+      "date": "2050-01-01",
+      "MS_total_sc1_jp": 54.9,
+      "MS_total_sc2_jp": 46.6
+    }
+  ],
+  "4": [
+    {
+      "date": "1930-01-01",
+      "GS_total_hist_jp": 1.0,
+      "RS_total_hist_jp": 1.0
+    },
+    {
+      "date": "1931-01-01",
+      "GS_total_hist_jp": 0.8,
+      "RS_total_hist_jp": 1.1
+    },
+    {
+      "date": "1932-01-01",
+      "GS_total_hist_jp": 0.8,
+      "RS_total_hist_jp": 1.1
+    },
+    {
+      "date": "1933-01-01",
+      "GS_total_hist_jp": 0.9,
+      "RS_total_hist_jp": 1.2
+    },
+    {
+      "date": "1934-01-01",
+      "GS_total_hist_jp": 1.0,
+      "RS_total_hist_jp": 1.2
+    },
+    {
+      "date": "1935-01-01",
+      "GS_total_hist_jp": 1.1,
+      "RS_total_hist_jp": 1.3
+    },
+    {
+      "date": "1936-01-01",
+      "GS_total_hist_jp": 1.2,
+      "RS_total_hist_jp": 1.3
+    },
+    {
+      "date": "1937-01-01",
+      "GS_total_hist_jp": 1.3,
+      "RS_total_hist_jp": 1.4
+    },
+    {
+      "date": "1938-01-01",
+      "GS_total_hist_jp": 1.3,
+      "RS_total_hist_jp": 1.5
+    },
+    {
+      "date": "1939-01-01",
+      "GS_total_hist_jp": 1.4,
+      "RS_total_hist_jp": 1.6
+    },
+    {
+      "date": "1940-01-01",
+      "GS_total_hist_jp": 1.3,
+      "RS_total_hist_jp": 1.6
+    },
+    {
+      "date": "1941-01-01",
+      "GS_total_hist_jp": 1.4,
+      "RS_total_hist_jp": 1.7
+    },
+    {
+      "date": "1942-01-01",
+      "GS_total_hist_jp": 1.0,
+      "RS_total_hist_jp": 1.8
+    },
+    {
+      "date": "1943-01-01",
+      "GS_total_hist_jp": 1.0,
+      "RS_total_hist_jp": 1.9
+    },
+    {
+      "date": "1944-01-01",
+      "GS_total_hist_jp": 0.9,
+      "RS_total_hist_jp": 2.0
+    },
+    {
+      "date": "1945-01-01",
+      "GS_total_hist_jp": 0.4,
+      "RS_total_hist_jp": 2.0
+    },
+    {
+      "date": "1946-01-01",
+      "GS_total_hist_jp": 0.4,
+      "RS_total_hist_jp": 2.1
+    },
+    {
+      "date": "1947-01-01",
+      "GS_total_hist_jp": 0.5,
+      "RS_total_hist_jp": 2.2
+    },
+    {
+      "date": "1948-01-01",
+      "GS_total_hist_jp": 0.7,
+      "RS_total_hist_jp": 2.3
+    },
+    {
+      "date": "1949-01-01",
+      "GS_total_hist_jp": 0.9,
+      "RS_total_hist_jp": 2.4
+    },
+    {
+      "date": "1950-01-01",
+      "GS_total_hist_jp": 1.2,
+      "RS_total_hist_jp": 2.6
+    },
+    {
+      "date": "1951-01-01",
+      "GS_total_hist_jp": 1.7,
+      "RS_total_hist_jp": 2.7
+    },
+    {
+      "date": "1952-01-01",
+      "GS_total_hist_jp": 1.8,
+      "RS_total_hist_jp": 2.8
+    },
+    {
+      "date": "1953-01-01",
+      "GS_total_hist_jp": 2.2,
+      "RS_total_hist_jp": 2.9
+    },
+    {
+      "date": "1954-01-01",
+      "GS_total_hist_jp": 2.5,
+      "RS_total_hist_jp": 3.1
+    },
+    {
+      "date": "1955-01-01",
+      "GS_total_hist_jp": 2.5,
+      "RS_total_hist_jp": 3.2
+    },
+    {
+      "date": "1956-01-01",
+      "GS_total_hist_jp": 2.9,
+      "RS_total_hist_jp": 3.4
+    },
+    {
+      "date": "1957-01-01",
+      "GS_total_hist_jp": 3.3,
+      "RS_total_hist_jp": 3.5
+    },
+    {
+      "date": "1958-01-01",
+      "GS_total_hist_jp": 3.3,
+      "RS_total_hist_jp": 3.7
+    },
+    {
+      "date": "1959-01-01",
+      "GS_total_hist_jp": 3.8,
+      "RS_total_hist_jp": 3.9
+    },
+    {
+      "date": "1960-01-01",
+      "GS_total_hist_jp": 4.8,
+      "RS_total_hist_jp": 4.0
+    },
+    {
+      "date": "1961-01-01",
+      "GS_total_hist_jp": 5.3,
+      "RS_total_hist_jp": 4.2
+    },
+    {
+      "date": "1962-01-01",
+      "GS_total_hist_jp": 6.3,
+      "RS_total_hist_jp": 4.4
+    },
+    {
+      "date": "1963-01-01",
+      "GS_total_hist_jp": 6.7,
+      "RS_total_hist_jp": 4.6
+    },
+    {
+      "date": "1964-01-01",
+      "GS_total_hist_jp": 7.4,
+      "RS_total_hist_jp": 4.9
+    },
+    {
+      "date": "1965-01-01",
+      "GS_total_hist_jp": 7.6,
+      "RS_total_hist_jp": 5.1
+    },
+    {
+      "date": "1966-01-01",
+      "GS_total_hist_jp": 8.0,
+      "RS_total_hist_jp": 5.3
+    },
+    {
+      "date": "1967-01-01",
+      "GS_total_hist_jp": 10.0,
+      "RS_total_hist_jp": 5.6
+    },
+    {
+      "date": "1968-01-01",
+      "GS_total_hist_jp": 11.1,
+      "RS_total_hist_jp": 5.9
+    },
+    {
+      "date": "1969-01-01",
+      "GS_total_hist_jp": 12.2,
+      "RS_total_hist_jp": 6.2
+    },
+    {
+      "date": "1970-01-01",
+      "GS_total_hist_jp": 13.7,
+      "RS_total_hist_jp": 6.5
+    },
+    {
+      "date": "1971-01-01",
+      "GS_total_hist_jp": 14.5,
+      "RS_total_hist_jp": 6.8
+    },
+    {
+      "date": "1972-01-01",
+      "GS_total_hist_jp": 16.2,
+      "RS_total_hist_jp": 7.2
+    },
+    {
+      "date": "1973-01-01",
+      "GS_total_hist_jp": 19.2,
+      "RS_total_hist_jp": 7.6
+    },
+    {
+      "date": "1974-01-01",
+      "GS_total_hist_jp": 18.5,
+      "RS_total_hist_jp": 8.0
+    },
+    {
+      "date": "1975-01-01",
+      "GS_total_hist_jp": 16.2,
+      "RS_total_hist_jp": 8.4
+    },
+    {
+      "date": "1976-01-01",
+      "GS_total_hist_jp": 16.6,
+      "RS_total_hist_jp": 8.9
+    },
+    {
+      "date": "1977-01-01",
+      "GS_total_hist_jp": 17.2,
+      "RS_total_hist_jp": 9.4
+    },
+    {
+      "date": "1978-01-01",
+      "GS_total_hist_jp": 19.2,
+      "RS_total_hist_jp": 9.9
+    },
+    {
+      "date": "1979-01-01",
+      "GS_total_hist_jp": 20.0,
+      "RS_total_hist_jp": 10.5
+    },
+    {
+      "date": "1980-01-01",
+      "GS_total_hist_jp": 20.4,
+      "RS_total_hist_jp": 11.1
+    },
+    {
+      "date": "1981-01-01",
+      "GS_total_hist_jp": 19.2,
+      "RS_total_hist_jp": 11.8
+    },
+    {
+      "date": "1982-01-01",
+      "GS_total_hist_jp": 17.7,
+      "RS_total_hist_jp": 12.5
+    },
+    {
+      "date": "1983-01-01",
+      "GS_total_hist_jp": 17.4,
+      "RS_total_hist_jp": 13.2
+    },
+    {
+      "date": "1984-01-01",
+      "GS_total_hist_jp": 17.1,
+      "RS_total_hist_jp": 14.0
+    },
+    {
+      "date": "1985-01-01",
+      "GS_total_hist_jp": 16.6,
+      "RS_total_hist_jp": 14.9
+    },
+    {
+      "date": "1986-01-01",
+      "GS_total_hist_jp": 16.9,
+      "RS_total_hist_jp": 15.9
+    },
+    {
+      "date": "1987-01-01",
+      "GS_total_hist_jp": 17.8,
+      "RS_total_hist_jp": 17.0
+    },
+    {
+      "date": "1988-01-01",
+      "GS_total_hist_jp": 19.3,
+      "RS_total_hist_jp": 18.1
+    },
+    {
+      "date": "1989-01-01",
+      "GS_total_hist_jp": 19.5,
+      "RS_total_hist_jp": 19.3
+    },
+    {
+      "date": "1990-01-01",
+      "GS_total_hist_jp": 20.3,
+      "RS_total_hist_jp": 20.6
+    },
+    {
+      "date": "1991-01-01",
+      "GS_total_hist_jp": 21.7,
+      "RS_total_hist_jp": 22.0
+    },
+    {
+      "date": "1992-01-01",
+      "GS_total_hist_jp": 20.9,
+      "RS_total_hist_jp": 23.5
+    },
+    {
+      "date": "1993-01-01",
+      "GS_total_hist_jp": 20.2,
+      "RS_total_hist_jp": 25.1
+    },
+    {
+      "date": "1994-01-01",
+      "GS_total_hist_jp": 20.3,
+      "RS_total_hist_jp": 26.7
+    },
+    {
+      "date": "1995-01-01",
+      "GS_total_hist_jp": 20.1,
+      "RS_total_hist_jp": 28.5
+    },
+    {
+      "date": "1996-01-01",
+      "GS_total_hist_jp": 20.5,
+      "RS_total_hist_jp": 30.4
+    },
+    {
+      "date": "1997-01-01",
+      "GS_total_hist_jp": 20.5,
+      "RS_total_hist_jp": 32.5
+    },
+    {
+      "date": "1998-01-01",
+      "GS_total_hist_jp": 19.0,
+      "RS_total_hist_jp": 34.6
+    },
+    {
+      "date": "1999-01-01",
+      "GS_total_hist_jp": 19.1,
+      "RS_total_hist_jp": 36.8
+    },
+    {
+      "date": "2000-01-01",
+      "GS_total_hist_jp": 19.6,
+      "RS_total_hist_jp": 39.2
+    },
+    {
+      "date": "2001-01-01",
+      "GS_total_hist_jp": 18.0,
+      "RS_total_hist_jp": 41.6
+    },
+    {
+      "date": "2002-01-01",
+      "GS_total_hist_jp": 17.0,
+      "RS_total_hist_jp": 44.1
+    },
+    {
+      "date": "2003-01-01",
+      "GS_total_hist_jp": 16.0,
+      "RS_total_hist_jp": 46.8
+    },
+    {
+      "date": "2004-01-01",
+      "GS_total_hist_jp": 15.7,
+      "RS_total_hist_jp": 49.6
+    },
+    {
+      "date": "2005-01-01",
+      "GS_total_hist_jp": 16.2,
+      "GS_total_sc1_jp": 16.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_hist_jp": 52.4,
+      "RS_total_sc1_jp": 52.4,
+      "RS_total_sc2_jp": 52.4
+    },
+    {
+      "date": "2006-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_sc1_jp": 55.4,
+      "RS_total_sc2_jp": 55.4
+    },
+    {
+      "date": "2007-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_sc1_jp": 58.4,
+      "RS_total_sc2_jp": 58.4
+    },
+    {
+      "date": "2008-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_sc1_jp": 61.6,
+      "RS_total_sc2_jp": 61.5
+    },
+    {
+      "date": "2009-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_sc1_jp": 64.8,
+      "RS_total_sc2_jp": 64.7
+    },
+    {
+      "date": "2010-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.2,
+      "RS_total_sc1_jp": 68.0,
+      "RS_total_sc2_jp": 68.0
+    },
+    {
+      "date": "2011-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.1,
+      "RS_total_sc1_jp": 71.4,
+      "RS_total_sc2_jp": 71.3
+    },
+    {
+      "date": "2012-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.1,
+      "RS_total_sc1_jp": 74.8,
+      "RS_total_sc2_jp": 74.7
+    },
+    {
+      "date": "2013-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.1,
+      "RS_total_sc1_jp": 78.2,
+      "RS_total_sc2_jp": 78.1
+    },
+    {
+      "date": "2014-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.0,
+      "RS_total_sc1_jp": 81.6,
+      "RS_total_sc2_jp": 81.5
+    },
+    {
+      "date": "2015-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.0,
+      "RS_total_sc1_jp": 85.1,
+      "RS_total_sc2_jp": 85.0
+    },
+    {
+      "date": "2016-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 16.0,
+      "RS_total_sc1_jp": 88.6,
+      "RS_total_sc2_jp": 88.4
+    },
+    {
+      "date": "2017-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.9,
+      "RS_total_sc1_jp": 92.0,
+      "RS_total_sc2_jp": 91.9
+    },
+    {
+      "date": "2018-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.9,
+      "RS_total_sc1_jp": 95.5,
+      "RS_total_sc2_jp": 95.3
+    },
+    {
+      "date": "2019-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.8,
+      "RS_total_sc1_jp": 99.0,
+      "RS_total_sc2_jp": 98.7
+    },
+    {
+      "date": "2020-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.7,
+      "RS_total_sc1_jp": 102.4,
+      "RS_total_sc2_jp": 102.1
+    },
+    {
+      "date": "2021-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.7,
+      "RS_total_sc1_jp": 105.7,
+      "RS_total_sc2_jp": 105.4
+    },
+    {
+      "date": "2022-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.6,
+      "RS_total_sc1_jp": 109.1,
+      "RS_total_sc2_jp": 108.7
+    },
+    {
+      "date": "2023-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.5,
+      "RS_total_sc1_jp": 112.3,
+      "RS_total_sc2_jp": 111.9
+    },
+    {
+      "date": "2024-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.4,
+      "RS_total_sc1_jp": 115.5,
+      "RS_total_sc2_jp": 115.0
+    },
+    {
+      "date": "2025-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.4,
+      "RS_total_sc1_jp": 118.6,
+      "RS_total_sc2_jp": 118.0
+    },
+    {
+      "date": "2026-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.3,
+      "RS_total_sc1_jp": 121.7,
+      "RS_total_sc2_jp": 121.0
+    },
+    {
+      "date": "2027-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.2,
+      "RS_total_sc1_jp": 124.6,
+      "RS_total_sc2_jp": 123.8
+    },
+    {
+      "date": "2028-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.1,
+      "RS_total_sc1_jp": 127.4,
+      "RS_total_sc2_jp": 126.5
+    },
+    {
+      "date": "2029-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 15.0,
+      "RS_total_sc1_jp": 130.2,
+      "RS_total_sc2_jp": 129.1
+    },
+    {
+      "date": "2030-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.9,
+      "RS_total_sc1_jp": 132.8,
+      "RS_total_sc2_jp": 131.6
+    },
+    {
+      "date": "2031-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.8,
+      "RS_total_sc1_jp": 135.3,
+      "RS_total_sc2_jp": 134.0
+    },
+    {
+      "date": "2032-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.7,
+      "RS_total_sc1_jp": 137.7,
+      "RS_total_sc2_jp": 136.2
+    },
+    {
+      "date": "2033-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.6,
+      "RS_total_sc1_jp": 139.9,
+      "RS_total_sc2_jp": 138.3
+    },
+    {
+      "date": "2034-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.5,
+      "RS_total_sc1_jp": 142.1,
+      "RS_total_sc2_jp": 140.2
+    },
+    {
+      "date": "2035-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.4,
+      "RS_total_sc1_jp": 144.1,
+      "RS_total_sc2_jp": 142.0
+    },
+    {
+      "date": "2036-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.3,
+      "RS_total_sc1_jp": 146.0,
+      "RS_total_sc2_jp": 143.7
+    },
+    {
+      "date": "2037-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.2,
+      "RS_total_sc1_jp": 147.8,
+      "RS_total_sc2_jp": 145.2
+    },
+    {
+      "date": "2038-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.1,
+      "RS_total_sc1_jp": 149.4,
+      "RS_total_sc2_jp": 146.6
+    },
+    {
+      "date": "2039-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 14.0,
+      "RS_total_sc1_jp": 151.0,
+      "RS_total_sc2_jp": 147.8
+    },
+    {
+      "date": "2040-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.9,
+      "RS_total_sc1_jp": 152.4,
+      "RS_total_sc2_jp": 148.9
+    },
+    {
+      "date": "2041-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.7,
+      "RS_total_sc1_jp": 153.7,
+      "RS_total_sc2_jp": 149.9
+    },
+    {
+      "date": "2042-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.6,
+      "RS_total_sc1_jp": 154.9,
+      "RS_total_sc2_jp": 150.7
+    },
+    {
+      "date": "2043-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.5,
+      "RS_total_sc1_jp": 156.0,
+      "RS_total_sc2_jp": 151.4
+    },
+    {
+      "date": "2044-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.4,
+      "RS_total_sc1_jp": 157.0,
+      "RS_total_sc2_jp": 152.0
+    },
+    {
+      "date": "2045-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.3,
+      "RS_total_sc1_jp": 157.9,
+      "RS_total_sc2_jp": 152.4
+    },
+    {
+      "date": "2046-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.2,
+      "RS_total_sc1_jp": 158.7,
+      "RS_total_sc2_jp": 152.8
+    },
+    {
+      "date": "2047-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.1,
+      "RS_total_sc1_jp": 159.4,
+      "RS_total_sc2_jp": 153.0
+    },
+    {
+      "date": "2048-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 13.0,
+      "RS_total_sc1_jp": 160.0,
+      "RS_total_sc2_jp": 153.1
+    },
+    {
+      "date": "2049-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 12.9,
+      "RS_total_sc1_jp": 160.5,
+      "RS_total_sc2_jp": 153.1
+    },
+    {
+      "date": "2050-01-01",
+      "GS_total_sc1_jp": 18.2,
+      "GS_total_sc2_jp": 12.7,
+      "RS_total_sc1_jp": 161.0,
+      "RS_total_sc2_jp": 153.1
+    }
+  ]
+}

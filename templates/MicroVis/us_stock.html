@@ -1,0 +1,758 @@
+{% extends 'MicroVis/base.html' %}
+  {% block speciality %}
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.14/c3.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
+  <script>
+        function deselect(e) {
+  $('.pop').slideFadeToggle(function() {
+    e.removeClass('selected');
+  });
+}
+
+$(function() {
+  $('#contact').on('click', function() {
+    if($(this).hasClass('selected')) {
+      deselect($(this));
+    } else {
+      $(this).addClass('selected');
+      $('.pop').slideFadeToggle();
+    }
+    return false;
+  });
+
+  $('.close').on('click', function() {
+    deselect($('#contact'));
+    return false;
+  });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};
+    </script>
+
+    {% endblock %}
+
+
+
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../../">  General</a></li>
+   <li><a  href="../../blog">News</a></li>
+   <li><a href="../../tools-index">IE Tools & Databases</a></li>
+   <li><a style="color: #e0e0eb;" href="../"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
+  </ul>
+</div>
+
+<br>
+<div class="container">
+    <legend>US material stock</legend>
+    <div class="messagepop pop" >
+
+    <h4>General info</h4>
+        <p><b>Unit:</b> tonnes</p>
+        <p><b>Original article:</b> Fishman, T., Schandl, H., Tanikawa, H., Walker, P., & Krausmann, F. (2014).<br> Accounting for the material stock of nations. Journal of industrial ecology, 18(3), 407-420.</p>
+
+    <a class="close" href="/">Cancel</a></p>
+
+</div>
+
+<a href="/contact" id="contact">More info &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
+<br><br><br>
+    <div id="chart"></div>
+<center>
+<li>
+Select legenda to deselect lines
+</li>
+<li>
+Select datapoints for more information on specific point
+</li>
+</center>
+<div id="dialog" title="Contribution of materials to totals">
+<div id="chart2" ></div>
+</div>
+
+
+<script>
+var formatYaxis = d3.format("s");
+
+
+
+//element chart to be used in HTML as the location of the plot, we use c3 and d3 for vis.
+var chart = c3.generate({
+  data: {
+    //data input
+    json: [{
+      date: '1930-01-01',
+      MS_Historical_Series: 11826247586.3376
+    }, {
+      date: '1931-01-01',
+      MS_Historical_Series: 12102452825.2908
+    }, {
+      date: '1932-01-01',
+      MS_Historical_Series: 12269188981.8634
+    }, {
+      date: '1933-01-01',
+      MS_Historical_Series: 12429241288.895
+    }, {
+      date: '1934-01-01',
+      MS_Historical_Series: 12629365196.5489
+    }, {
+      date: '1935-01-01',
+      MS_Historical_Series: 12838843208.2932
+    }, {
+      date: '1936-01-01',
+      MS_Historical_Series: 13169655318.4723
+    }, {
+      date: '1937-01-01',
+      MS_Historical_Series: 13523974758.5784
+    }, {
+      date: '1938-01-01',
+      MS_Historical_Series: 13834643712.9407
+    }, {
+      date: '1939-01-01',
+      MS_Historical_Series: 14208763193.8257
+    }, {
+      date: '1940-01-01',
+      MS_Historical_Series: 14608516926.8926
+    }, {
+      date: '1941-01-01',
+      MS_Historical_Series: 15123155225.4057
+    }, {
+      date: '1942-01-01',
+      MS_Historical_Series: 15664903505.1312
+    }, {
+      date: '1943-01-01',
+      MS_Historical_Series: 16099666789.4394
+    }, {
+      date: '1944-01-01',
+      MS_Historical_Series: 16473248537.7492
+    }, {
+      date: '1945-01-01',
+      MS_Historical_Series: 16838239516.9774
+    }, {
+      date: '1946-01-01',
+      MS_Historical_Series: 17327593483.9049
+    }, {
+      date: '1947-01-01',
+      MS_Historical_Series: 17903432030.2138
+    }, {
+      date: '1948-01-01',
+      MS_Historical_Series: 18522046418.8322
+    }, {
+      date: '1949-01-01',
+      MS_Historical_Series: 19110138112.9819
+    }, {
+      date: '1950-01-01',
+      MS_Historical_Series: 19803020389.2041
+    }, {
+      date: '1951-01-01',
+      MS_Historical_Series: 20568939862.3556
+    }, {
+      date: '1952-01-01',
+      MS_Historical_Series: 21362183007.1764
+    }, {
+      date: '1953-01-01',
+      MS_Historical_Series: 22179339490.9508
+    }, {
+      date: '1954-01-01',
+      MS_Historical_Series: 23101642194.7535
+    }, {
+      date: '1955-01-01',
+      MS_Historical_Series: 24157922612.4812
+    }, {
+      date: '1956-01-01',
+      MS_Historical_Series: 25291145960.4177
+    }, {
+      date: '1957-01-01',
+      MS_Historical_Series: 26388302517.6192
+    }, {
+      date: '1958-01-01',
+      MS_Historical_Series: 27505625845.712
+    }, {
+      date: '1959-01-01',
+      MS_Historical_Series: 28727918917.1972
+    }, {
+      date: '1960-01-01',
+      MS_Historical_Series: 29921748629.6033
+    }, {
+      date: '1961-01-01',
+      MS_Historical_Series: 31067059443.8541
+    }, {
+      date: '1962-01-01',
+      MS_Historical_Series: 32282788950.2538
+    }, {
+      date: '1963-01-01',
+      MS_Historical_Series: 33603758652.2433
+    }, {
+      date: '1964-01-01',
+      MS_Historical_Series: 35017560979.5095
+    }, {
+      date: '1965-01-01',
+      MS_Historical_Series: 36525949858.7562
+    }, {
+      date: '1966-01-01',
+      MS_Historical_Series: 38100039338.9789
+    }, {
+      date: '1967-01-01',
+      MS_Historical_Series: 39604090259.0216
+    }, {
+      date: '1968-01-01',
+      MS_Historical_Series: 41205058206.7873
+    }, {
+      date: '1969-01-01',
+      MS_Historical_Series: 42856300297.4851
+    }, {
+      date: '1970-01-01',
+      MS_Historical_Series: 44541140550.5245
+    }, {
+      date: '1971-01-01',
+      MS_Historical_Series: 46291857095.3137
+    }, {
+      date: '1972-01-01',
+      MS_Historical_Series: 48097965841.3152
+    }, {
+      date: '1973-01-01',
+      MS_Historical_Series: 50078209003.7091
+    }, {
+      date: '1974-01-01',
+      MS_Historical_Series: 51998126596.9561
+    }, {
+      date: '1975-01-01',
+      MS_Historical_Series: 53555739944.2605
+    }, {
+      date: '1976-01-01',
+      MS_Historical_Series: 55115441843.9325
+    }, {
+      date: '1977-01-01',
+      MS_Historical_Series: 56785424372.3614
+    }, {
+      date: '1978-01-01',
+      MS_Historical_Series: 58664710304.274
+    }, {
+      date: '1979-01-01',
+      MS_Historical_Series: 60552087474.4849
+    }, {
+      date: '1980-01-01',
+      MS_Historical_Series: 62123932158.6344
+    }, {
+      date: '1981-01-01',
+      MS_Historical_Series: 63480601998.228
+    }, {
+      date: '1982-01-01',
+      MS_Historical_Series: 64655832298.69
+    }, {
+      date: '1983-01-01',
+      MS_Historical_Series: 66008998388.256
+    }, {
+      date: '1984-01-01',
+      MS_Historical_Series: 67543982708.8333
+    }, {
+      date: '1985-01-01',
+      MS_Historical_Series: 69158434676.9156
+    }, {
+      date: '1986-01-01',
+      MS_Historical_Series: 70805178208.8693
+    }, {
+      date: '1987-01-01',
+      MS_Historical_Series: 72645070823.0453
+    }, {
+      date: '1988-01-01',
+      MS_Historical_Series: 74507490268.3651
+    }, {
+      date: '1989-01-01',
+      MS_Historical_Series: 76272787843.6118
+    }, {
+      date: '1990-01-01',
+      MS_Historical_Series: 78050974276.4537
+    }, {
+      date: '1991-01-01',
+      MS_Historical_Series: 79594041678.4554
+    }, {
+      date: '1992-01-01',
+      MS_Historical_Series: 81154920993.5936
+    }, {
+      date: '1993-01-01',
+      MS_Historical_Series: 82850208806.5767
+    }, {
+      date: '1994-01-01',
+      MS_Historical_Series: 84682013026.8
+    }, {
+      date: '1995-01-01',
+      MS_Historical_Series: 86539409998.1538
+    }, {
+      date: '1996-01-01',
+      MS_Historical_Series: 88421566966.5515
+    }, {
+      date: '1997-01-01',
+      MS_Historical_Series: 90435340766.9586
+    }, {
+      date: '1998-01-01',
+      MS_Historical_Series: 92571525794.7567
+    }, {
+      date: '1999-01-01',
+      MS_Historical_Series: 94758130865.263
+    }, {
+      date: '2000-01-01',
+      MS_Historical_Series: 96952517308.2119
+    }, {
+      date: '2001-01-01',
+      MS_Historical_Series: 99061816567.2434
+    }, {
+      date: '2002-01-01',
+      MS_Historical_Series: 101073199101.516
+    }, {
+      date: '2003-01-01',
+      MS_Historical_Series: 103044636446.831
+    }, {
+      date: '2004-01-01',
+      MS_Historical_Series: 105218752910.128
+    }, {
+      date: '2005-01-01',
+      MS_Historical_Series: 107461379799.673,
+      MS_sc1: 107461379799.673,
+      MS_sc2: 107461379799.673,
+      MS_sc3: 107461379799.673
+    }, {
+      date: '2006-01-01',
+      MS_sc1: 109348917679.79,
+      MS_sc2: 109698571133.527,
+      MS_sc3: 109647751427.504
+    }, {
+      date: '2007-01-01',
+      MS_sc1: 111197549094.821,
+      MS_sc2: 111930645491.66,
+      MS_sc3: 111778015260.944
+    }, {
+      date: '2008-01-01',
+      MS_sc1: 113007033623.875,
+      MS_sc2: 114157474963.361,
+      MS_sc3: 113852123584.256
+    }, {
+      date: '2009-01-01',
+      MS_sc1: 114777187422.04,
+      MS_sc2: 116376640882.839,
+      MS_sc3: 115870107803.986
+    }, {
+      date: '2010-01-01',
+      MS_sc1: 116507881635.11,
+      MS_sc2: 118586546758.914,
+      MS_sc3: 117832080475.085
+    }, {
+      date: '2011-01-01',
+      MS_sc1: 118199040301.409,
+      MS_sc2: 120783550207.203,
+      MS_sc3: 119738237160.06
+    }, {
+      date: '2012-01-01',
+      MS_sc1: 119850637782.373,
+      MS_sc2: 122967487997.027,
+      MS_sc3: 121588858156.008
+    }, {
+      date: '2013-01-01',
+      MS_sc1: 121462695773.766,
+      MS_sc2: 125145059261.798,
+      MS_sc3: 123384310125.224
+    }, {
+      date: '2014-01-01',
+      MS_sc1: 123035279958.798,
+      MS_sc2: 127316492718.298,
+      MS_sc3: 125125047663.635
+    }, {
+      date: '2015-01-01',
+      MS_sc1: 124568496372.544,
+      MS_sc2: 129482022296.099,
+      MS_sc3: 126811614837.432
+    }, {
+      date: '2016-01-01',
+      MS_sc1: 126062487553.826,
+      MS_sc2: 131641858186.043,
+      MS_sc3: 128444646711.738
+    }, {
+      date: '2017-01-01',
+      MS_sc1: 127517428565.798,
+      MS_sc2: 133796205228.854,
+      MS_sc3: 130024870886.178
+    }, {
+      date: '2018-01-01',
+      MS_sc1: 128933522969.771,
+      MS_sc2: 135945245506.314,
+      MS_sc3: 131553109040.746
+    }, {
+      date: '2019-01-01',
+      MS_sc1: 130310998838.169,
+      MS_sc2: 138089156565.87,
+      MS_sc3: 133030278481.783
+    }, {
+      date: '2020-01-01',
+      MS_sc1: 131650104891.866,
+      MS_sc2: 140228070261.668,
+      MS_sc3: 134457393662.501
+    }, {
+      date: '2021-01-01',
+      MS_sc1: 132951106844.457,
+      MS_sc2: 142362091203.173,
+      MS_sc3: 135835567635.827
+    }, {
+      date: '2022-01-01',
+      MS_sc1: 134214284031.368,
+      MS_sc2: 144491279786.529,
+      MS_sc3: 137166013379.965
+    }, {
+      date: '2023-01-01',
+      MS_sc1: 135439926395.073,
+      MS_sc2: 146615671235.41,
+      MS_sc3: 138450044919.721
+    }, {
+      date: '2024-01-01',
+      MS_sc1: 136628331889.342,
+      MS_sc2: 148735235622.603,
+      MS_sc3: 139689078149.953
+    }, {
+      date: '2025-01-01',
+      MS_sc1: 137779804355.41,
+      MS_sc2: 150849921620.071,
+      MS_sc3: 140884631252.414
+    }, {
+      date: '2026-01-01',
+      MS_sc1: 138894651911.599,
+      MS_sc2: 152959617591.844,
+      MS_sc3: 142038324584.392
+    }, {
+      date: '2027-01-01',
+      MS_sc1: 139973185885.422,
+      MS_sc2: 155064172763.515,
+      MS_sc3: 143151879907.826
+    }, {
+      date: '2028-01-01',
+      MS_sc1: 141015720303.854,
+      MS_sc2: 157163430946.076,
+      MS_sc3: 144227118821.571
+    }, {
+      date: '2029-01-01',
+      MS_sc1: 142022571943.632,
+      MS_sc2: 159257169850.549,
+      MS_sc3: 145265960257.904
+    }, {
+      date: '2030-01-01',
+      MS_sc1: 142994060929.447,
+      MS_sc2: 161345160020.157,
+      MS_sc3: 146270416907.626
+    }, {
+      date: '2031-01-01',
+      MS_sc1: 143930511854.087,
+      MS_sc2: 163427153146.166,
+      MS_sc3: 147242590446.564
+    }, {
+      date: '2032-01-01',
+      MS_sc1: 144832255381.312,
+      MS_sc2: 165502871103.079,
+      MS_sc3: 148184665450.107
+    }, {
+      date: '2033-01-01',
+      MS_sc1: 145699630279.889,
+      MS_sc2: 167572019455.685,
+      MS_sc3: 149098901901.452
+    }, {
+      date: '2034-01-01',
+      MS_sc1: 146532985826.033,
+      MS_sc2: 169634301618.48,
+      MS_sc3: 149987626223.41
+    }, {
+      date: '2035-01-01',
+      MS_sc1: 147332684501.862,
+      MS_sc2: 171689397953.132,
+      MS_sc3: 150853220792.262
+    }, {
+      date: '2036-01-01',
+      MS_sc1: 148099104909.613,
+      MS_sc2: 173736992967.389,
+      MS_sc3: 151698111924.837
+    }, {
+      date: '2037-01-01',
+      MS_sc1: 148832644815.477,
+      MS_sc2: 175776755427.471,
+      MS_sc3: 152524756365.65
+    }, {
+      date: '2038-01-01',
+      MS_sc1: 149533724233.211,
+      MS_sc2: 177808378307.086,
+      MS_sc3: 153335626338.788
+    }, {
+      date: '2039-01-01',
+      MS_sc1: 150202788456.241,
+      MS_sc2: 179831559590.192,
+      MS_sc3: 154133193268.115
+    }, {
+      date: '2040-01-01',
+      MS_sc1: 150840310947.818,
+      MS_sc2: 181845995177.975,
+      MS_sc3: 154919910308.006
+    }, {
+      date: '2041-01-01',
+      MS_sc1: 151446796001.977,
+      MS_sc2: 183851431353.766,
+      MS_sc3: 155698193864.263
+    }, {
+      date: '2042-01-01',
+      MS_sc1: 152022781093.36,
+      MS_sc2: 185847622150.147,
+      MS_sc3: 156470404319.621
+    }, {
+      date: '2043-01-01',
+      MS_sc1: 152568838841.439,
+      MS_sc2: 187834381755.141,
+      MS_sc3: 157238826209.457
+    }, {
+      date: '2044-01-01',
+      MS_sc1: 153085578523.861,
+      MS_sc2: 189811553521.808,
+      MS_sc3: 158005648119.789
+    }, {
+      date: '2045-01-01',
+      MS_sc1: 153573647084.55,
+      MS_sc2: 191779050059.655,
+      MS_sc3: 158772942600.516
+    }, {
+      date: '2046-01-01',
+      MS_sc1: 154033729594.271,
+      MS_sc2: 193736821654.617,
+      MS_sc3: 159542646401.525
+    }, {
+      date: '2047-01-01',
+      MS_sc1: 154466549134.445,
+      MS_sc2: 195684859957.278,
+      MS_sc3: 160316541346.997
+    }, {
+      date: '2048-01-01',
+      MS_sc1: 154872866088.653,
+      MS_sc2: 197623260645.741,
+      MS_sc3: 161096236164.004
+    }, {
+      date: '2049-01-01',
+      MS_sc1: 155253476840.084,
+      MS_sc2: 199552166677.727,
+      MS_sc3: 161883149574.839
+    }, {
+      date: '2050-01-01',
+      MS_sc1: 155609211886.886,
+      MS_sc2: 201471794220.151,
+      MS_sc3: 162678494948.928
+    }],
+    names: {
+      MS_sc1: 'MS: Scenario 1',
+      MS_sc2: 'MS: Scenario 2',
+      MS_sc3: 'MS: Scenario 3',
+      MS_Historical_Series: 'MS: Historical Series',
+
+    },
+
+
+
+
+
+    //function to recognize selection points in timeseries of C3
+    onclick: function(e) {
+      //specific scenario represented as the variable e
+      var id = e.id;
+      //convert value (json object) to string
+      var date = e.x;
+      var stringedDate = JSON.stringify(date);
+      //make array out of it
+      var array_date = stringedDate.split(" ");
+      //get only the year as that is what we work with
+      var year = array_date[0].substring(1, 5);
+      var year = parseInt(year) + 1;
+
+
+
+      //load json via AJAX
+
+      //var url = 'https://api.myjson.com/bins/198f3z';
+      //var url = 'https://api.myjson.com/bins/16wicr';
+      var url = 'https://api.myjson.com/bins/pq7xz';
+      $.ajax({
+        type: 'GET',
+        url: url,
+        contentType: "application/json",
+        dataType: 'json',
+        success: function(data) {
+          //as the json object should contain multiple data JSON object we parse through it
+          for (var i in data) {
+            //get the scenario to be used for comparison with selection of user
+            var scenarioDataset = data[i].scenarios;
+            //get the year to be used for comparison with selection of user
+            var yearDataset = data[i].year;
+
+            if (scenarioDataset == id && yearDataset == year) {
+              //remove the text element if multiple selections are made
+              d3.select('#chart2 svg').selectAll('text').remove();
+              //set text according to the matchin selection with the dataset to be visualized
+              d3.select('#chart2 svg').append('text')
+                .attr('x', d3.select('#chart2 svg').node().getBoundingClientRect().width / 2)
+                .attr('y', 16)
+                .attr('text-anchor', 'middle')
+                .style('font-size', '1.4em')
+                .text(yearDataset + ' ' + scenarioDataset);
+              chart2.load({
+                unload: true,
+                columns: data[i].materials
+              });
+            } // else {
+            //  console.log("cannot find match");
+
+            //}
+          }
+
+
+
+        },
+        error: function(e) {
+
+          console.log(e);
+
+        }
+      });
+
+
+
+
+
+      //call jquery-ui dialog as this is more advanced than a simple JS alert dialog
+      $(function() {
+        $("#dialog").dialog({
+          width: 660,
+          //add effect
+          autoOpen: true,
+          show: {
+            effect: "blind",
+            duration: 1000
+          },
+          hide: {
+            effect: "explode",
+            duration: 1000
+          }
+        });
+      });
+      chart2.show(null, {
+        withLegend: true
+      });
+      //end of special big function that opens dialog
+    },
+    keys: {
+      x: 'date',
+      value: ['MS_sc1', 'MS_sc2', 'MS_sc3', 'MS_Historical_Series']
+    }
+  },
+
+  axis: {
+    x: {
+      type: 'timeseries',
+
+      tick: {
+        format: function(x) {
+          return x.getFullYear();
+        }
+      }
+    },
+    y: {
+      label: 'Billion tonnes',
+      tick: {
+				//format the y-axis label accordingly
+        format: function formatAbbreviation(x) {
+          var s = formatYaxis(x);
+          switch (s[s.length - 1]) {
+            case "G":
+              return s.slice(0, -1) + "";
+          }
+          return s;
+        }
+
+
+      }
+    }
+  },
+
+  //format the tooltip values according to a set specific
+  tooltip: {
+    format: {
+      value: function(value) {
+        return d3.format(",.0f")(value).replace('.', ' ').replace(/,/g, '.').replace(' ', ',')
+      }
+    }
+  },
+
+
+
+  //identify c3 chart
+  bindto: '#chart'
+});
+
+
+//pie charts
+var chart2 = c3.generate({
+
+  data: {
+    // iris data from R
+    columns: [
+      ['Nothing to show', 0],
+    ],
+
+    type: 'pie'
+  },
+
+  legend: {
+    show: true
+  },
+
+  size: {
+    width: 600,
+    height: 600
+  },
+  label: {
+    format: function(value, ratio, id) {
+      return d3.format('$')(value);
+    }
+  },
+  //format the tooltip values according to a set specific
+  tooltip: {
+    format: {
+      value: function(value) {
+        return d3.format(",.0f")(value).replace('.', ' ').replace(/,/g, '.').replace(' ', ',')
+      }
+    }
+  },
+
+  //identify c3 chart
+  bindto: '#chart2'
+});
+
+//hide by default the following
+chart.hide(['MS_sc3'], {
+  withLegend: false
+});
+
+//hide the chart by default as data needs to be generated on the fly and specifically only on the model dialog
+chart2.hide(null, {
+  withLegend: true
+});
+
+
+//append the div needed
+var dialog = '<div id="chart2"></div>';
+$('#dialog').append(dialog);
+
+</script>
+
+
+    </div>
+   {% endblock %}
+

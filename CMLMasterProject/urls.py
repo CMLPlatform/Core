@@ -18,13 +18,30 @@ from django.contrib import admin
 import CMLMasterProject.views as views
 from django.conf import settings
 from django.views.static import serve
+from django.contrib.auth import views as auth_views
+from wagtail.wagtailadmin import urls as wagtailadmin_urls
+from wagtail.wagtaildocs import urls as wagtaildocs_urls
+from wagtail.wagtailcore import urls as wagtail_urls
+from django.conf.urls.static import static
 urlpatterns = [
     url(r'^$', views.homePage, name='homePage'),
+    url(r'^login/$', auth_views.login,{'template_name': 'CMLMasterProject/login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, {'next_page': '/'}, name='logout'),
     url(r'^admin/', admin.site.urls),
-    url(r'^visuals/', views.visuals, name='visuals'),
+    url(r'^exploratory/', views.exploratory, name='exploratory'),
+    url(r'^', include('snippets.urls')),
+    url(r'^', include('ramascene.urls')),
+
     url(r'^puma/', include('PUMA.urls')),
+    url(r'^books/', include('books.urls')),
     url(r'^media/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT,
     }),
+url(r'^research/microvis/', include('MicroVis.urls')),
     url(r'^exiovisuals/', include('ExioVisuals.urls')),
-]
+    url(r'^sign-up/$', views.signup, name='signup'),
+    url(r'^cml-sign-up/$', views.cml_signup, name='signup'),
+    url(r'^cms-admin/', include(wagtailadmin_urls)),
+    url(r'^documents/', include(wagtaildocs_urls)),
+    url(r'^research/', include(wagtail_urls)),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

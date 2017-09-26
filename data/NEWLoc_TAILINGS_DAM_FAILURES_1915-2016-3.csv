@@ -1,0 +1,549 @@
+FAILURE COLOR CODE#CSP2 FAILURE TYPE#MINE/PROJECT & LOCATION#ORE TYPE#DAM TYPE#DAM FILL MATERIAL#DAM HEIGHT (meters)#"STORAGE VOLUME
+(cu. meters)"#ICOLD TYPE#ICOLD INCIDENT TYPE#ICOLD INCIDENT NUMBER#INCIDENT YEAR#INCIDENT DATE#"RELEASE
+(cu. meters)"#RUNOUT (km)#DEATHS#SOURCES#NOTES#DEPOSIT TYPE#ORE TYPE#Est. Size (resource)  Mtonnes#Cu, %#Au, ppm#CuEq, %#1st Prod#Est. Mill through-put to event, Mtonnes#Adverse Minerals#Latitude#Longitude
+##as of: 22Aug16####################ORE DEPOSIT DATA######
+#1#Xiangjiang Wanji Aluminum , China#Al#####1A-SI#1#-#2016#08/08/16#2,000,000###AGU Landslide Blog 15Aug16, az-china.com 11Aug16#"The southwest corner of its red-mud dam body was unsound, threatening a red-mud slide.  Around 7pm on 8th of August, Xiangjiang Wanji Aluminium’s red mud storage had a landslide accident. It has been reported that the dam held about 2 million cubic meters of red mud and was about 1.5km in length. (http://blogs.agu.org/landslideblog/2016/08/15/luoyang-1/) Xiangjiang Wanji Aluminium is a private alumina refinery ... established in 2005 ... annual capacity is 1.2 million tonnes of alumina. (http://az-china.com/archives/7980#)"##Al########34.7461576#112.0761958
+#1#Fundao-Santarem (Germano), Minas Gerais, Brazil (Samarco = Vale & BHP)#Fe#US#MW#90#55,000,000#1A-ST#1#-#2015#05/11/15#32,000,000#637#19#The Australian, 16Nov15, 9Jan16; Sydney Morning Herald, 14Nov15; Do the right Thing, Samarco, December 15, 2015; www.mining.com, 8Jan16#The Fundão dam breached and its tailings impacted the nearby Santarém dam and caused a partial erosion of its right shoulder.  The Selinha dike, one of the side walls of the Germano dam, was also damaged.  19 people killed, including 14 working on the dams at the time.  Waste discharge reached the Atlantic Ocean.##Fe########-19.9349254#-43.9367903
+#5#Gold King Mine, near Silverton, Colorado#Au#N/A#N/A#N/A##3B-ST#3#-#2015#05/08/15#11,356###USEPA#Summary Report, EPA Internal Review of the August 5, 2015 Gold King Mine Blowout, August 24, 2015.  On August 5, 2015, there was a release of approximately 3,000,000 gallons of mine wastewater from the Gold King Mine near Silverton, CO.##Au########37.8944444#-107.6383333
+#4#Yellow Giant Mine, Banks Island, British Columbia, Canada#Au#####2A-ST#2#-#2015#25/06/15#240#1##Vancouver Sun#"Effluent and mine waste leaked from a pair of underground mine sites, including from a “non-engineered” containment berm and a concrete plug at an old underground site. Discharge reached the ocean through a creek, several beaver-dam-created wetlands and Banks Lake before entering the ocean at Surrey Bay. (Vancouver Sun, 27Jul15) (""Pollution spill at Yellow Giant gold mine sparks investigation by Environment Canada,"" Hoekstra, Vancouver 29Jul15)"##Au########53.4535898#-130.1498672
+#2#Herculano Iron Mine, Itabirite, Minas Gerais, Brazil#Fe#####1A-U#1#-#2014#10/09/14###3#WISE#"A large amount of waste was released on top of vehicles and workers. A truck driver, a bulldozer with operator and a Fiat Uno with the driver were all buried. ""Tailings dam failure kills three workers,"" Mining.com, September 12, 2014."##Fe########-20.2506152#-43.8042588
+#3#Buenavista del Cobre mine, Cananea, Sonora, Mexico (Grupo Mexico)#Cu#####1A-U#1#-#2014#07/08/14#40,000###WISE#Southern Copper Corp. (Grupo México) Flow into the 420km-long Bacanuchi river waterway, a tributary of the Sonora River, directly affecting 800,000 people #PCD#Cu#10000#0.5##0.5##1000#Py#30.9707414#-110.3089756
+#1#Imperial Metals, Mt Polley, British Columbia, Canada#Cu Au#MCL#MW#40#74,000,000#1A-FN#1#-#2014#04/08/14#23,600,000#7##Expert Panel Report#Report on Mount Polley Tailings Storage Facility Breach, Independent Expert Engineering Investigation and Review Panel, Province of British Columbia, January 30, 2015; Imperial Metals 2015 Annual Report#PCD#Cu Au#507#0.28#0.29#0.5126071278#2005#56.3628125#Py#52.5719902#-121.6408822
+#2#Dan River Steam Station, North Carolina (Duke Energy)#Coal####155,000,000#1A-ST#1#-#2014#02/02/14#334,000###WISE, Caldwell 2014#Collapse of an old drainage pipe under a 27-acre ash waste pond.  Ash flowing through drainage pipe into Dan River. Tailings Facility Failures in 2013/2014, Caldwell, 4Nov14##Coal########36.4915111#-79.7195704
+#3#Zangezur Copper Molybdenum Combine, Armenia#Cu Mo#####2A-U#2#-#2013#15/11/13####WISE, Green Program#Cronimet Mining AG. Tailings pipeline damage, tailings flowing into Norashenik River for several days (http://www.thegreenprogram.org/slopedoc2.html)##Cu Mo########39.1517342#46.1493699
+#2#Obed Mountain Coal Mine Alberta, Canada#Coal#####1B-U#1#-#2013#31/10/13#670,000#>113##WISE; Caldwell, 2014#Sherritt International. Breach of wall in containment pond. Plume of slurry containing fine coal particles, clay and heavy metals into the Apetowun und Plate creeks and eventually the Athabasca River. $52.2 million Set aside by Sheritt for cleanup (2013 Annual Report).  Tailings Facility Failures in 2013/2014, Caldwell, 4Nov14##Coal########56.130366#-106.346771
+#3#Casa Berardi Mine, La Sarre, Abitibi region, Quebec (Hecla Mining Company)#Au#####1B-OT#1#-#2013#01/05/13#57,000###Caldwell 2014#Breach of an internal tailings dyke which resulted in a surge of liquids and suspended solids over the external tailings dyke. Tailings Facility Failures in 2013/2014, Caldwell, 4Nov14##Au########None#None
+#2#Gullbridge Mine Newfoundland#Cu#DS#E#7##1B-SI#1#-#2012#17/12/12#100,000###WISE, Caldwell 2013#At 7:45 am on Monday December 17, the tailings dam at the former Gullbridge copper mine, central Newfoundland failed while work was under way to stabilize it. The failure resulted in a breach of the 7 m high dam approximately 25 m wide. The dam was impounding mine tailings that were partially covered by water forming a tailings pond.##Cu########None#None
+#2#Sotkamo, Kainuu Province, Finland (Talvivaara)#Ni U#####1A-SE#1#-#2012#04/11/12#240,000###WISE#"Talvivaara Mining Company Plc  Leak from gypsum pond through a ""funnel-shaped hole."" Nickel and zinc concentrations in nearby Snow River exceeded the values that are harmful to organisms tenfold or even a hundredfold, uranium concentrations more than tenfold. Heap-leach operation; leakage form gypsum pond also occured in 8 April 2013 (4th leak since 2008); after restarting operations, the gypsum leaked again on 21 May 2013"##Ni U########63.9495695#28.1714838
+#1#Padcal No 3, Benquet Philippines (Philex)#Cu####102,000,000#1A-OT#1#-#2012#02/08/12#13,000,000###NASSA & CCCP#"20.6 million tonnes released due to heavy rains.  The Balog and Agno River are heavily polluted. ""CSOs release results of independent investigation on Philex's tailings spill,"" NASSA & CCCP press release, 2 October 2012"#PCD#Cu#590#0.3#0.35#0.5807327405#1958#325#Py#16.2638711#120.6258059
+#3#Hudson Bay (HB) Mine, Salmo, British Columbia (Regional District of Central Kootenay & Teck)#Pb Zn####1,800,000#1B-SE#1#-#2012#11/07/12#nil###Nelson Star, 9Jul12#"A sinkhole in the dam at the  the HB mine site south of Salmo has been determined as the primary cause of the slough that threatened the stability of the tailings pond last week.  Heavy rainfall throughout the month of June was a contributing factor to some seepage and the initial slough. The Regional District of Central Kootenay purchased the six-hectare tailings area in 1998 as part of their central landfill area. ""Sinkhole to blame for slough at mine site near Salmo,"" Nelson Star, 9Jul12."##Pb Zn########None#None
+#3#Johson Gold Mining Corporation at Baranggay Bangong-Bayan#Au#####1A-ER#1#-#2012#13/04/12####Mambulaoans Worldwide Buzz, 2012#Cyanide-laden mine tailings destroyed 10 houses. (http://mambulaoansworldwidebuzz.blogspot.com/2012/04/friday-13th-disaster-gold-miners_21.html)##Au########None#None
+#3#Mianyang City, Songpan County, Sichuan Province, China#Mn#####1A-OT#1#-#2011#21/07/11#10,000###Future Directions Intl.#Heavy rain on July 20 led the managers of the electrolytic manganese metal plant to release water from its tailing dams into the Fujiang River, which provides drinking water to Sichuan’s second largest city - (http://www.futuredirections.org.au/publications/food-and-water-crises/28-global-food-and-water-crises-swa/176-chinese-city-of-4-million-left-dry-as-pollution-contaminates-water.html)##Mn########32.655325#103.604698
+#2#Bloom Lake, Newfoundland, Canada (Cleveland Cliffs)#Fe#####1A-U#1#-#2011#01/05/11#200,000###Globe and Mail, December 25, 2014#Cliffs' Bloom Lake mine hit with record $7.5-million environmental fine##Fe########None#None
+#1#Ajka Alumina Plant, Kolontár, Hungary (MAL Magyar Aluminum)#Al#DS#Compacted Fly Ash##30,000,000#1A-SE#1#-#2010#04/10/10#1,000,000##10#Kolontár Report, WISE, Zanbak 2010#"The Kolontar Report (https://www.google.com/?gws_rd=ssl#q=kolontar+hungary+disaster), 10 people dead and almost 150 injured, about 1,000 acres of polluted land.  8 square kilometres flooded, including several towns.  Failure Mechanism and Kinematics of the Ajka Tailings Pond, Hungary, C. Zanbak, 10 December 2010"##Al########None#None
+#1#Zijin Mining, Xinyi Yinyan Tin Mine, Guangdong Province, China#Sn#####1A-OT#1#-#2010#21/09/10###22#Zijin Mining Group;  Fry et al, 2012#Gaoqiling tailing pool dam at Qianpai Town, Xinyi City, Guangdong. Yinyan Tin Mine Dam Failure, Zijin Mining Group, 27Dec10, (https://www.regjeringen.no/contentassets/e7016c9a7430498e8c583a533dd1ca15/rec_zijin_2012_eng.pdf, http://www.facing-finance.org/en/database/cases/zijin-mining-collapse-of-tailing-dam-kills-22-destroys-houses/)##Sn########None#None
+#4#Zijin Mining, Zijinshan Gold & Copper Mine, (Ting River)#Au Cu#####3A-U#3#-#2010#16/07/10#500###Zijin Mining Group#Transfer tank used to dispose waste water for heap leach emergency leaked, Progress relating to the environmental incident concerning a sudden leakage of the waste water pond at the Zijinshan Copper Mine hydro-metallurgical plant, Zijin Mining Group, 16Jul10 (https://www.regjeringen.no/contentassets/e7016c9a7430498e8c583a533dd1ca15/rec_zijin_2012_eng.pdf)##Au Cu########None#None
+#3#Zijin Mining, Zijinshan Gold & Copper Mine, (Ting River)#Au Cu#####2A-U#2#-#2010#03/07/10#9,100###Zijin Mining Group#Heap Leach pond break, Social Responsibility Report of 2010, Zijin Mining Group Co., Ltd., Department of Investment Securities of Zijin Mining Group, 31Mar11 (https://www.regjeringen.no/contentassets/e7016c9a7430498e8c583a533dd1ca15/rec_zijin_2012_eng.pdf);##Au Cu########None#None
+#3#Huancavelica, Peru, Unidad Minera Caudalosa Chica#Ag, Cu, Pb, Zn###10##1A-SE#1#-#2010#25/06/10#21,420#110##WISE, McLemore et al, 2014#"Contamination of río Escalera and río Opamayo 110 km downstream.  See Sampling and Monitoring for the Mine Life Cycle
+edited by McLemore, Virginia T., Smith, Kathleen S., Russell, Carol C. Russell, SME, 2014"##Ag, Cu, Pb, Zn########-12.11532#-77.0322651
+#3#Unidad Minera Caudalosa Chica, Huancavelica, Peru######1B-U#1#-#2010#25/06/10#21,420#110##WISE#Contamination of río Escalera and río Opamayo 110 km downstream ##0########-12.7861978#-74.9764024
+#3#Tranque Adosado Planta Alhué, Alhué, Region Metropolitana, Chile##DS##15##1A-EQ#1#-#2010#27/02/10####Villavicencio#Intraplate earthquake Mw = 8.8, R = 252 km, slope 4.5:1, slope instability with seismically induced deformations##0########-34.0264691#-71.1002881
+#3#Las Palmas, Pencahue, VII Region, Maule, Chile (COMINOR)####15##1B-EQ#1#-#2010#27/02/10##0.5#4#Villavicencio#Intraplate earthquake Mw = 8.8, 80% of total volume estimated lost, overtopping with ﬂow failure##0########None#None
+#3#Tranque Planta Chacón, Cachapoal, VI Region, Rancagua, Chile######1B-EQ#1#-#2010#27/02/10####Villavicencio#Intraplate earthquake Mw = 8.8, slope 1.8:1, slope instability with seismically induced deformations##0########-34.1701324#-70.7406259
+#3#Veta del Agua Tranque No. 5, Nogales, V Region, Valparaíso, Chile#Cu#US####1B-EQ#1#-#2010#27/02/10#80,000#0.1##Villavicencio#Intraplate earthquake Mw = 8.8, slope 1.4:1, slope instability with seismically induced deformations##Cu########-32.7333#-71.2042115
+#3#Tranque Adosado Planta Alhué, Alhué, Region Metropolitana, Chile (Florida Mining)##US####1B-EQ#1#-#2010#27/02/10####Villavicencio#Intraplate earthquake Mw = 8.8, 80% of total volume estimated lost, slope 1.2:1, slope instability with seismically induced deformations##0########-34.0341147#-71.0267176
+#1#Karamken, Magadan Region, Russia (cyanide-leach processing facility of gold mines in the region)#Au###20##1A-U#1#-#2009#29/08/09#1200000##1#WISE, MACE#11 houses lost, 1 death (Karamken Update - MACE 2012-02-10); shutdown in 1990s; bad design, bad construction, no maintenance led to groundwater contamination prior to failure; #Vein#Au#####1978###None#None
+#2#Huayuan County, Xiangxi Autonomous Prefecture, Hunan Province, China#Mn#####1A-U#1#-#2009#14/05/09#50000##3#WISE#3 killed, 4 injured##Mn########28.572029#109.482078
+#1#Kingston fossil plant, Harriman, Tennessee, USA (TVA)#Coal#####1A-U#1#-#2008#22/12/08#4100000#4.1##WISE#"5.4 million cubic yards (1.09 billion gallons) of fly ash was released (http://www.sourcewatch.org/index.php?title=TVA_Kingston_Fossil_Plant_coal_ash_spill#TVA_Reaction)"#Strat#Coal#####1955###35.8982448#-84.5188191
+#1#Taoshi, Linfen City, Xiangfen county, Shanxi province, China (Tahsan Mining Co.)#Fe#US##50.7#290000#1B-U#1#-#2008#08/09/08#190000#2.5#277#WISE#"At least 254 dead and 35 injured; mine not operating - claimed that state-owned company ""sealed"" TSF"##Fe########None#None
+#3#Glebe Mines, UK#F##E###1B-OT#1#-#2007#22/01/07#20000###HSE Report#Flourspar mine.  Initial Report of the HSE investigation into the Glebe Mines Stony Middleton dam failure 2007, HSE Central Division - Nottingham, UK, 23Feb07##F########53.2740322#-1.6947402
+#1#Mineracao Rio Pomba Cataguases, Mirai, Minas Gerais, Brazil, Mineração (Industrias Quimicas Cataguases)#Al#####1A-OT#1#-#2007#10/01/07#2000000###WISE#The mud flow left about 4000 residents of the cities of Miraí and Muriaé in the Zona da Mata homeless. Crops and pastures were destroyed and the water supply was compromised in cities in the states of Minas Gerais and Rio de Janeiro. #Laterite (Bauxite)#Al########None#None
+#3#Fonte Santa ,Freixia De Espado a Cinta, Potugal#?#DS#E#12##2B-OT#2#-#2006#27/11/06#93940#17.5##Duque, 2011#Reconstitution of the failure of the Fonte Santa mine tailings dam. Modelling of the dam breaching process. Marta AC Duque, New University of Lisbon, Master of Civil Engineering Structures and Geotechnics thesis, July 2011##?########41.090445#-6.8058934
+#4#Nchanga, Chingola, Zambia (Konkola Copper Mines - Vedanta)#Cu#####3#3#-#2006#06/11/06####WISE#Konkola Copper Mines Plc (51% Vedanta Resources plc)  Failure of tailings slurry pipeline from Nchanga tailings leaching plant to Muntimpa tailings dumps. Release of highly acidic tailings into Kafue river; high concentrations of copper, manganese, cobalt in river water; drinking water supply of downstream communities shut down.#SSC#Cu#1100#2.16##3.6#1939#135#Co#-12.5322373#27.8571507
+#2#Miliang, Zhen'an County, Shangluo, Shaanxi Province, China#Au#####1A-U#1#-#2006#30/04/06##5#17#WISE#The landslide buried about 40 rooms of nine households, leaving 17 residents missing. Five injured people were taken to hospital. More than 130 local residents have been evacuated. Toxic potassium cyanide was released into the Huashui river, contaminating it approx. 5 km downstream. ##Au########33.319327#109.522122
+#2#Mineracao Rio Pomba Cataguases, Mirai, Minas Gerais, Brazil, Mineração (Industrias Quimicas Cataguases)#Al#####1A-U#1#-#2006#01/03/06#400000###Brazil Magazine#"In March 2006, a leaking (sic) let 400 million liters (400,000 m3) of muddy water escape making its way to Rio de Janeiro. ""Brazilian Rains Kill Dozens and Broken Dam Leaves, Thousands Without Shelter ,"" José Wilson Miranda , Brazzil Magazine, 11 January 2007  The mud flow left about 4000 residents of the cities of Miraí and Muriaé in the Zona da Mata homeless. Crops and pastures were destroyed and the water supply was compromised in cities in the states of Minas Gerais and Rio de Janeiro; company was cited for a TSF infraction in 2006"#Laterite (Bauxite)#Al########None#None
+#3#Bangs Lake, Jackson County, Mississippi, USA (Mississippi Phosphates Corp)#P######3#-#2005#14/04/05#64,350###WISE#Mississippi Phosphates Corp. Phosphogypsum stack failure, because the company was trying to increase the capacity of the pond at a faster rate than normal, according to Officials with the Mississippi Department of Environmental Quality (the company has blamed the spill on unusually heavy rainfall, though). Liquid poured into adjacent marsh lands, causing vegetation to die.#Strat#P########30.3519078#-88.4995938
+#3#Pinchi Lake, BC, Canada (Teck Cominco Ltd.)#Hg#WR#E#12##2A-ER#2#-#2004#30/11/04#6,000-8,000###WISE#Mercury contaminated tailings into Pinchi Lake; operated 1940-43 and 1968-1975 by Cominco#Vein-Strat#Hg#1.1####1940###49.12271#-123.0954608
+#2#Riverview, Florida, USA#P#####3#3#-#2004#05/09/04#227000###WISE#A dike at the top of a 100-foot-high gypsum stack holding 150-million gallons of polluted water broke after waves driven by Hurricane Frances bashed the dike's southwest corner. Liquid spilled into Archie Creek that leads to Hillsborough Bay.#Strat#P########27.8661364#-82.3264809
+#2#Partizansk, Primorski Krai, Russia (Dalenergo)#Coal#Ring###20000000#1A-U#1#-#2004#22/05/04#160000###WISE#A ring dike, enclosing an area of roughly 1 km2 and holding roughly 20 million cubic meters of coal ash, broke. The break left a hole roughly 50 meter wide in the dam. The ash flowed through a drainage canal into a tributary to the Partizanskaya River which empties in to Nahodka Bay in Primorski Krai (east of Vladivostok).  For details download Sept. 2004 report by Paul Robinson, SRIC.#Strat#Coal########None#None
+#3#Malvési, Aude, France (Comurhex, Cogéma/Areva)#U#####1A-U#1#-#2004#20/03/04#30000###WISE#Uranium slurries elevated nitrate in river. Decantation and evaporation pond of uranium conversion plant dam failure after heavy rain in preceding year. the release led to elevated nitrate concentrations of up to 170 mg/L in the canal of Tauran for several weeks.##U########43.2121511#2.983806
+#2#Cerro Negro, near Santiago, Chile, (5 of 5)#Cu#US#T###1A-ER#1#-#2003#03/10/03#80000#20##WISE, Villavicencio#Tailings flowed 20 kilometers downstream the río La Ligua.##Cu########-36.82909#-72.425984
+#2#Sasa Mine, Macedonia#Pb-Zn####2000000#1A-ST#1#-#2003#30/08/03#70,000-100,000#12##Vrhovnik et al, 2011; Vrhovnik et al, 2013; Peck, 2007#Culvert failure under Sasa Mine Tailings Dam. (Avoiding tailings dam failures, Good practice in prevention, Philip Peck, UNEP GRID Arendal and IIIEE at Lund University, Workshop on the safety of Tailings Management Facilities, November 12, 2007, Yerevan, Armenia); Tailings dam break with waste flowing into Lake Kalimanci 12 km from mine. (http://www.geologija-revija.si/dokument.aspx?id=1229); The Occurrence of Heavy Metals and Metalloids in Surficial Lake Sediments before and after a Tailings Dam Failure, Petra Vrhovnik, Tadej Dolenec, Todor Serafimovski, Matej Dolenec, Nastja Rogan Šmuc, Pol. J. Environ. Stud. Vol. 22, No. 5 (2013), 1525-1538 (http://www.pjoes.com/pdf/22.5/Pol.J.Environ.Stud.Vol.22.No.5.1525-1538.pdf)##Pb-Zn########42.1087167#22.5195587
+#1#Mineracao Rio Pomba Cataguases, Mirai, Minas Gerais, Brazil, Mineração (Industrias Quimicas Cataguases)#Al#####1A-U#1#-#2003#25/06/05#1200000###Brazil Magazine#"1.2 billion liters (1.2 million m3) of toxic water was poured out into the Pomba and Paraíba do Sul rivers. ""Brazilian Rains Kill Dozens and Broken Dam Leaves, Thousands Without Shelter ,"" José Wilson Miranda , Brazzil Magazine, 11 January 2007"#Laterite (Bauxite)#Al########None#None
+#3#El Cobre, Chile - El Soldado (Exxon)#Cu#US#T###1B-OT#1#-#2002#08/11/02#4500###Villavicencio#Strong rains and overﬂow#HT Manto#Cu#580#1.1##1.1#19th c#200#Py#-18.4876637#-70.2887417
+#3#El Cobre, Chile, 2, 3, 4, 5 (Exxon)#Cu#US#T###1B-OT#1#-#2002#22/09/02#8000###Villavicencio#Strong rains and overﬂow#HT Manto#Cu#580#1.1##1.1#19th c#200#Py#-18.4876637#-70.2887417
+#1#San Marcelino Zambales, Philippines, Bayarong dam (Benguet Corp-Dizon Copper-Silver Mines Inc)#Cu Au####47000000#1B-OT#1#-#2002#11/09/02#>1,000,000?###WISE, Piplinks#Dizon Copper Silver Mines Inc. Spillway of Bayarong tailings dam collapsed and Camalca tailings dam damaged during heavy rain. Low lying villages flooded with mine waste; 250 families evacuated; mined ceased operations in 1997#PCD#Cu Au#187#0.36#0.93#1.1059469961#1980#97#Py#None#None
+#3#San Marcelino Zambales, Philippines, Camalca dam (Benguet Corp-Dizon Copper-Silver Mines)#Cu Au#####1B-OT#1#-#2002#27/08/02####WISE, Piplinks#Heavy rains impounded water on the Bayarong tailings dam and Camalca silt dam, and spillways, eroding these and eventually causing leak. Some tailings spilled into Mapanuepe Lake and eventually into the Sto. Tomas River.  #PCD#Cu Au#187#0.36#0.93#1.1059469961#1980#97#Py#None#None
+#3#Tarkwa, Ghana (Goldfields)#Au########2001#16/10/01####Environmental New Service#http://www.corpwatch.org/article.php?id=744  (accessed 1Jul16)  This is possibly a larger failure, but no additional details are available.##Au########5.3150952#-1.9957717
+#2#Sebastião das Águas Claras, Nova Lima district, Minas Gerais, Brazil#Fe#####1A-U#1#-#2001#22/06/01##8#2#WISE#2 killed, 3 missing. Taililngs 8 km downstream the Córrego Taquaras stream, mud affected an area of 30 hectares#Strat#Fe########-20.0494418#-43.9160256
+#1#Nandan Tin mine, Dachang, Guangxi#Sn#####1A-U#1##2000#18/10/00###28#Wei, WISE#WISE:15 killed, 100 missing, 100 houses destroyed##Sn#######Py, Asp, Ga#24.830881#107.579105
+#1#Inez, Martin County, Kentucky, USA (Massey Energy subsidiary Martin Co. Coal Corp)#Coal#####1A-U#1#Table 1#2000#11/10/00#1068500#120##ICOLD, WISE#Estimated 250 million gallons (950,000 m3) of water and 155,000 cubic yards (118,500 m3) of coal waste into local streams 80' deep over a 15-18' crown pillar; $46M for cleanup, $3.5M in state fines; since this event, 22 impoundment spills attributed to Massey-operated sites through2010 (Wheeling Jesuit Univ.)##Coal########37.7575737#-82.5865289
+#1#Aitik mine, near Gällivare, Sweden (Boliden Ltd)#Cu#DS#MW & E#15#15000000#1A-ER#1#Table 1#2000#08/09/00#1800000#5.2##ICOLD, WISE#Failure at containment wall separating tailings pond from decant pond, which caused a 1.3m rise I nwater level. Discharge was controlled and only increase in suspended solids in the Leipojoki and Sakajoki Rivers was reported. https://pure.ltu.se/portal/files/96533586/Numerical_analysis_of_staged_construction_of_an_upstream_tailings_dam.pdf#PCD#Cu#1340#0.4#0.2#0.5604187088#1968#317#Py#67.0732956#20.9641294
+#3#Borsa, Romania (Remin S.A - govt)#Pb Zn#####1A-U#1#Table 1#2000#10/03/00#9140###WISE#22,000 t of heavy-metal contaminated tailings, contamination of the Vaser stream, tributary of the Tisza River. Company: Remin SA##Pb Zn#######Py#None#None
+#1#Baia Mare, Romania #Au#DS then US#T#A few m#800000#1A-ST#1#221#2000#30/01/00#100000#>100##ICOLD, WISE, Rico#(Aurul SA-Esmeralda Exploration, Australia (50%), Remin S.A. (44.8%))  Killed tonnes of fish and poisoned drinking water of more than 2 million people in Hungary; retreating old tailings (mining there for over 2,000 years) with cyanide; high snowfall led to water rise and overtopping causing a breach 25m wide and 2.5m deep (livebettermagazine.com)#Tailings#Au#####1999##St, Bi, Py, Ga#47.6567387#23.5849881
+#1#Toledo City, Philippines (Atlas Con Mining Corp)#Cu#####1B-ST#1##1999#09/08/99#5700000###Piplinks#Drainage tunnel blowout#PCD#Cu#2000#0.34#0.24#0.5325024506#1955#575#Py#None#None
+#3#Red Mountain, BC#Au Ag#Jumbo####1A-SE#1##1999#05/06/99#10000###Mt Polley Expert Panel 2015, App. I#Failure of the surface water diversion culvert beneath the facility. Discharge of tailings into the water reclaim pond downstream of the impoundment and into Little Sheep Creek.##Au Ag########49.1024147#-117.8194705
+#2#"Surigao Del Norte Placer, Philippines (#3 of 3) Manila Mining Corp"#Au#####3#3#Table 1#1999#26/04/99#700,000 t#12#4#ICOLD, Piplinks#Manila Mining Corp.  Tailings spill from damaged concrete pipe.  17 homes buried, 51 hectares of riceland swamped.#Placer#Au########9.6646755#125.5945712
+#3#Huelva, Spain (Fertiberia, Foret)#P#####1A-OT#1#Table 1#1998#31/12/98#50000###ICOLD, WISE#Fertiberia phosphate mine, 50,000 m3 of acidic and toxic water#Strat#P########37.229712#-6.9522003
+#3#Zamboanga Del Norte, Sibutad Gold Project (Philex Mining Corp)#Au#####1A-OT#1#-#1998#27/06/98####Piplinks#Philex Gold Philippines Inc. Heavy rain resulted in overflowing of silt dam at the Sibutad gold project##Au########None#None
+#1#Los Frailes, near Seville, Spain (Boliden Ltd.)#Pb Zn#WR#R#27#15000000#1A-FN#1#209#1998#25/04/98#6800000#41##ICOLD, WISE, Rico#Modern mining started in 1876 at nearby Aznalcollar; Andaluza de Piritas started open pit in 1979 after delineating recently-discovered mineralization; Boliden purchased company in 1987.#VMS#Pb Zn#161#0.44##2.5392712696#1979##PY#None#None
+#2#Mulberry Phosphate, Polk County, Florida, USA (Mulberry Phosphate)#P#####2A-SE#2#-#1997#07/12/97#200000###WISE; Beavers 2013.#Phosphogypsum stack failure. Biota in the Alafia River eliminated (WISE). Mulberry Phosphate had a gypsum stack dam break that resulted in the release of approximately 50 million gallons of waters into adjacent marshes and ponds. Acidic water eventually traveled down the Alafia toward Tampa Bay. Estimates of fish killed ranged from 50,000 to 3,000,000 (An Overview of Phosphate Mining and Reclamation in Florida, Casey Beavers, University of Florida thesis, April 2013).#Strat#P########27.8937109#-81.9732799
+#3#Zamboanga Del Norte, Sibutad Gold Project (Philex Mining Corp)#Au#####1A-OT#1#-#1997#06/11/97####Piplinks#Philex Gold Philippines Inc. Heavy rain caused mudflow and rockslide into silt dam at Lalab. Flashfloods damaged nearby houses and rice fields.##Au########None#None
+#2#Pinto Valley, Arizona, USA (BHP Copper)#Cu#####1B-SI#1#Table 1#1997#22/10/97#230000###ICOLD, WISE#Tailings dam slope failure. Tailings flow covers 16 hectares.#PCD#Cu########33.400691#-110.9690387
+#3#Algarrobo, IV Region, Vallenar, Chile#Fe#US##18##1A-EQ#1#-#1997#14/10/97####Villavicencio#Intraplate earthquake Ms = 7.0, R = 100 km, dam slope 1.5:1#Magmatic#Fe########-28.58501#-70.750973
+#3#Algarrobo, IV Region, Vallenar, Chile#Fe#US##20##1A-EQ#1#-#1997#14/10/97####Villavicencio#Intraplate earthquake Ms = 7.0, R = 80 km, dam slope 1.5:1#Magmatic#Fe########-28.58501#-70.750973
+#3#Maitén, IV Region, Vallenar, Chile#?#US##15##1A-EQ#1#-#1997#14/10/97####Villavicencio#Intraplate earthquake Ms = 7.0, R = 120 km, dam slope 1.5:1##?########-29.9587668#-71.2486024
+#3#Tranque Antiguo Planta La Cocinera, IV Region, Vallenar, Chile#?#US/CL##30##1A-EQ#1#-#1997#14/10/97#60000#>0.15##Villavicencio#Intraplate earthquake Ms = 7.0, R = 80 km, dam slope 1.7:1; deaths in 1943 failure after 7.9 magnitude eartquake##?########-29.9587668#-71.2486024
+#2#Amatista, Nazca, Peru#?#US####1B-EQ#1#-#1996#12/11/96#300000###WISE#Liquefaction failure of upstream-type tailings dam during M6.4 earthquake. Flow runout of about 600 meters, spill into river, croplands contaminated.##?########-14.8358687#-74.9327583
+#2#El Porco, Bolivia (Comsur-62%, Rio Tinto-33%)#Pb Zn#####1A-U#1#Table 1#1996#29/08/96#166000#300##ICOLD, WISE#400,000 tonnes released, 300 km of Pilcomayo river contaminated#Vein#Pb Zn########None#None
+#1#"Marcopper, Marinduque Island, Philippines (#2 of 2) (Placer Dome and President Marcos)"#Cu#####1A-ST#1#208#1996#24/03/96#1600000#26##ICOLD, WISE, Piplinks#Drainage tunnel plug failed. 26 km of the Makulaquit and Boac river systems filled with tailings rendering them unusable; US$ 80 million in damage; no production after this event#PCD#Cu#372#0.55#0.11#0.6382302899#1969#55#Py#None#None
+#2#Sgurigrad, Bulgaria#Pb Zn#US#T#45#1520000#1A-SI#1#220#1996#18/06/05#220000#6##ICOLD, Rico###Pb Zn########43.1811827#23.517919
+#3#Negros Occidental, Bulawan Mine Sipalay River, Philippines (Philex Mining Corp)#Au#####2A-U#2#-#1995#08/12/95####Piplinks#Pressure exerted by impounded tailings caused leak in decant tower of tailings pond 1 at the Bulawan gold mine. This was the 4th discharge in this area (1st was in 1982);  mine reactivated by Philex in 1996 and decommissioned in 2002 after which tailings dried up causing a dust problem as far as 5km from site##Au#####1957###None#None
+#3#Golden Cross, Waitekauri Valley, New Zealand (Coeur d'Alène Mines)#Au##R#25-30#3000000#1A-FN#1#207#1995#01/12/95#Nil###ICOLD#Movement of dam##Au########None#None
+#2#"Surigao del Norte Placer, Philippines (#2 of 3) (Manila Mining Corp)"#Au#WR#E#17##1B-FN#1#206#1995#02/09/95#50000##12#ICOLD, WISE#12 people killed, coastal pollution #Placer#Au########9.6646755#125.5945712
+#1#Omai Mine, Tailings dam No 1, 2, Guyana (Cambior)#Au#WR#R#44#5250000#1A-ER#1#205#1995#19/08/95#4200000#80##ICOLD, WISE, Rico#Cambior Inc., Canada (65%), Golden Star Resources Inc., Colorado, USA (30%) 80 km of Essequibo River declared environmental disaster zone.#Vein#Au#43##1.51#1.2111612517#1993#8#Py#None#None
+#3#Middle Arm, Launceston, Tasmania#Au#CL#E#4#25000#1A-OT#1#204#1995#25/06/95#5000###ICOLD###Au########-41.4309658#147.1439793
+#3#Riltec, Mathinna, Tasmania#Au#CL#E#7#120000#2A-SE#2#203#1995#01/06/95#40000###ICOLD###Au########-41.5270171#147.7884863
+#1#Hopewell Mine, Hillsborough County, Florida, USA#P#####1A-U#1#-#1994#19/11/94#1900000###WISE#IMC-Agrico.  Water from a clay settling pond spilled into nearby wetlands and the Alafia River, Keysville flooded.#Strat#P########27.9903597#-82.3017728
+#1#Payne Creek Mine, Polk County, Florida, USA#P#####1A-U#1#-#1994#02/10/94#6800000###WISE#IMC-Agrico. Majority of spill contained on adjacent mining area; 500,000 m3 released into Hickey Branch, a tributary of Payne Creek.#Strat#P########27.8617347#-81.6911559
+#3#Fort Meade Phosphate, Florida, USA #P#####2A-SE#2#-#1994#01/10/94#76000###WISE#Cargill. Phosphogypsum process (?) water. Spill into Peace River near Fort Meade.#Strat#P########27.747747#-81.851558
+#3#IMC-Agrico Phosphate, Florida, USA#P#####2A-SE#2#-#1994#01/06/94####WISE#IMC-Agrico. Sinkhole opens in phosphogypsum stack.#Strat#P########27.6648274#-81.5157535
+#1#Merriespruit, near Virginia, South Africa (Harmony) - No 4A Tailings Complex#Au#US paddock#T#31#7040000#1B-OT#1#202#1994#22/02/94#600000#4#17#ICOLD, WISE, Rico#Dam wall breach following heavy rain, tailings traveled 4 km downstream, 17 people killed, extensive damage to residential township; No 4 TSF started in 1978 and was only 320m from nearest houses#WITS#Au#####1950##Py#None#None
+#4#Olympic Dam, Roxby Downs, South Australia#Cu U#####3#3#-#1994#14/02/94#5000000###WISE#Designed groundwater leakage from unlined tailings impoundment into groundwater.  Up to 5 million m3 of contaminated water into the subsoil.##Cu U#4800#1.4#0.6#3.3212561265#1988#10#Py#-30.4405176#136.872751
+#3#Minera Sera Grande: Crixas, Goias, Brazil#Au#DS then US#CST#41#2.25Mt#2A-SI#2#214#1994#01/02/94#None###ICOLD###Au########-14.5770093#-49.9685762
+#3#"Fort Meade, Florida, Cargill phosphate (#3 of 3)"#P#####1A-U#1#-#1994#02/01/94#76000###WISE###P########27.6476309#-81.7570894
+#1#Longjiaoshan, Daye Iron Ore mine, Hubei#Fe#####1A-U#1#-#1994#01/01/94###31#Wei###Fe########None#None
+#2#"Marcopper, Marinduque Island, Mogpog Philippines(12/6) (#1 of 2) (Placer Dome-President Marcos)"#Cu#####1A-U#1#-#1993#06/12/93###2#Piplinks#Siltation (tailings) dam failure. Mogpog River and Mogpog town flooded. The dam was completed in 1992.##Cu########None#None
+#3#Gibsonton, Florida, USA (Cargill)#P#####2A-U#2#-#1993#01/10/93####WISE#Fish killed when acidic water spilled into Archie Creek (WISE). #Strat#P########27.932501#-82.439572
+#3#TD 7, Chingola, Zambia#Cu#US#T&E#5##1A-OT#1#200#1993#01/08/93#100 t###ICOLD###Cu########-12.5419553#27.8545867
+#3#Itogon-Suyoc, Baguio gold district, Luzon, Philippines (Benguet Corp)#Au Ag#####1A-OT#1#199#1993#26/06/93####ICOLD, Piplinks#Itogon-Suyoc Mines.  Overtopping at the dam of the Itogon-Suyoc gold and silver mines occurred during a typhoon when the dam’s penstock and diversion tunnel were blocked. Siltation of the adjoining river. No production after this event.#Vein#Au Ag#>50#2.5#6#7.3125612651#1931#37#Py#None#None
+#3#Saaiplaas, South Africa, failure on south ring dyke (22Mar93)#Au#US#CST#28##1A-SI#1#Table 1#1993#22/03/93#minimal###Blight, ICOLD#Slope Stability in Surface Mining, W. A. Hustrulid, M. Kim McCarter, Dirk J. A. Van Zyl, 2001, Chapter 42, Management and Operational Background to the Three Tailings Dam Failures in South Africa, G Blight, p. 386.  Three separate events within 4 days.  #Wits#Au########None#None
+#3#Saaiplaas, South Africa, 2 failures on west ring dyke (18-19Mar93)#Au#US#CST#28##1A-SI#1#Table 1#1993#18/03/93#minimal###Blight, ICOLD#Slope Stability in Surface Mining, W. A. Hustrulid, M. Kim McCarter, Dirk J. A. Van Zyl, 2001, Chapter 42, Management and Operational Background to the Three Tailings Dam Failures in South Africa, G Blight, p. 386.  Three separate events within 4 days.  #Wits#Au########None#None
+#2#Marsa, Peru (Marsa Mining Corp)#Au#####1A-OT#1#-#1993#15/06/05###6#WISE#Dam failure from overtopping.#Vein#Au########None#None
+#3#Kojkovac, Montenegro#Pb Zn#WR#E##3500000#2B-ER#2#198#1992#01/11/92#none###ICOLD###Pb Zn########42.9600774#19.5835874
+#2#Maritsa Istok 1, Bulgaria#Coal##Ash#15#52000000#1A-ER#1#218#1992#01/03/92#500000###ICOLD, WISE#Dam failure from inundation of the beach.#Strat#Coal########42.1911529#24.3481619
+#1#Tubu, Benguet, No.2 Tailings Pond, Luzon, Philippines - Padcal (Philex)#Cu#####1A-FN#1#197#1992#02/01/92#32243000###Piplinks#Philex Mining Corp. Collapse of dam wall (foundation failure). 80,000,000 tonnes released, siltation affected government irrigation system; the 2nd of 3 dams that Philex controls failed in 1994 and a 3rd breached in 2001; Benguet Corp and Lepanto mines have built 5 TSFs each and no longer operate their mines; Itogon-Suyac;s TSF collapsed in 1994 (from UN report (2007))#PCD#Cu#590#0.3#0.35#0.5807327405#1958#200#Py#None#None
+#3#Ajka Alumina Plant, Kolontár, Hungary#Al#DS#Compacted Fly Ash###1A-ST#1#-#1991#03/11/91#43200###Kolontár Report#"The Kolontar Report (https://www.google.com/?gws_rd=ssl#q=kolontar+hungary+disaster)  Dam break occurred during the construction of Reservoir 10 resulting in alkaline (pH = 10-11) slag water escaping, polluting the rivers Marcal and Rába through the Torna stream to a traceable extent."##Al########47.085541#17.4756235
+#3#Iron Dyke, Sullivan Mine, Kimberley, BC, Canada (Cominco, Inc)#Pb Zn#US##21##1A-SI#1#196#1991#23/08/91#75000###ICOLD, WISE, Mt Polley Expert Panel 2015, App I#Dam failure (liquefaction in old tailings foundation during construction of incremental raise), material was contained in an adjacent pond.#VMS#Pb Zn#170###5.693021381#1909#130#PY#49.688233#-115.9887171
+#2#Brewer Gold Mine Jefferson South Carolina#Au#####1A-U#1#-#1990#01/11/90#41639.51#80##NWF, 2012#The spill killed 11,000 fish and decimated 50 miles of the Lynches River. (Protecting America's Waters from Irresponsible Mining, National Wildlife Federation, February, 2012)##Au########34.6521048#-80.426976
+#2#Matachewan Mines, Kirtland Lake, Ontario#U#####1A-U#1#-#1990#17/10/90#190000#168##Proceedings of Canadian dam safety conference, Niagara Falls (Canada), Oct 1996; Ontario Environment, 1990#Proceedings: Failure of the dam in 1990, when it discharged 190,000 cu m of tailings into Davidson Creek and the Montreal River. The contaminant plume was observed as far away as Lake Temiskaming, some 168 km downstream. (https://www.etde.org/etdeweb/details.jsp?query_id=1&page=0&osti_id=415194); Ontario Environment (https://archive.org/details/matachewanmineta00ontauoft)##U########47.9469738#-80.6770209
+#3#Soda Lake, California, USA#Na#US#E#3##2A-EQ#2#111#1989#17/10/89####ICOLD##Strat#Na########35.227468#-119.8901979
+#3#Silver King, Idaho, USA#Ag Pb#DS#E#9#37000#2A-OT#2#108#1989#05/08/89#Small###ICOLD###Ag Pb########43.8526815#-114.8770163
+#3#Big Four, Florida, USA#P#CL#E###2A-FN#2#14#1989#11/06/05####ICOLD##Strat#P########29.987855#-90.066271
+#3#Thompson Creek, Idaho, USA (Cyprus)#Mo#CL#CST#146#27000000#2A-SE#2#34#1989#11/06/05####ICOLD###Mo########44.2588889#-114.3997222
+#3#Southern Clay, Tennessee, USA#Clay#WR#E#5##1A-SE#1#112#1989#11/06/05#300###ICOLD##Strat#Clay########36.1847433#-86.8038905
+#3#Stancil, Maryland, USA#Sand#US#E#9#74000#1A-SI#1#116#1989#11/06/05#38000#0.1##ICOLD, Rico, WISE##Strat#Sand########39.5709517#-76.0267691
+#3#"Unidentified, Hernando, County, Florida, USA #2"#Limestone#US#E#12#3300000#1A-OT#1#163#1988#01/09/88#4600###ICOLD##Strat#Limestone########28.5355615#-82.5323345
+#2#Jinduicheng, Shaanxi Province., China#Mo#US##40##1A-OT#1#195#1988#30/04/88#700000##~20#ICOLD, WISE###Mo########34.313519#108.949815
+#2#Consolidated Coal No.1, Tennessee, USA,#Coal#DS#MW#85#1000000#2A-ST#2#121#1988#19/01/88#250000###ICOLD, WISE##Strat#Coal########35.5174913#-86.5804473
+#3#Unidentified, Hernando, County, Florida, USA#Limestone#DS#E#12##2A-FN#2#164#1988#10/06/05####ICOLD##Strat#Limestone########28.5473855#-82.4218646
+#4#Rain Starter Dam, Elko, Nevada, USA#Au#WR#ER#27#1500000#3#3#98#1988#10/06/05####ICOLD###Au########40.8324211#-115.7631232
+#3#Riverview, Hillsborough County, Florida#P#####1A-ER#1##1988#10/06/05#246###WISE; Beavers 2013.#Gardiner/Cargill.  A breach at a Riverview phosphogypsum stack caused the release of 65,000 gallons of process water into Hillsborough Bay, impacting coastal ecosystems, including sea grasses and mangroves. Acidic spill. Thousands of fish killed at mouth of Alafia River. (An Overview of Phosphate Mining and Reclamation in Florida, Casey Beavers, University of Florida thesis, April 2013)#Strat#P########27.8661364#-82.3264809
+#3#"Surigao Del Norte Placer, Philippines (#1 of 3) (Manila Mining Corp)"#Au#####1A-U#1##1987#09/07/87####Piplinks##Placer#Au########9.6646755#125.5945712
+#2#Montcoal No.7, Raleigh County, West Virginia, USA#Coal#####1A-U#1##1987#08/04/87#87000#80##WISE#tailings flow 80 km downstream#Strat#Coal########37.9131641#-81.5320548
+#3#Bekovsky, Western Siberia#Coal#US#Argillite, aleurolite#53#52000000#1A-U#1#212#1987#25/03/87#None###ICOLD##Strat#Coal########55.037217#82.915091
+#3#Xishimen, China#Fe#US#T#31##1A-SI#1#194#1987#21/03/87#2230###ICOLD###Fe########39.94048#116.355425
+#4#Montana Tunnels, MT, USA (Pegasus Gold)#Au#DS#MW#33#250000#3#3#87#1987#09/06/05####ICOLD#Old Mining District re-opened with open pit##Au#150##0.51#0.4160386296#1986#3.5##None#None
+#3#"Marianna Mine #58, PA"#Coal#US#E#37#300000#2A-SI#2#77#1986#19/11/86####ICOLD##Strat#Coal########40.0177879#-80.0976092
+#2#Mankayan District, Luzon, Phillippines, No.3 Tailings Pond (Benguet Corp subsidiary Lepanto Con Mining Co)#Cu Au##E###1A-ST#1#193#1986#17/10/86#>100,000?###ICOLD, Piplinks#Lepanto Consolidated Mining Corporation. Collapse of tailings pond 3 due to weakened dam embankment caused by additional loading. Siltation of the Abra River which affected 9 municipalities##Cu Au########None#None
+#3#Pico de Sao Luis, Gerais, Brazil#Fe ##T#20##1A-ER#1#192#1986#02/10/86####ICOLD##Strat#Fe########-18.512178#-44.5550308
+#3#Rossarden, Tasmania#Sn#WR#E#7.5#200000#1B-OT#1#190#1986#16/05/86####ICOLD###Sn########-41.6393975#147.6036973
+#3#Story’s Creek, Tasmania#Sn#Valley side##17#30000#1B-OT#1#191#1986#16/05/86#Minimal###ICOLD###Sn########-41.7078976#147.7029458
+#2#Itabirito, Minas Gerais, Brazil#Fe#Gravity#Masonry#30##1A-ST#1#189#1986#01/05/86#100,000t#12#7#ICOLD, WISE, Rico#Itaminos Comercio de Minerios.  Dam wall burst. #Strat#Fe########-20.2530617#-43.8030567
+#3#Mineral King, BC, Canada#Pb Zn#CL#CST#6#Small#1B-OT#1#188#1986#20/03/86####ICOLD, MT Polley Expert Panel 2015, App I#Tailings spilt out through dam but were almost completely contained by the emergency pond downstream of the dam.##Pb Zn########53.7266683#-127.6476206
+#2#Huangmeishan, China#Fe#####1A-U#1##1986#08/06/05###19#WISE###Fe########27.366235#119.533784
+#3#Spring Creek Plant, Borger, Texas, USA#Sand###5#30000#1A-OT#1#114#1986#08/06/05####ICOLD##Strat#Sand########35.6678203#-101.3973876
+#3#Bonsal, North Carolina, USA#Sand#WR#E#6#38000#1A-OT#1#17#1985#17/08/86#11000#0.8##ICOLD##Strat#Sand########35.66028#-78.97389
+#1#Prestavel Mine - Stava, North Italy, 2, 3 (Prealpi Mineraria)#F#US#CST#29.5#300000#1A-SI#1#117#1985#19/07/85#200000#8#269#ICOLD, WISE, Rico#Damage valued at Euro133M; razed 20 buildings in Stava and flowed in to Avisio River; mining of argentiferous galena since 16th c.; fluorite mining commenced in 1934 and throughput increased from 30tpd to 200tpd in 1961; 1st TSF in use by 1962, 2nd by 1970##F######1.5##None#None
+#3#La Belle, Pennsylvania, USA#Coal#DS#MW#79#1230000#2A-FN#2#68#1985#17/07/85####ICOLD##Strat#Coal########40.0078516#-79.9789401
+#2#Cerro Negro No. (4 of 5)#Cu#US#CST#40#2000000#1A-EQ#1#30#1985#03/03/85#500000#8##ICOLD WISE, Rico###Cu########12.5077778#-86.7022222
+#2#Veta de Agua#Cu#US#T#24#700000#1A-EQ#1#178#1985#03/03/85#280000#5##WISE, Rico###Cu########30.506111#-111.0041667
+#1#Niujiaolong, Shizhuyuan Non-ferrous Metals Co., Hunan#P#####1A-U#1##1985#07/06/05#731000#4.2#49#Wei###P########25.775885#113.169207
+#3#El Cobre No. 4 - El Soldado (Exxon)#Cu#DS#CST#50##2A-EQ#2#44#1985#07/06/05####ICOLD##HT Manto#Cu#580#1.1##1.1#19th c#65#Py#None#None
+#3#Marga, Chile - El Teniente (Codelco)#Cu#####1B-OT#1#76#1985#07/06/05####ICOLD##PCD#Cu#12000#1###1905#680#Py#-34.1736837#-70.7493885
+#3#Olinghouse, Nevada, USA#Au#WR#E#5#120000#1A-SE#1#91#1985#07/06/05#25000#1.5##ICOLD, Rico, WISE###Au########39.6582446#-119.4290649
+#5#Quintette, MaËmot, BC, Canada#Coal#####3#3##1985#07/06/05#2500000#2.5##Blight & Fourie, 2004#Waste dump failure - pore pressure resulting from collapse settlement. River valley filled with waste for 2.5km. (Blight & Fourie, 2004)#Strat#Coal########None#None
+#3#Texasgulf 4B Pond, Beaufort, Co., North Carolina, USA#P#WR#T#8#12300000#2A-SI#2#122#1984#01/04/84####ICOLD##Strat#P########35.5344397#-76.9650262
+#3#Mirolubovka, Southern Ukraine#Fe#US#E&T#32#80000000#2A-SI#2#210#1984#15/01/84#none###ICOLD###Fe########46.387501#30.72736
+#3#Battle Mt. Gold, Nevada,#Au#DS#E#8#1540000#2A-SI#2#11#1984#06/06/05####ICOLD###Au########40.6317489#-116.9361811
+#3#Virginia Vermiculite, Louisa County, Virginia, USA#Vermiculite#WR#E#9##1A-ST#1#179#1984#06/06/05####ICOLD###Vermiculite########38.0598804#-78.148369
+#3#Clayton Mine, Idaho, USA#Ag Pb#CL#T#24#215000#2A-ST#2#32#1983#02/06/83####ICOLD#Mine shut down in 1986#Vein#Ag Pb#####1881###44.2588889#-114.3997222
+#4#Golden Sunlight, MT, USA#Au#CL#CST###3#3#51#1983#05/01/83####ICOLD#Discovered in 1890, production ceased in 1945; mine started as open pit in 1983; earlier dumps/tails cleaned up#Vein#Au#65##1.9#1.523977734#1982#1.5##45.9037371#-112.0077829
+#3#Vallenar 1 and 2#Cu#####1B-OT#1#175#1983#05/06/05####ICOLD###Cu########-28.5754805#-70.75853
+#4#Grey Eagle, California, USA#Au#DS#E###3#3#53#1983#05/06/05####ICOLD##Vein#Au########39.7662874#-120.6185519
+#1# Sipalay, Phillippines, No.3 Tailings Pond (Maricalum Mining Corp)#Cu#WR#MW##37000000#1A-FN#1#187#1982#08/11/82#28,000,000t###ICOLD, WISE, Piplinks#dam failure, due to slippage of foundations on clayey soils.  Widespread inundation of agricultural land up to 1.5 m high; 1st of 4 discharges reported in this area (4th in 1995); mine reactivated by Philex in 1996 and decommissioned in 2002 after which tailings dried up causing a dust problem as far as 5km from site#PCD#Cu#800#0.473#0.05#0.5131046772#1957#~100#Py#None#None
+#3#Royster, Florida, USA#Gypsum#US#T#21##1A-FN#1#102#1982#04/06/05####ICOLD##Strat#Gypsum########27.8883596#-81.945639
+#2#Ages, Harlan County, Kentucky, USA#Coal#####1A-U#1##1981#18/12/81#96000#163#1#WISE###Coal########36.8569915#-83.2445786
+#3#Dixie Mine, Colorado, USA#Au#####1B-U#1#39#1981#01/04/81####ICOLD#Ceased operations in 1954#Vein#Au#0.087####1936##Py Ga#39.715821#-105.6119454
+#1#Balka Chuficheva, Russia#Fe#US#CST#25#27000000#1A-SI#1#211#1981#20/01/81#3500000#1.3##ICOLD, WISE###Fe########61.52401#105.318756
+#3#Texasgulf No. 1 Pond, Beaufort Co., North Carolina, USA#P#WR#E##24700000#2A-SI#2#123#1981#03/06/05####ICOLD##Strat#P########35.5344397#-76.9650262
+#3#Veta de Aqua A#Cu#####1A-EQ#1#176#1981#03/06/05####ICOLD###Cu########21.1014357#-86.861694
+#3#Veta de Agua B#Cu#####1A-EQ#1#177#1981#03/06/05####ICOLD###Cu########30.506111#-111.0041667
+#1#Tyrone, New Mexico (Phelps Dodge)#Cu#US#CST#66#2500000#1A-SI#1#94#1980#13/10/80#2000000#8##ICOLD, WISE, Rico##PCD#Cu#1300#0.53##0.53#1967#100#Py#32.7021833#-108.3052321
+#3#Sweeney Tailings Dam, Longmont, Colorado, USA#Sand###7##1A-SE#1#119#1980#01/05/80####ICOLD##Strat#Sand########40.1672068#-105.1019275
+#3#Marga, Sewell, VI Region, Rancagua, Chile - El Teniente (Codelco)#Cu#####1B-OT#1##1980#02/06/05####Villavicencio#Strong rains and overﬂow#PCD#Cu#12000#1##1##580#Py#-34.1683181#-70.7472101
+#3#Arena, Sewell, VI Region, Rancagua, Chile - El Teniente (Codelco)#Cu#####1B-OT#1##1980#02/06/05####Villavicencio#Strong rains and overﬂow#PCD#Cu#12000#1##1##580#Py#-34.1736837#-70.7493885
+#3#Kyanite Mining, Virginia, USA#Kyanite###11#430000#2A-OT#2#67#1980#02/06/05####ICOLD###Kyanite########37.4786417#-78.4655463
+#3#Churchill Copper, BC#Cu#####1A-SE#1##1979#01/12/79#37854.1###Mt Polley Expert Panel 2015, App. I#Seepage and piping with release of 10,000,000 gallons of supernatant.##Cu########53.7266683#-127.6476206
+#2#Churchrock, New Mexico, United Nuclear#U#WR#E#11#370000#1A-FN#1#173#1979#16/07/79#370000#110##ICOLD, Wikipedia, Rico#Mined closed in 1982; basic surface remediation and tailings pumped into undergorund mine; high radium levels proximal to and on site; EPA program in progress##U#####1967#3#U#35.5362424#-108.6422539
+#3#Union Carbide, Uravan, Colorado, USA#U#US#T#43##2A-SI#2#172#1979#01/03/79####ICOLD###U########38.3683225#-108.7364871
+#3#Suncor E-W Dike, Alberta, Canada#Oil Sands#WR#MW#30##2A-SI#2#118#1979#01/06/05####ICOLD##Strat#Oil Sands########53.9332706#-116.5765035
+#3#Unidentified, British Columbia, Canada #?#####1A-FN#1##1979#01/06/05#40000###WISE#Piping in the sand beach of the tailings dam ##?########53.7266683#-127.6476206
+#5#Incident No. 1, Elliot, Ontario, Canada#U#WR#E#9##3#3#35#1979#01/06/05####ICOLD###U########46.386179#-82.650941
+#2#Arcturus, Zimbabwe#Au#US#T#25#1.7-2.0 Mt#1A-OT#1#185#1978#31/01/78#39000#0.3#1#ICOLD, WISE, Rico###Au#######Asp, Py#-17.7762736#31.3113356
+#2#Mochikoshi No. 1, Japan (1 of 2)#Au#US#T#28#480000#1A-EQ#1#84#1978#14/01/78#80000#8#1#ICOLD, WISE, Rico#Dam failure due to earthquake##Au########37.8867764#140.5157539
+#3#Norosawa, Japan#Au#DS##24#225000#2B-EQ#2#90#1978#14/01/78####ICOLD###Au########38.5396481#139.6832314
+#3#Hirayama, Japan#Au#DS##9#87000#2B-EQ#2#56#1978#31/05/05####ICOLD###Au########35.6416851#139.3792429
+#3#Mochikoshi No. 2, Japan (2 of 2)#Au#US#T#19##1A-EQ#1#85#1978#31/05/05#3000#0.15##ICOLD, Rico#dam failure due to aftershock##Au########34.8929749#138.8820431
+#3#Syncrude, Alberta, Canada#Oil Sands#CL#T###2A-FN#2#120#1978#31/05/05####ICOLD##Strat#Oil Sands########57.0437999#-111.5905414
+#3#Madison, Missouri, USA#Pb#WR#E#11##1A-OT#1#74#1977#28/02/77####ICOLD###Pb########39.4736487#-92.2098988
+#3#Grants, Milan, New Mexico, USA mill site (Homestake Mining)#U#US#T#21##1A-ST#1#59#1977#01/02/77#30000###ICOLD, WISE#Dam failure, due to rupture of plugged slurry pipeline; mill decommissioned in 1993#n.a.#U#####1958##U#35.2607827#-107.8391007
+#3#Pit No. 2, Western#REE#US#T#9##1A-SI#1#96#1977#30/05/05####ICOLD###REE########62.4676279#21.316302
+#3#Unidentified, Hernando, County, Florida, USA#Limestone#CL#E#6##2A-FN#2#162#1977#30/05/05####ICOLD##Strat#Limestone########28.5473855#-82.4218646
+#3#"Western Nuclear, Jeffrey City, Wyoming, USA #2"#U#####1A-SI#1#180#1977#30/05/05#40###ICOLD##Strat#U########42.4885578#-107.7593831
+#3#Kerr-McGee, Churchrock, New Mexico, USA#U#WR#E#9##1A-FN#1#64#1976#01/04/76####ICOLD###U########35.5339114#-108.5998029
+#2#Zlevoto No. 4, Yugoslavia#Pb Zn#US#T#25#1000000#1A-SI#1#184#1976#01/03/76#300000###ICOLD, WISE# dam failure, due to high phreatic surface and seepage breakout on the embankment face.  Tailings flow reached and polluted nearby river##Pb Zn########52.09381#4.283494
+#3#Dashihe, China#Fe#US##37##2A-EQ#2#36#1976#29/05/05####ICOLD###Fe########43.8886955#125.259967
+#3#Unidentified, Idaho, USA#P#DS#E#34##2A-SI#2#149#1976#29/05/05####ICOLD##Strat#P########46.498432#-116.724759
+#3#Cadet No. 2, Montana,#Barite#CL#E#21##2A-SI#2#18#1975#01/09/75####ICOLD###Barite########40.4101294#-80.0078961
+#2#Silverton, Colorado, USA#Au Ag#####1A-U#1##1975#01/06/75#116,000t###WISE#Tailings flow slide polluted nearly 100 miles (160 km) of the Animas river and its tributaries; severe property damage; no injuries ##Au Ag########37.811941#-107.6645057
+#2#Madjarevo, Bulgaria#Pb Zn#US#T#40#3000000#1A-ST#1#219#1975#01/04/75#250000#20+##ICOLD###Pb Zn########41.6332599#25.8603494
+#3#Carr Fork, Utah, USA (Anaconda)#Cu Au###10##1A-ST#1#22#1975#01/02/75####ICOLD#Adjacent to Bingham Canyon open pit; underground mine operated form 1979-1982 and re-opened in 1984#Skarn#Cu Au#127#2.42#1.12#3.3183447695#1979##Py#40.553278#-112.2457782
+#2#Mike Horse, Montana, USA (Asarco)#Pb Zn#US#T#18#750000#1B-OT#1#79#1975#28/05/05#150000###ICOLD##Vein#Pb Zn#######Py, En, Ga#46.5821879#-111.9263212
+#3#Dresser No. 4, Montana,#Barite#CL#E#15##1A-FN#1#40#1975#28/05/05####ICOLD###Barite########17.493771#78.3319162
+#3#Keystone Mine, Crested Butte, Colorado, USA#Mo#####1B-U#1#65#1975#28/05/05####ICOLD###Mo########38.8686036#-107.0389357
+#3#Heath Steele main dam, Brunswick, Canada (American Metals)#Pb Zn#WR#R,E#30##2A-FN#2#186#1975#28/05/05####ICOLD##VMS#Pb Zn#40#1.11#0.93#5.0224804126#1956##PY Ga#None#None
+#5#PCS Rocanville, Saskatchewan, Canada#K#US#T#12##3#3#92#1975#28/05/05####ICOLD##Strat#K########50.4714499#-101.5450752
+#5#Unidentified, Green River, Wyoming, USA#Trona#WR#E#18##3#3#161#1975#28/05/05####ICOLD##Strat#Trona########41.5285757#-109.4662461
+#1#Bafokeng, South Africa#Pt#US#T#20#17000000#1A-SE#1#7#1974#11/11/74#3000000#45#12#ICOLD, WISE, Rico#"https://books.google.com/books?id=mDgarPrQ1_YC&pg=PA383&lpg=PA383&dq=Bafokeng+tailings&source=bl&ots=rgKF0PG8jS&sig=ZHuhBXlzouXT6uMa4exSS0DC96U&hl=en&sa=X&ved=0ahUKEwjKj4OnguLMAhUMcj4KHaBwAc0Q6AEIMDAD#v=onepage&q=Bafokeng%20tailings&f=false (copied 9Jun16)"#Magmatic#Pt########-25.598844#27.126531
+#3#Golden Gilpin Mine, Colorado, USA#Au###12##1B-U#1#50#1974#01/11/74####ICOLD###Au########39.7872924#-105.5002227
+#3#Deneen Mica Yancey County, North Carolina, USA#Mica#US#CST#18#300000#1A-SI#1#37#1974#01/06/74#38000#0.03##ICOLD###Mica########35.7595731#-79.0192997
+#3#Silver King, Idaho, USA#Ag#DS#E#9#37000#1A-OT#1#109#1974#16/01/74#6000###ICOLD###Ag########43.8526815#-114.8770163
+#3#"Galena Mine, Idaho, USA #2 of 2 (ASARCO)"#Ag Pb#US#MW#9##1A-OT#1#49#1974#15/01/74#3800#0.61##ICOLD, Rico###Ag Pb########48.2853611#-115.882989
+#3#Berrien, France#Ag Pb#US#R#9##1A-SE#1#10#1974#27/05/05####ICOLD##Strat#Ag Pb########48.404192#-3.751799
+#3#GCOS, Alberta, Canada#Oil Sands#US#T#61##2A-SI#2#47#1974#27/05/05####ICOLD###Oil Sands########53.9332706#-116.5765035
+#3#"Unidentified, Mississippi, USA #2"#Gypsum#US#T#20##2A-FN#2#153#1974#27/05/05####ICOLD###Gypsum########30.4148916#-89.2352106
+#3#Unidentified, Canaca, Mexico#Cu#US#T#46##1A-OT#1#159#1974#27/05/05####ICOLD###Cu########19.3969616#-99.1787439
+#3#"Ray Mine, Arizona, USA inc #2 (Kennecott)"#Cu#US#T#52##2A-SI#2#101#1973#05/02/73####ICOLD##PCD#Cu#3200#0.49##0.67#1911#32#Py#None#None
+#2#(unidentified), Southwestern USA#Cu#US#E#43#500000#1A-SI#1#169#1973#26/05/05#170000#25##ICOLD, WISE, Rico#"noted as ""Southwestern US"" in WISE"##Cu########30.4148916#-89.2352106
+#3#Earth Resources, N M,#Cu#US#T#21##1A-OT#1#41#1973#26/05/05####ICOLD###Cu########32.7713792#-108.2801458
+#3#Ray Mine, Arizona, USA#Cu#US#T#52##1A-SI#1#100#1972#02/12/72####ICOLD##PCD#Cu#3200#0.49##0.67#1911#30#Py#33.129135#-110.9798736
+#1#Buffalo Creek, West Virginia, USA (Pittson Coal Co.)#Coal#####1A-U#1#Table 1#1972#26/02/72#500000#64.4#125#ICOLD, WISE, Rico#Tailings traveled 27 km downstream, 125 people lost their lives, 500 homes were destroyed. Property and highway damage exceeded $65 million#Strat#Coal########None#None
+#3#"Galena Mine, Idaho, USA #1 of 2 (ASARCO)"#Ag Pb#US#E#14##2A-ER#2#48#1972#25/05/05####ICOLD##Vein#Ag Pb########48.2853611#-115.882989
+#1#Cities Service, Fort Meade, Florida,  phosphate#P#####1A-U#1#31#1971#03/12/71#9000000#120##WISE, Rico##Strat#P########27.7520418#-81.8020327
+#1#Certej gold mine, Romania#Au###25##1A-SI#1#-#1971#30/10/71#300000##89#Mining Watch Romania, 30Oct14;  Adevărul, 14Oct10#43 years since the Certej gold mine dam failure, Mining Watch Romania, October 30, 2014; Certej 1971 forgotten tragedy of 89 lives buried under 300 thousand cubic meters of mud, Adevărul, October 14, 2010##Au########45.9368206#22.9448446
+#3#Pinchi Lake, BC, Canada#Hg#WR#E#13##2A-ER#2#95#1971#24/05/05####ICOLD##Vein-Strat#Hg#1.1####1940###54.627956#-124.404853
+#3#Western Nuclear, Jeffrey City, Wyoming, USA#U#####1A-ST#1#181#1971#24/05/05####ICOLD##Strat#U########42.4885578#-107.7593831
+#1#Mufulira, Zambia (Roan Consolidated Mines)#Cu###50#1000000#1A-MS#1#88#1970#01/09/70#68000##89#ICOLD, WISE#"Saturated slime tailings deposited in a TSF #3 over subsidence feature flowed into an underground mine killing 89 miners."#SSC#Cu#612#3##3#1967#50##None#None
+#3#Maggie Pye, United Kingdom, clay#Clay#US#T#18##1A-SI#1#75#1970#01/01/70#15000###ICOLD, WISE##Strat#Clay########53.163795#-1.414784
+#3#Park, United Kingdom#Clay#WR#T#3##1A-OT#1#93#1970#23/05/05####ICOLD##Strat#Clay########54.4608702#-3.0886254
+#3#Portworthy, United Kingdom#Clay#DS#R#15##1A-ST#1#97#1970#23/05/05####ICOLD##Strat#Clay########50.4237922#-4.0364108
+#3#Unidentified, Mississippi, USA#Gypsum#US#T#15##1A-OT#1#152#1970#23/05/05####ICOLD##Strat#Gypsum########30.4148916#-89.2352106
+#3#Williamsport Washer, Maury County, Tennessee, USA#P###21##1A-U#1#182#1970#23/05/05####ICOLD##Strat#P########35.6195242#-87.1422895
+#2#Bilbao, Spain#Fe#####1A-SI#1#15#1969#22/05/05#115000#0.035#?#ICOLD, WISE###Fe########43.2630126#-2.9349852
+#3#Monsanto Dike 15, TN,#P#DS#E#43#1230000#2A-SE#2#86#1969#22/05/05####ICOLD##Strat#P########35.5174913#-86.5804473
+#3#Phoenix Copper, BC#Cu#US####2A-SE#2##1969#12/09/69#11356###Mt Polley Expert Panel 2015, App. I#Piping failure occurred 25 years after closure with a release of 9 million gallons of tailings and supernatant.##Cu########49.2888811#-123.1223073
+#3#Stoney Middleton, UK#?#####1A-SI#1#217#1968#08/02/68####ICOLD###?########53.277288#-1.658657
+#3#Hokkaido, Japan#Pb Zn#US#T#12#300000#1A-EQ#1#57#1968#21/05/05#90000#0.15##ICOLD, WISE, Rico###Pb Zn########43.2203266#142.8634737
+#3#Agrico Chemical, Florida, USA#P#####1A-U#1#1#1968#21/05/05####ICOLD##Strat#P########27.6648274#-81.5157535
+#5#IMC K-2, Saskatchewan, Canada#K#US#T#30##3#3#60#1968#21/05/05####ICOLD##Strat#K########52.9399159#-106.4508639
+#3#Climax, Colorado, USA - Mill (Climax Molybdenum Co)#Mo#####1A-U#1#33#1967#02/07/67#12000###ICOLD#Mill decommissioned in 1970##Mo########39.3685383#-106.184114
+#1#Mobil Chemical, Fort Meade, Florida,  phosphate#P#####1A#1#83#1967#01/03/67#2000000###ICOLD, WISE#250,000 m3 of phosphatic clay slimes, 1.8 million m3 of water.  Spill reaches Peace River, fish kill reported#Strat#P########27.742642#-81.8510948
+#3#Unidentified, United Kingdom#Coal#DS##20##1A-SI#1#144#1967#20/05/05####ICOLD##Strat#Coal########54.941666#-1.617791
+#3#"Unidentified, United Kingdom #3"#Coal#DS#MW#14##2A-SI#2#145#1967#20/05/05####ICOLD##Strat#Coal########54.941666#-1.617791
+#3#"Unidentified, United Kingdom #2"#Sand#DS#E#30##2A-SE#2#146#1967#20/05/05####ICOLD##Strat#Sand########54.941666#-1.617791
+#5#Aberfan, South Wales Colliery#Coal####230000#3#3##1966#21/10/66#162000##144#Blight & Fourie, 2004; WISE; Wikipedia#Coal tip (waste rock pile) failure. Waste dumped over spring on hillside above village in Tips;  a Tip failed in 1939 burying a road, Tip 4 failed in 1944, Tip 7 failed in 1966 and slid into village #Strat#Coal#####1869###51.7254324#-3.370929
+#1#Mir mine, Sgorigrad, Bulgaria#Pb Zn#US#T###1A-U#1#81#1966#01/05/66#450000#8#488#ICOLD, WISE#Tailings wave traveled 8 km to the city of Vratza and destroyed half of Sgorigrad village 1 km downstream, killing 488 people.##Pb Zn########43.1811827#23.517919
+#3#Williamthorpe, UK#Coal##MW###1A-OT#1#183#1966#24/03/66####ICOLD##Strat#Coal########53.192461#-1.3616054
+#2#Unidentified, Texas, USA#Gypsum#US#T#16##1A-SE#1#154#1966#19/05/05#130000###ICOLD, WISE##Strat#Gypsum########32.5503271#-94.3645498
+#3#Gypsum Tailings Dam (Texas, USA)#Gypsum#UP##11#7000000#1A-SE#1##1966#19/05/05#85000#0.3##Rico, WISE#Summary of Research on Analyses of Flow Failures of Mine Tailings Impoundments, J. K. Jeyapalan, J. M. Duncan, and H. B. Seed#Strat#Gypsum########37.09024#-95.712891
+#3#Derbyshire, United Kingdom#Coal#DS##8##1B-FN#1#38#1966#19/05/05#30000#0.1##ICOLD##Strat#Coal########53.1046782#-1.5623885
+#3#"Williamthorpe, UK #2"#Coal#####1A-FN#1#216#1966#19/05/05####ICOLD##Strat#Coal########53.1810924#-1.3685274
+#3#"Tymawr, United Kindom Inc#2"#Coal###12##1A-OT#1#125#1965#29/03/65##0.7##ICOLD, WISE##Strat#Coal########53.007468#-1.211327
+#3#Tymawr, United Kingdon#Coal#####1A-OT#1#124#1965#29/03/65##0.8##ICOLD##Strat#Coal########53.0098251#-3.6270191
+#1#El Cobre Old Dam#Cu#US#T#35#4250000#1A-EQ#1#45#1965#28/03/65#1900000#12#>200#ICOLD, WISE, Rico#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)#HT Manto#Cu#580#1.1##1.1#19th c#20#Py#None#None
+#2#El Cobre New Dam#Cu#DS#CST#19#350000#1A-EQ#1#43#1965#28/03/65#350000#12##ICOLD, WISE#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)#HT Manto#Cu#580#1.1##1.1#19th c#20#Py#None#None
+#3#Bellavista, Chile#Cu#US#T#20#450000#1A-EQ#1#12#1965#28/03/65#70000#0.8##ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)#HT Manto#Cu#580#1.1##1.1#19th c#20#Py#-33.4321351#-70.6363265
+#3#Cerro Blanco de Polpaico, Chile#Limestone#WR#R#9##2A-EQ#2#26#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)#Strat#Limestone########-33.1622146#-70.8735831
+#3#El Cerrado, Chile#Cu#US#T#25##2B-EQ#2#42#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-26.3892944#-69.4813018
+#3#Hierro Viejo, Chile#Cu#US#T#5##1A-EQ#1#55#1965#28/03/65#800#1##ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-32.2832999#-71.0167
+#3#La Patagua New Dam, Chile (La Patagua - private)#Cu#US#T#15##1A-EQ#1#69#1965#28/03/65#35000#5##ICOLD, Rico#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-33.4075152#-70.724305
+#3#Los Maquis No. 1#Cu#US#T#15##2B-EQ#2#70#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-40.7642459#-71.6478454
+#3#Los Maquis No. 3#Cu#US##15#43000#1A-EQ#1#71#1965#28/03/65#21000#5##ICOLD, Rico#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-40.7642427#-71.6478017
+#3#Ramayana No. 1, Chile#Cu#US#T#5##1A-EQ#1#99#1965#28/03/65#150###ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-33.5089876#-70.7502016
+#3#Sauce No. 1, Chile#Cu#US#T#6##2A-EQ#2#104#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-29.9219794#-71.2520337
+#3#Sauce No. 2, Chile#Cu#US#T#5##2B-EQ#2#105#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-29.9219369#-71.2520029
+#3#Sauce No. 3, Chile#Cu#US##5##2B-EQ#2#106#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-29.9219284#-71.2519967
+#3#Sauce No. 4, Chile#Cu#US#T#5##2B-EQ#2#107#1965#28/03/65####ICOLD#The talings failures of March 28, 1965, were from La Ligua, Chile, earthquake.  This accounts for a sigificant part of the large number of earthquakes in the period of 1960-1970.  About half of the failed dams  were abandoned, and half were lecated at operating mines. (see Villavicencio et al, 2014)##Cu########-29.921801#-71.2519043
+#3#"American Cyanamid, Florida #2"#P#####1A-U#1#4#1965#18/05/05####ICOLD##Strat#P########30.6010805#-84.5737265
+#3#Cerro Negro No. (1 of 5)#Cu#US#T#46##2B-EQ#2#27#1965#18/05/05####ICOLD#Cracking due to EQ##Cu########12.5077778#-86.7022222
+#3#Cerro Negro No. (2 of 5)#Cu#US#T#46##2B-EQ#2#28#1965#18/05/05####ICOLD#Cracking due to EQ##Cu########12.5077778#-86.7022222
+#3#Cerro Negro No. (3 of 5)#Cu#US#T#20#500000#1A-EQ#1#29#1965#18/05/05#85000#5##ICOLD, WISE, Rico#dam failied due to EQ##Cu########12.5077778#-86.7022222
+#3#El Cobre Small Dam - El Soldado (Penarroya)#Cu#US#T#26#985000#2B-EQ#2#46#1965#18/05/05####ICOLD##HT Manto#Cu#580#1.1##1.1#21st c#22#Py#None#None
+#3#N'yukka Creek, USSR#?#WR#E#12##2A-FN#2#89#1965#18/05/05####ICOLD###?########38.9171845#-77.0464456
+#3#Unidentified, Idaho, USA#P#DS#E#18##2A-SI#2#150#1965#18/05/05####ICOLD##Strat#P########46.498432#-116.724759
+#3#Alcoa, Texas, USA#Al###19#4500000#1A-U#1#2#1964#01/10/64####ICOLD###Al########30.564369#-97.066654
+#3#Utah Construction, Riverton, Wyoming, USA#U#####2A-OT#2#174#1963#16/06/63####ICOLD###U########43.079009#-108.492548
+#3#Mines Development, Edgemont, South Dakota, USA#U#####1A-U#1#80#1962#11/06/62#100###ICOLD###U########43.3010841#-103.8254758
+#1#Huogudu, Yunnan Tin Group Co., Yunnan#Sn#US####1A-U#1##1962#15/05/05#3300000#4.5#171#Wei###Sn########22.280941#114.175588
+#1#American Cyanamid, Florida#Gypsum#####1A-U#1#3#1962#15/05/05#11356230###ICOLD; Beavers 2013.#A gypsum stack dike break occurred at American Cyanamid Phosphate Complex in Brewster, Florida.  Approximately 3 billion gallons of process water were released into Hooker's Prairie.  The water was contained and limed on-site before the water was discharged into the South Prong of the Alafia River.  (An Overview of Phosphate Mining and Reclamation in Florida, Casey Beavers, University of Florida thesis, April 2013)#Strat#Gypsum########30.5738502#-87.0911509
+#3#Unidentified, Peru#?#####1A-EQ#1#135#1962#15/05/05####ICOLD###?########-9.189967#-75.015152
+#3#Union Carbide, Maybell, Colorado, USA#U#####1A-U#1#171#1961#06/12/61#280###ICOLD###U########40.5177463#-108.0870285
+#3#Tymawr, United Kingdon#Coal#####1A-U#1#124#1961#01/12/61##0.7##ICOLD##Strat#Coal########53.0098251#-3.6270191
+#5#Jupille, Belgium#Coal#####3#3##1961#14/05/05###11#Blight & Fourie, 2004#Cause - Fly ash dum faulure due to removal of toe support of dump. 11 deaths, houses destroyed.#Strat#Coal########50.64547#5.63488
+#3#Lower Indian Creek, MO, USA#Pb#US#E###2A-SI#2#72#1960#13/05/05####ICOLD###Pb########39.5944853#-91.7768291
+#3#Union Carbide, Green River, Utah, USA#U#####1A-OT#1#170#1959#19/08/59#8400###ICOLD###U########38.9955607#-110.1596352
+#3#Grootvlei, South Africa#Au#US#T###1A-SI#1#54#1956#09/05/05####ICOLD##Wits#Au########-26.8023883#28.5272661
+#3#Unidentified, Peace River, Florida, USA 3/52#P#WR#E#8##1A-SI#1#165#1952#01/03/52####ICOLD##Strat#P########27.902047#-81.80423
+#3#Unidentified, Alfaria River, Florida, USA 2/52#P#WR#E#8##1A-SI#1#156#1952#01/02/52####ICOLD##Strat#P########42.6934403#-73.0506869
+#3#Unidentified, Peace River, Florida, USA 9/51#P#WR#MW#6##1A-SE#1#167#1951#01/09/51####ICOLD##Strat#P########27.902047#-81.80423
+#3#Unidentified, Peace River, Florida 7/51#P#WR#MW#30##1A-SE#1#166#1951#01/07/51####ICOLD##Strat#P########28.5604501#-81.793243
+#3#Unidentified, Peace River, Florida, USA 2/51#P#DS#E###1A-SE#1#168#1951#01/02/51####ICOLD##Strat#P########27.902047#-81.80423
+#1#Sullivan Mine, Kimberley, BC, Canada#Pb Zn#US#T###1A-SI#1#66#1948#01/05/05#1100000###ICOLD##VMS#Pb Zn#170###5.693021381#1909#60#PY#49.688233#-115.9887171
+#2#Castle Dome, Arizona, USA#Cu#US#T###1A-SE#1#25#1947#29/09/47#150000#0.1##ICOLD##PCD#Cu#1400#0.33#0.04#0.3620837418#1947#25#Py#32.965#-114.46278
+#3#Hollinger, Canada#Au#US#T#15##1A-FN#1#58#1944#27/04/05####ICOLD##Vein#Au#######Py#45.471052#-73.6152793
+#3#Captains Flat Dump 3, Australia#Cu##T###1A-U#1#20#1942#25/04/05#40000###ICOLD###Cu#4####1882##PY#-25.274398#133.775136
+#3#Kennecott, Utah, USA#Cu#US#T###1A-FN#1#63#1942#25/04/05####ICOLD##PCD#Cu#3500#0.75#0.35#1.2107327405#1865#400#Py#40.5221684#-112.1493862
+#3#Kennecott, Garfield, Utah, USA#Cu#US#T###1A-SI#1#62#1941#24/04/05####ICOLD##PCD#Cu#3500#0.75#0.35#1.2107327405#1865#370#Py#37.8400344#-111.2845025
+#3#St. Joe Lead, Flat Missouri, USA#Pb#US#T#15##1A-OT#1#115#1940#23/04/05####ICOLD###Pb########37.747044#-91.933403
+#3#Captains Flat Dump 6A, Australia#Cu#US#T###1A-SI#1#21#1939#22/04/05####ICOLD###Cu#4####1882##PY#-25.274398#133.775136
+#1#Los Cedros, Tlalpujahua, Michoacán, México#Au Ag#US#T##9200000#1B-ST#1##1937#27/05/37#10000000#11#>300#Macias et al, 2015#The 27 May 1937 catastrophic flow failure of gold tailings at Tlalpujahua, Michoacán, Mexico, J. L. Macías, P. Corona-Chávez, J. M. Sanchéz-Núñez, M. Martínez-Medina, V. H. Garduño-Monroy, L. Capra, F. García-Tenorio, and G. Cisneros-Máximo, Nat. Hazards Earth Syst. Sci., 15, 1069–1085, 2015, www.nat-hazards-earth-syst-sci.net/15/1069/2015/##Au Ag########19.7038263#-101.191382
+#3#Simmer and Jack, South Africa#Au#US#T###1A-SI#1#110#1937#20/04/05####ICOLD##Wits#Au########-26.2778005#30.2147248
+#1#Barahona, Chile#Cu#US#CST#61#20000000#1A-EQ#1#9#1928#01/10/28#2800000###ICOLD##PCD#Cu#12000#1##1##35#Py#-33.4421117#-70.7696657
+#3#Unidentified, South Africa#Au#####1A-U#1#136#1917#31/03/05####ICOLD###Au########36.4912834#-4.7686327
+#2#Agua Dulce, Sewell, VI Region, Rancagua, Chile#Cu###61##1A-OT#1##1915#15/06/15#180,000###Villavicencio#Strong rains and overﬂow#PCD#Cu#12000#1##1##2.5#Py#-34.1683181#-70.7472101
+# =====###########################
+#289###########################
+############################
+#TSF FAILURE TYPE CLASSIFICATIONS (Chambers, Jul15)###########################
+#1#Very Serious Tailings Dam Failures = multiple loss of life (~20) and/or release of ≥ 1,000,000 m3 total discharge, and/or release travel of 20 km or more#########43#################
+#2#Serious Tailings Dam Failures = loss of life and/or release of ≥ 100,000 m3 semi-solids discharge#########48#################
+#3#Other Tailings Dam Failures = Engineering/facility failures other than those classified as Very Serious or Serious, no loss of life#########182#################
+#4#Other Tailings-Related Accidents = Accidents other than those classified as 1, 2, or 3#########8#################
+#5#Non-Tailings (or Unknown type) Failure = Non-tailings incidents - groundwater, waste rock, etc.#########8#################
+########### =======#################
+###########289#################
+############################
+############################
+##################Deposit Type:##########
+####ICOLD DAM TYPE KEY##"DAM FILL
+MATERIAL KEY"##INCIDENT TYPE KEY#"ICOLD
+INCIDENT CAUSE KEY"##ICOLD INCIDENT CAUSE CLASSIFICATIONS#######PCD-#Porphyry Copper Deposit. Mineralization occurs as disseminations, in veinlets, and breccias. Always some pyrite in unoxidized/enriched zones, enargite can occur in upper reaches#########
+####US#Upstream#T#Tailings#1A#Active Dam Failure##SI#Slope instability - static failure######HT Manto-#High-Temperature Manto - mineralization hosted by volcanic rocks, especially confined to certain volcanic layers forming a tabular body#########
+####DS#Downstream#CST#Cycloned #1B#Inactive Dam Failure##SE#Seepage - seepage and internal erosion######Skarn-#High-temperature mineralization hosted by limestone, which was altered due to heat#########
+####CL#Centerline##   sand tailings#2A#Active Tailings Accident##FN#Foundation - structural and foundation conditions, foundations with insufficient investigations######Placer-#gold, and other heavy minerals like tin, occur as small grains in unconsolidated sediments#########
+####WR#Water retention#MW#Mine waste#2B#Inactive Tailings Accident##OT#Overtopping######Laterite-#Fe-rich soils in tropical climates that contain elevated quantities of Bauxite (aluminum oxide) and nickel#########
+####NR#Not reported#E#Earthfill#3#Groundwater##ST#Structural - structural inadequacies, inadequate or failed decants######VMS-#Volcanogenic Massive Sulfide; herein, deposits formed at coean floor; majority of ore deposit is sulfides with a very high content of pyrite#########
+######R#Rockfill####EQ#Earthquake - seismic instability######VEIN-#Typically a subvertical tabular body; herein includes mineralization in faults and breccias#########
+###########MS#Mine Subsidence######WITS-#Free gold in a lithified conglomerate typical of deposits in the Witswatersrand, S Africa near Johannesberg#########
+###########ER#Erosion - external erosion######Magmatic-#Sulfide mineralization formed in layers as magma cools; commodity, e.g, platiunum group metals, generally confined to a layer #########
+###########U#Unknown######SSC-#Stratiform sedimentary-rock hosted copper deposit; mineralization generally confined to a stratigraphic unit; very little or no pyrite#########
+##################Strat-#Stratiform. commodity either is the straigraphic unit, e.g., coal, iron, or confined to that unit, e.g., phosphate#########
+############################
+##################Est. Size-#tonnage that encompasses the mineralization that may have the reasonable expectation of economic extraction; principal source is Singer, D.A., et al., 2008, Porphyry Copper Deposits of the World: USGS Open File Report 2008-1155#########
+############################
+##################Cu, %-#grade of copper in percent; principal source as above#########
+############################
+##################Au, ppm-#grade of gold in ppm (or g/t); principal source as above#########
+############################
+##################CuEq, %-#equivalent coppr grade in percent adding gold grade; prices of $2.00/lb copper, $1,100/oz gold, $14.00/oz Ag, $1.00/lb Pb, $1.00/lb Zn, $4.00/lb Ni, $6.00/lb Mo used#########
+############################
+##################1st prod-#year that mine started operations and production; based on production series from USGS Mineral Commodity Summaries, American Metal Statistics, and Annual Reports#########
+############################
+##################Est. throughput-##calculated by dividing copper production by estimated copper grade from start to year of event using aforementioned sources########
+############################
+###################Deleterious Minerals-#Gangue minerals known to potentially cause environmental issues:########
+##################Py#Pyrite-#Iron sulfide that upon the addition of water and oxygen, leaches to form sulfuric acid and iron in solution; other sulfide minerals, e.g., chalcopyrite, bornite, will also leach########
+##################En#Enargite-#Copper-arsenic sulfide that upon oxidation or leaching will release arsenic and copper into the ecosystem########
+##################St#Stibnite-#Antimony sulfide########
+##################Ga#Galena-#Lead sulfide########
+##################Bi#Bismuthinite-##Bismuth sulfide#######
+#######TSF DAM FAILURES###########Asp-#Arsenopyrite-##Arsenic-iron sulfide#######
+#####Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes##Co-#Cobalt#########
+#####1#2#3#4#5#########U-#Uranium#########
+####2010-19#6#6#14#2#1#29#####2010#(incomplete list)############
+####2000-09#10#8#10#1#0#29#146.2#31/12/99#20#4255.71#2000###PY -#indicates very high volume of pyrite in ore#########
+####1990-99#9#12#24#1#0#46#104.4#31/12/99#15#3292.08#1990#############
+####1980-89#5#9#38#4#1#57#89.0#31/12/99#20#3871.29#1980###Key references:##########
+####1970-79#5#8#40#0#3#56#68.5#31/12/99#38#5895.30#1970####MRDS inventory (USGS) of mines#########
+####1960-69#5#3#41#0#3#52#45.4#31/12/99#55#5112.27#1960####USGS Mineral Commodities Summaries, American Metals Bulletin, Annual Reports (for production esitmates)#########
+####1950-59#0#0#7#0#0#7#28.7#31/12/99#48#5076.15#1950####USGS compilation of Porphyry Copper Deposits#########
+####1940-49#1#1#5#0#0#7#22.9#31/12/99#35#3632.64#1940#############
+####1930-39#1#0#2#0#0#3#15.9#31/12/99#38#3150.18#1930#############
+####1920-29#1#0#0#0#0#1#13.2#01/01/00#45#3854.52#1920#############
+####1910-19#0#1#1#0#0#2#11.0#01/01/00#48#7725.81#1910#############
+####1900-09#-#-#-#-#-#-#####1900#############
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#182#8#8#289#(Note: this data includes 1910 - 2015)#################
+############################
+############################
+############################
+#######TSF DAM FAILURES (Ascending Order For Stats)#####################
+#####Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes############
+#####1#2#3#4#5###################
+####1900-09#-#-#-#-#-#-#####1900#############
+####1910-19#0#1#1#0#0#2#11.0#01/01/00#48#7725.81#1910#37.0############
+####1920-29#1#0#0#0#0#1#13.2#01/01/00#45#3854.52#1920#31.8############
+####1930-39#1#0#2#0#0#3#15.9#31/12/99#38#3150.18#1930#22.1############
+####1940-49#1#1#5#0#0#7#22.9#31/12/99#35#3632.64#1940#12.1############
+####1950-59#0#0#7#0#0#7#28.7#31/12/99#48#5076.15#1950#19.3############
+####1960-69#5#3#41#0#3#52#45.4#31/12/99#55#5112.27#1960#9.6############
+####1970-79#5#8#40#0#3#56#68.5#31/12/99#38#5895.30#1970#30.5############
+####1980-89#5#9#38#4#1#57#89.0#31/12/99#20#3871.29#1980#69.0############
+####1990-99#9#12#24#1#0#46#104.4#31/12/99#15#3292.08#1990#89.4############
+####2000-09#10#8#10#1#0#29#146.2#31/12/99#20#4255.71#2000#126.2############
+####2010-19#6#6#14#2#1#29#####2010#(incomplete list)############
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#182#8#8#289##################
+############################
+############################
+##CONVERTER: Metric Tonnes to Cubic Meters#####TSF DAM FAILURES (5-Year Offset Data)#####################
+##Assume 1.6 metric tonnes per cubic meter (~100 pounds per cubic foot) for tailings.  Note, if the tailings discharge was pure water then the density would be 1 metric tonne per cubic meter.###Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes############
+##Enter Metric Tonnes:###1#2#3#4#5###################
+##21##2006-15#10#9#16#3#1#39#####1905#############
+####1996-05#9#11#16#0#0#36#####1915#############
+##Cubic Meters:##1986-95#6#12#34#3#0#55#####1925#############
+##13##1976-85#5#7#36#2#2#52#####1935#############
+####1966-75#7#6#37#0#4#54#####1945#############
+##Gallons to Cubic Meters##1956-65#3#1#30#0#1#35#####1955#############
+##Gallons:##1946-55#1#1#5#0#0#7#####1965#############
+##3,000,000##1936-45#1#0#7#0#0#8#####1975#############
+####1926-35#1#0#0#0#0#1#####1985#############
+##Cubic Meters: ##1916-25#0#0#1#0#0#1#####1995#############
+##11,356##1906-15#0#1#0#0#0#1#####2005#############
+####1896-05#-#-#-#-#-#0#####2015#############
+############################
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#182#8#8#289##################
+############################
+############################
+#######TSF DAM FAILURES (5-Year Intervals)#####################
+#####Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes############
+#####1#2#3#4#5###################
+####1905-14#-#-#-#-#-#-##################
+####1915-19#0#1#1#0#0#2#####1915#############
+####1920-24#-#-#-#-#-#0#####1920#############
+####1925-29#1#0#0#0#0#1#####1925#############
+####1930-34#-#-#-#-#-#0#####1930#############
+####1935-39#1#0#2#0#0#3#####1935#############
+####1940-44#0#0#5#0#0#5#####1940#############
+####1945-49#1#1#0#0#0#2#####1945#############
+####1950-54#0#0#5#0#0#5#####1950#############
+####1955-59#0#0#2#0#0#2#####1955#############
+####1960-64#2#0#7#0#1#10#####1960#############
+####1965-69#3#3#34#0#2#42#####1965#############
+####1970-74#5#1#19#0#0#25#####1970#############
+####1975-79#0#7#21#0#3#31#####1975#############
+####1980-84#3#1#15#2#0#21#####1980#############
+####1985-89#2#8#23#2#0#35#####1985#############
+####1990-94#5#5#12#1#0#23#####1990#############
+####1995-99#4#7#12#0#0#23#####1995#############
+####2000-04#6#5#7#0#0#18#####2000#############
+####2005-09#4#3#3#1#0#11#####2005#############
+####2010-14#4#6#14#1#0#25#####2010#############
+####2015-19#2#0#0#1#1#4#####2015#(incomplete list)############
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#182#8#7#288##################
+############################
+############################
+#######TSF DAM FAILURES (20-Year Interval)#####################
+#####Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes############
+#####1#2#3#4#5###################
+####1900-19#0#1#0#0#0#1#####1910#############
+####1920-39#2#0#2#0#0#4#####1920#############
+####1940-59#1#1#12#0#0#14#####1940#############
+####1960-79#10#10#81#0#6#107#####1960#############
+####1980-99#13#22#62#5#1#103#####1980#############
+####2000-19#17#14#24#3#1#59#####2000#(incomplete list)############
+############################
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#181#8#8#288##################
+############################
+############################
+#######TSF DAM FAILURES Yearly Interval#####################
+#####Very Serious Failures#Serious Failures#Other Failures#Other Accidents#Non-Dam Failures#All Failures#cu prod#cugrade#cucost#cu price#x axis#Notes############
+#####1#2#3#4#5###################
+####1915#0#1#0#0#0#1##################
+####1916#-#-#-#-#-#0##################
+####1917#0#0#1#0#0#1##################
+####1918#-#-#-#-#-#0##################
+####1919#-#-#-#-#-#0##################
+####1920#-#-#-#-#-#0##################
+####1921#-#-#-#-#-#0##################
+####1922#-#-#-#-#-#0##################
+####1923#-#-#-#-#-#0##################
+####1924#-#-#-#-#-#0##################
+####1925#-#-#-#-#-#0##################
+####1926#-#-#-#-#-#0##################
+####1927#-#-#-#-#-#0##################
+####1928#1#0#0#0#0#1##################
+####1929#-#-#-#-#-#0##################
+####1930#-#-#-#-#-#0##################
+####1931#-#-#-#-#-#0##################
+####1932#-#-#-#-#-#0##################
+####1933#-#-#-#-#-#0##################
+####1934#-#-#-#-#-#0##################
+####1935#-#-#-#-#-#0##################
+####1936#-#-#-#-#-#0##################
+####1937#1#0#1#0#0#2##################
+####1938#-#-#-#-#-#0##################
+####1939#0#0#1#0#0#1##################
+####1940#0#0#1#0#0#1##################
+####1941#0#0#1#0#0#1##################
+####1942#0#0#2#0#0#2##################
+####1943#-#-#-#-#-#0##################
+####1944#0#0#1#0#0#1##################
+####1945#-#-#-#-#-#0##################
+####1946#-#-#-#-#-#0##################
+####1947#0#1#0#0#0#1##################
+####1948#1#0#0#0#0#1##################
+####1949#-#-#-#-#-#0##################
+####1950#-#-#-#-#-#0##################
+####1951#0#0#3#0#0#3##################
+####1952#0#0#2#0#0#2##################
+####1953#-#-#-#-#-#0##################
+####1954#-#-#-#-#-#0##################
+####1955#-#-#-#-#-#0##################
+####1956#0#0#1#0#0#1##################
+####1957#-#-#-#-#-#0##################
+####1958#-#-#-#-#-#0##################
+####1959#0#0#1#0#0#1##################
+####1960#0#0#1#0#0#1##################
+####1961#0#0#2#0#0#2##################
+####1962#2#0#2#0#0#4##################
+####1963#0#0#1#0#0#1##################
+####1964#0#0#1#0#0#1##################
+####1965#1#1#21#0#0#23##################
+####1966#1#1#4#0#1#7##################
+####1967#1#0#4#0#0#5##################
+####1968#0#0#3#0#1#4##################
+####1969#0#1#1#0#0#2##################
+####1970#1#0#5#0#0#6##################
+####1971#2#0#2#0#0#4##################
+####1972#1#0#2#0#0#3##################
+####1973#0#1#2#0#0#3##################
+####1974#1#0#8#0#0#9##################
+####1975#0#3#5#0#2#10##################
+####1976#0#1#3#0#0#4##################
+####1977#0#0#5#0#0#5##################
+####1978#0#2#4#0#0#6##################
+####1979#0#1#4#0#1#6##################
+####1980#1#0#4#0#0#5##################
+####1981#1#1#4#0#0#6##################
+####1982#1#0#1#0#0#2##################
+####1983#0#0#2#2#0#4##################
+####1984#0#0#4#0#0#4##################
+####1985#2#2#5#0#0#9##################
+####1986#0#3#6#0#0#9##################
+####1987#0#1#3#1#0#5##################
+####1988#0#2#3#1#0#6##################
+####1989#0#0#6#0#0#6##################
+####1990#0#2#0#0#0#2##################
+####1991#0#0#2#0#0#2##################
+####1992#1#1#1#0#0#3##################
+####1993#0#2#5#0#0#7##################
+####1994#4#0#4#1#0#9##################
+####1995#1#1#4#0#0#6##################
+####1996#1#3#0#0#0#4##################
+####1997#0#2#5#0#0#7##################
+####1998#1#0#2#0#0#3##################
+####1999#1#1#1#0#0#3##################
+####2000#4#0#1#0#0#5##################
+####2001#0#1#1#0#0#2##################
+####2002#1#0#3#0#0#4##################
+####2003#1#2#0#0#0#3##################
+####2004#0#2#2#0#0#4##################
+####2005#0#0#1#0#0#1##################
+####2006#0#2#1#1#0#4##################
+####2007#1#0#1#0#0#2##################
+####2008#2#0#0#0#0#2##################
+####2009#1#1#0#0#0#2##################
+####2010#2#0#8#1#0#11##################
+####2011#0#1#1#0#0#2##################
+####2012#1#2#2#0#0#5##################
+####2013#0#1#2#0#0#3##################
+####2014#1#2#1#0#0#4##################
+####2015#2#0#0#1#1#4##################
+############################
+##### =======# =======# =======# =======# =======# =======##################
+#####43#48#181#8#6#286##################

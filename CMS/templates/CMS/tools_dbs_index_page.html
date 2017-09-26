@@ -1,0 +1,54 @@
+{% extends "CMLMasterProject/baseHome.html" %}
+{% load wagtailcore_tags %}
+
+{% block title %}CMS -- Tools & Databases{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li><a href="../../">Home</a></li>
+
+
+                <li><a href="../../">Modeling tools</a></li>
+                <li><a href="../../exploratory">Exploratory tools</a></li>
+                 <li  class="active"><a href="/research">Research</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+
+
+{% endblock %}
+{% block content %}
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a  href="../">  General</a></li>
+   <li><a  href="../blog">News</a></li>
+   <li><a style="color: #e0e0eb;" href="./"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IE Tools & Databases</a></li>
+   <li><a href="../microvis">IV CML</a></li>
+  </ul>
+</div>
+
+<div class="container">
+    <br>
+    <h3>{{ page.title }}</h3>
+
+    <div class="intro">{{ page.intro|richtext }}</div>
+
+
+    {% for toolsdbspage in toolsdbspages %}
+
+          <p>
+              <strong><a href="{% pageurl toolsdbspage %}">{{ toolsdbspage.title }}</a></strong><br />
+              <small>Revised: {{ toolsdbspage.latest_revision_created_at }}</small><br />
+              {% if toolsdbspage.author %}
+                <p>By {{ toolsdbspage.author.profile }}</p>
+              {% endif %}
+          </p>
+
+    {% empty %}
+        No pages found.
+    {% endfor %}
+</div>
+{% endblock %}

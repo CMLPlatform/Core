@@ -1,0 +1,75 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+
+{% load wagtailcore_tags %}
+{% block title %}CMS{% endblock %}
+{% block body_class %}template-homepage{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+            <ul class="nav navbar-nav">
+                <li><a href="../">Home</a></li>
+
+
+                <li><a href="../">Modeling tools</a></li>
+                <li><a href="../exploratory">Exploratory tools</a></li>
+                 <li  class="active"><a href="/research">Research</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+
+
+{% endblock %}
+{% block content %}
+
+<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+
+  <ul class="nav navbar-nav">
+      <br>
+      <li ><a style="color: #e0e0eb;" href="./"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>General</a></li>
+   <li><a href="blog">News</a></li>
+   <li><a href="tools-index">IE Tools & Databases</a></li>
+   <li><a href="./microvis">IV CML</a></li>
+  </ul>
+</div>
+
+<div class="container">
+
+ <div class="row" >
+
+    {{ page.research|richtext }}
+
+<table class="table table-hover" style="width:40%;">
+   <thead>
+      <tr>
+        <th>Name</th>
+
+      </tr>
+    </thead>
+{% for sub,prof in listOfUsers %}
+
+   <td>{{ sub }}</td>
+    <td> {{prof }}</td>
+   {% if forloop.last %}
+     </tr>
+   {% else %}
+     {% if forloop.counter|divisibleby:"1" %}
+       </tr><tr>
+     {% endif %}
+   {% endif %}
+{% endfor %}
+
+</table>
+      </div>
+     <div class="row" >
+         {{ page.blog|richtext }}
+    <a href="blog">Enter our CML news channel</a>
+     </div>
+    <div class="row" >
+        {{ page.tools_dbs|richtext }}
+        <a href="tools-index">Visit the tools & databases overview</a>
+    </div>
+    <div class="row">
+        {{ page.IV_CML|richtext }}
+        <a href="./microvis">Check out various interactive visuals</a>
+    </div></div>
+{% endblock %}

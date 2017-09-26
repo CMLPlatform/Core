@@ -1,0 +1,15 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<br>
+<div class="container-fluid">
+  <legend>Login</legend>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button class="btn btn-primary" type="submit">Login</button>
+  </form>
+</div>
+
+{% endblock %}
