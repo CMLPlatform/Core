@@ -61,7 +61,7 @@ AUTHENTICATION_KEY_STUDENT = yamjam()['CMLMasterProject']['cml-student-key']
 DEBUG = True
 #on server
 #DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '132.229.201.25']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 #on server
 #ALLOWED_HOSTS = []
 
