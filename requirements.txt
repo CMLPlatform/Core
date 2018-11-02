@@ -2,9 +2,9 @@ amqp==2.2.2
 beautifulsoup4==4.6.0
 billiard==3.5.0.3
 celery==4.1.0
-certifi==2017.11.5
+certifi==2018.10.15
 chardet==3.0.4
-Django==1.11.7
+Django==1.11.15
 django-bootstrap-form==3.2.1
 django-extensions==1.7.9
 django-geojson==2.10.0
@@ -19,7 +19,7 @@ djangorestframework==3.6.4
 geopy==1.11.0
 h5py==2.7.0
 html5lib==0.999999999
-idna==2.6
+idna==2.7
 jsonfield==2.0.1
 kombu==4.1.0
 numpy==1.13.0
@@ -29,10 +29,10 @@ Pygments==2.2.0
 python-dateutil==2.6.1
 pytz==2017.3
 PyYAML==3.12
-requests==2.18.4
+requests==2.20.0
 six==1.11.0
 Unidecode==0.4.21
-urllib3==1.22
+urllib3==1.24
 vine==1.1.4
 wagtail==1.13
 webencodings==0.5.1
