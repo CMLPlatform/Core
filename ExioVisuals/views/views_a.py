@@ -23,54 +23,29 @@ import h5py
 from CMLMasterProject.settings import PATH_HDF5
 
 
+#get the latest year (the model should be ordered in order for this to work)
+all_years = YearF.objects.values_list('name', flat=True)
+latest_year_str = all_years.reverse()[0]
+latest_year_int = all_years.reverse()[0]
+all_years = list(all_years)
+#remove total
+all_years.pop(0)
+
+
+def about(request):
+    context = RequestContext(request)
+
+    #print(data)
+    return render(request,'ExioVisuals/about.html')
 # Create your views here.
 #Homepage code
 def home(request):
     context = RequestContext(request)
 
 
-    start_time = int(time.mktime(datetime.datetime(2012, 6, 1).timetuple()) * 1000)
-    nb_element = 150
-    xdata = range(nb_element)
-    xdata = list(map(lambda x: start_time + x * 1000000000, xdata))
-    ydata = [i + random.randint(1, 10) for i in range(nb_element)]
-    ydata2 = list(map(lambda x: x * 2, ydata))
 
-    tooltip_date = "%d %b %Y %H:%M:%S %p"
-    extra_serie1 = {
-        "tooltip": {"y_start": "", "y_end": " cal"},
-        "date_format": tooltip_date,
-    }
-    extra_serie2 = {
-        "tooltip": {"y_start": "", "y_end": " cal"},
-        "date_format": tooltip_date,
-    }
-    chartdata = {'x': xdata,
-        'name1': 'series 1', 'y1': ydata, 'extra1': extra_serie1, 'kwargs1': { 'color': '#778899' },
-        'name2': 'series 2', 'y2': ydata2, 'extra2': extra_serie2, 'kwargs2': { 'color': '#b22121' },
-    }
-
-    charttype = "lineChart"
-    chartcontainer = 'linechart_container'  # container name
-    data = {
-        'charttype': charttype,
-        'chartdata': chartdata,
-        'chartcontainer': chartcontainer,
-        'extra': {
-            'x_is_date': True,
-            'x_axis_format': '%d %b %Y %H',
-            'tag_script_js': True,
-            'jquery_on_ready': False,
-        },'sample_datas' : [
-    {"value": 100, "name": "alpha"      },
-    {"value": 70, "name": "beta"},
-            {"value": 30, "name": "Test"},
-            {"value": 10, "name": "bla"},
-
-  ]
-    }
     #print(data)
-    return render(request,'ExioVisuals/home.html', data)
+    return render(request,'ExioVisuals/home.html')
 
 
 
@@ -90,7 +65,7 @@ def distributionView(request):
     formTreeCountry = CountrySelectionForm(request.POST or None)
     formTreeSubstance = SubstanceSelectionForm(request.POST or None)
     formTreeYear = YearFSelectionForm(request.POST or None)
-    print("wher")
+
 
     MemberFormSet = formset_factory(wraps(PostFormEFactor)(partial(PostFormEFactor)))
 
@@ -121,7 +96,7 @@ def distributionView(request):
                     smart_str(u"Data"),
 
                 ])
-                print("****")
+
 
                 #convert to actual list
                 import ast
@@ -146,7 +121,7 @@ def distributionView(request):
 
 
         if mode != None:
-            print("Entering mode:" +mode)
+
             if mode=="selectA":
                 #call all the necessary forms
                 modeFormSet = modes(initial={'selection': 'selectA'})
@@ -154,7 +129,7 @@ def distributionView(request):
                 xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consumed product category"
+                title = "Carbon footprint of consumption split by consumed product category"
                 xdata, ydata = defaultData("PieChart", title, request)
                 description = ""
 
@@ -171,7 +146,7 @@ def distributionView(request):
                         i['unselectable'] = True
 
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -206,7 +181,7 @@ def distributionView(request):
                                 k['selected'] = True
 
 
-                print(parsed_json)
+
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -241,7 +216,7 @@ def distributionView(request):
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
 
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
                 return render(request,"ExioVisuals/distribution.html", pieData)
             if mode=="selectB":
                 #call all the necessary forms
@@ -249,7 +224,7 @@ def distributionView(request):
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consuming region"
+                title = "Carbon footprint of consumption split by consuming country"
                 description = ""
                 xdata, ydata = defaultData("PieChart", title, request)
                 countryDataReady = generateTrees(formTreeCountry)
@@ -266,7 +241,7 @@ def distributionView(request):
                         i['unselectable'] = True
 
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -301,7 +276,7 @@ def distributionView(request):
                         for y in x['children']:
                                     y['selected'] = True
 
-                print(parsed_json)
+
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -334,17 +309,17 @@ def distributionView(request):
                 default =1
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
                 return render(request,"ExioVisuals/distribution.html", pieData)
             if mode=="selectD":
                 #call all the necessary forms
                 modeFormSet = modes(initial={'selection': 'selectD'})
-                yearsSelect = yearsSingleSelect(initial={'Year': '2011'})
+                yearsSelect = yearsSingleSelect(initial={'Year': 'latest_year_int'})
 
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by country where impact occurs"
+                title = "Carbon footprint of consumption split by country where emission occurs"
                 description = ""
                 xdata, ydata = defaultData("PieChart", title, request)
                 sourceData = generateTrees(formTree)
@@ -360,7 +335,7 @@ def distributionView(request):
                         i['unselectable'] = True
 
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -396,7 +371,7 @@ def distributionView(request):
                         for y in x['children']:
                                     y['selected'] = True
 
-                print(parsed_json)
+
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -429,16 +404,16 @@ def distributionView(request):
                 default =1
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
                 return render(request,"ExioVisuals/distribution.html", pieData)
             if mode=="selectC":
                 #call all the necessary forms
                 modeFormSet = modes(initial={'selection': 'selectC'})
-                yearsSelect = yearsSingleSelect(initial={'Year': '2011'})
+                yearsSelect = yearsSingleSelect(initial={'Year': 'latest_year_int'})
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by sector where impact occurs"
+                title = "Carbon footprint of consumption split by sector where emission occurs"
                 description = ""
                 #normally we want to load data here that makes sense of the selected mode
                 xdata, ydata = defaultData("PieChart", title, request)
@@ -458,7 +433,7 @@ def distributionView(request):
                         i['unselectable'] = True
 
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -531,17 +506,17 @@ def distributionView(request):
                 default =1
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
                 return render(request,"ExioVisuals/distribution.html", pieData)
             if mode=="selectF":
                 #call all the necessary forms
                 modeFormSet = modes(initial={'selection': 'selectF'})
-                yearsSelect = yearsSingleSelect(initial={'Year': '2011'})
+                yearsSelect = yearsSingleSelect(initial={'Year': 'latest_year_int'})
 
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by region selling"
+                title = "Carbon footprint of consumption split by country selling"
                 description = ""
                 xdata, ydata = defaultData("PieChart", title, request)
                 sourceData = generateTrees(formTree)
@@ -557,7 +532,7 @@ def distributionView(request):
                         i['unselectable'] = True
 
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -622,7 +597,7 @@ def distributionView(request):
                 default =1
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
                 return render(request,"ExioVisuals/distribution.html", pieData)
 
         #************START RETRIEVING USER SELECTIONS*******************
@@ -636,29 +611,29 @@ def distributionView(request):
         year = YearF.objects.values_list('name', flat=True).get(pk=year)
         envP = (request.POST.getlist('ft_4[]'))
         envPtitles = []
+        '''
         for x in envP:
             print("Environmental Pressure:")
             print(Substance.objects.get(pk=x))
             print(Substance.objects.values_list('name', flat=True).get(pk=x))
             name = (Substance.objects.values_list('name', flat=True).get(pk=x))
             envPtitles.append(name)
-
+        '''
 
         year = (request.POST.get('ft_6[]'))
-        print(year)
 
-        print(YearF.objects.get(pk=year))
+
+
 
         year = YearF.objects.values_list('name', flat=True).get(pk=year)
         regP = (request.POST.getlist('ft_2[]'))
+
         regPdata = []
         regPtitles = []
         regPquery =[]
         regPparents = []
         for x in regP:
-            print("Region of production:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -671,12 +646,11 @@ def distributionView(request):
                 regPtitles.append(name[:40])
             else:
                 regPtitles.append(name)
-            regPquery.append(name+"("+str(id)+")")
+            regPquery.append(name)
             regPdata.append(id)
 
 
-        print("test8888888")
-        print(regP)
+
         secP = (request.POST.getlist('ft_5[]'))
         secPdata = []
         secPtitles = []
@@ -684,9 +658,7 @@ def distributionView(request):
         secPparents = []
         da = 0
         for x in secP:
-            print("Sector of production:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -699,7 +671,7 @@ def distributionView(request):
                 secPtitles.append(name[:40])
             else:
                 secPtitles.append(name)
-            secPquery.append(name+"("+str(id)+")")
+            secPquery.append(name)
             secPdata.append(id)
 
         regRS = (request.POST.getlist('ft_7[]'))
@@ -708,9 +680,7 @@ def distributionView(request):
         regRSquery = []
         regRSparents = []
         for x in regRS:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -718,23 +688,21 @@ def distributionView(request):
             id = Country.objects.values_list('id', flat=True).get(pk=x)
             #mitigate the offset
             id = id - 1
-            regPparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
+            regRSparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
             if len(name) > 25:
                 regRStitles.append(name[:40])
             else:
                 regRStitles.append(name)
-            regRSquery.append(name+"("+str(id)+")")
+            regRSquery.append(name)
             regRSdata.append(id)
-        print(regRSquery)
+
         secC = (request.POST.getlist('ft_3[]'))
         secCdata = []
         secCtitles = []
         secCquery = []
         secCparents = []
         for x in  secC:
-            print("Sector of consumption:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -747,7 +715,7 @@ def distributionView(request):
                 secCtitles.append(name[:40])
             else:
                 secCtitles.append(name)
-            secCquery.append(name+"("+str(id)+")")
+            secCquery.append(name)
             secCdata.append(id)
 
 
@@ -757,9 +725,7 @@ def distributionView(request):
         regCquery = []
         regCparents = []
         for x in regC:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -772,17 +738,14 @@ def distributionView(request):
                 regCtitles.append(name[:40])
             else:
                 regCtitles.append(name)
-            regCquery.append(name+"("+str(id)+")")
+            regCquery.append(name)
             regCdata.append(id)
-        print(year)
+
 
         selectMode = (request.POST.get('selectMode'))
 
 
-        print("Select mode is: ")
-        print(selectMode)
-        print(secPdata)
-        print(")*(^%%%%%%%%")
+
 
         #validate input
         if not regPdata:
@@ -792,7 +755,7 @@ def distributionView(request):
             error_status = {"error":"<Sector of Production> data has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regRSdata:
-            error_status = {"error":"<Region Selling> has not been filled in properly."}
+            error_status = {"error":"<country selling> has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regCdata:
             error_status = {"error":"<Region of Consumption> data has not been filled in properly."}
@@ -803,7 +766,7 @@ def distributionView(request):
 
 
         #START MAKING PLOT DATA
-        if selectMode == "Contribution footprint of consumption split by country where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by country where emission occurs":
             plotType = "PieChart"
             #QUERY THE DATABASE
             plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regPtitles,request)
@@ -828,7 +791,7 @@ def distributionView(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -885,19 +848,19 @@ def distributionView(request):
             notification = '<div class="alert alert-warning"><strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong> Only single selection is possible, because of selected mode.</div>'
             #create select modes for fancyTree : so single select or multiple
             pieData.update({'mode_tree7': 1, 'warning_11':notification,'yearDataReady': yearData})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
 
             pieData.update({'mode_tree4': 1, 'warning_8':notification,"sectorOfProduction":sourceData})
             pieData.update({'mode_tree': 1, 'warning_6':notification,"productPurchased":sourceData})
             pieData.update({'mode_tree2': 1, 'warning_5':notification,"regionConsumng":countryDataReady2})
             pieData.update({'mode_tree3': 2, 'warning_7':"","regionProducing":regProducing})
             pieData.update({'mode_tree6': 1, 'warning_10':notification,"regionSelling":countryDataReady2})
-        if selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by sector where emission occurs":
             plotType = "PieChart"
             #QUERY THE DATABASE
             plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, secPtitles, request)
 
-            table = generateDesc(selectMode,envPtitles,year,regPparents, secPquery, regRSquery, regCparents, secCparents,queryData)
+            table = generateDesc(selectMode,envPtitles,year,regPquery, secPquery, regRSquery, regCparents, secCparents,queryData)
 
             pieData = pieChart(secPtitles,plotData,selectMode, table)
             modeFormSet = modes(initial={'selection': 'selectA'})
@@ -920,7 +883,7 @@ def distributionView(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -988,9 +951,9 @@ def distributionView(request):
             popup = 1
 
             pieData.update({'popup': popup})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
 
-        if selectMode == "Contribution footprint of consumption split by consumed product category":
+        if selectMode == "Carbon footprint of consumption split by consumed product category":
             plotType = "PieChart"
             #QUERY THE DATABASE
             plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, secCtitles, request)
@@ -1010,7 +973,7 @@ def distributionView(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -1045,7 +1008,7 @@ def distributionView(request):
                             k['selected'] = False
 
 
-            print(parsed_json)
+
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -1071,16 +1034,15 @@ def distributionView(request):
             pieData.update({'mode_tree6': 1, 'warning_10':notification,"regionSelling":countryDataReady})
             #pieData.update({'warning': '<div class="alert alert-warning"><strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong> Only single selection is possible, because of selected mode.</div>'})
             pieData.update({'session': "session"})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
 
 
             pieData.update({'titles': secCtitles})
             pieData.update({'plot': plotData})
-        if selectMode == "Contribution footprint of consumption split by consuming region":
+        if selectMode == "Carbon footprint of consumption split by consuming country":
             plotType = "PieChart"
 
-            print(regCdata)
-            print(regCtitles)
+
             #QUERY THE DATABASE
             plotData,regCtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regCtitles, request)
 
@@ -1102,7 +1064,7 @@ def distributionView(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -1149,7 +1111,7 @@ def distributionView(request):
             #call pieChart function
          #updata dictionary for filter options: form skeletons
             pieData.update({'modeForm':modeFormSet})
-            pieData.update({'session': "session"})
+
             pieData.update({'sourceData': sourceData})
             pieData.update({'countryDataReady': countryDataReady})
             pieData.update({'substanceDataReady': generateTrees(formTreeSubstance)})
@@ -1166,11 +1128,11 @@ def distributionView(request):
 
             popup = 1
             pieData.update({'popup': popup})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
             pieData.update({'modeForm':modeFormSet})
             pieData.update({'titles': regCtitles})
             pieData.update({'plot': plotData})
-        if selectMode == "Contribution footprint of consumption split by region selling":
+        if selectMode == "Carbon footprint of consumption split by country selling":
             plotType = "PieChart"
             #QUERY THE DATABASE
             plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regRStitles,request)
@@ -1195,7 +1157,7 @@ def distributionView(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -1257,7 +1219,7 @@ def distributionView(request):
             #send signal for popup and default data
             popup = 1
             pieData.update({'popup': popup})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
 
 
 
@@ -1277,8 +1239,7 @@ def distributionView(request):
             email = request.POST.get('email')
             password = request.POST.get('password')
             mode = request.POST.get('radio')
-            print(request.POST)
-            print(email)
+
             data = {"email":email , "password" : password, "sign": "Dsdfs"}
 
 
@@ -1313,7 +1274,7 @@ def distributionView(request):
     #pieData.update(bla)
      #updata dictionary for filter options : FancyTree
     pieData = ({'formTree2': formTree})
-    pieData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your mode in the navigation bar.</strong></div>' })
+    pieData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your dimension in the navigation bar.</strong></div>' })
 
 
     #start getting some form skeletons now!
@@ -1331,7 +1292,16 @@ def distributionView(request):
     pieData.update({'countryDataReady': generateTrees(formTreeCountry)})
     pieData.update({'substanceDataReady': generateTrees(formTreeSubstance)})
     modeFormSet = modes(initial={'selection': 'selectA'})
-    pieData.update({'modeForm':modeFormSet})
+
+    if request.method != 'POST':
+        pieData.update({'modeForm':modeFormSet, 'session': "RESET"})
+        #load tree with nothing suich that we can reset the cookies and remove any previous selections
+        pieData.update({'mode_tree7': 2, 'warning_11': "", 'yearDataReady': ["N/A", "N/A"]})
+        pieData.update({'mode_tree4': 1, 'warning_8': "", "sectorOfProduction": ["N/A", "N/A"]})
+        pieData.update({'mode_tree': 1, 'warning_6': "", "productPurchased": ["N/A", "N/A"]})
+        pieData.update({'mode_tree2': 1, 'warning_5': "", "regionConsumng": ["N/A", "N/A"]})
+        pieData.update({'mode_tree3': 2, 'warning_7': "", "regionProducing": ["N/A", "N/A"]})
+        pieData.update({'mode_tree6': 1, 'warning_10': "", "regionSelling": ["N/A", "N/A"]})
 
 
     return render(request,"ExioVisuals/distribution.html", pieData)
@@ -1355,7 +1325,7 @@ def timeseries(request):
     formTreeCountry = CountrySelectionForm(request.POST or None)
     formTreeSubstance = SubstanceSelectionForm(request.POST or None)
     formTreeYear = YearFSelectionForm(request.POST or None)
-    print("wher")
+
 
     MemberFormSet = formset_factory(wraps(PostFormEFactor)(partial(PostFormEFactor)))
  #retrieve filter data!
@@ -1396,7 +1366,7 @@ def timeseries(request):
                     smart_str(u"Data"),smart_str(u"year"),
 
                 ])
-                print("****")
+
 
 
                 #merge the two sorted lists
@@ -1430,10 +1400,11 @@ def timeseries(request):
                 #xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consumed product category"
+                title = "Carbon footprint of consumption split by consumed product category"
                 description = ""
 
                 csvData, ydata = defaultData("TimeSeries", title, request)
+
                 from collections import defaultdict
                             #sum the value if years and name are the same (timeseries query gives multiple values)
                 c = defaultdict(int)
@@ -1451,6 +1422,7 @@ def timeseries(request):
                         queryData.append(year+"_"+name+"_"+str(value))
 
                 pieData.update({'graph':ydata})
+
                 pieData.update({'modeForm':modeFormSet})
                 #pieData.update({'titles': secCtitles})
                 pieData.update({'plot': csvData})
@@ -1500,11 +1472,11 @@ def timeseries(request):
                 for i in productP:
                     i['selected'] = False
                     for x in i['children']:
-                        x['selected'] = True
+                        x['selected'] = False
                         for y in x['children']:
                             y['selected'] = False
                             for k in y['children']:
-                                k['selected'] = False
+                                k['selected'] = True
 
 
 
@@ -1541,7 +1513,7 @@ def timeseries(request):
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
 
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
 
                 #countryDataReady = (countryDataReady.replace("'", '"'))
                 #call pieChart function
@@ -1551,9 +1523,9 @@ def timeseries(request):
 
 
 
-                pieData.update({'title':"Contribution footprint of consumption split by consumed product category"})
+                pieData.update({'title':"Carbon footprint of consumption split by consumed product category"})
 
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
                 return render(request,"ExioVisuals/timeseries.html", pieData)
             if mode=="selectB":
                 #call all the necessary forms
@@ -1563,11 +1535,26 @@ def timeseries(request):
                 #xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consuming region"
+                title = "Carbon footprint of consumption split by consuming country"
                 description = ""
                 csvData, ydata = defaultData("TimeSeries", title, request)
 
+                from collections import defaultdict
 
+                # sum the value if years and name are the same (timeseries query gives multiple values)
+                c = defaultdict(int)
+                for d in csvData:
+                    c[d['name']] += d['value']
+                queryData = []
+                shorten = []
+                # generate list for table
+                for key, value in c.items():
+                    # print(value)
+                    seperate = (key.split("_"))
+                    ayear = (seperate[0])
+
+                    name = (seperate[1])
+                    queryData.append(ayear + "_" + name + "_" + str(value))
                 pieData.update({'graph':ydata})
                 pieData.update({'modeForm':modeFormSet})
                 #pieData.update({'titles': secCtitles})
@@ -1621,11 +1608,10 @@ def timeseries(request):
                     if i['title'] == "Total":
                         i['selected'] = False
                     for x in i['children']:
-                        x['selected'] = True
+                        x['selected'] = False
                         for y in x['children']:
-                                    y['selected'] = False
+                                    y['selected'] = True
 
-                print(parsed_json)
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -1657,8 +1643,8 @@ def timeseries(request):
                 default =1
                 pieData.update({'popup': popup})
                 pieData.update({'default': default})
-                pieData.update({'title':"Contribution footprint of consumption split by consuming region"})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
+                pieData.update({'title':"Carbon footprint of consumption split by consuming country"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
                 return render(request,"ExioVisuals/timeseries.html", pieData)
             if mode=="selectC":
                 #call all the necessary forms
@@ -1668,7 +1654,7 @@ def timeseries(request):
                 #xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by sector where impact occurs"
+                title = "Carbon footprint of consumption split by sector where emission occurs"
                 description = ""
                 csvData, ydata = defaultData("TimeSeries", title, request)
                 from collections import defaultdict
@@ -1739,11 +1725,11 @@ def timeseries(request):
                 for i in secOfProduction:
                     i['selected'] = False
                     for x in i['children']:
-                        x['selected'] = True
+                        x['selected'] = False
                         for y in x['children']:
                             y['selected'] = False
                             for k in y['children']:
-                                k['selected'] = False
+                                k['selected'] = True
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -1778,10 +1764,10 @@ def timeseries(request):
                 default =1
                 pieData.update({'popup': popup, 'title': title})
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
 
-                pieData.update({'title':"Contribution footprint of consumption split by sector where impact occurs"})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+                pieData.update({'title':"Carbon footprint of consumption split by sector where emission occurs"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
                 return render(request,"ExioVisuals/timeseries.html", pieData)
             if mode=="selectD":
                 #call all the necessary forms
@@ -1790,7 +1776,7 @@ def timeseries(request):
                 #xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by country where impact occurs"
+                title = "Carbon footprint of consumption split by country where emission occurs"
                 description = ""
                 sourceData = generateTrees(formTree)
                 csvData, ydata = defaultData("TimeSeries", title, request)
@@ -1874,11 +1860,10 @@ def timeseries(request):
                     if i['title'] == "Total":
                         i['selected'] = False
                     for x in i['children']:
-                        x['selected'] = True
+                        x['selected'] = False
                         for y in x['children']:
-                                    y['selected'] = False
+                                    y['selected'] = True
 
-                print(parsed_json)
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -1911,7 +1896,7 @@ def timeseries(request):
                 pieData.update({'popup': popup, 'title': title})
 
                 pieData.update({'default': default})
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
                 return render(request,"ExioVisuals/timeseries.html", pieData)
             if mode=="selectF":
                 #call all the necessary forms
@@ -1920,7 +1905,7 @@ def timeseries(request):
                 #xdata, ydata = retrieveData()
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by region selling"
+                title = "Carbon footprint of consumption split by country selling"
                 description = ""
                 sourceData = generateTrees(formTree)
                 csvData, ydata = defaultData("TimeSeries", title, request)
@@ -1987,9 +1972,9 @@ def timeseries(request):
                     if i['title'] == "Total":
                         i['selected'] = False
                     for x in i['children']:
-                        x['selected'] = True
+                        x['selected'] = False
                         for y in x['children']:
-                                    y['selected'] = False
+                                    y['selected'] = True
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -2022,13 +2007,14 @@ def timeseries(request):
                 pieData.update({'popup': popup, 'title': title})
                 pieData.update({'default': default})
 
-                pieData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+                pieData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
                 return render(request,"ExioVisuals/timeseries.html", pieData)
         #************START RETRIEVING USER SELECTIONS*******************
         envP = (request.POST.getlist('ft_4[]'))
         envPtitles = []
         envP = (request.POST.getlist('ft_4[]'))
         envPtitles = []
+        '''
         for x in envP:
             print("Environmental Pressure:")
             print(Substance.objects.get(pk=x))
@@ -2036,9 +2022,10 @@ def timeseries(request):
             name = (Substance.objects.values_list('name', flat=True).get(pk=x))
             envPtitles.append(name)
 
-
+'''
         #print(request.POST)
         year = []
+
         years = (request.POST.getlist('ft_6[]'))
         #check if year has been filled in properly
         if not years:
@@ -2054,9 +2041,7 @@ def timeseries(request):
 
                 name = YearF.objects.values_list('name', flat=True).get(pk=x)
                 year.append(name)
-        print("Years selected:")
 
-        print(year)
 
         regP = (request.POST.getlist('ft_2[]'))
         regPdata = []
@@ -2064,9 +2049,7 @@ def timeseries(request):
         regPquery =[]
         regPparents = []
         for x in regP:
-            print("Region of production:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -2079,12 +2062,11 @@ def timeseries(request):
                 regPtitles.append(name[:40])
             else:
                 regPtitles.append(name)
-            regPquery.append(name+"("+str(id)+")")
+            regPquery.append(name)
             regPdata.append(id)
 
 
-        print("test8888888")
-        print(regP)
+
         secP = (request.POST.getlist('ft_5[]'))
         secPdata = []
         secPtitles = []
@@ -2092,9 +2074,7 @@ def timeseries(request):
         secPparents = []
         da = 0
         for x in secP:
-            print("Sector of production:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -2107,7 +2087,7 @@ def timeseries(request):
                 secPtitles.append(name[:40])
             else:
                 secPtitles.append(name)
-            secPquery.append(name+"("+str(id)+")")
+            secPquery.append(name)
             secPdata.append(id)
 
         regRS = (request.POST.getlist('ft_7[]'))
@@ -2116,9 +2096,7 @@ def timeseries(request):
         regRSquery = []
         regRSparents = []
         for x in regRS:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -2126,23 +2104,21 @@ def timeseries(request):
             id = Country.objects.values_list('id', flat=True).get(pk=x)
             #mitigate the offset
             id = id - 1
-            regPparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
+            regRSparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
             if len(name) > 25:
                 regRStitles.append(name[:40])
             else:
                 regRStitles.append(name)
-            regRSquery.append(name+"("+str(id)+")")
+            regRSquery.append(name)
             regRSdata.append(id)
-        print(regRSquery)
+
         secC = (request.POST.getlist('ft_3[]'))
         secCdata = []
         secCtitles = []
         secCquery = []
         secCparents = []
         for x in  secC:
-            print("Sector of consumption:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -2155,7 +2131,7 @@ def timeseries(request):
                 secCtitles.append(name[:40])
             else:
                 secCtitles.append(name)
-            secCquery.append(name+"("+str(id)+")")
+            secCquery.append(name)
             secCdata.append(id)
 
 
@@ -2165,9 +2141,7 @@ def timeseries(request):
         regCquery = []
         regCparents = []
         for x in regC:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -2180,9 +2154,9 @@ def timeseries(request):
                 regCtitles.append(name[:40])
             else:
                 regCtitles.append(name)
-            regCquery.append(name+"("+str(id)+")")
+            regCquery.append(name)
             regCdata.append(id)
-        print("gdsf")
+
 
         #remove duplicate selections and preserve order
         def f7(seq):
@@ -2194,10 +2168,7 @@ def timeseries(request):
         selectMode = (request.POST.get('selectMode'))
 
 
-        print("Select mode is: ")
-        print(selectMode)
-        print(secPdata)
-        print(")*(^%%%%%%%%")
+
 
         #validate input
         if not regPdata:
@@ -2207,7 +2178,7 @@ def timeseries(request):
             error_status = {"error":"<Sector of Production> data has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regRSdata:
-            error_status = {"error":"<Region Selling> has not been filled in properly."}
+            error_status = {"error":"<country selling> has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regCdata:
             error_status = {"error":"<Region of Consumption> data has not been filled in properly."}
@@ -2217,7 +2188,7 @@ def timeseries(request):
             return render(request, "ExioVisuals/error_page.html", error_status)
 
 
-        if selectMode == "Contribution footprint of consumption split by consumed product category":
+        if selectMode == "Carbon footprint of consumption split by consumed product category":
             plotType = "TimeSeries"
 
             #QUERY THE DATABASE
@@ -2288,7 +2259,6 @@ def timeseries(request):
                             k['selected'] = False
 
 
-            print(parsed_json)
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -2320,7 +2290,7 @@ def timeseries(request):
             popup = 1
             pieData.update({'popup': popup})
 
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
 
             #countryDataReady = (countryDataReady.replace("'", '"'))
             #call pieChart function
@@ -2330,9 +2300,9 @@ def timeseries(request):
 
 
 
-            pieData.update({'title':"Contribution footprint of consumption split by consumed product category"})
+            pieData.update({'title':"Carbon footprint of consumption split by consumed product category"})
 
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
 
             pieData.update({'description':table})
             pieData.update({'modeForm':modeFormSet})
@@ -2341,7 +2311,7 @@ def timeseries(request):
             pieData.update({'plot': csvData})
 
 
-        if selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by sector where emission occurs":
             plotType = "TimeSeries"
             #QUERY THE DATABASE
 
@@ -2428,7 +2398,7 @@ def timeseries(request):
             #call pieChart function
          #updata dictionary for filter options: form skeletons
             pieData.update({'modeForm':modeFormSet})
-
+            pieData.update({'session': "session"})
             pieData.update({'sourceData': sourceData})
             pieData.update({'countryDataReady': countryDataReady})
             pieData.update({'substanceDataReady': generateTrees(formTreeSubstance)})
@@ -2446,10 +2416,10 @@ def timeseries(request):
             #send signal for popup and default data
             popup = 1
             pieData.update({'popup': popup})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
 
-            pieData.update({'title':"Contribution footprint of consumption split by sector where impact occurs"})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+            pieData.update({'title':"Carbon footprint of consumption split by sector where emission occurs"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
             pieData.update({'graph':plotData})
             pieData.update({'description':table})
             pieData.update({'modeForm':modeFormSet})
@@ -2459,12 +2429,27 @@ def timeseries(request):
 
 
 
-        if selectMode == "Contribution footprint of consumption split by consuming region":
+        if selectMode == "Carbon footprint of consumption split by consuming country":
             plotType = "TimeSeries"
 
             #QUERY THE DATABASE
             plotData,csvData, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regCtitles, request)
+            from collections import defaultdict
 
+            # sum the value if years and name are the same (timeseries query gives multiple values)
+            c = defaultdict(int)
+            for d in csvData:
+                c[d['name']] += d['value']
+            queryData = []
+            shorten = []
+            # generate list for table
+            for key, value in c.items():
+                # print(value)
+                seperate = (key.split("_"))
+                ayear = (seperate[0])
+
+                name = (seperate[1])
+                queryData.append(ayear + "_" + name + "_" + str(value))
             table = generateDesc(selectMode,envPtitles,year,regPquery, secPquery, regRSquery, regCquery, secCquery, queryData)
             pieData = {'graph':plotData}
             countryDataReady = generateTrees(formTreeCountry)
@@ -2514,7 +2499,7 @@ def timeseries(request):
                     for y in x['children']:
                                 y['selected'] = False
 
-            print(parsed_json)
+
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -2544,7 +2529,7 @@ def timeseries(request):
             pieData.update({'session': "session"})
             popup = 1
             pieData.update({'popup': popup})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
             pieData.update({'description':table})
             pieData.update({'modeForm':modeFormSet})
             pieData.update({'title':selectMode})
@@ -2554,7 +2539,7 @@ def timeseries(request):
 
 
         #START MAKING PLOT DATA
-        if selectMode == "Contribution footprint of consumption split by country where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by country where emission occurs":
             plotType = "TimeSeries"
             from collections import defaultdict
                  #QUERY THE DATABASE
@@ -2625,7 +2610,7 @@ def timeseries(request):
                     for y in x['children']:
                                 y['selected'] = False
 
-            print(parsed_json)
+
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -2659,11 +2644,11 @@ def timeseries(request):
             #modeFormSet = modes(initial={'selection': 'selectA'})
             pieData.update({'modeForm':modeFormSet})
             pieData.update({'title':selectMode})
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
 
             pieData.update({'titles': regPtitles})
             pieData.update({'plot': csvData})
-        if selectMode == "Contribution footprint of consumption split by region selling":
+        if selectMode == "Carbon footprint of consumption split by country selling":
             plotType = "TimeSeries"
             from collections import defaultdict
                  #QUERY THE DATABASE
@@ -2769,10 +2754,19 @@ def timeseries(request):
             popup = 1
             pieData.update({'popup': popup})
 
-            pieData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+            pieData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
     else:
-        pieData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your mode in the navigation bar.</strong></div>' })
-
+        pieData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your dimension in the navigation bar.</strong></div>' })
+    if request.method != 'POST':
+        pieData.update({'modeForm': modeFormSet, 'session': "RESET"})
+        # load tree with nothing suich that we can reset the cookies and remove any previous selections
+        pieData.update({'mode_tree7': 2, 'warning_11': "", 'yearDataReady': ["N/A", "N/A"]})
+        pieData.update({'mode_tree4': 1, 'warning_8': "", "sectorOfProduction": ["N/A", "N/A"]})
+        pieData.update({'mode_tree': 1, 'warning_6': "", "productPurchased": ["N/A", "N/A"]})
+        pieData.update({'mode_tree2': 1, 'warning_5': "", "regionConsumng": ["N/A", "N/A"]})
+        pieData.update({'mode_tree3': 2, 'warning_7': "", "regionProducing": ["N/A", "N/A"]})
+        pieData.update({'mode_tree6': 1, 'warning_10': "", "regionSelling": ["N/A", "N/A"]})
+        pieData.update({'mode_tree5': 1, 'warning_10': "", "substanceDataReady": ["N/A", "N/A"]})
 
 
     """
@@ -2855,7 +2849,7 @@ def retrieveData():
         ydata = absData
         return xdata,ydata
 def defaultData(plotType,selectMode, request):
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by consumed product category":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by consumed product category":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
@@ -2892,11 +2886,11 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
+        plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
 
         return secCtitles, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
@@ -2933,11 +2927,11 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
+        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
 
         return secPtitles, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by consuming region":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by consuming country":
         #call queryHDF5 function with standard input
 
 
@@ -2955,10 +2949,10 @@ def defaultData(plotType,selectMode, request):
                 names.append(name)
                 locals.append(local)
 
-        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0] ,[0], locals,[0], names, request)
+        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0] ,[0], locals,[0], names, request)
 
         return secPtitles, plotData
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
@@ -2995,10 +2989,10 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
+        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
 
         return regPtitles, plotData
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by region selling":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by country selling":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
@@ -3035,16 +3029,16 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
+        plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
 
         return regRStitles, plotData
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by consumed product category":
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by consumed product category":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
 
         lvls = Product.objects.values_list('lvl', flat=True)
-        lwst_level = 2
+        lwst_level = max(lvls)
         secCdata = []
         secCdata2 = []
         secCtitlesReady = []
@@ -3053,7 +3047,7 @@ def defaultData(plotType,selectMode, request):
 
             #print(lwst_level)
         # if lowest level get the name and id
-            if lwst_level == int(lvl):
+            if lwst_level == lvl:
                 name = Product.objects.values_list('name', flat=True).get(pk=x)
                 if len(name) > 25:
                     secCtitlesReady.append(name[:40])
@@ -3076,17 +3070,17 @@ def defaultData(plotType,selectMode, request):
                 locals.append(local)
 
 
-        plotData,csvData, queryData = queryhdf5(plotType,selectMode, "",  ["2000","2001","2002","2003","2004","2005", "2006","2007", "2008", "2009", "2010",  "2011"], [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
+        plotData,csvData, queryData = queryhdf5(plotType,selectMode, "",  all_years, [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
 
         return csvData, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
 
         lvls = Product.objects.values_list('lvl', flat=True)
-        lwst_level = 2
+        lwst_level = max(lvls)
         secPdata = []
         secPdata2 = []
         secPtitlesReady = []
@@ -3095,7 +3089,7 @@ def defaultData(plotType,selectMode, request):
 
             #print(lwst_level)
         # if lowest level get the name and id
-            if lwst_level == int(lvl):
+            if lwst_level == lvl:
                 name = Product.objects.values_list('name', flat=True).get(pk=x)
                 if len(name) > 25:
                     secPtitlesReady.append(name[:40])
@@ -3109,18 +3103,18 @@ def defaultData(plotType,selectMode, request):
 
 
 
-        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "",  ["2000","2001","2002","2003","2004","2005", "2006","2007", "2008", "2009", "2010",  "2011"], [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
+        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "",  all_years, [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
 
         return secPtitles, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by consuming region":
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by consuming country":
         #call queryHDF5 function with standard input
 
         id = Country.objects.values_list('id', flat=True)
 
 
         lvls = Country.objects.values_list('lvl', flat=True)
-        lwst_level = 2
+        lwst_level = max(lvls)
         regCdata = []
         regCdata2 = []
         regCtitlesReady = []
@@ -3129,7 +3123,7 @@ def defaultData(plotType,selectMode, request):
 
             #print(lwst_level)
         # if lowest level get the name and id
-            if lwst_level == int(lvl):
+            if lwst_level == lvl:
                 name = Country.objects.values_list('name', flat=True).get(pk=x)
                 if len(name) > 25:
                     regCtitlesReady.append(name[:40])
@@ -3141,18 +3135,17 @@ def defaultData(plotType,selectMode, request):
                 #secCdata.append(str(x-1)+secC)
 
 
+                # plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
+        plotData,regCtitles, queryData = queryhdf5(plotType,selectMode, "", all_years, [0], [0],[0], regCdata2,[0], regCtitlesReady, request)
 
-
-        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", ["2000","2001","2002","2003","2004","2005", "2006","2007", "2008", "2009", "2010",  "2011"], [0], [0],[0], regCdata2,[0], regCtitlesReady, request)
-
-        return regPtitles, plotData
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
+        return regCtitles, plotData
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
 
         lvls = Country.objects.values_list('lvl', flat=True)
-        lwst_level = 2
+        lwst_level = max(lvls)
         regPdata = []
         regPdata2 = []
         regPtitlesReady = []
@@ -3161,7 +3154,7 @@ def defaultData(plotType,selectMode, request):
 
             #print(lwst_level)
         # if lowest level get the name and id
-            if lwst_level == int(lvl):
+            if lwst_level == lvl:
                 name = Country.objects.values_list('name', flat=True).get(pk=x)
                 if len(name) > 25:
                     regPtitlesReady.append(name[:40])
@@ -3175,17 +3168,17 @@ def defaultData(plotType,selectMode, request):
 
 
 
-        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", ["2000","2001","2002","2003","2004","2005", "2006","2007", "2008", "2009", "2010",  "2011"], regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
+        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", all_years, regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
 
         return regPtitles, plotData
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by region selling":
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by country selling":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
 
         lvls = Country.objects.values_list('lvl', flat=True)
         #lwst_level = max(lvls)
-        lwst_level = 2
+        lwst_level = max(lvls)
         regRSdata = []
         regRSdata2 = []
         regRStitlesReady = []
@@ -3194,10 +3187,10 @@ def defaultData(plotType,selectMode, request):
 
             #print(lwst_level)
         # if lowest level get the name and id
-            if lwst_level == int(lvl):
-                print("FDsg")
+            if lwst_level == lvl:
+
                 name = Country.objects.values_list('name', flat=True).get(pk=x)
-                print(name)
+
                 if len(name) > 25:
                     regRStitlesReady.append(name[:40])
                 else:
@@ -3209,7 +3202,7 @@ def defaultData(plotType,selectMode, request):
 
 
 
-        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", ["2000","2001","2002","2003","2004","2005", "2006","2007", "2008", "2009", "2010",  "2011"], [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
+        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", all_years, [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
 
         return regPtitles, plotData
 #--------------------------------------Visual Analytics library
@@ -3232,7 +3225,7 @@ def pieChart(vLabel,vData, vTitle, vDescr):
     return pieData
 
 def timeSeries(vLabel,vData):
-    print("is this working?")
+
     vData = [ int(x) for x in vData ]
     data = []
 
@@ -3247,14 +3240,14 @@ def timeSeries(vLabel,vData):
 
 def test(request):
 	form = ProductSelectionForm(request.POST or None)
-	print("you are here ")
+
 	if request.method == "POST":
 		if form.is_valid():
-			print("you are here 3")
+
 
 			subject = form.cleaned_data['categories']
 			test = subject.values_list('url', flat=True)
-			print(test)
+
 
 
 
@@ -3272,10 +3265,10 @@ def redirectView(request):
             for f in formset:
                 cd = f.cleaned_data
 
-                print("selection:")
+
                 selection = cd.get('selection')
-                print(selection)
-                #
+
+
 
                 #start getting some form skeletons now!
                 ArticleFormSet = formset_factory(PostFormEFactor)
@@ -3308,11 +3301,11 @@ def ajax(request):
 
 
 def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request):
-    print("query function reached")
+
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regPadjusted = [ int(x) for x in regP ]
@@ -3365,12 +3358,12 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         t = (zip(package,outputData))
 
         #print(others)
-        print(outputDataReady)
+
         return outputDataReady, plotDatatitles, t
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         secPadjusted = [ int(x) for x in secP ]
@@ -3424,13 +3417,13 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         t = (zip(package,outputData))
 
         #print(others)
-        print(outputDataReady)
+
         return outputDataReady, plotDatatitles, t
 
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by consumed product category":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by consumed product category":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
 
@@ -3486,14 +3479,14 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
             t = (zip(package,outputData))
 
             #print(others)
-            print(outputDataReady)
+
             return outputDataReady, plotDatatitles, t
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by consuming region":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by consuming country":
         with h5py.File(PATH_HDF5+'{0}_combined.hdf5'.format(year) ,'r')as hf:
         #with h5py.File('/home/sidney/datahdf5/experiments/{0}_combined.hdf5'.format(year) ,'r')as hf:
             outputData = []
-            print("***")
+
 
             #retrieve the data for each region of consumption and append to data variable
             for x in regC:
@@ -3528,11 +3521,11 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
             t = (zip(package,outputData))
 
             #print(others)
-            print(outputDataReady)
+
             return outputDataReady, plotDatatitles, t
-    if plotType == "PieChart" and selectMode == "Contribution footprint of consumption split by region selling":
+    if plotType == "PieChart" and selectMode == "Carbon footprint of consumption split by country selling":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regRSadjusted = [ int(x) for x in regRS ]
@@ -3585,10 +3578,10 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         t = (zip(package,outputData))
 
         #print(others)
-        print(outputDataReady)
+
         return outputDataReady, plotDatatitles, t
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
 
 
         data = []
@@ -3601,7 +3594,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         data = []
         testa = []
         plottableData =[]
-        print("ok?")
+
         #print(secPadjusted)
         csvData = []
         for i,x in enumerate(year):
@@ -3617,7 +3610,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
                     tmp = tmp.tolist()
                     t = (zip(pack,tmp))
 
-                    print("year")
+
                     years = x
 
                     #testa.append(x)
@@ -3640,8 +3633,8 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         return plottableData, csvData, testa
 
             #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by consumed product category":
-        print(" we are here")
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by consumed product category":
+
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         secCadjusted = [ int(x) for x in secC ]
         points = zip(secCadjusted,plotDatatitles)
@@ -3672,7 +3665,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
                     #print(tmp)
                     #print(secPadjusted[i])
                     #year
-                    print("year")
+
                     years = x
 
                     #testa.append(x)
@@ -3686,8 +3679,8 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
                         plottableData.append(entries)
                         csvData.append({"name": years+"_"+y, "value": int(tmp[z])})
         return plottableData, csvData, testa
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by consuming region":
-        print(" we are here*")
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by consuming country":
+
 
         testa = []
         plottableData =[]
@@ -3703,7 +3696,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
                     test = (hf.get('region{0}'.format(int(regions))))
                     tmp = test[int(regP[0]),int(secP[0]),int(regRS[0]),int(secC[0])]
                     tmp = tmp.tolist()
-                    print(x)
+
                     #testa.append(years)
                     testa.append(regions)
                     #print(regions)
@@ -3724,9 +3717,9 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
 
 
-        return plottableData, None, testa
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
-        print(" we are here")
+        return plottableData, csvData, testa
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
+
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regPadjusted = [ int(x) for x in regP ]
@@ -3755,7 +3748,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
 
                     years = x
-                    print("year: "+years)
+
                     #testa.append(x)
                 #since the order of de x data en y data are the same (and aligned) we can use the length to retrieve specific data
                     testa.append(x)
@@ -3768,8 +3761,8 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
                         csvData.append({"name": years+"_"+y, "value": int(tmp[z])})
 
         return plottableData, csvData, testa
-    if plotType == "TimeSeries" and selectMode == "Contribution footprint of consumption split by region selling":
-        print(" we are here")
+    if plotType == "TimeSeries" and selectMode == "Carbon footprint of consumption split by country selling":
+
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regRSadjusted = [ int(x) for x in regRS ]
@@ -3798,7 +3791,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
 
                     years = x
-                    print("year: "+years)
+
                     #testa.append(x)
                 #since the order of de x data en y data are the same (and aligned) we can use the length to retrieve specific data
                     testa.append(x)
@@ -3816,7 +3809,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 def generateDesc(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles, queryData):
     head = '<div class="container" ><table class="table table-hover" ><thead><tr><th class="col-sm-0.5">Type </th><th class="col-sm-0.5">Query</th></tr></thead>'
 
-    body = '<tbody><tr><td>Select mode</td><td>{0}</td></tr><tr><td>Environmental pressure</td><td> {1}</td> </tr><tr><td>Year</td><td>{2} </td> </tr><tr><td>Region of production </td><td>{3} </td> </tr><tr><td> Sector of production</td><td>{4} </td> </tr><tr><td>Region selling</td><td>{5} </td> </tr><tr><td>Region of consumption </td><td>{6} </td> </tr><tr><td>Sector of consumption </td><td>{7} </td> </tr><tr><td>Result data </td><td>{8} </td> </tr></tbody></table></div>'.format(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles, list(queryData))
+    body = '<tbody><tr><td>Select mode</td><td>{0}</td></tr><tr hidden><td>Environmental pressure</td><td> {1}</td> </tr><tr><td>Year</td><td>{2} </td> </tr><tr><td>Region of production </td><td>{3} </td> </tr><tr><td> Sector of production</td><td>{4} </td> </tr><tr><td>country selling</td><td>{5} </td> </tr><tr><td>Region of consumption </td><td>{6} </td> </tr><tr><td>Sector of consumption </td><td>{7} </td> </tr></tbody></table></div>'.format(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles)
     table = head + body
     return table
 

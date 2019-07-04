@@ -3,25 +3,63 @@
 {% load static %}
 
 
+ {% block speciality %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/styleVis.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
+  <script>
+        function deselect(e) {
+  $('.pop').slideFadeToggle(function() {
+    e.removeClass('selected');
+  });
+}
+
+$(function() {
+  $('#contact').on('click', function() {
+    if($(this).hasClass('selected')) {
+      deselect($(this));
+    } else {
+      $(this).addClass('selected');
+      $('.pop').slideFadeToggle();
+    }
+    return false;
+  });
+
+  $('.close').on('click', function() {
+    deselect($('#contact'));
+    return false;
+  });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};
+    </script>
+    {% endblock %}
+
 
 {% block content %}
-<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
+<br><br><br>
+<div class="container-fluid" style="left-margin:0px;">
+<div class="messagepop pop" >
 
-  <ul class="nav navbar-nav">
-      <br>
-      <li ><a  href="../">  General</a></li>
-   <li><a  href="../blog">News</a></li>
-   <li><a href="../tools-index">IE Tools & Databases</a></li>
-   <li><a style="color: #e0e0eb;" href="./"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
-  </ul>
+<h4 style="color:#428bca;">Interactive Visualisations - MicroVis</h4>
+    <p>Sets of different interactive visualisation developed at CML</p>
+    <p>Click on any image to view the interactive visualisation</p>
+
+    <a class="close" href="/">Cancel</a></p>
+
+</div>
+<a href="/contact" id="contact">CML IV &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
+
 </div>
 <br>
 
-<div class="container">
+<div class="container-fluid">
 
-    <h3>Interactive Visualisations - MicroVis</h3>
-    <p>Sets of different interactive visualisation developed at CML</p>
-    <p>Click on any image to view the interactive visualisation</p>
+
 <table class="table table-striped">
 
 
@@ -34,6 +72,10 @@
 <td>
 <a href="fishman" title="">
 <img src="{% static 'images/usflow.jpg' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
+</td>
+    <td>
+<a href="fishman2" title="">
+<img src="{% static 'images/fishman2.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
 </td>
 
 

@@ -61,11 +61,61 @@
 
   <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
 </li>
+
+
+<li class="active"><a href="../about">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > About</span></a>
+</li>
 {% endblock %}
 {% block title %}
 SupplyChain
 {% endblock %}
 {% block body_block %}
+<script>
+
+{%  if session == "RESET" %}
+
+setTimeout(function(){
+console.log("called");
+var tree = $("#tree").fancytree("getTree");
+       var tree6 = $("#tree6").fancytree("getTree");
+       var tree7 = $("#tree7").fancytree("getTree");
+       var tree3 = $("#tree3").fancytree("getTree");
+       var tree2 = $("#tree2").fancytree("getTree");
+       var tree4 = $("#tree4").fancytree("getTree");
+
+         tree.clearCookies();
+         tree6.clearCookies();
+         tree7.clearCookies();
+         tree3.clearCookies();
+         tree2.clearCookies();tree4.clearCookies();
+
+      $("#tree").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree6").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree7").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree3").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree2").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree4").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+}, 2000);
+
+
+{% endif %}
+
+</script>
+
+
 
   <div class="row">
     <div class="thumbnail">
@@ -95,8 +145,9 @@ SupplyChain
 
          <div class="caption" ALIGN=justify>
     <center>
-    <h4>Export<span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
         {% if not default %}
+            <h4>Export<span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
+
 <form method="post"> {% csrf_token %}
     <input type="hidden" name="raw" value="{{dataExport}}">
 
@@ -104,11 +155,10 @@ SupplyChain
     </form>
 {% endif %}
 
-
+<!--
 <canvas id="canvas2" width="1000" height="1000" style="display:none">   </canvas>
 <body onload="myFunction()"></body>
-
-<a type="button" class="btn btn-default btn-xs">Export image by right-click (SVG)[Not functional yet]</a>
+-->
 </center>
 </div></div></div></div>{% endif %}
 
@@ -189,7 +239,7 @@ SupplyChain
 
 
 <script>
-
+ {% if  title %}
 var margin = {top: 1, right: 1, bottom: 6, left: 1},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -270,55 +320,9 @@ var energyData = {"nodes":{{nodes|safe}},
 "links":{{links|safe}}}
 
 createChart( energyData )
-
+{% endif %}
 </script>
-  <script>
-//function for export image
-    var a = "world";
-setTimeout(function(){
-//alert("Hello " + a);
 
-
-
-
-var svg = document.getElementById("chart");
-//get svg element.
-
-
-//get svg source.
-var serializer = new XMLSerializer();
-var source = serializer.serializeToString(svg);
-
-//add name spaces.
-if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
-    source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
-}
-if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
-    source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
-}
-
-//add xml declaration
-source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-
-//convert svg source to URI data scheme.
-var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
-
-//set url value to a element's href attribute.
-document.getElementById("link").href = url;
-//you can download svg file by right click menu.
-
-
-
-
-
-//delay time before plot is finally rendered
-}, 1000);
-a = "Stack Overflow";
-
-
-
-
-</script>
 {% endblock %}
 
 
@@ -697,7 +701,7 @@ Select countries for analysis:
 {% endblock %}
 
 {% block belowButtons %}
-{% if session %}
+{%  if session == "session" %}
     <button type="submit" class="btn btn-success btn-sm" value="Send data">Visualize in session</button>
     <input type="hidden" name="session" value="session" >
     <button type="submit" id="noSession2" class="btn btn-warning btn-sm" value="Send data">Visualize & reset session</button>

@@ -4,69 +4,69 @@ from django import forms
 from ExioVisuals.widgets import FancyTreeWidget
 from ExioVisuals.models import years
 class modes(forms.Form):
-    CHOICES=[('selectD','Country where impact occurs'),
-          ('selectC','Sector where impact occurs')   ,('selectF', 'Region selling final product'),
-    ('selectA','Consumed product category'),('selectB','Consuming region'),('selectE','Environmental pressure [not functional yet]')
+    CHOICES=[('selectD','Country where emission occurs'),
+          ('selectC','Sector where emission occurs')   ,('selectF', 'Country selling final product'),
+    ('selectA','Consumed product category'),('selectB','Consuming country')
     ]
     y = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(modes, self).__init__(*args, **kwargs)
-        self.fields['y'].label = ":"
+        self.fields['y'].label = ""
 class modesGeo(forms.Form):
-    CHOICES=[('selectD','Country where impact occurs')   ,('selectF', 'Region selling final product'),
-             ('selectB','Consuming region')
+    CHOICES=[('selectD','Country where emission occurs')   ,('selectF', 'Country selling final product'),
+             ('selectB','Consuming country')
     ]
     modeSelection = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(modesGeo, self).__init__(*args, **kwargs)
-        self.fields['modeSelection'].label = ":"
+        self.fields['modeSelection'].label = ""
 
 #two supplychain modes as they should behave independently
 class supplychainLeftMode(forms.Form):
-    CHOICES=[('1','Region of emission'),
-          ('2','Sector of emission')   ,('3', 'Region of supply'),
-    ('4','Product or service'),('5','Region of consumption')
+    CHOICES=[('1','Country of emission'),
+          ('2','Sector of emission')   ,('3', 'Country of supply'),
+    ('4','Product or service'),('5','Country of consumption')
     ]
     left = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(supplychainLeftMode, self).__init__(*args, **kwargs)
-        self.fields['left'].label = ":"
+        self.fields['left'].label = ""
 class supplychainRightMode(forms.Form):
-    CHOICES=[('1','Region of emission'),
-          ('2','Sector of emission')   ,('3', 'Region of supply'),
-    ('4','Product or service'),('5','Region of consumption')
+    CHOICES=[('1','Country of emission'),
+          ('2','Sector of emission')   ,('3', 'Country of supply'),
+    ('4','Product or service'),('5','Country of consumption')
     ]
     right = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(supplychainRightMode, self).__init__(*args, **kwargs)
-        self.fields['right'].label = ":"
+        self.fields['right'].label = ""
 
 class rightMode(forms.Form):
-    CHOICES=[('selectD','Country where impact occurs'),
-          ('selectC','Sector where impact occurs')   ,('selectF', 'Region selling final product'),
-    ('selectA','Consumed product category'),('selectB','Consuming region'),('selectE','Environmental pressure [not functional yet]')
+    CHOICES=[('selectD','Country where emission occurs'),
+          ('selectC','Sector where emission occurs')   ,('selectF', 'Country selling final product'),
+    ('selectA','Consumed product category'),('selectB','Consuming country')
     ]
     y = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(modes, self).__init__(*args, **kwargs)
-        self.fields['y'].label = ":"
+        self.fields['y'].label = ""
         #below is the class for the case that a user selected the TimeSeries (it does not make sense to split on year as that is default)
 class modesTimeSeries(forms.Form):
-    CHOICES=[('selectD','Country where impact occurs'),
-          ('selectC','Sector where impact occurs')   ,('selectF', 'Region selling final product'),
-    ('selectA','Consumed product category'),('selectB','Consuming region'),('selectE','Environmental pressure [not functional yet]')
+    CHOICES=[('selectD','Country where emission occurs'),
+          ('selectC','Sector where emission occurs')   ,('selectF', 'Country selling final product'),
+    ('selectA','Consumed product category'),('selectB','Consuming country')
     ]
 
     y = forms.ChoiceField(choices=CHOICES, widget=forms.RadioSelect())
 
     def __init__(self, *args, **kwargs):
         super(modesTimeSeries, self).__init__(*args, **kwargs)
-        self.fields['y'].label = ":"
+        self.fields['y'].label = ""
 class yearsSingleSelect(forms.Form):
 
     p = []

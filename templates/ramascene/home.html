@@ -1,12 +1,87 @@
+{% extends 'CMLMasterProject/baseHome.html' %}
+
+
 {% load render_bundle from webpack_loader %}
 
 
-<body>
+{% load static %}
+{% block title %}ExioVisuals 2.0{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+         <ul class="nav navbar-nav" >
+                <li ><a href="/">Home</a></li>
+
+
+                <li class="active"><a href="./">Model</a></li>
+                <li ><a href="./">Explore</a></li>
+                 <li><a href="../research/tools-index/">Links</a></li>
+                <li><a href="../research">Projects</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+                 <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: #3e3e3e;">
+            <li><a href="https://cmlworld.slack.com/">Slack</a></li>
+            <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
+              <li><a href="../about">Contact</a></li>
+          </ul>
+        </li>
+
+
+            </ul>
+
+
+
+{% endblock %}
+    <!--
+<script src="{% static 'js/bootstrap.min.css' %}"></script>
+-->
+
+{% block speciality %}
+    <!--js-cookie for storing cookie information of trees
+    -->
+
+<link href="{% static 'fancytree/skin-bootstrap-n/ui.fancytree.css' %}" rel="stylesheet" type="text/css"
+    class="skinswitcher">
+<link rel="stylesheet" href="https://unpkg.com/react-select/dist/react-select.css">
+    <link rel="stylesheet" href="{% static 'css/sass/main.css' %}" type="text/css" >
+
+<style type="text/css">
+   body { background: #1B262D !important;   } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+
+
+<script type="text/javascript">
+
+    var countryData = {{countryData|safe}}
+    var productData = {{productData|safe}}
+    var defaultYears = {{defaultYears|safe}}
+
+
+</script>
+{% endblock %}
+
+
+<!-- Add code to initialize the product tree when the document is loaded: -->
+
+
+
+{% block content %}
+
+
+
+
+<br>
+
 
 <div id="container">
+
 {% render_bundle 'main' %}
+
 
 </div>
 
 
-</body>
+
+
+{% endblock %}

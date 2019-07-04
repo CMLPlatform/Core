@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+
+
+    <title>IE Soft-Lab</title>
+</head>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../">ExioVisuals</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+          <li class="active" ><a href="../distribution" >
+              {% block ActiveDistribution %}
+  <span class="glyphicon glyphicon-scale" aria-hidden="true" > PieChart  </span></a>
+</li>
+          {% endblock %}
+          <li class="active"><a href="../timeseries">
+  <span class="glyphicon glyphicon-time" aria-hidden="true" > TimeSeries</span></a>
+</li>
+           <li class="active"><a href="../geo">
+  <span class="glyphicon glyphicon-globe" aria-hidden="true" > GeoRegion</span></a>
+</li>
+<li class="active"><a href="../supplychain">
+  <span class="glyphicon glyphicon-link" aria-hidden="true" > SupplyChain</span></a>
+</li>
+            <li class="active"><a href="../treemap">
+  <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
+</li>
+
+<li class="active2"><a href="../about">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > About</span></a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="../../">
+  <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
+</li>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+
+
+
+
+               </ul>
+               <ul class="nav">
+
+
+               </ul>
+           </div>
+           <!--/.nav-collapse -->
+       </div>
+
+</nav>
+<body>
+
+
+   <!-- Some info on this app -->
+
+<div class="container">
+   <!-- Some info on this app -->
+   <div class="jumbotron">
+       <legend>FAQ</legend>
+
+<br><strong >What is Exiovisuals?</strong><br>
+       Exiovisuals is a visualization tool that allows you to explore global carbon footprints and understand how international supply chains connect consumption of goods and services and GHG emissions occurring in production activities.
+
+The figures in Exiovisuals are calculated using the theory of environmentally-extended multi-regional input-output analysis (EEMRIO) and its data source is the Exiobase 3.X database.
+
+     <br> <br> <strong >What is Exiobase?</strong><br>
+       Exiobase is global EEMRIO covering 49 world regions (XX countries and YY aggregations with the rest of the world), YY sectors and ZZ products and over WW environmental extensions. Version 2.X is currently availabe at exiobase.eu and version 3.X, currently underlying Exiovisuals, will be available soon.
+
+     <br> <br> <strong >What is EEMRIO?</strong><br>
+       EEMRIO is an extension of classical input-output (IOA) to cover both multiple regions and environmental applications. The powerhorse of IOA is the Leontief model which calculates the amount of production activities across all sectors in a supply chain that are required to satisfy a unit of final demand of a specific good or service.
+
+      <br><br> <strong >How is a carbon footprint calculated?</strong><br>
+       The mathematics of carbon footprinting are quite simple. If $\mathbf{y}$ is a column vector of final demand, $\mathbf{A}$ is the technology matrix, specifying how much inputs of others sectors a given sector needs to generate a unit of output, and $\mathbf{b}$ is the row vector of GHG emissions per unit of output, then the carbon footprint, $r$, is:
+
+\(r = \mathbf{b} \left(\mathbf{I} - \mathbf{A}\right) \mathbf{y}\)
+
+And that's all about it as far as maths go. The interesting part is how this grand total can be split into components.
+     <br> <br> <strong >What does Exiovisuals do?</strong><br>Consumers purchase multiple products, which can either be domestic or imported from different countries, and emissions can can occur at any stage of the supply chain, meaning that they can occur in whichever economic sector of whichever region. Thus we have so far five dimensions to take into account:
+<li style="margin-left: 14px;">
+	*) The region where the consumer is located;</li>
+	<li style="margin-left: 14px;">*) The product the consumer is purchasing;</li>
+	<li style="margin-left: 14px;">*) The region the consumer is purchasing the product from;</li>
+	<li style="margin-left: 14px;">*) The sector where emissions occur;</li>
+	<li style="margin-left: 14px;">*) The region where the emitting sector is located.</li>
+
+Furthermore, we can also look at emissions occurring in different years.
+
+Thus, Exiovisuals allows you to decompose a carbon footprint along these six dimensions using different visualizations.
+
+
+     <br> <br> <strong >Which visualizations are currently available?</strong><br>
+       <li style="margin-left: 14px;">*) PieChart: a unidimensional visualization, to split a footprint along any of the five relevant regional/sectoral dimensions, for a single year;</li>
+           <li style="margin-left: 14px;">*) TimeSeries: also allows splitting a footprint along any of the five relevant regional/sectoral dimensions, but now you can plot figures for multiple years;</li>
+       <li style="margin-left: 14px;">*) GeoRegion: allows splitting a footprint along any of the three regional dimensions, displayed on a world map;</li>
+       <li style="margin-left: 14px;">*) SankeyDiagram: a Sankey diagram shows the magnitude of a flow along a directed network by the width of an arrow. This allows visualizing two dimensions at the same time, each to be chosen from to the five regional/sectoral dimensions;</li>
+       <li style="margin-left: 14px;">*) TreeMap: a tree map is a unidimensional visualization type with the twist that it allows zooming in along a hierarchical classification. Because both regions and sectors are hierarchical, this may be convenient to explore the data.
+</li>
+
+    <br> <strong >Can you explain how to use the webpage?</strong><br>There are three steps required to generate a particular visualization:
+
+First, you need to select the type of visualization, by clicking on the appropriate button in the top menu of the webpage.
+
+Second, you need to specify which are the dimension(s) that you wish to visualize. Recall that the data has five sectoral/regional dimensions and the available visualizations allow you to select either one or two at a time only. You do so by selecting the appropriate button on the menu that pops up on the left side after you selected the visualization type.
+
+Third, you need to indicate for which actual year, sectors and regions you want to generate a figure. You do so by choosing the appropriate values in the menus that pop up further below in the left side of the webpage.
+
+Note that for the specific dimension your visualization focus on you can only select one particular region or sector (and year, except for time-series), while for the remainder dimensions you can choose whichever regions and sectors you want the footprint to account for.
+
+To make your life easier there are defaults, which are usually the grand totals. You can also store the input data you provided by saving your session. Naturally, you can also export the associated tables of your visualizations.
+   <br>   <br> <strong >Can you provide concrete examples for each visualization?</strong><br>Selecting a dimension after choosing your visualization type will result in a default visualisation with default selections.
+   <br>   <br> <strong >Who developed Exiovisuals and how do I contact them?</strong><br>Exiovisuals was developed by the Institute of Environmental Sciences CML at Leiden University. The actual developer was Sidney Niccolson, with input for the design and calculations by Joao Rodrigues and Arjan de Koning.
+<br>
+We are looking forward to your feedback if you have any comments or suggestions for improvement! You can send us a mail at s.i.niccolson@cml.leidenuniv.nl <br><br>
+
+        <strong>Download product and country classifications (EXIOBASE v3)</strong><br>
+          <br>   <a type="button" href="../../media/product_classification_exiobasev3.xlsx" class="btn btn-info btn-xs" download>Product classifications <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+         <a type="button" href="../../media/country_classification_exiobasev3.xlsx" class="btn btn-info btn-xs" download>Country classifications <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+
+      <br><br> <strong>Download the report below for more information.</strong>
+          <br>   <a type="button" href="../../media/userguide.pdf" class="btn btn-info btn-xs" download>Report <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a>
+
+
+</div>
+</div>
+
+<!--/.fluid-container-->
+
+<hr>
+
+<footer>
+
+    <div class="container">
+     <center>
+            <div>
+    <!--Add a picture -->
+
+</div>
+        <!--Add a picture and center it-->
+           <font color="black"> IE Soft-Lab 2016 - 2017</font> </center>
+
+    </div>
+</footer>
+   <script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
+
+

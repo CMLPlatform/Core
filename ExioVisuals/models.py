@@ -11,7 +11,7 @@ from django.contrib.auth.models import User
 from urllib.parse import urljoin
 
 from django.db import models
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django_extensions.db.fields import AutoSlugField
 import mptt
 
@@ -46,7 +46,7 @@ class Product(models.Model):
     parent = models.ForeignKey('self',
                                null=True,
                                blank=True,
-                               related_name='children')
+                               related_name='children', on_delete=models.CASCADE)
 
     name = models.CharField(max_length=200)
     local = models.CharField(max_length=200, default="none")
@@ -117,7 +117,7 @@ class Country(models.Model):
     parent = models.ForeignKey('self',
                                null=True,
                                blank=True,
-                               related_name='children')
+                               related_name='children', on_delete=models.CASCADE)
 
     name = models.CharField(max_length=200)
     local = models.CharField(max_length=200)
@@ -188,7 +188,7 @@ class Substance(models.Model):
     parent = models.ForeignKey('self',
                                null=True,
                                blank=True,
-                               related_name='children')
+                               related_name='children', on_delete=models.CASCADE)
 
     name = models.CharField(max_length=200)
 
@@ -255,7 +255,7 @@ class YearF(models.Model):
     parent = models.ForeignKey('self',
                                null=True,
                                blank=True,
-                               related_name='children')
+                               related_name='children', on_delete=models.CASCADE)
 
     name = models.CharField(max_length=200)
 

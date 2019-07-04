@@ -42,30 +42,40 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">CML1.1</a>
+            <a class="navbar-brand" href="/">CORE</a>
         </div>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
  {% block navibar %}
 <!-- Collect the nav links, forms, and other content for toggling -->
-            <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+              <ul class="nav navbar-nav">
+                <li ><a href="/">Home</a></li>
 
 
-                <li><a href="/">RaMa-Scene</a></li>
-                <li><a href="/visuals">Exploratory tools</a></li>
-                 <li  class="active"><a href="/research">Research</a></li>
-<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
-                <li><a href="./">About</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a href="./">Model</a></li>
+                <li><a href="/exploratory">Explore</a></li>
+                 <li ><a href="/research/tools-index/">Links</a></li>
+                <li class="active"> <a href="/research">Projects</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+                 <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://cmlworld.slack.com/">Slack</a></li>
+            <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
+              <li><a href="/about">Contact</a></li>
+          </ul>
+        </li>
+
+
             </ul>
           {% endblock %}
           <ul class="nav navbar-nav navbar-right">
                {% if user.is_authenticated %}
- <t style="color:#428bca;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span>  {{ username}} &nbsp;&nbsp;</t>
-              <a href="/logout" style="color:#800000">
-  <span class="glyphicon glyphicon-off" aria-hidden="true" > </span> Log-out</a>
+  <t style="color:#428bca;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span>  {{ username}} &nbsp;&nbsp;</t>
+              <a href="/logout" style="color:#d9534f">
+  <span class="glyphicon glyphicon-off" aria-hidden="true" > </span> Log-out &nbsp;</a>
               <br>
-              <a href="/cms-admin" >Manage pages (staff only)</a>
+                            <a href="/cms-admin" style="color:#428bca;">
+  <span class="glyphicon glyphicon-cog" aria-hidden="true" > </span> Manage pages (staff only) &nbsp;</a>
               {% else %}
               <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign up <span class="caret"></span></a>

@@ -9,12 +9,21 @@
                 <li class="active"><a href="./">Home</a></li>
 
 
-                <li><a href="./">Modeling tools</a></li>
-                <li><a href="exploratory">Exploratory tools</a></li>
-                 <li><a href="research">Research</a></li>
-<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">CML Wiki</a></li>
-                <li><a href="./">About</a></li>
-                <li><a href="./">Contact</a></li>
+                <li><a href="./">Model</a></li>
+                <li><a href="exploratory">Explore</a></li>
+                 <li><a href="research/tools-index/">Links</a></li>
+                <li><a href="research">Projects</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+                 <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://cmlworld.slack.com/">Slack</a></li>
+            <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
+              <li><a href="about">Contact</a></li>
+          </ul>
+        </li>
+
+
             </ul>
 
 
@@ -22,6 +31,9 @@
 
 
 {% block content %}
+<br>
+        <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span>&nbsp Core (CML platform) is under development.</div>
+<br>
 {% if messages %}
 <div class="container-fluid">
     <ul class="messages">
@@ -82,13 +94,31 @@
 </div>
 <hr>
 <div class="container-fluid">
+<div class="container-fluid">
+
  <div class="row">
-     <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>Exploratory Tools</b></h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?   </div>
-  <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>Modeling Tools</b></h5>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </div>
-  <div class="col-sm-4" style="border-left: 3px solid #778899;"><h5><b>CML wiki</b></h5> Please refer for more information about the CML institute at the CML Wiki.  </div>
+          <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-wrench" style="color:#428bca;" aria-hidden="true">  Model</span></b></h3>Advanced analytical tools that allow for scenario modeling <br> [Under construction]</div>
+
+     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#428bca;">  Explore</span></b></h3> Explore various Industrial Ecology datasets such as EXIOBASE  </div>
+     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#428bca;"> Links </span></b></h3> Assess recent project developments outside of CML in terms of tooling  </div>
+</div>
+
+</div>
+<br>
+
+<div class="container-fluid">
+
+ <div class="row">
+     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="color:#428bca;">  Projects</span></b></h3>Follow CML project developments</div>
+     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="color:#428bca;"> Wiki</span></b></h3> For more information about the CML institute refer to our CML Wiki <br> [Only accessible by CML affiliates]  </div>
+</div>
+
 </div>
 </div>
 <hr>
+<center>
+    <i>The clients and developers of the CML platform (CORE) are not responsible for any incorrect or incomplete data (about measurements, standards, visualizations etc.) or information on this website. </i>  </center>
+<br>
     {% endblock %}
 
 {% block footer %}
@@ -98,23 +128,28 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-4 col-sm-6 footerleft ">
-        <div class="logofooter"> Logo</div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-        <p><i class="fa fa-map-pin"></i> 210, Einsteinweg, Leiden -2563AK, The Netherlands</p>
-        <p><i class="fa fa-phone"></i> Phone (Netherlands) : +6546323423</p>
-        <p><i class="fa fa-envelope"></i> E-mail : info@cml.com</p>
+      <div class="col-md-4 col-sm-6 paddingtop-bottom2 ">
+        <div class="logofooter"> Core</div>
+        <p>The CML platform was developed for scientific communication purposes and the development of several web-based ICT tools.</p>
+        <p><i class="fa fa-map-pin"></i> 2, Einsteinweg, Leiden - 2333CC, The Netherlands</p>
+
+        <p><i class="fa fa-envelope"></i> E-mail : s.i.niccolson@cml.leidenuniv.nl</p>
 
       </div>
       <div class="col-md-2 col-sm-6 paddingtop-bottom">
         <h6 class="heading7">RESOURCES</h6>
         <ul class="footer-ul">
-          <li><a href="#"> Privacy Policy</a></li>
-          <li><a href="#"> Terms & Conditions</a></li>
-          <li><a href="#"> RaMa-Scene</a></li>
-            <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> CML wiki</a></li>
-            <li><a href="visuals"> Viz projects</a></li>
-          <li><a href="#"> Frequently Ask Questions</a></li>
+
+          <li><a href="#"> Model</a></li>
+
+            <li><a href="/exploratory"> Explore</a></li>
+
+
+            <li><a href="research/tools-index/"> Links</a></li>
+            <li><a href="research/microvis/"> Projects</a></li>
+            <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> Wiki</a></li>
+            <li><a href="about"> Contact</a></li>
+
         </ul>
       </div>
         <!--
@@ -128,8 +163,11 @@
       </div>
       -->
       <div class="col-md-3 col-sm-6 paddingtop-bottom">
-            <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/DjangoPlatform">GitHub</a></blockquote>
+            <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+                  <blockquote cite="https://cmlworld.slack.com/"><a href="https://cmlworld.slack.com/">Slack</a></blockquote>
+
       </div>
+
     </div>
   </div>
 </footer>
@@ -141,13 +179,7 @@
     <div class="col-md-6">
       <p>© 2017 - All Rights with CML</p>
     </div>
-    <div class="col-md-6">
-      <ul class="bottom_ul">
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Faq's</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
+
   </div>
 </div>
 

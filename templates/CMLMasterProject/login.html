@@ -3,13 +3,18 @@
 {% block content %}
 <br>
 <div class="container-fluid">
-  <legend>Login</legend>
+<br>
+  <div class="container-fluid" style="background-color: #f8f8f8; max-width:50%">
+  <br>
+    <legend>Login</legend>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-
+    <center>
     <button class="btn btn-primary" type="submit">Login</button>
+    </center>
+      <br>
   </form>
 </div>
-
+</div>
 {% endblock %}

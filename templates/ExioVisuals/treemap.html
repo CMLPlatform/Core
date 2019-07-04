@@ -75,6 +75,11 @@ setTimeout(function() {
 
   <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
 </li>
+
+
+<li class="active"><a href="../about">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > About</span></a>
+</li>
 {% endblock %}
 
 {% block title %}
@@ -86,11 +91,50 @@ TreeMap
 
 
 
+<!--if session is set to RESET remove the cookies but with timeout to wait for them to initialize-->
+<script>
+
+{%  if session == "RESET" %}
+
+setTimeout(function(){
+console.log("called");
+var tree = $("#tree").fancytree("getTree");
+       var tree6 = $("#tree6").fancytree("getTree");
+       var tree7 = $("#tree7").fancytree("getTree");
+       var tree3 = $("#tree3").fancytree("getTree");
+       var tree2 = $("#tree2").fancytree("getTree");
+       var tree4 = $("#tree4").fancytree("getTree");
+
+         tree.clearCookies();
+         tree6.clearCookies();
+         tree7.clearCookies();
+         tree3.clearCookies();
+         tree2.clearCookies();tree4.clearCookies();
+
+      $("#tree").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree6").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree7").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree3").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree2").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree4").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+}, 2000);
 
 
+{% endif %}
 
-
-
+</script>
 
   <div class="row">
     <div class="thumbnail">
@@ -119,6 +163,7 @@ TreeMap
 
 </center>
 <script>
+{% if  sample_datas %}
   // sample data array
   var sample_data = {{sample_datas|safe}}
   // instantiate d3plus
@@ -128,7 +173,8 @@ TreeMap
     .type("tree_map")   // visualization type
     .id("name")         // key for which our data is unique on
     .size("value")      // sizing of blocks
-    .draw()             // finally, draw the visualization!
+    .draw()             // finally, draw the visualization!\
+    {% endif %}
 </script>
 
 <div class="row">
@@ -137,8 +183,9 @@ TreeMap
 
          <div class="caption" ALIGN=justify>
     <center> {% if  sample_datas %}
-    <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
         {% if not default %}
+            <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
+
 <form method="post">{% csrf_token %}
     <input type="hidden" name="raw" value="{{titles}}">
      <input type="hidden" name="raw2" value="{{plot}}">
@@ -146,61 +193,16 @@ TreeMap
     </form>
 {% endif %}
 
-
+<!--
 <canvas id="canvas2" width="1000" height="1000" style="display:none">   </canvas>
-<body onload="myFunction()"></body>
+
 
 <a id="link" type="button" class="btn btn-primary btn-xs">Export image by right-click (SVG)</a>
+-->
 </center>
 </div></div></div></div>
 {% endif %}
-    <script>
-//function for export image
-    var a = "world";
-setTimeout(function(){
-//alert("Hello " + a);
 
-
-
-
-var svg = document.getElementById("viz");
-//get svg element.
-
-
-//get svg source.
-var serializer = new XMLSerializer();
-var source = serializer.serializeToString(svg);
-
-//add name spaces.
-if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
-    source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
-}
-if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
-    source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
-}
-
-//add xml declaration
-source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-
-//convert svg source to URI data scheme.
-var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
-
-//set url value to a element's href attribute.
-document.getElementById("link").href = url;
-//you can download svg file by right click menu.
-
-
-
-
-
-//delay time before plot is finally rendered
-}, 3000);
-a = "Stack Overflow";
-
-
-
-
-</script>
 
  {{description|safe}}
 
@@ -246,7 +248,7 @@ a = "Stack Overflow";
 
 <div class="panel-body"  style="background-color:white;font-size: 12px;">
 
-<legend>Decomposition</legend>
+<legend>Decomposition by</legend>
 
 
 <form class="form-inline" method="post" action="../treemap/">
@@ -259,10 +261,10 @@ a = "Stack Overflow";
     <input type="hidden" name="yearDataReady" value="{{ yearDataReady }}" >
     <input type="hidden" name="previousType" value="defaultType" >
 <fieldset class="inlineLabels">
-    Contribution footprint of consumption split by{{ modeForm }}
+    {{ modeForm }}
 </fieldset>
 <center>
-     <button id="reload" class="btn btn-lg btn-primary btn-sm" type="submit">Reload</button></center>
+     <button type="submit" id="reload" class="btn btn-lg btn-primary btn-sm" >Reload</button></center>
  </form>
    </div>
                   {% endblock %}
@@ -572,7 +574,7 @@ Select countries for analysis:
 <button type="submit" class="btn btn-success btn-xs">Submit</button></p>
 </form>
 -->
-{% if session %}
+{%  if session == "session" %}
     <button type="submit" class="btn btn-success btn-sm" value="Send data">Visualize in session</button>
     <input type="hidden" name="session" value="session" >
     <button type="submit" id="noSession2" class="btn btn-warning btn-sm" value="Send data">Visualize & reset session</button>

@@ -1,0 +1,3982 @@
+{
+  "1": [
+    {
+      "date": "1930-01-01",
+      "MS_timber_hist": 36.9728603062,
+      "MS_iron_hist": 2.9621394882,
+      "MS_other_hist": 2.8002849846,
+      "MS_minerals_hist": 52.8937185715
+    },
+    {
+      "date": "1931-01-01",
+      "MS_timber_hist": 36.697788111,
+      "MS_iron_hist": 2.9718058297,
+      "MS_other_hist": 2.8414473886,
+      "MS_minerals_hist": 54.5936807369
+    },
+    {
+      "date": "1932-01-01",
+      "MS_timber_hist": 36.3095568804,
+      "MS_iron_hist": 2.9486938437,
+      "MS_other_hist": 2.8509682033,
+      "MS_minerals_hist": 55.7031234772
+    },
+    {
+      "date": "1933-01-01",
+      "MS_timber_hist": 36.0057773963,
+      "MS_iron_hist": 2.9389896828,
+      "MS_other_hist": 2.8626426203,
+      "MS_minerals_hist": 56.6966423604
+    },
+    {
+      "date": "1934-01-01",
+      "MS_timber_hist": 35.7077924173,
+      "MS_iron_hist": 2.9347121747,
+      "MS_other_hist": 2.8794092068,
+      "MS_minerals_hist": 57.9391361196
+    },
+    {
+      "date": "1935-01-01",
+      "MS_timber_hist": 35.4695840762,
+      "MS_iron_hist": 2.9365303066,
+      "MS_other_hist": 2.9030699651,
+      "MS_minerals_hist": 59.1048905964
+    },
+    {
+      "date": "1936-01-01",
+      "MS_timber_hist": 35.3536478305,
+      "MS_iron_hist": 2.968427464,
+      "MS_other_hist": 2.9461373207,
+      "MS_minerals_hist": 61.0752205138
+    },
+    {
+      "date": "1937-01-01",
+      "MS_timber_hist": 35.2822552975,
+      "MS_iron_hist": 3.0327265208,
+      "MS_other_hist": 3.0096059226,
+      "MS_minerals_hist": 63.1366892054
+    },
+    {
+      "date": "1938-01-01",
+      "MS_timber_hist": 35.01690023,
+      "MS_iron_hist": 3.0236025682,
+      "MS_other_hist": 3.0433910991,
+      "MS_minerals_hist": 64.9482017597
+    },
+    {
+      "date": "1939-01-01",
+      "MS_timber_hist": 34.8258029345,
+      "MS_iron_hist": 3.0438024066,
+      "MS_other_hist": 3.0949693225,
+      "MS_minerals_hist": 67.0548202978
+    },
+    {
+      "date": "1940-01-01",
+      "MS_timber_hist": 34.6652411083,
+      "MS_iron_hist": 3.0879439049,
+      "MS_other_hist": 3.1680823783,
+      "MS_minerals_hist": 69.2178108965
+    },
+    {
+      "date": "1941-01-01",
+      "MS_timber_hist": 34.588330359,
+      "MS_iron_hist": 3.1571318366,
+      "MS_other_hist": 3.2467826448,
+      "MS_minerals_hist": 71.9328550342
+    },
+    {
+      "date": "1942-01-01",
+      "MS_timber_hist": 34.4585752939,
+      "MS_iron_hist": 3.2367636253,
+      "MS_other_hist": 3.3295721802,
+      "MS_minerals_hist": 74.6805791664
+    },
+    {
+      "date": "1943-01-01",
+      "MS_timber_hist": 34.1396224666,
+      "MS_iron_hist": 3.2966061179,
+      "MS_other_hist": 3.3988815944,
+      "MS_minerals_hist": 76.4478520381
+    },
+    {
+      "date": "1944-01-01",
+      "MS_timber_hist": 33.8542839017,
+      "MS_iron_hist": 3.3501511692,
+      "MS_other_hist": 3.4626910974,
+      "MS_minerals_hist": 77.8991919309
+    },
+    {
+      "date": "1945-01-01",
+      "MS_timber_hist": 33.511223583,
+      "MS_iron_hist": 3.4017213774,
+      "MS_other_hist": 3.5227587563,
+      "MS_minerals_hist": 79.4315992502
+    },
+    {
+      "date": "1946-01-01",
+      "MS_timber_hist": 33.3156160239,
+      "MS_iron_hist": 3.4304015487,
+      "MS_other_hist": 3.5525656672,
+      "MS_minerals_hist": 81.7783047685
+    },
+    {
+      "date": "1947-01-01",
+      "MS_timber_hist": 32.8670356812,
+      "MS_iron_hist": 3.4574477931,
+      "MS_other_hist": 3.5811502169,
+      "MS_minerals_hist": 83.8325618068
+    },
+    {
+      "date": "1948-01-01",
+      "MS_timber_hist": 32.5228189445,
+      "MS_iron_hist": 3.5015384818,
+      "MS_other_hist": 3.6127481205,
+      "MS_minerals_hist": 86.1894497465
+    },
+    {
+      "date": "1949-01-01",
+      "MS_timber_hist": 32.051172212,
+      "MS_iron_hist": 3.5228558848,
+      "MS_other_hist": 3.6345498272,
+      "MS_minerals_hist": 88.3879909014
+    },
+    {
+      "date": "1950-01-01",
+      "MS_timber_hist": 31.7480685982,
+      "MS_iron_hist": 3.5645030261,
+      "MS_other_hist": 3.674889833,
+      "MS_minerals_hist": 91.063699888
+    },
+    {
+      "date": "1951-01-01",
+      "MS_timber_hist": 31.4419535118,
+      "MS_iron_hist": 3.6262219853,
+      "MS_other_hist": 3.7044493319,
+      "MS_minerals_hist": 94.0347452453
+    },
+    {
+      "date": "1952-01-01",
+      "MS_timber_hist": 31.1249446209,
+      "MS_iron_hist": 3.6516655721,
+      "MS_other_hist": 3.7294626417,
+      "MS_minerals_hist": 97.081208951
+    },
+    {
+      "date": "1953-01-01",
+      "MS_timber_hist": 30.8267222191,
+      "MS_iron_hist": 3.7062346061,
+      "MS_other_hist": 3.7685448879,
+      "MS_minerals_hist": 100.1601392182
+    },
+    {
+      "date": "1954-01-01",
+      "MS_timber_hist": 30.4855978275,
+      "MS_iron_hist": 3.7078554227,
+      "MS_other_hist": 3.7925674082,
+      "MS_minerals_hist": 103.7192422736
+    },
+    {
+      "date": "1955-01-01",
+      "MS_timber_hist": 30.1898510084,
+      "MS_iron_hist": 3.739743841,
+      "MS_other_hist": 3.82190718,
+      "MS_minerals_hist": 107.8386686589
+    },
+    {
+      "date": "1956-01-01",
+      "MS_timber_hist": 29.9341566256,
+      "MS_iron_hist": 3.7676841906,
+      "MS_other_hist": 3.85506212,
+      "MS_minerals_hist": 112.1807924299
+    },
+    {
+      "date": "1957-01-01",
+      "MS_timber_hist": 29.5636195673,
+      "MS_iron_hist": 3.8031248215,
+      "MS_other_hist": 3.880568179,
+      "MS_minerals_hist": 116.1873238962
+    },
+    {
+      "date": "1958-01-01",
+      "MS_timber_hist": 29.2274685182,
+      "MS_iron_hist": 3.7974460019,
+      "MS_other_hist": 3.8982733404,
+      "MS_minerals_hist": 120.3578693421
+    },
+    {
+      "date": "1959-01-01",
+      "MS_timber_hist": 28.9779151916,
+      "MS_iron_hist": 3.7936724127,
+      "MS_other_hist": 3.8929927604,
+      "MS_minerals_hist": 124.882509087
+    },
+    {
+      "date": "1960-01-01",
+      "MS_timber_hist": 28.7034287023,
+      "MS_iron_hist": 3.8133893193,
+      "MS_other_hist": 3.9110766124,
+      "MS_minerals_hist": 129.1866679111
+    },
+    {
+      "date": "1961-01-01",
+      "MS_timber_hist": 28.3661212008,
+      "MS_iron_hist": 3.7982166631,
+      "MS_other_hist": 3.9398850818,
+      "MS_minerals_hist": 133.0225140412
+    },
+    {
+      "date": "1962-01-01",
+      "MS_timber_hist": 28.1121727497,
+      "MS_iron_hist": 3.799154004,
+      "MS_other_hist": 3.9739546685,
+      "MS_minerals_hist": 137.1775205284
+    },
+    {
+      "date": "1963-01-01",
+      "MS_timber_hist": 27.8784250952,
+      "MS_iron_hist": 3.8025197854,
+      "MS_other_hist": 4.0104886843,
+      "MS_minerals_hist": 141.8788661162
+    },
+    {
+      "date": "1964-01-01",
+      "MS_timber_hist": 27.7106745297,
+      "MS_iron_hist": 3.8255910666,
+      "MS_other_hist": 4.0556632334,
+      "MS_minerals_hist": 146.8967025119
+    },
+    {
+      "date": "1965-01-01",
+      "MS_timber_hist": 27.6157851124,
+      "MS_iron_hist": 3.8634384718,
+      "MS_other_hist": 4.1100379144,
+      "MS_minerals_hist": 152.3952259193
+    },
+    {
+      "date": "1966-01-01",
+      "MS_timber_hist": 27.5713618204,
+      "MS_iron_hist": 3.9077145731,
+      "MS_other_hist": 4.170798055,
+      "MS_minerals_hist": 158.1842695227
+    },
+    {
+      "date": "1967-01-01",
+      "MS_timber_hist": 27.5153657647,
+      "MS_iron_hist": 3.9446613446,
+      "MS_other_hist": 4.1929663686,
+      "MS_minerals_hist": 163.6509753767
+    },
+    {
+      "date": "1968-01-01",
+      "MS_timber_hist": 27.5178346607,
+      "MS_iron_hist": 3.9905448013,
+      "MS_other_hist": 4.2458915014,
+      "MS_minerals_hist": 169.5463090232
+    },
+    {
+      "date": "1969-01-01",
+      "MS_timber_hist": 27.5288550606,
+      "MS_iron_hist": 4.0257881012,
+      "MS_other_hist": 4.3275325746,
+      "MS_minerals_hist": 175.5690510801
+    },
+    {
+      "date": "1970-01-01",
+      "MS_timber_hist": 27.4762814925,
+      "MS_iron_hist": 4.0537315228,
+      "MS_other_hist": 4.4048473444,
+      "MS_minerals_hist": 181.2838965923
+    },
+    {
+      "date": "1971-01-01",
+      "MS_timber_hist": 27.4283155982,
+      "MS_iron_hist": 4.0758610654,
+      "MS_other_hist": 4.4640432421,
+      "MS_minerals_hist": 186.9521026165
+    },
+    {
+      "date": "1972-01-01",
+      "MS_timber_hist": 27.4200892286,
+      "MS_iron_hist": 4.0941891465,
+      "MS_other_hist": 4.554504244,
+      "MS_minerals_hist": 193.0826344698
+    },
+    {
+      "date": "1973-01-01",
+      "MS_timber_hist": 27.450965601,
+      "MS_iron_hist": 4.1271928711,
+      "MS_other_hist": 4.6526202386,
+      "MS_minerals_hist": 200.0886272783
+    },
+    {
+      "date": "1974-01-01",
+      "MS_timber_hist": 27.4687926609,
+      "MS_iron_hist": 4.162427573,
+      "MS_other_hist": 4.7376079056,
+      "MS_minerals_hist": 206.7789577189
+    },
+    {
+      "date": "1975-01-01",
+      "MS_timber_hist": 27.3657440008,
+      "MS_iron_hist": 4.1847020225,
+      "MS_other_hist": 4.7992936565,
+      "MS_minerals_hist": 211.6244975826
+    },
+    {
+      "date": "1976-01-01",
+      "MS_timber_hist": 27.3545268062,
+      "MS_iron_hist": 4.2089786959,
+      "MS_other_hist": 4.8699320859,
+      "MS_minerals_hist": 216.3491057832
+    },
+    {
+      "date": "1977-01-01",
+      "MS_timber_hist": 27.3370626797,
+      "MS_iron_hist": 4.2077606672,
+      "MS_other_hist": 4.9294704417,
+      "MS_minerals_hist": 221.36116847
+    },
+    {
+      "date": "1978-01-01",
+      "MS_timber_hist": 27.3808118496,
+      "MS_iron_hist": 4.2200656068,
+      "MS_other_hist": 4.9923603361,
+      "MS_minerals_hist": 226.9676953534
+    },
+    {
+      "date": "1979-01-01",
+      "MS_timber_hist": 27.4041335572,
+      "MS_iron_hist": 4.2269539969,
+      "MS_other_hist": 5.0562842411,
+      "MS_minerals_hist": 232.3672480732
+    },
+    {
+      "date": "1980-01-01",
+      "MS_timber_hist": 27.3232627385,
+      "MS_iron_hist": 4.2033589677,
+      "MS_other_hist": 5.0837986683,
+      "MS_minerals_hist": 236.1902517135
+    },
+    {
+      "date": "1981-01-01",
+      "MS_timber_hist": 27.2772005026,
+      "MS_iron_hist": 4.2015045181,
+      "MS_other_hist": 5.1442670595,
+      "MS_minerals_hist": 239.4201672361
+    },
+    {
+      "date": "1982-01-01",
+      "MS_timber_hist": 27.1699535169,
+      "MS_iron_hist": 4.1537026926,
+      "MS_other_hist": 5.1735527148,
+      "MS_minerals_hist": 241.966270003
+    },
+    {
+      "date": "1983-01-01",
+      "MS_timber_hist": 27.1757475133,
+      "MS_iron_hist": 4.1084107993,
+      "MS_other_hist": 5.2010686325,
+      "MS_minerals_hist": 245.2346536911
+    },
+    {
+      "date": "1984-01-01",
+      "MS_timber_hist": 27.256075969,
+      "MS_iron_hist": 4.0840631196,
+      "MS_other_hist": 5.2221645928,
+      "MS_minerals_hist": 249.2192525858
+    },
+    {
+      "date": "1985-01-01",
+      "MS_timber_hist": 27.3127806128,
+      "MS_iron_hist": 4.0529323444,
+      "MS_other_hist": 5.2334028038,
+      "MS_minerals_hist": 253.4143561935
+    },
+    {
+      "date": "1986-01-01",
+      "MS_timber_hist": 27.4347339058,
+      "MS_iron_hist": 4.0095864262,
+      "MS_other_hist": 5.237324845,
+      "MS_minerals_hist": 257.5421490049
+    },
+    {
+      "date": "1987-01-01",
+      "MS_timber_hist": 27.5940830268,
+      "MS_iron_hist": 3.9722860168,
+      "MS_other_hist": 5.2470158811,
+      "MS_minerals_hist": 262.3794230442
+    },
+    {
+      "date": "1988-01-01",
+      "MS_timber_hist": 27.7001293791,
+      "MS_iron_hist": 3.944863037,
+      "MS_other_hist": 5.2769933668,
+      "MS_minerals_hist": 267.1636410691
+    },
+    {
+      "date": "1989-01-01",
+      "MS_timber_hist": 27.8012970277,
+      "MS_iron_hist": 3.9097266692,
+      "MS_other_hist": 5.3082727162,
+      "MS_minerals_hist": 271.3508197814
+    },
+    {
+      "date": "1990-01-01",
+      "MS_timber_hist": 27.8537888447,
+      "MS_iron_hist": 3.865382352,
+      "MS_other_hist": 5.3358137653,
+      "MS_minerals_hist": 274.9842877126
+    },
+    {
+      "date": "1991-01-01",
+      "MS_timber_hist": 27.7486365099,
+      "MS_iron_hist": 3.8072228122,
+      "MS_other_hist": 5.3468053918,
+      "MS_minerals_hist": 277.0870617533
+    },
+    {
+      "date": "1992-01-01",
+      "MS_timber_hist": 27.676189611,
+      "MS_iron_hist": 3.7494212379,
+      "MS_other_hist": 5.3641294094,
+      "MS_minerals_hist": 279.1182267903
+    },
+    {
+      "date": "1993-01-01",
+      "MS_timber_hist": 27.6415845783,
+      "MS_iron_hist": 3.6961701122,
+      "MS_other_hist": 5.3877636347,
+      "MS_minerals_hist": 281.616479908
+    },
+    {
+      "date": "1994-01-01",
+      "MS_timber_hist": 27.6421675882,
+      "MS_iron_hist": 3.6601670204,
+      "MS_other_hist": 5.417065413,
+      "MS_minerals_hist": 284.7329380861
+    },
+    {
+      "date": "1995-01-01",
+      "MS_timber_hist": 27.6377696763,
+      "MS_iron_hist": 3.6207157724,
+      "MS_other_hist": 5.4530414936,
+      "MS_minerals_hist": 287.9446646206
+    },
+    {
+      "date": "1996-01-01",
+      "MS_timber_hist": 27.6309702538,
+      "MS_iron_hist": 3.5873993514,
+      "MS_other_hist": 5.4915925473,
+      "MS_minerals_hist": 291.181247232
+    },
+    {
+      "date": "1997-01-01",
+      "MS_timber_hist": 27.6311429124,
+      "MS_iron_hist": 3.5537658039,
+      "MS_other_hist": 5.5301848692,
+      "MS_minerals_hist": 294.6569981373
+    },
+    {
+      "date": "1998-01-01",
+      "MS_timber_hist": 27.649309274,
+      "MS_iron_hist": 3.5306326755,
+      "MS_other_hist": 5.5722730746,
+      "MS_minerals_hist": 298.5118207535
+    },
+    {
+      "date": "1999-01-01",
+      "MS_timber_hist": 27.6730338016,
+      "MS_iron_hist": 3.4986494781,
+      "MS_other_hist": 5.5945823122,
+      "MS_minerals_hist": 302.5102278563
+    },
+    {
+      "date": "2000-01-01",
+      "MS_timber_hist": 27.7145985493,
+      "MS_iron_hist": 3.4756310461,
+      "MS_other_hist": 5.598312799,
+      "MS_minerals_hist": 306.8221909827
+    },
+    {
+      "date": "2001-01-01",
+      "MS_timber_hist": 27.7351863595,
+      "MS_iron_hist": 3.4329123825,
+      "MS_other_hist": 5.6036188952,
+      "MS_minerals_hist": 310.9173003761
+    },
+    {
+      "date": "2002-01-01",
+      "MS_timber_hist": 27.7775677282,
+      "MS_iron_hist": 3.3966820325,
+      "MS_other_hist": 5.5960419975,
+      "MS_minerals_hist": 314.7874388289
+    },
+    {
+      "date": "2003-01-01",
+      "MS_timber_hist": 27.824437577,
+      "MS_iron_hist": 3.3505433721,
+      "MS_other_hist": 5.5753028846,
+      "MS_minerals_hist": 318.5932032547
+    },
+    {
+      "date": "2004-01-01",
+      "MS_timber_hist": 27.8655274936,
+      "MS_iron_hist": 3.3133008192,
+      "MS_other_hist": 5.5448287945,
+      "MS_minerals_hist": 322.6226435496
+    },
+    {
+      "date": "2005-01-01",
+      "MS_timber_hist": 27.9059291079,
+      "MS_iron_hist": 3.2703006138,
+      "MS_other_hist": 5.5116389318,
+      "MS_minerals_hist": 326.8695071079,
+      "MS_timber_sc1": 27.9059291079,
+      "MS_iron_sc1": 3.2703006138,
+      "MS_other_sc1": 5.5116389318,
+      "MS_minerals_sc1": 326.8695071079,
+      "MS_timber_sc2": 27.9059291079,
+      "MS_iron_sc2": 3.2703006138,
+      "MS_other_sc2": 5.5116389318,
+      "MS_minerals_sc2": 326.8695071079
+    },
+    {
+      "date": "2006-01-01",
+      "MS_timber_sc1": 27.9074180561,
+      "MS_iron_sc1": 3.2357481706,
+      "MS_other_sc1": 5.5103368411,
+      "MS_minerals_sc1": 329.8218561378,
+      "MS_timber_sc2": 27.9458382618,
+      "MS_iron_sc2": 3.2276745402,
+      "MS_other_sc2": 5.4780126386,
+      "MS_minerals_sc2": 330.9956732105
+    },
+    {
+      "date": "2007-01-01",
+      "MS_timber_sc1": 27.8979778705,
+      "MS_iron_sc1": 3.2006138036,
+      "MS_other_sc1": 5.5064855972,
+      "MS_minerals_sc1": 332.5386997464,
+      "MS_timber_sc2": 27.9822155751,
+      "MS_iron_sc2": 3.1851139967,
+      "MS_other_sc2": 5.4433646886,
+      "MS_minerals_sc2": 334.9667512604
+    },
+    {
+      "date": "2008-01-01",
+      "MS_timber_sc1": 27.8817272847,
+      "MS_iron_sc1": 3.1654152064,
+      "MS_other_sc1": 5.5009134793,
+      "MS_minerals_sc1": 335.0706988353,
+      "MS_timber_sc2": 28.018993781,
+      "MS_iron_sc2": 3.1431217015,
+      "MS_other_sc2": 5.4084893446,
+      "MS_minerals_sc2": 338.831326692
+    },
+    {
+      "date": "2009-01-01",
+      "MS_timber_sc1": 27.8766965012,
+      "MS_iron_sc1": 3.1322157931,
+      "MS_other_sc1": 5.4971950603,
+      "MS_minerals_sc1": 337.6388192425,
+      "MS_timber_sc2": 28.0735953545,
+      "MS_iron_sc2": 3.1036948635,
+      "MS_other_sc2": 5.3767895975,
+      "MS_minerals_sc2": 342.8046650597
+    },
+    {
+      "date": "2010-01-01",
+      "MS_timber_sc1": 27.8766657732,
+      "MS_iron_sc1": 3.1003014198,
+      "MS_other_sc1": 5.4941216886,
+      "MS_minerals_sc1": 340.174828537,
+      "MS_timber_sc2": 28.1393378372,
+      "MS_iron_sc2": 3.0660808658,
+      "MS_other_sc2": 5.34696804,
+      "MS_minerals_sc2": 346.8134256869
+    },
+    {
+      "date": "2011-01-01",
+      "MS_timber_sc1": 27.8971933162,
+      "MS_iron_sc1": 3.0713876717,
+      "MS_other_sc1": 5.4947797624,
+      "MS_minerals_sc1": 342.87577601,
+      "MS_timber_sc2": 28.2310652219,
+      "MS_iron_sc2": 3.0319045112,
+      "MS_other_sc2": 5.3218636285,
+      "MS_minerals_sc2": 351.0488356903
+    },
+    {
+      "date": "2012-01-01",
+      "MS_timber_sc1": 27.9120929914,
+      "MS_iron_sc1": 3.0425746173,
+      "MS_other_sc1": 5.4940335137,
+      "MS_minerals_sc1": 345.4273014596,
+      "MS_timber_sc2": 28.3222653781,
+      "MS_iron_sc2": 2.9982817091,
+      "MS_other_sc2": 5.2964289749,
+      "MS_minerals_sc2": 355.1901401348
+    },
+    {
+      "date": "2013-01-01",
+      "MS_timber_sc1": 27.8707974333,
+      "MS_iron_sc1": 3.0084467652,
+      "MS_other_sc1": 5.4819679397,
+      "MS_minerals_sc1": 347.2023693106,
+      "MS_timber_sc2": 28.3629003835,
+      "MS_iron_sc2": 2.9599688997,
+      "MS_other_sc2": 5.2612999699,
+      "MS_minerals_sc2": 358.6078427905
+    },
+    {
+      "date": "2014-01-01",
+      "MS_timber_sc1": 27.8224823183,
+      "MS_iron_sc1": 2.9744611402,
+      "MS_other_sc1": 5.4683047619,
+      "MS_minerals_sc1": 348.8084423843,
+      "MS_timber_sc2": 28.4025881424,
+      "MS_iron_sc2": 2.9223436536,
+      "MS_other_sc2": 5.2258729484,
+      "MS_minerals_sc2": 361.9221514865
+    },
+    {
+      "date": "2015-01-01",
+      "MS_timber_sc1": 27.7674324045,
+      "MS_iron_sc1": 2.9406898292,
+      "MS_other_sc1": 5.4531377946,
+      "MS_minerals_sc1": 350.25220884,
+      "MS_timber_sc2": 28.441466762,
+      "MS_iron_sc2": 2.8854676006,
+      "MS_other_sc2": 5.1902189071,
+      "MS_minerals_sc2": 365.1381516309
+    },
+    {
+      "date": "2016-01-01",
+      "MS_timber_sc1": 27.7060935255,
+      "MS_iron_sc1": 2.9072191285,
+      "MS_other_sc1": 5.4365938129,
+      "MS_minerals_sc1": 351.5424855878,
+      "MS_timber_sc2": 28.4798311608,
+      "MS_iron_sc2": 2.8494157734,
+      "MS_other_sc2": 5.154439224,
+      "MS_minerals_sc2": 368.2630683992
+    },
+    {
+      "date": "2017-01-01",
+      "MS_timber_sc1": 27.6387278467,
+      "MS_iron_sc1": 2.8741124873,
+      "MS_other_sc1": 5.4187642636,
+      "MS_minerals_sc1": 352.6858334555,
+      "MS_timber_sc2": 28.5177861777,
+      "MS_iron_sc2": 2.8142406141,
+      "MS_other_sc2": 5.1186013048,
+      "MS_minerals_sc2": 371.301779414
+    },
+    {
+      "date": "2018-01-01",
+      "MS_timber_sc1": 27.5656749603,
+      "MS_iron_sc1": 2.8414378979,
+      "MS_other_sc1": 5.3997559961,
+      "MS_minerals_sc1": 353.6897959689,
+      "MS_timber_sc2": 28.5555111857,
+      "MS_iron_sc2": 2.779998757,
+      "MS_other_sc2": 5.0827867975,
+      "MS_minerals_sc2": 374.2601560288
+    },
+    {
+      "date": "2019-01-01",
+      "MS_timber_sc1": 27.4871019327,
+      "MS_iron_sc1": 2.8092416373,
+      "MS_other_sc1": 5.3796417229,
+      "MS_minerals_sc1": 354.5596601232,
+      "MS_timber_sc2": 28.5930070498,
+      "MS_iron_sc2": 2.7467256806,
+      "MS_other_sc2": 5.0470455493,
+      "MS_minerals_sc2": 377.1417159987
+    },
+    {
+      "date": "2020-01-01",
+      "MS_timber_sc1": 27.4034214045,
+      "MS_iron_sc1": 2.7775910728,
+      "MS_other_sc1": 5.3585413915,
+      "MS_minerals_sc1": 355.3037790643,
+      "MS_timber_sc2": 28.6305213895,
+      "MS_iron_sc2": 2.7144771558,
+      "MS_other_sc2": 5.0114714479,
+      "MS_minerals_sc2": 379.9531592082
+    },
+    {
+      "date": "2021-01-01",
+      "MS_timber_sc1": 27.3148768818,
+      "MS_iron_sc1": 2.7465316624,
+      "MS_other_sc1": 5.3365404467,
+      "MS_minerals_sc1": 355.92821282,
+      "MS_timber_sc2": 28.668124151,
+      "MS_iron_sc2": 2.6832875304,
+      "MS_other_sc2": 4.9761261719,
+      "MS_minerals_sc2": 382.6987648242
+    },
+    {
+      "date": "2022-01-01",
+      "MS_timber_sc1": 27.221792185,
+      "MS_iron_sc1": 2.7161123295,
+      "MS_other_sc1": 5.3137382024,
+      "MS_minerals_sc1": 356.4399053839,
+      "MS_timber_sc2": 28.7059641073,
+      "MS_iron_sc2": 2.6531944267,
+      "MS_other_sc2": 4.9410844418,
+      "MS_minerals_sc2": 385.3837340695
+    },
+    {
+      "date": "2023-01-01",
+      "MS_timber_sc1": 27.124332601,
+      "MS_iron_sc1": 2.6863613386,
+      "MS_other_sc1": 5.2902007686,
+      "MS_minerals_sc1": 356.8435385002,
+      "MS_timber_sc2": 28.744022674,
+      "MS_iron_sc2": 2.6242155032,
+      "MS_other_sc2": 4.9063907959,
+      "MS_minerals_sc2": 388.0108656469
+    },
+    {
+      "date": "2024-01-01",
+      "MS_timber_sc1": 27.0229033265,
+      "MS_iron_sc1": 2.6573259473,
+      "MS_other_sc1": 5.2660384579,
+      "MS_minerals_sc1": 357.1467242397,
+      "MS_timber_sc2": 28.7825264009,
+      "MS_iron_sc2": 2.596386755,
+      "MS_other_sc2": 4.8721307925,
+      "MS_minerals_sc2": 390.5860749741
+    },
+    {
+      "date": "2025-01-01",
+      "MS_timber_sc1": 26.9176000499,
+      "MS_iron_sc1": 2.6290178569,
+      "MS_other_sc1": 5.2412982969,
+      "MS_minerals_sc1": 357.35276384,
+      "MS_timber_sc2": 28.8213749659,
+      "MS_iron_sc2": 2.5697098421,
+      "MS_other_sc2": 4.8383324244,
+      "MS_minerals_sc2": 393.1106527829
+    },
+    {
+      "date": "2026-01-01",
+      "MS_timber_sc1": 26.8087582418,
+      "MS_iron_sc1": 2.6014675466,
+      "MS_other_sc1": 5.2160708853,
+      "MS_minerals_sc1": 357.4678657583,
+      "MS_timber_sc2": 28.8607160597,
+      "MS_iron_sc2": 2.5442047244,
+      "MS_other_sc2": 4.8050643802,
+      "MS_minerals_sc2": 395.5890245179
+    },
+    {
+      "date": "2027-01-01",
+      "MS_timber_sc1": 26.6965659039,
+      "MS_iron_sc1": 2.5746862101,
+      "MS_other_sc1": 5.1904147288,
+      "MS_minerals_sc1": 357.4960212991,
+      "MS_timber_sc2": 28.9005377165,
+      "MS_iron_sc2": 2.5198727684,
+      "MS_other_sc2": 4.7723665781,
+      "MS_minerals_sc2": 398.0232071312
+    },
+    {
+      "date": "2028-01-01",
+      "MS_timber_sc1": 26.5809992459,
+      "MS_iron_sc1": 2.5486601382,
+      "MS_other_sc1": 5.1643437166,
+      "MS_minerals_sc1": 357.438093971,
+      "MS_timber_sc2": 28.9406007092,
+      "MS_iron_sc2": 2.4966916189,
+      "MS_other_sc2": 4.740239716,
+      "MS_minerals_sc2": 400.4118088807
+    },
+    {
+      "date": "2029-01-01",
+      "MS_timber_sc1": 26.4624197143,
+      "MS_iron_sc1": 2.5234083405,
+      "MS_other_sc1": 5.1379431005,
+      "MS_minerals_sc1": 357.2998250249,
+      "MS_timber_sc2": 28.9810730942,
+      "MS_iron_sc2": 2.4746708431,
+      "MS_other_sc2": 4.7087504612,
+      "MS_minerals_sc2": 402.7587928457
+    },
+    {
+      "date": "2030-01-01",
+      "MS_timber_sc1": 26.340830622,
+      "MS_iron_sc1": 2.4989111876,
+      "MS_other_sc1": 5.1112249894,
+      "MS_minerals_sc1": 357.0818701922,
+      "MS_timber_sc2": 29.021735139,
+      "MS_iron_sc2": 2.4537827547,
+      "MS_other_sc2": 4.6778999375,
+      "MS_minerals_sc2": 405.0624987417
+    },
+    {
+      "date": "2031-01-01",
+      "MS_timber_sc1": 26.2163258975,
+      "MS_iron_sc1": 2.4751538816,
+      "MS_other_sc1": 5.0842156305,
+      "MS_minerals_sc1": 356.7858229098,
+      "MS_timber_sc2": 29.0624621647,
+      "MS_iron_sc2": 2.4340047574,
+      "MS_other_sc2": 4.6477035848,
+      "MS_minerals_sc2": 407.3223067894
+    },
+    {
+      "date": "2032-01-01",
+      "MS_timber_sc1": 26.08908464,
+      "MS_iron_sc1": 2.4521259574,
+      "MS_other_sc1": 5.0569543891,
+      "MS_minerals_sc1": 356.4141827831,
+      "MS_timber_sc2": 29.1032187285,
+      "MS_iron_sc2": 2.4153187086,
+      "MS_other_sc2": 4.6181897287,
+      "MS_minerals_sc2": 409.5386035926
+    },
+    {
+      "date": "2033-01-01",
+      "MS_timber_sc1": 25.9592268252,
+      "MS_iron_sc1": 2.4298078826,
+      "MS_other_sc1": 5.0294658925,
+      "MS_minerals_sc1": 355.9684213106,
+      "MS_timber_sc2": 29.1439017935,
+      "MS_iron_sc2": 2.3976978515,
+      "MS_other_sc2": 4.5893742204,
+      "MS_minerals_sc2": 411.7106076742
+    },
+    {
+      "date": "2034-01-01",
+      "MS_timber_sc1": 25.8268163894,
+      "MS_iron_sc1": 2.4081717839,
+      "MS_other_sc1": 5.0017608414,
+      "MS_minerals_sc1": 355.4490349884,
+      "MS_timber_sc2": 29.1843443751,
+      "MS_iron_sc2": 2.3811075639,
+      "MS_other_sc2": 4.5612613343,
+      "MS_minerals_sc2": 413.8364206022
+    },
+    {
+      "date": "2035-01-01",
+      "MS_timber_sc1": 25.6920669758,
+      "MS_iron_sc1": 2.3872009954,
+      "MS_other_sc1": 4.9738760851,
+      "MS_minerals_sc1": 354.8584025113,
+      "MS_timber_sc2": 29.2245429719,
+      "MS_iron_sc2": 2.3655243313,
+      "MS_other_sc2": 4.5338796438,
+      "MS_minerals_sc2": 415.9162783055
+    },
+    {
+      "date": "2036-01-01",
+      "MS_timber_sc1": 25.5550645258,
+      "MS_iron_sc1": 2.366864488,
+      "MS_other_sc1": 4.9458211388,
+      "MS_minerals_sc1": 354.1970082104,
+      "MS_timber_sc2": 29.2643503925,
+      "MS_iron_sc2": 2.3509107154,
+      "MS_other_sc2": 4.5072335689,
+      "MS_minerals_sc2": 417.9482253501
+    },
+    {
+      "date": "2037-01-01",
+      "MS_timber_sc1": 25.4160378736,
+      "MS_iron_sc1": 2.3471424368,
+      "MS_other_sc1": 4.917630862,
+      "MS_minerals_sc1": 353.4672078284,
+      "MS_timber_sc2": 29.3037788153,
+      "MS_iron_sc2": 2.3372403387,
+      "MS_other_sc2": 4.4813507312,
+      "MS_minerals_sc2": 419.9324558479
+    },
+    {
+      "date": "2038-01-01",
+      "MS_timber_sc1": 25.275022978,
+      "MS_iron_sc1": 2.3279955009,
+      "MS_other_sc1": 4.8893007734,
+      "MS_minerals_sc1": 352.6686113989,
+      "MS_timber_sc2": 29.3426229763,
+      "MS_iron_sc2": 2.3244677261,
+      "MS_other_sc2": 4.4562235666,
+      "MS_minerals_sc2": 421.8659508115
+    },
+    {
+      "date": "2039-01-01",
+      "MS_timber_sc1": 25.1321950208,
+      "MS_iron_sc1": 2.3093959712,
+      "MS_other_sc1": 4.8608516354,
+      "MS_minerals_sc1": 351.8027226376,
+      "MS_timber_sc2": 29.3808369694,
+      "MS_iron_sc2": 2.3125589166,
+      "MS_other_sc2": 4.4318674871,
+      "MS_minerals_sc2": 423.7478962812
+    },
+    {
+      "date": "2040-01-01",
+      "MS_timber_sc1": 24.9877947559,
+      "MS_iron_sc1": 2.2913212562,
+      "MS_other_sc1": 4.8323155023,
+      "MS_minerals_sc1": 350.8719709165,
+      "MS_timber_sc2": 29.4184519141,
+      "MS_iron_sc2": 2.3014849079,
+      "MS_other_sc2": 4.4083077531,
+      "MS_minerals_sc2": 425.5785598864
+    },
+    {
+      "date": "2041-01-01",
+      "MS_timber_sc1": 24.8418095205,
+      "MS_iron_sc1": 2.27372503,
+      "MS_other_sc1": 4.803674351,
+      "MS_minerals_sc1": 349.8752656176,
+      "MS_timber_sc2": 29.4552103715,
+      "MS_iron_sc2": 2.2911931605,
+      "MS_other_sc2": 4.3855242889,
+      "MS_minerals_sc2": 427.3540123002
+    },
+    {
+      "date": "2042-01-01",
+      "MS_timber_sc1": 24.6944823421,
+      "MS_iron_sc1": 2.2565843452,
+      "MS_other_sc1": 4.7749588488,
+      "MS_minerals_sc1": 348.8151658633,
+      "MS_timber_sc2": 29.4911560178,
+      "MS_iron_sc2": 2.2816542638,
+      "MS_other_sc2": 4.3635405914,
+      "MS_minerals_sc2": 429.0746855462
+    },
+    {
+      "date": "2043-01-01",
+      "MS_timber_sc1": 24.5458059504,
+      "MS_iron_sc1": 2.2398536292,
+      "MS_other_sc1": 4.7461507968,
+      "MS_minerals_sc1": 347.6907956124,
+      "MS_timber_sc2": 29.5260457712,
+      "MS_iron_sc2": 2.2728161274,
+      "MS_other_sc2": 4.342335466,
+      "MS_minerals_sc2": 430.7368642658
+    },
+    {
+      "date": "2044-01-01",
+      "MS_timber_sc1": 24.3959587929,
+      "MS_iron_sc1": 2.223504924,
+      "MS_other_sc1": 4.7172677166,
+      "MS_minerals_sc1": 346.5040138637,
+      "MS_timber_sc2": 29.5598619871,
+      "MS_iron_sc2": 2.2646441085,
+      "MS_other_sc2": 4.3219193521,
+      "MS_minerals_sc2": 432.340152715
+    },
+    {
+      "date": "2045-01-01",
+      "MS_timber_sc1": 24.2449350819,
+      "MS_iron_sc1": 2.2074944091,
+      "MS_other_sc1": 4.6882915652,
+      "MS_minerals_sc1": 345.254206261,
+      "MS_timber_sc2": 29.592376685,
+      "MS_iron_sc2": 2.2570874428,
+      "MS_other_sc2": 4.3022696643,
+      "MS_minerals_sc2": 433.8811330345
+    },
+    {
+      "date": "2046-01-01",
+      "MS_timber_sc1": 24.092907186,
+      "MS_iron_sc1": 2.1917957379,
+      "MS_other_sc1": 4.6592390347,
+      "MS_minerals_sc1": 343.9434450991,
+      "MS_timber_sc2": 29.6235837575,
+      "MS_iron_sc2": 2.2501127051,
+      "MS_other_sc2": 4.2833942741,
+      "MS_minerals_sc2": 435.3597065146
+    },
+    {
+      "date": "2047-01-01",
+      "MS_timber_sc1": 23.9400391502,
+      "MS_iron_sc1": 2.1763832684,
+      "MS_other_sc1": 4.630125696,
+      "MS_minerals_sc1": 342.573869163,
+      "MS_timber_sc2": 29.6534772908,
+      "MS_iron_sc2": 2.2436868295,
+      "MS_other_sc2": 4.2652986243,
+      "MS_minerals_sc2": 436.7758788155
+    },
+    {
+      "date": "2048-01-01",
+      "MS_timber_sc1": 23.7862003995,
+      "MS_iron_sc1": 2.1612062854,
+      "MS_other_sc1": 4.6009107942,
+      "MS_minerals_sc1": 341.1435875984,
+      "MS_timber_sc2": 29.6817055781,
+      "MS_iron_sc2": 2.2377510193,
+      "MS_other_sc2": 4.2479358048,
+      "MS_minerals_sc2": 438.1246388113
+    },
+    {
+      "date": "2049-01-01",
+      "MS_timber_sc1": 23.631547416,
+      "MS_iron_sc1": 2.1462420817,
+      "MS_other_sc1": 4.5716098805,
+      "MS_minerals_sc1": 339.6550020623,
+      "MS_timber_sc2": 29.7082793161,
+      "MS_iron_sc2": 2.2322746926,
+      "MS_other_sc2": 4.2313089029,
+      "MS_minerals_sc2": 439.4064074792
+    },
+    {
+      "date": "2050-01-01",
+      "MS_timber_sc1": 23.4761150058,
+      "MS_iron_sc1": 2.131458938,
+      "MS_other_sc1": 4.5422158748,
+      "MS_minerals_sc1": 338.1089697409,
+      "MS_timber_sc2": 29.7330723472,
+      "MS_iron_sc2": 2.2272176416,
+      "MS_other_sc2": 4.2153987321,
+      "MS_minerals_sc2": 440.6196894323
+    }
+  ],
+  "2": [
+    {
+      "date": "1930-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1931-01-01",
+      "GS_timber_hist": 0.6,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1932-01-01",
+      "GS_timber_hist": 0.5,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.0,
+      "GS_minerals_hist": 1.7,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1933-01-01",
+      "GS_timber_hist": 0.6,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.0,
+      "GS_minerals_hist": 1.6,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1934-01-01",
+      "GS_timber_hist": 0.6,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 1.9,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1935-01-01",
+      "GS_timber_hist": 0.7,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 1.9,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.3
+    },
+    {
+      "date": "1936-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.7,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.4
+    },
+    {
+      "date": "1937-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.8,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.4
+    },
+    {
+      "date": "1938-01-01",
+      "GS_timber_hist": 0.7,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.7,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.4
+    },
+    {
+      "date": "1939-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 3.0,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.4
+    },
+    {
+      "date": "1940-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 3.2,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.4
+    },
+    {
+      "date": "1941-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 3.8,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.5
+    },
+    {
+      "date": "1942-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 4.0,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.5
+    },
+    {
+      "date": "1943-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 3.3,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.5
+    },
+    {
+      "date": "1944-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.9,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.5
+    },
+    {
+      "date": "1945-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 2.9,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.5
+    },
+    {
+      "date": "1946-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 3.7,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.6
+    },
+    {
+      "date": "1947-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 4.2,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.6
+    },
+    {
+      "date": "1948-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 4.4,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.6
+    },
+    {
+      "date": "1949-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 4.3,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.6
+    },
+    {
+      "date": "1950-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 4.8,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.7
+    },
+    {
+      "date": "1951-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.2,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 5.2,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.7
+    },
+    {
+      "date": "1952-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 5.3,
+      "RS_timber_hist": 0.8,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.7
+    },
+    {
+      "date": "1953-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.2,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 5.4,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.7
+    },
+    {
+      "date": "1954-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.1,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.7
+    },
+    {
+      "date": "1955-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.7,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.8
+    },
+    {
+      "date": "1956-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.0,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.8
+    },
+    {
+      "date": "1957-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.8,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.8
+    },
+    {
+      "date": "1958-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.9,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.8
+    },
+    {
+      "date": "1959-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.4,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.9
+    },
+    {
+      "date": "1960-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.2,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.9
+    },
+    {
+      "date": "1961-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.9,
+      "RS_timber_hist": 0.7,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 0.9
+    },
+    {
+      "date": "1962-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.1,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.0
+    },
+    {
+      "date": "1963-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.6,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.0
+    },
+    {
+      "date": "1964-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.0,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.0
+    },
+    {
+      "date": "1965-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.0
+    },
+    {
+      "date": "1966-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.6,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.1
+    },
+    {
+      "date": "1967-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.1
+    },
+    {
+      "date": "1968-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.7,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.0,
+      "RS_other_hist": 0.0,
+      "RS_minerals_hist": 1.2
+    },
+    {
+      "date": "1969-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.2
+    },
+    {
+      "date": "1970-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.0,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.2
+    },
+    {
+      "date": "1971-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.3
+    },
+    {
+      "date": "1972-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.3
+    },
+    {
+      "date": "1973-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 10.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.4
+    },
+    {
+      "date": "1974-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.4
+    },
+    {
+      "date": "1975-01-01",
+      "GS_timber_hist": 0.7,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.5
+    },
+    {
+      "date": "1976-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.5
+    },
+    {
+      "date": "1977-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.7,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.6
+    },
+    {
+      "date": "1978-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.5,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.6
+    },
+    {
+      "date": "1979-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.5,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.7
+    },
+    {
+      "date": "1980-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.3,
+      "RS_timber_hist": 0.5,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.7
+    },
+    {
+      "date": "1981-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 7.3,
+      "RS_timber_hist": 0.5,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.8
+    },
+    {
+      "date": "1982-01-01",
+      "GS_timber_hist": 0.7,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 6.7,
+      "RS_timber_hist": 0.5,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.8
+    },
+    {
+      "date": "1983-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 7.3,
+      "RS_timber_hist": 0.5,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 1.9
+    },
+    {
+      "date": "1984-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.1,
+      "RS_timber_hist": 0.5,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.0
+    },
+    {
+      "date": "1985-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.0
+    },
+    {
+      "date": "1986-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.5,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.1
+    },
+    {
+      "date": "1987-01-01",
+      "GS_timber_hist": 1.0,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 9.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.2
+    },
+    {
+      "date": "1988-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 9.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.2
+    },
+    {
+      "date": "1989-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 9.0,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.3
+    },
+    {
+      "date": "1990-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.1,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.4
+    },
+    {
+      "date": "1991-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 8.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.5
+    },
+    {
+      "date": "1992-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.5
+    },
+    {
+      "date": "1993-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 8.7,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.6
+    },
+    {
+      "date": "1994-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.2,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.7
+    },
+    {
+      "date": "1995-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.8
+    },
+    {
+      "date": "1996-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.4,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.8
+    },
+    {
+      "date": "1997-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 9.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 2.9
+    },
+    {
+      "date": "1998-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 10.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.0
+    },
+    {
+      "date": "1999-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.2,
+      "GS_minerals_hist": 10.5,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.1
+    },
+    {
+      "date": "2000-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 10.6,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.2
+    },
+    {
+      "date": "2001-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 10.3,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.3
+    },
+    {
+      "date": "2002-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 10.0,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.3
+    },
+    {
+      "date": "2003-01-01",
+      "GS_timber_hist": 0.8,
+      "GS_iron_hist": 0.0,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 9.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.4
+    },
+    {
+      "date": "2004-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 10.6,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.5
+    },
+    {
+      "date": "2005-01-01",
+      "GS_timber_hist": 0.9,
+      "GS_iron_hist": 0.1,
+      "GS_other_hist": 0.1,
+      "GS_minerals_hist": 10.9,
+      "GS_timber_sc1": 0.9,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 10.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_hist": 0.6,
+      "RS_iron_hist": 0.1,
+      "RS_other_hist": 0.1,
+      "RS_minerals_hist": 3.6,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 3.6,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 3.6
+    },
+    {
+      "date": "2006-01-01",
+      "GS_timber_sc1": 0.9,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.7,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 3.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 3.7
+    },
+    {
+      "date": "2007-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.6,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 3.8,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 3.8
+    },
+    {
+      "date": "2008-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 3.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 3.9
+    },
+    {
+      "date": "2009-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.0
+    },
+    {
+      "date": "2010-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.4,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.1
+    },
+    {
+      "date": "2011-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.3,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.1,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.1
+    },
+    {
+      "date": "2012-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.2,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.2,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.2
+    },
+    {
+      "date": "2013-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.2,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.3,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.3
+    },
+    {
+      "date": "2014-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.1,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.4,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.4
+    },
+    {
+      "date": "2015-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 9.0,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.5,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.5
+    },
+    {
+      "date": "2016-01-01",
+      "GS_timber_sc1": 0.8,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.5,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.5
+    },
+    {
+      "date": "2017-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.8,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.6,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.6
+    },
+    {
+      "date": "2018-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.8,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.7
+    },
+    {
+      "date": "2019-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.7,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.8
+    },
+    {
+      "date": "2020-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.6,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.8,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.8
+    },
+    {
+      "date": "2021-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 4.9
+    },
+    {
+      "date": "2022-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 4.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.0
+    },
+    {
+      "date": "2023-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.4,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.0
+    },
+    {
+      "date": "2024-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.3,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.1
+    },
+    {
+      "date": "2025-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.3,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.1,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.2
+    },
+    {
+      "date": "2026-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.2,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.2,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.2
+    },
+    {
+      "date": "2027-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.1,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.1,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.2,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.3
+    },
+    {
+      "date": "2028-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.1,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.3,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.3
+    },
+    {
+      "date": "2029-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 8.0,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.3,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.4
+    },
+    {
+      "date": "2030-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.4,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.5
+    },
+    {
+      "date": "2031-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.4,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.5
+    },
+    {
+      "date": "2032-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.8,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.5,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.6
+    },
+    {
+      "date": "2033-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.8,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.5,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.6
+    },
+    {
+      "date": "2034-01-01",
+      "GS_timber_sc1": 0.7,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.7,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.6,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.7
+    },
+    {
+      "date": "2035-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.6,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.1,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.6,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.1,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.7
+    },
+    {
+      "date": "2036-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.6,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.6,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.8
+    },
+    {
+      "date": "2037-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.9
+    },
+    {
+      "date": "2038-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.5,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 5.9
+    },
+    {
+      "date": "2039-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.4,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.7,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.0
+    },
+    {
+      "date": "2040-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.4,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.8,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.0
+    },
+    {
+      "date": "2041-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.3,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.8,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.1
+    },
+    {
+      "date": "2042-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.3,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.8,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.2
+    },
+    {
+      "date": "2043-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.2,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.2
+    },
+    {
+      "date": "2044-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.2,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.3
+    },
+    {
+      "date": "2045-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.1,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 5.9,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.3
+    },
+    {
+      "date": "2046-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.1,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 6.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.4
+    },
+    {
+      "date": "2047-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.0,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 6.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.4
+    },
+    {
+      "date": "2048-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 7.0,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 6.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.5
+    },
+    {
+      "date": "2049-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 6.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 6.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.6
+    },
+    {
+      "date": "2050-01-01",
+      "GS_timber_sc1": 0.6,
+      "GS_iron_sc1": 0.0,
+      "GS_other_sc1": 0.1,
+      "GS_minerals_sc1": 6.9,
+      "GS_timber_sc2": 0.9,
+      "GS_iron_sc2": 0.1,
+      "GS_other_sc2": 0.1,
+      "GS_minerals_sc2": 10.9,
+      "RS_timber_sc1": 0.6,
+      "RS_iron_sc1": 0.0,
+      "RS_other_sc1": 0.1,
+      "RS_minerals_sc1": 6.0,
+      "RS_timber_sc2": 0.6,
+      "RS_iron_sc2": 0.0,
+      "RS_other_sc2": 0.1,
+      "RS_minerals_sc2": 6.6
+    }
+  ],
+  "3": [
+    {
+      "date": "1930-01-01",
+      "MS_total_hist": 95.6
+    },
+    {
+      "date": "1931-01-01",
+      "MS_total_hist": 97.1
+    },
+    {
+      "date": "1932-01-01",
+      "MS_total_hist": 97.8
+    },
+    {
+      "date": "1933-01-01",
+      "MS_total_hist": 98.5
+    },
+    {
+      "date": "1934-01-01",
+      "MS_total_hist": 99.5
+    },
+    {
+      "date": "1935-01-01",
+      "MS_total_hist": 100.4
+    },
+    {
+      "date": "1936-01-01",
+      "MS_total_hist": 102.3
+    },
+    {
+      "date": "1937-01-01",
+      "MS_total_hist": 104.5
+    },
+    {
+      "date": "1938-01-01",
+      "MS_total_hist": 106.0
+    },
+    {
+      "date": "1939-01-01",
+      "MS_total_hist": 108.0
+    },
+    {
+      "date": "1940-01-01",
+      "MS_total_hist": 110.1
+    },
+    {
+      "date": "1941-01-01",
+      "MS_total_hist": 112.9
+    },
+    {
+      "date": "1942-01-01",
+      "MS_total_hist": 115.7
+    },
+    {
+      "date": "1943-01-01",
+      "MS_total_hist": 117.3
+    },
+    {
+      "date": "1944-01-01",
+      "MS_total_hist": 118.6
+    },
+    {
+      "date": "1945-01-01",
+      "MS_total_hist": 119.9
+    },
+    {
+      "date": "1946-01-01",
+      "MS_total_hist": 122.1
+    },
+    {
+      "date": "1947-01-01",
+      "MS_total_hist": 123.7
+    },
+    {
+      "date": "1948-01-01",
+      "MS_total_hist": 125.8
+    },
+    {
+      "date": "1949-01-01",
+      "MS_total_hist": 127.6
+    },
+    {
+      "date": "1950-01-01",
+      "MS_total_hist": 130.1
+    },
+    {
+      "date": "1951-01-01",
+      "MS_total_hist": 132.8
+    },
+    {
+      "date": "1952-01-01",
+      "MS_total_hist": 135.6
+    },
+    {
+      "date": "1953-01-01",
+      "MS_total_hist": 138.5
+    },
+    {
+      "date": "1954-01-01",
+      "MS_total_hist": 141.7
+    },
+    {
+      "date": "1955-01-01",
+      "MS_total_hist": 145.6
+    },
+    {
+      "date": "1956-01-01",
+      "MS_total_hist": 149.7
+    },
+    {
+      "date": "1957-01-01",
+      "MS_total_hist": 153.4
+    },
+    {
+      "date": "1958-01-01",
+      "MS_total_hist": 157.3
+    },
+    {
+      "date": "1959-01-01",
+      "MS_total_hist": 161.5
+    },
+    {
+      "date": "1960-01-01",
+      "MS_total_hist": 165.6
+    },
+    {
+      "date": "1961-01-01",
+      "MS_total_hist": 169.1
+    },
+    {
+      "date": "1962-01-01",
+      "MS_total_hist": 173.1
+    },
+    {
+      "date": "1963-01-01",
+      "MS_total_hist": 177.6
+    },
+    {
+      "date": "1964-01-01",
+      "MS_total_hist": 182.5
+    },
+    {
+      "date": "1965-01-01",
+      "MS_total_hist": 188.0
+    },
+    {
+      "date": "1966-01-01",
+      "MS_total_hist": 193.8
+    },
+    {
+      "date": "1967-01-01",
+      "MS_total_hist": 199.3
+    },
+    {
+      "date": "1968-01-01",
+      "MS_total_hist": 205.3
+    },
+    {
+      "date": "1969-01-01",
+      "MS_total_hist": 211.5
+    },
+    {
+      "date": "1970-01-01",
+      "MS_total_hist": 217.2
+    },
+    {
+      "date": "1971-01-01",
+      "MS_total_hist": 222.9
+    },
+    {
+      "date": "1972-01-01",
+      "MS_total_hist": 229.2
+    },
+    {
+      "date": "1973-01-01",
+      "MS_total_hist": 236.3
+    },
+    {
+      "date": "1974-01-01",
+      "MS_total_hist": 243.1
+    },
+    {
+      "date": "1975-01-01",
+      "MS_total_hist": 248.0
+    },
+    {
+      "date": "1976-01-01",
+      "MS_total_hist": 252.8
+    },
+    {
+      "date": "1977-01-01",
+      "MS_total_hist": 257.8
+    },
+    {
+      "date": "1978-01-01",
+      "MS_total_hist": 263.6
+    },
+    {
+      "date": "1979-01-01",
+      "MS_total_hist": 269.1
+    },
+    {
+      "date": "1980-01-01",
+      "MS_total_hist": 272.8
+    },
+    {
+      "date": "1981-01-01",
+      "MS_total_hist": 276.0
+    },
+    {
+      "date": "1982-01-01",
+      "MS_total_hist": 278.5
+    },
+    {
+      "date": "1983-01-01",
+      "MS_total_hist": 281.7
+    },
+    {
+      "date": "1984-01-01",
+      "MS_total_hist": 285.8
+    },
+    {
+      "date": "1985-01-01",
+      "MS_total_hist": 290.0
+    },
+    {
+      "date": "1986-01-01",
+      "MS_total_hist": 294.2
+    },
+    {
+      "date": "1987-01-01",
+      "MS_total_hist": 299.2
+    },
+    {
+      "date": "1988-01-01",
+      "MS_total_hist": 304.1
+    },
+    {
+      "date": "1989-01-01",
+      "MS_total_hist": 308.4
+    },
+    {
+      "date": "1990-01-01",
+      "MS_total_hist": 312.0
+    },
+    {
+      "date": "1991-01-01",
+      "MS_total_hist": 314.0
+    },
+    {
+      "date": "1992-01-01",
+      "MS_total_hist": 315.9
+    },
+    {
+      "date": "1993-01-01",
+      "MS_total_hist": 318.3
+    },
+    {
+      "date": "1994-01-01",
+      "MS_total_hist": 321.5
+    },
+    {
+      "date": "1995-01-01",
+      "MS_total_hist": 324.7
+    },
+    {
+      "date": "1996-01-01",
+      "MS_total_hist": 327.9
+    },
+    {
+      "date": "1997-01-01",
+      "MS_total_hist": 331.4
+    },
+    {
+      "date": "1998-01-01",
+      "MS_total_hist": 335.3
+    },
+    {
+      "date": "1999-01-01",
+      "MS_total_hist": 339.3
+    },
+    {
+      "date": "2000-01-01",
+      "MS_total_hist": 343.6
+    },
+    {
+      "date": "2001-01-01",
+      "MS_total_hist": 347.7
+    },
+    {
+      "date": "2002-01-01",
+      "MS_total_hist": 351.6
+    },
+    {
+      "date": "2003-01-01",
+      "MS_total_hist": 355.3
+    },
+    {
+      "date": "2004-01-01",
+      "MS_total_hist": 359.3
+    },
+    {
+      "date": "2005-01-01",
+      "MS_total_hist": 363.6,
+      "MS_total_sc1": 363.6,
+      "MS_total_sc2": 363.6
+    },
+    {
+      "date": "2006-01-01",
+      "MS_total_sc1": 366.5,
+      "MS_total_sc2": 367.6
+    },
+    {
+      "date": "2007-01-01",
+      "MS_total_sc1": 369.1,
+      "MS_total_sc2": 371.6
+    },
+    {
+      "date": "2008-01-01",
+      "MS_total_sc1": 371.6,
+      "MS_total_sc2": 375.4
+    },
+    {
+      "date": "2009-01-01",
+      "MS_total_sc1": 374.1,
+      "MS_total_sc2": 379.4
+    },
+    {
+      "date": "2010-01-01",
+      "MS_total_sc1": 376.6,
+      "MS_total_sc2": 383.4
+    },
+    {
+      "date": "2011-01-01",
+      "MS_total_sc1": 379.3,
+      "MS_total_sc2": 387.6
+    },
+    {
+      "date": "2012-01-01",
+      "MS_total_sc1": 381.9,
+      "MS_total_sc2": 391.8
+    },
+    {
+      "date": "2013-01-01",
+      "MS_total_sc1": 383.6,
+      "MS_total_sc2": 395.2
+    },
+    {
+      "date": "2014-01-01",
+      "MS_total_sc1": 385.1,
+      "MS_total_sc2": 398.5
+    },
+    {
+      "date": "2015-01-01",
+      "MS_total_sc1": 386.4,
+      "MS_total_sc2": 401.7
+    },
+    {
+      "date": "2016-01-01",
+      "MS_total_sc1": 387.6,
+      "MS_total_sc2": 404.7
+    },
+    {
+      "date": "2017-01-01",
+      "MS_total_sc1": 388.6,
+      "MS_total_sc2": 407.8
+    },
+    {
+      "date": "2018-01-01",
+      "MS_total_sc1": 389.5,
+      "MS_total_sc2": 410.7
+    },
+    {
+      "date": "2019-01-01",
+      "MS_total_sc1": 390.2,
+      "MS_total_sc2": 413.5
+    },
+    {
+      "date": "2020-01-01",
+      "MS_total_sc1": 390.8,
+      "MS_total_sc2": 416.3
+    },
+    {
+      "date": "2021-01-01",
+      "MS_total_sc1": 391.3,
+      "MS_total_sc2": 419.0
+    },
+    {
+      "date": "2022-01-01",
+      "MS_total_sc1": 391.7,
+      "MS_total_sc2": 421.7
+    },
+    {
+      "date": "2023-01-01",
+      "MS_total_sc1": 391.9,
+      "MS_total_sc2": 424.3
+    },
+    {
+      "date": "2024-01-01",
+      "MS_total_sc1": 392.1,
+      "MS_total_sc2": 426.8
+    },
+    {
+      "date": "2025-01-01",
+      "MS_total_sc1": 392.1,
+      "MS_total_sc2": 429.3
+    },
+    {
+      "date": "2026-01-01",
+      "MS_total_sc1": 392.1,
+      "MS_total_sc2": 431.8
+    },
+    {
+      "date": "2027-01-01",
+      "MS_total_sc1": 392.0,
+      "MS_total_sc2": 434.2
+    },
+    {
+      "date": "2028-01-01",
+      "MS_total_sc1": 391.7,
+      "MS_total_sc2": 436.6
+    },
+    {
+      "date": "2029-01-01",
+      "MS_total_sc1": 391.4,
+      "MS_total_sc2": 438.9
+    },
+    {
+      "date": "2030-01-01",
+      "MS_total_sc1": 391.0,
+      "MS_total_sc2": 441.2
+    },
+    {
+      "date": "2031-01-01",
+      "MS_total_sc1": 390.6,
+      "MS_total_sc2": 443.5
+    },
+    {
+      "date": "2032-01-01",
+      "MS_total_sc1": 390.0,
+      "MS_total_sc2": 445.7
+    },
+    {
+      "date": "2033-01-01",
+      "MS_total_sc1": 389.4,
+      "MS_total_sc2": 447.8
+    },
+    {
+      "date": "2034-01-01",
+      "MS_total_sc1": 388.7,
+      "MS_total_sc2": 450.0
+    },
+    {
+      "date": "2035-01-01",
+      "MS_total_sc1": 387.9,
+      "MS_total_sc2": 452.0
+    },
+    {
+      "date": "2036-01-01",
+      "MS_total_sc1": 387.1,
+      "MS_total_sc2": 454.1
+    },
+    {
+      "date": "2037-01-01",
+      "MS_total_sc1": 386.1,
+      "MS_total_sc2": 456.1
+    },
+    {
+      "date": "2038-01-01",
+      "MS_total_sc1": 385.2,
+      "MS_total_sc2": 458.0
+    },
+    {
+      "date": "2039-01-01",
+      "MS_total_sc1": 384.1,
+      "MS_total_sc2": 459.9
+    },
+    {
+      "date": "2040-01-01",
+      "MS_total_sc1": 383.0,
+      "MS_total_sc2": 461.7
+    },
+    {
+      "date": "2041-01-01",
+      "MS_total_sc1": 381.8,
+      "MS_total_sc2": 463.5
+    },
+    {
+      "date": "2042-01-01",
+      "MS_total_sc1": 380.5,
+      "MS_total_sc2": 465.2
+    },
+    {
+      "date": "2043-01-01",
+      "MS_total_sc1": 379.2,
+      "MS_total_sc2": 466.9
+    },
+    {
+      "date": "2044-01-01",
+      "MS_total_sc1": 377.8,
+      "MS_total_sc2": 468.5
+    },
+    {
+      "date": "2045-01-01",
+      "MS_total_sc1": 376.4,
+      "MS_total_sc2": 470.0
+    },
+    {
+      "date": "2046-01-01",
+      "MS_total_sc1": 374.9,
+      "MS_total_sc2": 471.5
+    },
+    {
+      "date": "2047-01-01",
+      "MS_total_sc1": 373.3,
+      "MS_total_sc2": 472.9
+    },
+    {
+      "date": "2048-01-01",
+      "MS_total_sc1": 371.7,
+      "MS_total_sc2": 474.3
+    },
+    {
+      "date": "2049-01-01",
+      "MS_total_sc1": 370.0,
+      "MS_total_sc2": 475.6
+    },
+    {
+      "date": "2050-01-01",
+      "MS_total_sc1": 368.3,
+      "MS_total_sc2": 476.8
+    }
+  ],
+  "4": [
+    {
+      "date": "1930-01-01",
+      "GS_total_hist": 3.9,
+      "RS_total_hist": 0.9
+    },
+    {
+      "date": "1931-01-01",
+      "GS_total_hist": 3.1,
+      "RS_total_hist": 0.9
+    },
+    {
+      "date": "1932-01-01",
+      "GS_total_hist": 2.3,
+      "RS_total_hist": 0.9
+    },
+    {
+      "date": "1933-01-01",
+      "GS_total_hist": 2.2,
+      "RS_total_hist": 1.0
+    },
+    {
+      "date": "1934-01-01",
+      "GS_total_hist": 2.6,
+      "RS_total_hist": 1.0
+    },
+    {
+      "date": "1935-01-01",
+      "GS_total_hist": 2.7,
+      "RS_total_hist": 1.1
+    },
+    {
+      "date": "1936-01-01",
+      "GS_total_hist": 3.7,
+      "RS_total_hist": 1.1
+    },
+    {
+      "date": "1937-01-01",
+      "GS_total_hist": 3.9,
+      "RS_total_hist": 1.1
+    },
+    {
+      "date": "1938-01-01",
+      "GS_total_hist": 3.5,
+      "RS_total_hist": 1.2
+    },
+    {
+      "date": "1939-01-01",
+      "GS_total_hist": 4.0,
+      "RS_total_hist": 1.2
+    },
+    {
+      "date": "1940-01-01",
+      "GS_total_hist": 4.2,
+      "RS_total_hist": 1.2
+    },
+    {
+      "date": "1941-01-01",
+      "GS_total_hist": 5.1,
+      "RS_total_hist": 1.3
+    },
+    {
+      "date": "1942-01-01",
+      "GS_total_hist": 5.3,
+      "RS_total_hist": 1.3
+    },
+    {
+      "date": "1943-01-01",
+      "GS_total_hist": 4.5,
+      "RS_total_hist": 1.3
+    },
+    {
+      "date": "1944-01-01",
+      "GS_total_hist": 4.0,
+      "RS_total_hist": 1.4
+    },
+    {
+      "date": "1945-01-01",
+      "GS_total_hist": 4.0,
+      "RS_total_hist": 1.4
+    },
+    {
+      "date": "1946-01-01",
+      "GS_total_hist": 4.9,
+      "RS_total_hist": 1.4
+    },
+    {
+      "date": "1947-01-01",
+      "GS_total_hist": 5.4,
+      "RS_total_hist": 1.4
+    },
+    {
+      "date": "1948-01-01",
+      "GS_total_hist": 5.7,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1949-01-01",
+      "GS_total_hist": 5.4,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1950-01-01",
+      "GS_total_hist": 6.0,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1951-01-01",
+      "GS_total_hist": 6.5,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1952-01-01",
+      "GS_total_hist": 6.6,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1953-01-01",
+      "GS_total_hist": 6.7,
+      "RS_total_hist": 1.5
+    },
+    {
+      "date": "1954-01-01",
+      "GS_total_hist": 7.2,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1955-01-01",
+      "GS_total_hist": 7.9,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1956-01-01",
+      "GS_total_hist": 8.3,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1957-01-01",
+      "GS_total_hist": 8.0,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1958-01-01",
+      "GS_total_hist": 8.0,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1959-01-01",
+      "GS_total_hist": 8.5,
+      "RS_total_hist": 1.6
+    },
+    {
+      "date": "1960-01-01",
+      "GS_total_hist": 8.3,
+      "RS_total_hist": 1.7
+    },
+    {
+      "date": "1961-01-01",
+      "GS_total_hist": 7.9,
+      "RS_total_hist": 1.7
+    },
+    {
+      "date": "1962-01-01",
+      "GS_total_hist": 8.2,
+      "RS_total_hist": 1.7
+    },
+    {
+      "date": "1963-01-01",
+      "GS_total_hist": 8.7,
+      "RS_total_hist": 1.7
+    },
+    {
+      "date": "1964-01-01",
+      "GS_total_hist": 9.1,
+      "RS_total_hist": 1.7
+    },
+    {
+      "date": "1965-01-01",
+      "GS_total_hist": 9.5,
+      "RS_total_hist": 1.8
+    },
+    {
+      "date": "1966-01-01",
+      "GS_total_hist": 9.8,
+      "RS_total_hist": 1.8
+    },
+    {
+      "date": "1967-01-01",
+      "GS_total_hist": 9.4,
+      "RS_total_hist": 1.8
+    },
+    {
+      "date": "1968-01-01",
+      "GS_total_hist": 9.8,
+      "RS_total_hist": 1.9
+    },
+    {
+      "date": "1969-01-01",
+      "GS_total_hist": 10.0,
+      "RS_total_hist": 1.9
+    },
+    {
+      "date": "1970-01-01",
+      "GS_total_hist": 10.1,
+      "RS_total_hist": 1.9
+    },
+    {
+      "date": "1971-01-01",
+      "GS_total_hist": 10.4,
+      "RS_total_hist": 2.0
+    },
+    {
+      "date": "1972-01-01",
+      "GS_total_hist": 10.6,
+      "RS_total_hist": 2.0
+    },
+    {
+      "date": "1973-01-01",
+      "GS_total_hist": 11.4,
+      "RS_total_hist": 2.0
+    },
+    {
+      "date": "1974-01-01",
+      "GS_total_hist": 11.1,
+      "RS_total_hist": 2.1
+    },
+    {
+      "date": "1975-01-01",
+      "GS_total_hist": 9.3,
+      "RS_total_hist": 2.1
+    },
+    {
+      "date": "1976-01-01",
+      "GS_total_hist": 9.3,
+      "RS_total_hist": 2.2
+    },
+    {
+      "date": "1977-01-01",
+      "GS_total_hist": 9.8,
+      "RS_total_hist": 2.2
+    },
+    {
+      "date": "1978-01-01",
+      "GS_total_hist": 10.7,
+      "RS_total_hist": 2.3
+    },
+    {
+      "date": "1979-01-01",
+      "GS_total_hist": 10.7,
+      "RS_total_hist": 2.3
+    },
+    {
+      "date": "1980-01-01",
+      "GS_total_hist": 9.3,
+      "RS_total_hist": 2.4
+    },
+    {
+      "date": "1981-01-01",
+      "GS_total_hist": 8.3,
+      "RS_total_hist": 2.4
+    },
+    {
+      "date": "1982-01-01",
+      "GS_total_hist": 7.5,
+      "RS_total_hist": 2.5
+    },
+    {
+      "date": "1983-01-01",
+      "GS_total_hist": 8.3,
+      "RS_total_hist": 2.6
+    },
+    {
+      "date": "1984-01-01",
+      "GS_total_hist": 9.1,
+      "RS_total_hist": 2.6
+    },
+    {
+      "date": "1985-01-01",
+      "GS_total_hist": 9.5,
+      "RS_total_hist": 2.7
+    },
+    {
+      "date": "1986-01-01",
+      "GS_total_hist": 9.6,
+      "RS_total_hist": 2.8
+    },
+    {
+      "date": "1987-01-01",
+      "GS_total_hist": 10.4,
+      "RS_total_hist": 2.8
+    },
+    {
+      "date": "1988-01-01",
+      "GS_total_hist": 10.5,
+      "RS_total_hist": 2.9
+    },
+    {
+      "date": "1989-01-01",
+      "GS_total_hist": 10.1,
+      "RS_total_hist": 3.0
+    },
+    {
+      "date": "1990-01-01",
+      "GS_total_hist": 10.2,
+      "RS_total_hist": 3.1
+    },
+    {
+      "date": "1991-01-01",
+      "GS_total_hist": 9.2,
+      "RS_total_hist": 3.1
+    },
+    {
+      "date": "1992-01-01",
+      "GS_total_hist": 9.3,
+      "RS_total_hist": 3.2
+    },
+    {
+      "date": "1993-01-01",
+      "GS_total_hist": 9.8,
+      "RS_total_hist": 3.3
+    },
+    {
+      "date": "1994-01-01",
+      "GS_total_hist": 10.3,
+      "RS_total_hist": 3.4
+    },
+    {
+      "date": "1995-01-01",
+      "GS_total_hist": 10.4,
+      "RS_total_hist": 3.4
+    },
+    {
+      "date": "1996-01-01",
+      "GS_total_hist": 10.5,
+      "RS_total_hist": 3.5
+    },
+    {
+      "date": "1997-01-01",
+      "GS_total_hist": 11.0,
+      "RS_total_hist": 3.6
+    },
+    {
+      "date": "1998-01-01",
+      "GS_total_hist": 11.4,
+      "RS_total_hist": 3.7
+    },
+    {
+      "date": "1999-01-01",
+      "GS_total_hist": 11.6,
+      "RS_total_hist": 3.8
+    },
+    {
+      "date": "2000-01-01",
+      "GS_total_hist": 11.6,
+      "RS_total_hist": 3.9
+    },
+    {
+      "date": "2001-01-01",
+      "GS_total_hist": 11.4,
+      "RS_total_hist": 3.9
+    },
+    {
+      "date": "2002-01-01",
+      "GS_total_hist": 11.0,
+      "RS_total_hist": 4.0
+    },
+    {
+      "date": "2003-01-01",
+      "GS_total_hist": 10.9,
+      "RS_total_hist": 4.1
+    },
+    {
+      "date": "2004-01-01",
+      "GS_total_hist": 11.7,
+      "RS_total_hist": 4.2
+    },
+    {
+      "date": "2005-01-01",
+      "GS_total_Series": 11.9,
+      "GS_total_sc1": 11.9,
+      "GS_total_sc2": 11.9,
+      "RS_total_hist": 4.3,
+      "RS_total_sc1": 4.3,
+      "RS_total_sc2": 4.3
+    },
+    {
+      "date": "2006-01-01",
+      "GS_total_sc1": 10.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.4,
+      "RS_total_sc2": 4.4
+    },
+    {
+      "date": "2007-01-01",
+      "GS_total_sc1": 10.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.5,
+      "RS_total_sc2": 4.5
+    },
+    {
+      "date": "2008-01-01",
+      "GS_total_sc1": 10.5,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.6,
+      "RS_total_sc2": 4.6
+    },
+    {
+      "date": "2009-01-01",
+      "GS_total_sc1": 10.4,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.7,
+      "RS_total_sc2": 4.7
+    },
+    {
+      "date": "2010-01-01",
+      "GS_total_sc1": 10.4,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.8,
+      "RS_total_sc2": 4.8
+    },
+    {
+      "date": "2011-01-01",
+      "GS_total_sc1": 10.3,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.8,
+      "RS_total_sc2": 4.9
+    },
+    {
+      "date": "2012-01-01",
+      "GS_total_sc1": 10.2,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 4.9,
+      "RS_total_sc2": 4.9
+    },
+    {
+      "date": "2013-01-01",
+      "GS_total_sc1": 10.1,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.0,
+      "RS_total_sc2": 5.0
+    },
+    {
+      "date": "2014-01-01",
+      "GS_total_sc1": 10.0,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.1,
+      "RS_total_sc2": 5.1
+    },
+    {
+      "date": "2015-01-01",
+      "GS_total_sc1": 9.9,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.2,
+      "RS_total_sc2": 5.2
+    },
+    {
+      "date": "2016-01-01",
+      "GS_total_sc1": 9.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.3,
+      "RS_total_sc2": 5.3
+    },
+    {
+      "date": "2017-01-01",
+      "GS_total_sc1": 9.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.3,
+      "RS_total_sc2": 5.3
+    },
+    {
+      "date": "2018-01-01",
+      "GS_total_sc1": 9.7,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.4,
+      "RS_total_sc2": 5.4
+    },
+    {
+      "date": "2019-01-01",
+      "GS_total_sc1": 9.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.5,
+      "RS_total_sc2": 5.5
+    },
+    {
+      "date": "2020-01-01",
+      "GS_total_sc1": 9.5,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.5,
+      "RS_total_sc2": 5.6
+    },
+    {
+      "date": "2021-01-01",
+      "GS_total_sc1": 9.4,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.6,
+      "RS_total_sc2": 5.6
+    },
+    {
+      "date": "2022-01-01",
+      "GS_total_sc1": 9.3,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.7,
+      "RS_total_sc2": 5.7
+    },
+    {
+      "date": "2023-01-01",
+      "GS_total_sc1": 9.3,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.7,
+      "RS_total_sc2": 5.8
+    },
+    {
+      "date": "2024-01-01",
+      "GS_total_sc1": 9.2,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.8,
+      "RS_total_sc2": 5.8
+    },
+    {
+      "date": "2025-01-01",
+      "GS_total_sc1": 9.1,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.8,
+      "RS_total_sc2": 5.9
+    },
+    {
+      "date": "2026-01-01",
+      "GS_total_sc1": 9.0,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.9,
+      "RS_total_sc2": 5.9
+    },
+    {
+      "date": "2027-01-01",
+      "GS_total_sc1": 9.0,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 5.9,
+      "RS_total_sc2": 6.0
+    },
+    {
+      "date": "2028-01-01",
+      "GS_total_sc1": 8.9,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.0,
+      "RS_total_sc2": 6.1
+    },
+    {
+      "date": "2029-01-01",
+      "GS_total_sc1": 8.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.0,
+      "RS_total_sc2": 6.1
+    },
+    {
+      "date": "2030-01-01",
+      "GS_total_sc1": 8.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.1,
+      "RS_total_sc2": 6.2
+    },
+    {
+      "date": "2031-01-01",
+      "GS_total_sc1": 8.7,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.1,
+      "RS_total_sc2": 6.3
+    },
+    {
+      "date": "2032-01-01",
+      "GS_total_sc1": 8.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.2,
+      "RS_total_sc2": 6.3
+    },
+    {
+      "date": "2033-01-01",
+      "GS_total_sc1": 8.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.2,
+      "RS_total_sc2": 6.4
+    },
+    {
+      "date": "2034-01-01",
+      "GS_total_sc1": 8.5,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.3,
+      "RS_total_sc2": 6.4
+    },
+    {
+      "date": "2035-01-01",
+      "GS_total_sc1": 8.4,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.3,
+      "RS_total_sc2": 6.5
+    },
+    {
+      "date": "2036-01-01",
+      "GS_total_sc1": 8.4,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.4,
+      "RS_total_sc2": 6.6
+    },
+    {
+      "date": "2037-01-01",
+      "GS_total_sc1": 8.3,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.4,
+      "RS_total_sc2": 6.6
+    },
+    {
+      "date": "2038-01-01",
+      "GS_total_sc1": 8.2,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.4,
+      "RS_total_sc2": 6.7
+    },
+    {
+      "date": "2039-01-01",
+      "GS_total_sc1": 8.2,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.5,
+      "RS_total_sc2": 6.7
+    },
+    {
+      "date": "2040-01-01",
+      "GS_total_sc1": 8.1,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.5,
+      "RS_total_sc2": 6.8
+    },
+    {
+      "date": "2041-01-01",
+      "GS_total_sc1": 8.1,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.5,
+      "RS_total_sc2": 6.8
+    },
+    {
+      "date": "2042-01-01",
+      "GS_total_sc1": 8.0,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.6,
+      "RS_total_sc2": 6.9
+    },
+    {
+      "date": "2043-01-01",
+      "GS_total_sc1": 8.0,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.6,
+      "RS_total_sc2": 7.0
+    },
+    {
+      "date": "2044-01-01",
+      "GS_total_sc1": 7.9,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.6,
+      "RS_total_sc2": 7.0
+    },
+    {
+      "date": "2045-01-01",
+      "GS_total_sc1": 7.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.1
+    },
+    {
+      "date": "2046-01-01",
+      "GS_total_sc1": 7.8,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.1
+    },
+    {
+      "date": "2047-01-01",
+      "GS_total_sc1": 7.7,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.2
+    },
+    {
+      "date": "2048-01-01",
+      "GS_total_sc1": 7.7,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.3
+    },
+    {
+      "date": "2049-01-01",
+      "GS_total_sc1": 7.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.3
+    },
+    {
+      "date": "2050-01-01",
+      "GS_total_sc1": 7.6,
+      "GS_total_sc2": 11.9,
+      "RS_total_sc1": 6.7,
+      "RS_total_sc2": 7.4
+    }
+  ]
+}

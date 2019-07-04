@@ -115,19 +115,10 @@ $.fn.slideFadeToggle = function(easing, callback) {
 
 
 {% block content %}
-<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
 
-  <ul class="nav navbar-nav">
-      <br>
-      <li ><a  href="../../">  General</a></li>
-   <li><a  href="../../blog">News</a></li>
-   <li><a href="../../tools-index">IE Tools & Databases</a></li>
-   <li><a style="color: #e0e0eb;" href="../"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
-  </ul>
-</div>
 
 <br>
-<div class="container">
+<div class="container-fluid">
     <legend>Material stock and flows (US and Japan)</legend>
     <div class="messagepop pop" >
 
@@ -219,7 +210,7 @@ var formatYaxis = d3.format("s");
 var US_Json = [];
 GAS_RS_Json = [];
 //ajax function for default plotting
-var url = 'https://api.myjson.com/bins/1cp2p1';
+var url = 'https://cml.liacs.nl/research/microvis/fishman-default/';
 $.ajax({
   type: 'GET',
   url: url,
@@ -828,7 +819,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
       //differentiate between the totals scenario comparison as opposed to materials
       if (selectedEffect3 == "totals") {
         if (selectedEffect === "US" && selectedEffect2 === "absolute") {
-          var url = 'https://api.myjson.com/bins/1cp2p1';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-default/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -865,7 +856,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "cap") {
-          var url = 'https://api.myjson.com/bins/ectal';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-cap/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -902,7 +893,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "cap") {
-          var url = 'https://api.myjson.com/bins/h84fh';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-cap/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -939,7 +930,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "gdp") {
-          var url = 'https://api.myjson.com/bins/efllp';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-gdp/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -977,7 +968,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
           });
 
         } else if (selectedEffect === "US" && selectedEffect2 === "gdp") {
-          var url = 'https://api.myjson.com/bins/m9vn1';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-gdp/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1020,7 +1011,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
           chart.hide();
           chart2.hide();
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "growth") {
-          var url = 'https://api.myjson.com/bins/12hifx';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-growth/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1057,7 +1048,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "growth") {
-          var url = 'https://api.myjson.com/bins/mcg8d';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-growth/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1094,7 +1085,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "absolute") {
-          var url = 'https://api.myjson.com/bins/17iu7x';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-abs/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1133,7 +1124,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
         }
       } else {
         if (selectedEffect === "US" && selectedEffect2 === "gdp") {
-          var url = 'https://api.myjson.com/bins/m9vn1';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-gdp/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1180,7 +1171,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "absolute") {
-          var url = 'https://api.myjson.com/bins/1cp2p1';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-default/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1227,7 +1218,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "cap") {
-          var url = 'https://api.myjson.com/bins/ectal';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-cap/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1274,7 +1265,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "percent") {
-          var url = 'https://api.myjson.com/bins/9crt9';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-percent/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1321,7 +1312,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "US" && selectedEffect2 === "growth") {
-          var url = 'https://api.myjson.com/bins/mcg8d';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-us-growth/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1368,7 +1359,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "absolute") {
-          var url = 'https://api.myjson.com/bins/17iu7x';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-abs/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1416,7 +1407,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
           });
 
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "cap") {
-          var url = 'https://api.myjson.com/bins/h84fh';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-cap/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1463,7 +1454,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "gdp") {
-          var url = 'https://api.myjson.com/bins/efllp';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-gdp/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1510,7 +1501,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "percent") {
-          var url = 'https://api.myjson.com/bins/m8dml';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-percent/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1557,7 +1548,7 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
             }
           });
         } else if (selectedEffect === "JAPAN" && selectedEffect2 === "growth") {
-          var url = 'https://api.myjson.com/bins/12hifx';
+          var url = 'https://cml.liacs.nl/research/microvis/fishman-jp-growth/';
           $.ajax({
             type: 'GET',
             url: url,
@@ -1755,4 +1746,3 @@ function iDependOnMyParameter(US_Json, GAS_RS_Json) {
 
     </div>
    {% endblock %}
-

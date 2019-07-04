@@ -11,8 +11,9 @@ urlpatterns = [
         url(r'^geo/$', views.geo, name='geo'),
         url(r'^timeseries/$', views.timeseries, name='timeseries'),
         url(r'^supplychain/$', views.supplychain, name='supplychain'),
-        url(r'^bla/$', views.test, name='test'),
-        url(r'^ajax/$', views.ajax, name='Ajaxtest'),
+url(r'^about/$', views.about, name='supplychain'),
+
+
         url(r'^infobutton/$', views.info, name='Ajaxtest'),
 
 

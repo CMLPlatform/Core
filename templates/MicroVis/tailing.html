@@ -72,16 +72,7 @@ $.fn.slideFadeToggle = function(easing, callback) {
 
 
 {% block content %}
-<div class="navbar navbar-default navbar-inverse navbar-fixed-left">
 
-  <ul class="nav navbar-nav">
-      <br>
-      <li ><a  href="../../">  General</a></li>
-   <li><a  href="../../blog">News</a></li>
-   <li><a href="../../tools-index">IE Tools & Databases</a></li>
-   <li><a style="color: #e0e0eb;" href="../"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>IV CML</a></li>
-  </ul>
-</div>
 
 <br>
 
@@ -89,7 +80,7 @@ $.fn.slideFadeToggle = function(easing, callback) {
 
 
 
-<div class="container">
+<div class="container-fluid">
 
 <div class="messagepop pop">
     <h4>General info</h4>
@@ -117,8 +108,8 @@ $.fn.slideFadeToggle = function(easing, callback) {
     <div id="map"></div>
 </div>
     <script>
-      var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-      var osmAttrib = '&copy; <a href="http://openstreetmap.org/copyright">' +
+      var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var osmAttrib = '&copy; <a href="https://openstreetmap.org/copyright">' +
         'OpenStreetMap</a> contributors';
       var osm = L.tileLayer(osmUrl, {
         maxZoom: 18,

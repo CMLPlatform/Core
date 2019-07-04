@@ -4,9 +4,9 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-from wagtail.wagtailcore.models import Page
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.core.models import Page
+from wagtail.core.fields import RichTextField
+from wagtail.admin.edit_handlers import FieldPanel
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     topics = models.TextField(max_length=254, blank=True)

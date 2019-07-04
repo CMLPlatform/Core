@@ -72,6 +72,11 @@
 
   <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
 </li>
+
+
+<li class="active"><a href="../about">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > About</span></a>
+</li>
 {% endblock %}
 
 {% block title %}
@@ -85,7 +90,51 @@ TimeSeries
 
 
 
+<!--if session is set to RESET remove the cookies but with timeout to wait for them to initialize-->
+<script>
 
+{%  if session == "RESET" %}
+setTimeout(function(){
+
+var tree = $("#tree").fancytree("getTree");
+       var tree6 = $("#tree6").fancytree("getTree");
+       var tree7 = $("#tree7").fancytree("getTree");
+       var tree3 = $("#tree3").fancytree("getTree");
+       var tree2 = $("#tree2").fancytree("getTree");
+       var tree4 = $("#tree4").fancytree("getTree");
+var tree5 = $("#tree5").fancytree("getTree");
+         tree.clearCookies();
+         tree6.clearCookies();
+         tree7.clearCookies();
+         tree3.clearCookies();
+         tree5.clearCookies();
+         tree2.clearCookies();tree4.clearCookies();
+
+      $("#tree").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree6").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree7").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree3").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree2").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree4").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+       $("#tree5").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+}, 2000);
+{% endif %}
+
+</script>
 
 
 
@@ -118,7 +167,7 @@ TimeSeries
     <script type="text/javascript">
 
 
-
+{% if title %}
 
   // sample data array
   var sample_data = {{graph|safe}}
@@ -134,7 +183,7 @@ TimeSeries
     .draw()             // finally, draw the visualization!
 
 
-
+{% endif %}
 
 
 
@@ -199,70 +248,26 @@ image.onload = function() {
 
          <div class="caption" ALIGN=justify>
     <center>
-    <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
+
         {% if not default %}
+        <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
 <form method="post">{% csrf_token %}
     <input type="hidden" name="raw" value="{{titles}}">
      <input type="hidden" name="raw2" value="{{plot}}">
         <input type="submit" class="btn btn-primary btn-xs" value="Export raw data (CSV)">
     </form>
 {% endif %}
-
+<!--
 <canvas id="canvas2" width="1000" height="1000" style="display:none">   </canvas>
-<body onload="myFunction()"></body>
+
 
 <a id="link" type="button" class="btn btn-primary btn-xs">Export image by right-click (SVG)</a>
+-->
 </center>
 </div></div></div></div>
 {% endif %}
 
-    <script>
-//function for export image
-    var a = "world";
-setTimeout(function(){
-//alert("Hello " + a);
 
-
-
-
-var svg = document.getElementById("viz");
-//get svg element.
-
-
-//get svg source.
-var serializer = new XMLSerializer();
-var source = serializer.serializeToString(svg);
-
-//add name spaces.
-if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)){
-    source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
-}
-if(!source.match(/^<svg[^>]+"http\:\/\/www\.w3\.org\/1999\/xlink"/)){
-    source = source.replace(/^<svg/, '<svg xmlns:xlink="http://www.w3.org/1999/xlink"');
-}
-
-//add xml declaration
-source = '<?xml version="1.0" standalone="no"?>\r\n' + source;
-
-//convert svg source to URI data scheme.
-var url = "data:image/svg+xml;charset=utf-8,"+encodeURIComponent(source);
-
-//set url value to a element's href attribute.
-document.getElementById("link").href = url;
-//you can download svg file by right click menu.
-
-
-
-
-
-//delay time before plot is finally rendered
-}, 3000);
-a = "Stack Overflow";
-
-
-
-
-</script>
 
  {{description|safe}}
 
@@ -327,13 +332,13 @@ a = "Stack Overflow";
 
 <div class="panel-body"  style="background-color:white;font-size: 12px;">
 
-<legend>Decomposition</legend>
+<legend>Decomposition by</legend>
 
 <form class="form-inline" method="post" action="../timeseries/">
     <input type="hidden" name="selectMode" value="{{ userSelectMode }}" >
      {% csrf_token %}
 <fieldset class="inlineLabels">
-    Contribution footprint of consumption split by{{ modeForm }}
+    {{ modeForm }}
 </fieldset>
 <center>
      <button id="reload" class="btn btn-lg btn-primary btn-sm" type="submit">Reload</button></center>
@@ -697,7 +702,7 @@ Select countries for analysis:
 {% endblock %}
 
 {% block belowButtons %}
-{% if session %}
+{%  if session == "session" %}
     <button type="submit" class="btn btn-success btn-sm" value="Send data">Visualize in session</button>
     <input type="hidden" name="session" value="session" >
     <button type="submit" id="noSession2" class="btn btn-warning btn-sm" value="Send data">Visualize & reset session</button>

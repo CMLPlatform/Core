@@ -579,6 +579,7 @@ glyph_opts = {
 //add Post function
 		$("form").submit(function() {
 			// Render hidden <input> elements for active and selected nodes
+
 			$("#tree2").fancytree("getTree").generateFormElements();
 			$("#tree").fancytree("getTree").generateFormElements();
 			$("#tree3").fancytree("getTree").generateFormElements();
@@ -1374,26 +1375,8 @@ $("input[name=search]").keyup(function(e){
 
     $("#counter,#hideExpandedCounter,#highlight").prop("checked", true);
 
-    addSampleButton({
-      label: "Filter active branch",
-      newline: false,
-      code: function(){
-        if( !tree.getRootNode() ) {
-          alert("Please activate a folder.");
-          return;
-        }
-        tree.filterBranches(function(node){
-          return node.isActive();
-        });
-      }
-    });
-    addSampleButton({
-      label: "Reset filter",
-      newline: false,
-      code: function(){
-        tree.clearFilter();
-      }
-    });
+
+
 var tree4 = $("#tree4").fancytree("getTree");
 $("input#search4[name=searchs]").keyup(function(e){
       var n,
@@ -1452,26 +1435,7 @@ $("input#search4[name=searchs]").keyup(function(e){
 
     $("#counter,#hideExpandedCounter,#highlight").prop("checked", true);
 
-    addSampleButton({
-      label: "Filter active branch",
-      newline: false,
-      code: function(){
-        if( !tree4.getRootNode() ) {
-          alert("Please activate a folder.");
-          return;
-        }
-        tree4.filterBranches(function(node){
-          return node.isActive();
-        });
-      }
-    });
-    addSampleButton({
-      label: "Reset filter",
-      newline: false,
-      code: function(){
-        tree4.clearFilter();
-      }
-    });
+
 
 
 

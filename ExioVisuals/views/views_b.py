@@ -22,6 +22,12 @@ import numpy as np
 import h5py
 from CMLMasterProject.settings import PATH_HDF5
 
+#get the latest year (the model should be ordered in order for this to work)
+latest_year = YearF.objects.values_list('name', flat=True)
+latest_year_str = latest_year.reverse()[0]
+latest_year_int = int(latest_year.reverse()[0])
+
+
  #retrieve mandatory context
 def treemap(request):
     #by default mode is :
@@ -37,16 +43,18 @@ def treemap(request):
 
     MemberFormSet = formset_factory(wraps(PostFormEFactor)(partial(PostFormEFactor)))
 
+
+
  #retrieve filter data!
     if request.method == 'POST':
-
+        print("recognized as post")
         #First and foremost try to retrieve any mode (decomposition data)
         mode = (request.POST.get('y'))
         exportRaw = request.POST.get('raw')
         exportRaw2 = request.POST.get('raw2')
         previousMode = request.POST.get('previousMode')
         defaultMode = request.POST.get('previousType')
-        session = request.POST.get('session')
+
 
 
         if exportRaw != None and len(exportRaw) != 0 and exportRaw2 != None and len(exportRaw2) != 0:
@@ -68,7 +76,7 @@ def treemap(request):
                     smart_str(u"Data"),
 
                 ])
-                print("****")
+
 
                 #convert to actual list
                 import ast
@@ -93,14 +101,14 @@ def treemap(request):
 
 
         if mode != None:
-            print("Entering mode:" +mode)
+
             if mode=="selectA":
                 #call all the necessary forms
                 modeFormSet = modes(initial={'selection': 'selectA'})
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consumed product category"
+                title = "Carbon footprint of consumption split by consumed product category"
                 #xdata, ydata = defaultData("PieChart", title, request)
                 description = ""
                 xdata, ydata = defaultData("TreeMap", title, request)
@@ -118,7 +126,7 @@ def treemap(request):
                     if i['title'] == "Total":
                         i['unselectable'] = True
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                 for i in parsed_json:
                     if i['title'] == "Total":
@@ -183,9 +191,9 @@ def treemap(request):
                 default =1
                 treemapData.update({'popup': popup})
                 treemapData.update({'default': default})
-                treemapData.update({'title':"Contribution footprint of consumption split by consumed product category"})
+                treemapData.update({'title':"Carbon footprint of consumption split by consumed product category"})
 
-                treemapData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+                treemapData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
                 return render(request,"ExioVisuals/treemap.html", treemapData)
             if mode=="selectB":
                 #call all the necessary forms
@@ -193,7 +201,7 @@ def treemap(request):
                 #normally we want to load data here that makes sense of the selected mode
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by consuming region"
+                title = "Carbon footprint of consumption split by consuming country"
                 description = ""
                 xdata, ydata = defaultData("TreeMap", title, request)
 
@@ -211,7 +219,7 @@ def treemap(request):
                     if i['title'] == "Total":
                         i['unselectable'] = True
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
 
                 #DEFAULT SELECTION, MAY FAIL IF LEVELS OF DATA are changed (in that case remove these lines)
@@ -244,7 +252,7 @@ def treemap(request):
                         for y in x['children']:
                                     y['selected'] = True
 
-                print(parsed_json)
+
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -276,8 +284,8 @@ def treemap(request):
                 default =1
                 treemapData.update({'popup': popup})
                 treemapData.update({'default': default})
-                treemapData.update({'title':"Contribution footprint of consumption split by consuming region"})
-                treemapData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
+                treemapData.update({'title':"Carbon footprint of consumption split by consuming country"})
+                treemapData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
                 return render(request,"ExioVisuals/treemap.html", treemapData)
             if mode=="selectD":
                 #call all the necessary forms
@@ -285,7 +293,7 @@ def treemap(request):
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by country where impact occurs"
+                title = "Carbon footprint of consumption split by country where emission occurs"
                 description = ""
                 xdata, ydata = defaultData("TreeMap", title, request)
                 sourceData = generateTrees(formTree)
@@ -304,7 +312,7 @@ def treemap(request):
                     if i['title'] == "Total":
                         i['unselectable'] = True
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                 #start selecting some nodes of the tree (some countries)
 
@@ -337,7 +345,7 @@ def treemap(request):
                         for y in x['children']:
                                     y['selected'] = True
 
-                print(parsed_json)
+
                 #print(countryDataReady)
 
                 #parsed_json[0]['selected'] = True
@@ -371,8 +379,8 @@ def treemap(request):
                 default =1
                 treemapData.update({'popup': popup})
                 treemapData.update({'default': default})
-                treemapData.update({'title':"Contribution footprint of consumption split by country where impact occurs"})
-                treemapData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+                treemapData.update({'title':"Carbon footprint of consumption split by country where emission occurs"})
+                treemapData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
                 return render(request,"ExioVisuals/treemap.html", treemapData)
             if mode=="selectC":
                 #call all the necessary forms
@@ -381,7 +389,7 @@ def treemap(request):
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by sector where impact occurs"
+                title = "Carbon footprint of consumption split by sector where emission occurs"
                 description = ""
                 xdata, ydata = defaultData("TreeMap", title, request)
 
@@ -400,7 +408,7 @@ def treemap(request):
                     if i['title'] == "Total":
                         i['unselectable'] = True
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
 
                  #DEFAULT SELECTION, MAY FAIL IF LEVELS OF DATA are changed (in that case remove these lines)
@@ -466,8 +474,8 @@ def treemap(request):
                 default =1
                 treemapData.update({'popup': popup})
                 treemapData.update({'default': default})
-                treemapData.update({'title':"Contribution footprint of consumption split by sector where impact occurs"})
-                treemapData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
+                treemapData.update({'title':"Carbon footprint of consumption split by sector where emission occurs"})
+                treemapData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
                 return render(request,"ExioVisuals/treemap.html", treemapData)
             if mode=="selectF":
 
@@ -477,7 +485,7 @@ def treemap(request):
 
 
                 #set title,description, size
-                title = "Contribution footprint of consumption split by region selling"
+                title = "Carbon footprint of consumption split by country selling"
                 description = ""
                 xdata, ydata = defaultData("TreeMap", title, request)
 
@@ -489,7 +497,7 @@ def treemap(request):
                     if i['title'] == "Total":
                         i['unselectable'] = True
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                 #start selecting some nodes of the tree (some countries)
 
@@ -515,7 +523,7 @@ def treemap(request):
                         i['unselectable'] = True
     
                     for x in i['children']:
-                        if x['title'] == "2011":
+                        if x['title'] == latest_year_str:
                             x['selected'] = True
                         else:
                             x['selected'] = False
@@ -579,7 +587,7 @@ def treemap(request):
                 default =1
                 treemapData.update({'popup': popup})
                 treemapData.update({'default': default})
-                treemapData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+                treemapData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
 
                 return render(request,"ExioVisuals/treemap.html", treemapData)
 
@@ -587,15 +595,16 @@ def treemap(request):
 
         envP = (request.POST.getlist('ft_4[]'))
         envPtitles = []
+        '''
         for x in envP:
             print("Environmental Pressure:")
             print(Substance.objects.get(pk=x))
             print(Substance.objects.values_list('name', flat=True).get(pk=x))
             name = (Substance.objects.values_list('name', flat=True).get(pk=x))
             envPtitles.append(name)
+'''
 
 
-        print(request.POST)
         #as it only allows one year we will fetch one (there is a case that multiple years are selected due to cookies)
         year = (request.POST.get('ft_6[]'))
         #check if year has been filled in properly
@@ -611,8 +620,7 @@ def treemap(request):
             # retrieve the indices for HDf5 query
 
 
-        print("Year selected:")
-        print(year)
+
 
 
         regP = (request.POST.getlist('ft_2[]'))
@@ -621,9 +629,7 @@ def treemap(request):
         regPquery =[]
         regPparents = []
         for x in regP:
-            print("Region of production:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -636,7 +642,7 @@ def treemap(request):
                 regPtitles.append(name[:40])
             else:
                 regPtitles.append(name)
-            regPquery.append(name+"("+str(id)+")")
+            regPquery.append(name)
             regPdata.append(id)
 
 
@@ -649,9 +655,7 @@ def treemap(request):
         secPparents = []
         da = 0
         for x in secP:
-            print("Sector of production:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -664,7 +668,7 @@ def treemap(request):
                 secPtitles.append(name[:40])
             else:
                 secPtitles.append(name)
-            secPquery.append(name+"("+str(id)+")")
+            secPquery.append(name)
             secPdata.append(id)
 
         regRS = (request.POST.getlist('ft_7[]'))
@@ -673,9 +677,7 @@ def treemap(request):
         regRSquery = []
         regRSparents = []
         for x in regRS:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -683,23 +685,21 @@ def treemap(request):
             id = Country.objects.values_list('id', flat=True).get(pk=x)
             #mitigate the offset
             id = id - 1
-            regPparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
+            regRSparents.append(Country.objects.values_list('name', flat=True).get(pk=x))
             if len(name) > 25:
                 regRStitles.append(name[:40])
             else:
                 regRStitles.append(name)
-            regRSquery.append(name+"("+str(id)+")")
+            regRSquery.append(name)
             regRSdata.append(id)
-        print(regRSquery)
+
         secC = (request.POST.getlist('ft_3[]'))
         secCdata = []
         secCtitles = []
         secCquery = []
         secCparents = []
         for x in  secC:
-            print("Sector of consumption:")
-            print(Product.objects.get(pk=x))
-            print(Product.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Product.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -712,7 +712,7 @@ def treemap(request):
                 secCtitles.append(name[:40])
             else:
                 secCtitles.append(name)
-            secCquery.append(name+"("+str(id)+")")
+            secCquery.append(name)
             secCdata.append(id)
 
 
@@ -722,9 +722,7 @@ def treemap(request):
         regCquery = []
         regCparents = []
         for x in regC:
-            print("Region selling:")
-            print(Country.objects.get(pk=x))
-            print(Country.objects.values_list('name', flat=True).get(pk=x))
+
             #local = Product.objects.values_list('local', flat=True).get(pk=x)
             name = Country.objects.values_list('name', flat=True).get(pk=x)
             #lwst_level = Product.objects.values_list('lwst_level', flat=True).get(pk=x)
@@ -737,9 +735,9 @@ def treemap(request):
                 regCtitles.append(name[:40])
             else:
                 regCtitles.append(name)
-            regCquery.append(name+"("+str(id)+")")
+            regCquery.append(name)
             regCdata.append(id)
-        print(regCquery)
+
 
         #remove duplicate selections and preserve order
         def f7(seq):
@@ -751,10 +749,6 @@ def treemap(request):
         selectMode = (request.POST.get('selectMode'))
 
 
-        print("Select mode is: ")
-        print(selectMode)
-        print(secPdata)
-        print(")*(^%%%%%%%%")
 
         #validate input
 
@@ -765,7 +759,7 @@ def treemap(request):
             error_status = {"error":"<Sector of Production> data has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regRSdata:
-            error_status = {"error":"<Region Selling> has not been filled in properly."}
+            error_status = {"error":"<country selling> has not been filled in properly."}
             return render(request, "ExioVisuals/error_page.html", error_status)
         if not regCdata:
             error_status = {"error":"<Region of Consumption> data has not been filled in properly."}
@@ -776,16 +770,10 @@ def treemap(request):
 
 
         #START MAKING PLOT DATA
-        if selectMode == "Contribution footprint of consumption split by country where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by country where emission occurs":
             plotType = "TreeMap"
 
-            if session == None:
-                print("No session")
-                session = None
-            else:
-                #there is a session so we want to do something dynamic with the data send to user
-                print("we are in a session")
-                session = "session"
+
             #QUERY THE DATABASE
             plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regPtitles,request)
 
@@ -809,7 +797,7 @@ def treemap(request):
                 if i['title'] == "Total":
                     i['unselectable'] = True
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
             #start selecting some nodes of the tree (some countries)
 
@@ -842,7 +830,7 @@ def treemap(request):
                     for y in x['children']:
                                 y['selected'] = False
 
-            print(parsed_json)
+
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -855,7 +843,7 @@ def treemap(request):
 
 
          #updata dictionary for filter options: form skeletons
-            treemapData.update({'modeForm':modeFormSet, 'session': session})
+            treemapData.update({'modeForm':modeFormSet})
             treemapData.update({'session': "session"})
             treemapData.update({'sourceData': sourceData })
             treemapData.update({'countryDataReady': countryDataReady})
@@ -868,22 +856,18 @@ def treemap(request):
             treemapData.update({'mode_tree2': 1, 'warning_5':notification,"regionConsumng":countryDataReady2})
             treemapData.update({'mode_tree3': 2, 'warning_7':"","regionProducing":regProducing})
             treemapData.update({'mode_tree6': 1, 'warning_10':notification,"regionSelling":countryDataReady2})
-            treemapData.update({'userSelectMode': "Contribution footprint of consumption split by country where impact occurs"})
+            treemapData.update({'userSelectMode': "Carbon footprint of consumption split by country where emission occurs"})
 
-        if selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+        if selectMode == "Carbon footprint of consumption split by sector where emission occurs":
             plotType = "TreeMap"
+
             #QUERY THE DATABASE
             plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, secPtitles, request)
-            if session == None:
-                print("No session")
-                session = None
-            else:
-                #there is a session so we want to do something dynamic with the data send to user
-                print("we are in a session")
-                session = "session"
+
             table = generateDesc(selectMode,envPtitles,year,regPparents, secPquery, regRSquery, regCparents, secCparents,queryData)
 
             treemapData = treeMp(secPtitles,plotData,selectMode, table)
+
             modeFormSet = modes(initial={'selection': 'selectA'})
             treemapData.update({'modeForm':modeFormSet})
             treemapData.update({'titles': secPtitles})
@@ -903,7 +887,7 @@ def treemap(request):
                 if i['title'] == "Total":
                     i['unselectable'] = True
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
 
              #DEFAULT SELECTION, MAY FAIL IF LEVELS OF DATA are changed (in that case remove these lines)
@@ -967,21 +951,15 @@ def treemap(request):
             #send signal for popup and default data
             popup = 1
             treemapData.update({'popup': popup})
-            treemapData.update({'title':"Contribution footprint of consumption split by sector where impact occurs"})
-            treemapData.update({'userSelectMode': "Contribution footprint of consumption split by sector where impact occurs"})
-        if selectMode == "Contribution footprint of consumption split by consumed product category":
+            treemapData.update({'title':"Carbon footprint of consumption split by sector where emission occurs"})
+            treemapData.update({'userSelectMode': "Carbon footprint of consumption split by sector where emission occurs"})
+        if selectMode == "Carbon footprint of consumption split by consumed product category":
             plotType = "TreeMap"
             #QUERY THE DATABASE
             plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, secCtitles, request)
 
             table = generateDesc(selectMode,envPtitles,year,regPquery, secPquery, regRSquery, regCquery, secCquery, queryData)
-            if session == None:
-                print("No session")
-                session = None
-            else:
-                #there is a session so we want to do something dynamic with the data send to user
-                print("we are in a session")
-                session = "session"
+
             treemapData = treeMp(secCtitles,plotData,selectMode, table)
             modeFormSet = modes(initial={'selection': 'selectA'})
             treemapData.update({'modeForm':modeFormSet})
@@ -1003,7 +981,7 @@ def treemap(request):
                 if i['title'] == "Total":
                     i['unselectable'] = True
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
             for i in parsed_json:
                 if i['title'] == "Total":
@@ -1062,24 +1040,17 @@ def treemap(request):
             treemapData.update({'mode_tree6': 1, 'warning_10':notification,"regionSelling":countryDataReady})
             treemapData.update({'mode_tree7': 1, 'warning_11':notification,'yearDataReady': yearData})
             #treemapData.update({'warning': '<div class="alert alert-warning"><strong><span class="glyphicon glyphicon-alert" aria-hidden="true"></span></strong> Only single selection is possible, because of selected mode.</div>'})
-            treemapData.update({'userSelectMode': "Contribution footprint of consumption split by consumed product category"})
+            treemapData.update({'userSelectMode': "Carbon footprint of consumption split by consumed product category"})
 
-        if selectMode == "Contribution footprint of consumption split by consuming region":
+        if selectMode == "Carbon footprint of consumption split by consuming country":
             plotType = "TreeMap"
 
-            print(regCdata)
-            print(regCtitles)
+
             #QUERY THE DATABASE
             plotData,regCtitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regCtitles, request)
 
             table = generateDesc(selectMode,envPtitles,year,regPquery, secPquery, regRSquery, regCquery, secCquery, queryData)
-            if session == None:
-                print("No session")
-                session = None
-            else:
-                #there is a session so we want to do something dynamic with the data send to user
-                print("we are in a session")
-                session = "session"
+
             treemapData = treeMp(regCtitles,plotData,selectMode, table)
             modeFormSet = modes(initial={'selection': 'selectA'})
             treemapData.update({'modeForm':modeFormSet})
@@ -1098,7 +1069,7 @@ def treemap(request):
                 if i['title'] == "Total":
                     i['unselectable'] = True
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
 
             #DEFAULT SELECTION, MAY FAIL IF LEVELS OF DATA are changed (in that case remove these lines)
@@ -1131,7 +1102,7 @@ def treemap(request):
                     for y in x['children']:
                                 y['selected'] = False
 
-            print(parsed_json)
+
             #print(countryDataReady)
 
             #parsed_json[0]['selected'] = True
@@ -1161,21 +1132,16 @@ def treemap(request):
             #send signal for popup and default data
             popup = 1
             treemapData.update({'popup': popup})
-            treemapData.update({'title':"Contribution footprint of consumption split by consuming region"})
-            treemapData.update({'userSelectMode': "Contribution footprint of consumption split by consuming region"})
-        if selectMode == "Contribution footprint of consumption split by region selling":
+            treemapData.update({'title':"Carbon footprint of consumption split by consuming country"})
+            treemapData.update({'userSelectMode': "Carbon footprint of consumption split by consuming country"})
+        if selectMode == "Carbon footprint of consumption split by country selling":
             plotType = "TreeMap"
+
             #QUERY THE DATABASE
             plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, envP, year, regPdata, secPdata,regRSdata, regCdata,secCdata, regRStitles,request)
 
             table = generateDesc(selectMode,envPtitles,year,regPquery, secPparents, regRSquery, regCparents, secCparents, queryData)
-            if session == None:
-                print("No session")
-                session = None
-            else:
-                #there is a session so we want to do something dynamic with the data send to user
-                print("we are in a session")
-                session = "session"
+
             treemapData = treeMp(regRStitles,plotData,selectMode, table)
             modeFormSet = modes(initial={'selection': 'selectF'})
             treemapData.update({'modeForm':modeFormSet})
@@ -1196,7 +1162,7 @@ def treemap(request):
                     i['unselectable'] = True
 
                 for x in i['children']:
-                    if x['title'] == "2011":
+                    if x['title'] == latest_year_str:
                         x['selected'] = False
                     else:
                         x['selected'] = False
@@ -1261,7 +1227,7 @@ def treemap(request):
 
             treemapData.update({'popup': popup})
 
-            treemapData.update({'userSelectMode': "Contribution footprint of consumption split by region selling"})
+            treemapData.update({'userSelectMode': "Carbon footprint of consumption split by country selling"})
 
 
 
@@ -1281,7 +1247,7 @@ def treemap(request):
     #treemapData.update(bla)
      #updata dictionary for filter options : FancyTree
     treemapData.update({'formTree2': formTree})
-    treemapData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your mode in the navigation bar.</strong></div>' })
+    treemapData.update({'desc': '<div class="alert alert-info"><h2><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></H2><strong><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  Select your dimension in the navigation bar.</strong></div>' })
 
 
     #start getting some form skeletons now!
@@ -1302,6 +1268,18 @@ def treemap(request):
     treemapData.update({'modeForm':modeFormSet})
 
 
+    if request.method != 'POST':
+
+        treemapData.update({'modeForm': modeFormSet, 'session': "RESET"})
+        # load tree with nothing suich that we can reset the cookies and remove any previous selections
+        treemapData.update({'mode_tree7': 2, 'warning_11': "", 'yearDataReady': ["N/A", "N/A"]})
+        treemapData.update({'mode_tree4': 1, 'warning_8': "", "sectorOfProduction": ["N/A", "N/A"]})
+        treemapData.update({'mode_tree': 1, 'warning_6': "", "productPurchased": ["N/A", "N/A"]})
+        treemapData.update({'mode_tree2': 1, 'warning_5': "", "regionConsumng": ["N/A", "N/A"]})
+        treemapData.update({'mode_tree3': 2, 'warning_7': "", "regionProducing": ["N/A", "N/A"]})
+        treemapData.update({'mode_tree6': 1, 'warning_10': "", "regionSelling": ["N/A", "N/A"]})
+
+
     return render(request,"ExioVisuals/treemap.html",  treemapData)
 
 
@@ -1315,17 +1293,17 @@ def generateTrees(treeData):
 #function that generates a description of outputData
 def generateDesc(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles, queryData):
     head = '<div class="container" ><table class="table table-hover" ><thead><tr><th class="col-sm-0.5">Type </th><th class="col-sm-0.5">Query</th></tr></thead>'
-    body = '<tbody><tr><td>Select mode</td><td>{0}</td></tr><tr><td>Environmental pressure</td><td> {1}</td> </tr><tr><td>Year</td><td>{2} </td> </tr><tr><td>Region of production </td><td>{3} </td> </tr><tr><td> Sector of production</td><td>{4} </td> </tr><tr><td>Region selling</td><td>{5} </td> </tr><tr><td>Region of consumption </td><td>{6} </td> </tr><tr><td>Sector of consumption </td><td>{7} </td> </tr><tr><td>Result data </td><td>{8} </td> </tr></tbody></table></div>'.format(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles, list(queryData))
+    body = '<tbody><tr><td>Select mode</td><td>{0}</td></tr><tr hidden><td>Environmental pressure</td><td> {1}</td> </tr><tr><td>Year</td><td>{2} </td> </tr><tr><td>Region of production </td><td>{3} </td> </tr><tr><td> Sector of production</td><td>{4} </td> </tr><tr><td>country selling</td><td>{5} </td> </tr><tr><td>Region of consumption </td><td>{6} </td> </tr><tr><td>Sector of consumption </td><td>{7} </td> </tr></tbody></table></div>'.format(selectMode,envPtitles,year,plotDataTitles, secPtitles, regRStitles, regCtitles, secCtitles)
     table = head + body
     return table
 
 
 def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request):
-    print("query function reached")
+
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regPadjusted = [ int(x) for x in regP ]
@@ -1333,7 +1311,7 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         pack = (sorted(points))
         regPadjusted = [point[0] for point in pack]
         plotDatatitles = [point[1] for point in pack]
-        print(year)
+
         outputData = []
         with h5py.File(PATH_HDF5+'{0}_combined.hdf5'.format(year) ,'r') as hf:
             for x in regC:
@@ -1359,9 +1337,9 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
         return outputData, plotDatatitles, t
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         secPadjusted = [ int(x) for x in secP ]
@@ -1404,9 +1382,9 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
         return outputData, plotDatatitles, t
 
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by consumed product category":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by consumed product category":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
 
@@ -1450,11 +1428,11 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
             return outputData, plotDatatitles, t
     #determine plottype as it affects the query and determine the mode that we are in
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by consuming region":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by consuming country":
         with h5py.File(PATH_HDF5+'{0}_combined.hdf5'.format(year) ,'r')as hf:
         #with h5py.File('/home/sidney/datahdf5/experiments/{0}_combined.hdf5'.format(year) ,'r')as hf:
             outputData = []
-            print("***")
+
 
             #retrieve the data for each region of consumption and append to data variable
             for x in regC:
@@ -1474,9 +1452,9 @@ def queryhdf5(plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plot
 
 
             return outputData, plotDatatitles, t
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by region selling":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by country selling":
         #as it is piechart we only select one year
-        print("Query is: ")
+
         #print("regP"+str(regP[0])+"secP"+str(secP[0])+"regRS"+str(regRS[0])+"regC"+str(regC[0])+"secC"+str(secC[0]))
         #we have the title list and the actual data points , both needs to be sorted for the query to hdf5 according to the data points
         regRSadjusted = [ int(x) for x in regRS ]
@@ -1517,8 +1495,7 @@ def treeMp(vLabel,vData, vTitle, vDescr):
     for x, y in zip(vData, vLabel):
         data.append({"value": x, "name":y })
 
-    print(data)
-    print("did we reach?")
+
     data = {
             'sample_datas' : data,
         'title' : vTitle,
@@ -1529,7 +1506,7 @@ def treeMp(vLabel,vData, vTitle, vDescr):
 
 
 def defaultData(plotType,selectMode, request):
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by consumed product category":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by consumed product category":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
@@ -1566,11 +1543,11 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
+        plotData,secCtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0] ,[0], [1],secCdata2, secCtitlesReady, request)
 
         return secCtitles, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by sector where impact occurs":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by sector where emission occurs":
         #call queryHDF5 function with standard input
         id = Product.objects.values_list('id', flat=True)
 
@@ -1607,11 +1584,11 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
+        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], secPdata2 ,[0], [1],[0], secPtitlesReady, request)
 
         return secPtitles, plotData
     #plotType,selectMode, envP, year, regP, secP,regRS, regC,secC, plotDatatitles, request
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by consuming region":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by consuming country":
         #call queryHDF5 function with standard input
 
 
@@ -1647,10 +1624,10 @@ def defaultData(plotType,selectMode, request):
                 names.append(name)
                 locals.append(local)
 
-        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0] ,[0], locals,[0], regCtitlesReady, request)
+        plotData,secPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0] ,[0], locals,[0], regCtitlesReady, request)
 
         return secPtitles, plotData
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by country where impact occurs":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by country where emission occurs":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
@@ -1687,10 +1664,10 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", 2011, regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
+        plotData,regPtitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, regPdata2, [0],[0], [1],[0], regPtitlesReady, request)
 
         return regPtitles, plotData
-    if plotType == "TreeMap" and selectMode == "Contribution footprint of consumption split by region selling":
+    if plotType == "TreeMap" and selectMode == "Carbon footprint of consumption split by country selling":
         #call queryHDF5 function with standard input
         id = Country.objects.values_list('id', flat=True)
 
@@ -1727,7 +1704,7 @@ def defaultData(plotType,selectMode, request):
                 local = int(local)
                 locals.append(local)
 
-        plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, "", 2011, [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
+        plotData,regRStitles, queryData = queryhdf5(plotType,selectMode, "", latest_year_int, [0], [0],regRSdata2, [1],[0], regRStitlesReady, request)
 
         return regRStitles, plotData
 

@@ -1,12 +1,18 @@
 {% extends 'CMLMasterProject/baseHome.html' %}
 {% block title %}Sign-up for CML members{% endblock %}
 {% block content %}
+
+
 <br>
 <div class="container-fluid">
+<br>
+  <div class="container-fluid" style="background-color: #f8f8f8; max-width:50%">
+      <br>
+      <legend>CML member sign-up</legend>
 <form class="form-horizontal" method="post">{% csrf_token %}
     <fieldset>
 
-        <legend>CML member sign-up</legend>
+<br>
         {% if status %}
         <div class="alert alert-danger" role="alert">{{status}}</div>
         {%endif%}
@@ -32,10 +38,15 @@
             {% endif %}
         {% endfor %}
     </fieldset>
+    <center>
     <div class="form-actions">
-        <button type="submit" class="btn btn-primary" >Submit</button>
+        <button type="submit" class="btn btn-primary btn-md"  >Sign up</button>
     </div>
+        </center>
+    <br>
 </form>
 </div>
+</div>
+
 
 {% endblock %}

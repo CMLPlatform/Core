@@ -73,6 +73,11 @@
 
   <span class="glyphicon glyphicon-leaf" aria-hidden="true" > TreeMap</span></a>
 </li>
+
+
+<li class="active"><a href="../about">
+  <span class="glyphicon glyphicon-info-sign" aria-hidden="true" > About</span></a>
+</li>
 {% endblock %}
 
 {% block title %}
@@ -84,7 +89,49 @@ GeoRegion
 
 
 
+<script>
 
+{%  if session == "RESET" %}
+
+setTimeout(function(){
+console.log("called");
+var tree = $("#tree").fancytree("getTree");
+       var tree6 = $("#tree6").fancytree("getTree");
+       var tree7 = $("#tree7").fancytree("getTree");
+       var tree3 = $("#tree3").fancytree("getTree");
+       var tree2 = $("#tree2").fancytree("getTree");
+       var tree4 = $("#tree4").fancytree("getTree");
+
+         tree.clearCookies();
+         tree6.clearCookies();
+         tree7.clearCookies();
+         tree3.clearCookies();
+         tree2.clearCookies();tree4.clearCookies();
+
+      $("#tree").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree6").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree7").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree3").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree2").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+      $("#tree4").fancytree("getTree").visit(function(node){
+          node.setSelected(false);
+      });
+}, 2000);
+
+
+{% endif %}
+
+</script>
 
 
 
@@ -98,7 +145,8 @@ GeoRegion
       <h3 ALIGN=center>{{title}}</h3>
              {% if  geoData %}
     <center>
-<h5>{{display_message}}</h5>
+        <!--
+<h5>{{display_message}}</h5> -->
                  <p> <p>Plotted in kgCO2eq</center></p>
 {% endif %}{% if not geoData %}{{desc|safe}}{% endif %}
         </p>
@@ -118,18 +166,20 @@ GeoRegion
 
 </center>
 <script>
+{% if  geoData %}
  var sample_data = {{geoData|safe}}
 // instantiate d3plus
   var visualization = d3plus.viz()
     .container("#viz")        // container DIV to hold the visualization
     .data(sample_data)        // data to use with the visualization
-    .coords("http://d3plus.org/topojson/countries.json") // pass topojson coordinates
+    .coords("https://d3plus.org/topojson/countries.json") // pass topojson coordinates
     .type("geo_map")          // visualization type
     .id("country")            // key for which our data is unique on
     .text("name")             // key to use for display text
     .color("value")           // key for coloring countries
     .tooltip("value")         // keys to place in tooltip
     .draw()                   // finally, draw the visualization!
+    {% endif %}
 </script>
 
 <div class="row">
@@ -138,8 +188,9 @@ GeoRegion
 
          <div class="caption" ALIGN=justify>
     <center> {% if  geoData %}
-    <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
         {% if not default %}
+            <h4>Export  <span class="glyphicon glyphicon-export" aria-hidden="true" ></span><br></h4>
+
 <form method="post"> {% csrf_token %}
     <input type="hidden" name="raw" value="{{titles}}">
      <input type="hidden" name="raw2" value="{{plot}}">
@@ -147,14 +198,16 @@ GeoRegion
     </form>
 {% endif %}
 
-
+<!--
 <canvas id="canvas2" width="1000" height="1000" style="display:none">   </canvas>
-<body onload="myFunction()"></body>
 
-<a id="link" type="button" class="btn btn-primary btn-xs">Only display image</a>
+-->
+<!-- <a id="link" type="button" class="btn btn-primary btn-xs">Only display image</a> -->
 </center>
 </div></div></div></div>
 {% endif %}
+
+<!--
     <script>
 //function for export image
     var a = "world";
@@ -195,14 +248,14 @@ document.getElementById("link").href = url;
 
 
 //delay time before plot is finally rendered
-}, 1000);
+}, 0);
 a = "Stack Overflow";
 
 
 
 
 </script>
-
+-->
  {{description|safe}}
 
 
@@ -249,12 +302,12 @@ a = "Stack Overflow";
 
 <div class="panel-body"  style="background-color:white;font-size: 12px;">
 
-<legend>Decomposition</legend>
+<legend>Decomposition by</legend>
 
 <form class="form-inline" method="post" action="../geo/">
      {% csrf_token %}
 <fieldset class="inlineLabels">
-    Contribution footprint of consumption split by{{ modeForm }}
+    {{ modeForm }}
 </fieldset>
 <center>
      <button id="reload" class="btn btn-lg btn-primary btn-sm" type="submit">Reload</button></center>
@@ -573,7 +626,7 @@ Select countries for analysis:
 {% endblock %}
 
 {% block belowButtons %}
-{% if session %}
+{%  if session == "session" %}
     <button type="submit" class="btn btn-success btn-sm" value="Send data">Visualize in session</button>
     <input type="hidden" name="session" value="session" >
     <button type="submit" id="noSession2" class="btn btn-warning btn-sm" value="Send data">Visualize & reset session</button>

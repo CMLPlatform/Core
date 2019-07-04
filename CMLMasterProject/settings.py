@@ -30,9 +30,10 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 #get the static directory for images etc
 STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
-
+STATIC_ROOT = os.path.join(STATIC_PATH, 'collectStaticAssets' )
 STATIC_URL = '/static/'
-
+#onServer for collectstatic
+#STATIC_ROOT = os.path.join(STATIC_PATH, 'collectStaticAssets' )
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
@@ -44,6 +45,7 @@ STATICFILES_DIRS = (
 )
 
 
+#Webpack for REACT (GUI library and more support for JS libraries dependency tracking) purposes
 WEBPACK_LOADER = {
     'DEFAULT': {
         'BUNDLE_DIR_NAME': 'bundles/',
@@ -53,20 +55,34 @@ WEBPACK_LOADER = {
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
+#celery
+CELERY_BROKER_URL = 'amqp://localhost'
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = yamjam()['CMLMasterProject']['django-secret-key']
 AUTHENTICATION_KEY_RESEARCH = yamjam()['CMLMasterProject']['cml-research-key']
 AUTHENTICATION_KEY_STUDENT = yamjam()['CMLMasterProject']['cml-student-key']
+#ON SERVER
+#cfg = yamjam('/home/cml_platform/.yamjam/config.yaml')
+#yam_config = cfg['CMLMasterProject']
+#ON SERVER
+#SECRET_KEY = yam_config['django-secret-key']
+#AUTHENTICATION_KEY_RESEARCH = yam_config['cml-research-key']
+#AUTHENTICATION_KEY_STUDENT = yam_config['cml-student-key']
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 #on server
-#DEBUG = False
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+#DEBUG = yam_config['debug']
+
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '132.229.201.249']
 #on server
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ['*']
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -81,29 +97,28 @@ INSTALLED_APPS = [
 'bootstrapform',
 'CMLMasterProject',
     #wigtail CMS apps
-'wagtail.wagtailforms',
-'wagtail.wagtailredirects',
-'wagtail.wagtailembeds',
-'wagtail.wagtailsites',
-'wagtail.wagtailusers',
-'wagtail.wagtailsnippets',
-'wagtail.wagtaildocs',
-'wagtail.wagtailimages',
-'wagtail.wagtailsearch',
-'wagtail.wagtailadmin',
-'wagtail.wagtailcore',
+'wagtail.contrib.forms',
+'wagtail.contrib.redirects',
+'wagtail.embeds',
+'wagtail.sites',
+'wagtail.users',
+'wagtail.snippets',
+'wagtail.documents',
+'wagtail.images',
+'wagtail.search',
+'wagtail.admin',
+'wagtail.core',
+
 
 'modelcluster',
 'taggit',
     'CMS',
 "wagtail.contrib.table_block",
     'MicroVis',
-    'books',
 'widget_tweaks',
     'rest_framework',
     'snippets.apps.SnippetsConfig',
-    'webpack_loader',
-    'ramascene'
+    'webpack_loader'
 
 ]
 
@@ -116,8 +131,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     #wigtail CMS
-'wagtail.wagtailcore.middleware.SiteMiddleware',
-'wagtail.wagtailredirects.middleware.RedirectMiddleware',
+'wagtail.core.middleware.SiteMiddleware',
+'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 
 ]
 
@@ -151,8 +166,15 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, yamjam()['CMLMasterProject']['database']['name']),
     }
 }
-
-
+#ONSERVER
+'''
+DATABASES = {
+    'default': {
+        'ENGINE': yam_config['database']['engine'],
+        'NAME': os.path.join(BASE_DIR, yam_config['database']['name']),
+    }
+}
+'''
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -208,7 +230,7 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = '/media/'
 #for server!!
-#MEDIA_URL = '/platform/media/'
+#MEDIA_URL = '/Core/media/'  -> THIS MIGHT NOT BE NEEDED ANYMORE SO USE /media/ DIRECTLY
 #exiovisuals
 PATH_HDF5 = "/home/sidney/exiovis_db_original/exiovis/"
 #temp on server
@@ -217,6 +239,6 @@ PATH_HDF5 = "/home/sidney/exiovis_db_original/exiovis/"
 #login -> redirect to home
 LOGIN_REDIRECT_URL = '/'
 #for server !!
-#LOGIN_REDIRECT_URL = '/platform/'
+#LOGIN_REDIRECT_URL = '/platform/' -> THIS MIGHT NOT BE NEEDED ANYMORE SO USE '/' DIRECTLY
 #wagtail site name of dashboard admin
 WAGTAIL_SITE_NAME = 'CML\'s'

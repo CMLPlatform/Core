@@ -10,11 +10,10 @@ from django.contrib.auth.models import Group
 def homePage(request):
     context_dict = {}
     username = None
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         username = request.user.username
         #special for cml researcher to get info to be used later
         context_dict.update({'username': username})
-
 
     #return render_to_response('/IEMasterProject/HomePage.html', context_dict, context)
     return render(request,'CMLMasterProject/HomePage.html', context_dict)
@@ -22,11 +21,20 @@ def homePage(request):
 def exploratory(request):
     context_dict = {}
     username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+    return render(request, 'CMLMasterProject/explore.html', context_dict)
+
+def about(request):
+    context_dict = {}
+    username = None
     if request.user.is_authenticated():
         username = request.user.username
         #special for cml researcher to get info to be used later
         context_dict.update({'username': username})
-    return render(request, 'CMLMasterProject/visuals.html', context_dict)
+    return render(request, 'CMLMasterProject/about.html', context_dict)
 
 #default signup method for decisionmakers and companies
 def signup(request):

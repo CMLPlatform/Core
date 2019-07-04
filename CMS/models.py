@@ -1,17 +1,17 @@
 from __future__ import unicode_literals
 from django.db import models
-from wagtail.wagtailcore.models import Page, Orderable
-from wagtail.wagtailcore.fields import RichTextField
-from wagtail.wagtailadmin.edit_handlers import FieldPanel
-from wagtail.wagtailsearch import index
+from wagtail.core.models import Page, Orderable
+from wagtail.core.fields import RichTextField
+from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.search import index
 from django.contrib.auth.models import User
 from modelcluster.fields import ParentalKey
-from wagtail.wagtailadmin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel,StreamFieldPanel
+from wagtail.admin.edit_handlers import FieldPanel, InlinePanel, MultiFieldPanel,StreamFieldPanel
 from taggit.models import TaggedItemBase
-from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
+from wagtail.images.edit_handlers import ImageChooserPanel
 from modelcluster.tags import ClusterTaggableManager
 from wagtail.contrib.table_block.blocks import TableBlock
-from wagtail.wagtailcore.fields import StreamField
+from wagtail.core.fields import StreamField
 class HomePage(Page):
     #set a custom context for the usage as template tags in the html
     def get_context(self, request):
@@ -165,5 +165,4 @@ class ToolsDbsPage(Page):
     content_panels = Page.content_panels + [
         StreamFieldPanel('content')
     ]
-
 

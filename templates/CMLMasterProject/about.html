@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% extends 'CMLMasterProject/baseHome.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+{% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+       <ul class="nav navbar-nav">
+                <li ><a href="../">Home</a></li>
+
+
+                <li><a href="./">Model</a></li>
+                <li><a href="../exploratory">Explore</a></li>
+                 <li><a href="../research/tools-index">Links</a></li>
+                <li><a href="../research">Projects</a></li>
+<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+                 <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://cmlworld.slack.com/">Slack</a></li>
+            <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
+              <li><a href="./">Contact</a></li>
+          </ul>
+        </li>
+
+
+            </ul>
+
+
+{% endblock %}
+
+{% block speciality %}
+
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container-fluid col-md-4">
+<h3 style="color:#428bca;">What is CORE? </h3>
+The CML platform was developed for scientific communication purposes and the development of several web-based ICT tools (apps).
+It is developed in such a way that these tools are modular while serving their own content. This helps in software development,
+    as the platform provides simple features to integrate complete web-apps.
+ Apps can be stored under their own domain and cloud, once an app is "production ready". CORE is developed with the Django web framework.
+<br>
+    In relation to scientific communication purposes we showcase project developments and an app called "MicroVis" which are sets of interactive
+    visualisations in order to communicate scientific results.
+</div>
+<hr>
+
+
+<div class="container-fluid col-md-4">
+<h3>Team communication & Support </h3>
+All support is done through our Slack channel,
+<a href="https://cmlworld.slack.com">Click here</a>. This is also used as a means of communication
+for CML developers.
+</div>
+
+<div class="container-fluid col-md-4">
+<h3>Software repository </h3>
+    Some software libraries and complete applications are shared on our GitHub, <a href="https://github.com/CMLPlatform/">Click here</a>
+    </div>
+<div class="container-fluid col-md-4">
+<h3>Software Developers </h3>
+    1) Sidney Niccolson, s.i.niccolson@cml.leidenuniv.nl    </div>
+<div class="container-fluid col-md-4">
+<h3>Contact</h3>
+    <b>postal address 	CML: </b> <br>
+Leiden University<br>
+P.O.Box 9518<br>
+2300 RA Leiden<br>
+The Netherlands<br>
+
+    <b>phone:</b> 	+31 (0)71 527 7461 / 5615<br>
+
+    <b>fax:</b> 	+31 (0)71 527 7434<br>
+
+    <b>email :</b>	secretariaat@cml.leidenuniv.nl<br>
+
+    <b>visiting address:</b>   <br> 	Van Steenisgebouw<br>
+Einsteinweg 2<br>
+2333 CC Leiden<br>
+The Netherlands<br>
+<br>
+
+    </div>
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}<b>Developers:</b>
+<br>
