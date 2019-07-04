@@ -1,0 +1,3 @@
+#(ignore sqlite)
+db.sqlite3
+
