@@ -1,7 +1,7 @@
 # Core
-The CML Django-based platform including all development applications. 
-The idea for a platform to visualize, share IE/CML-wide data emerged some years ago and a large proportion of the current code-base dates back to 2017.
-Thus bare in mind that many of the "Django apps" are outdated prototype codebases. In view of further potential development parts are currently being updated.
+The CML Django-based platform includes development & showcase applications. 
+The initial idea for this platform is to visualize, share IE/CML-wide data. This vision emerged some years ago and a large proportion of the current code-base dates back to 2017.
+Thus bare in mind that many of the "Django apps" are outdated prototype code bases. In view of potential further development parts are currently being updated.
 
 # Overview of apps and folders
 * CMLMasterProject: the core of the platform.
