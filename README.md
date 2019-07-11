@@ -7,6 +7,7 @@ Thus bare in mind that some of the "Django apps" are outdated prototype code bas
 * CMLMasterProject: the core of the platform.
 * CMS (app - Unused): A Wagtail content management system for databases and project overviews. It can potentially also include a blog.
 * PUMA (app): An app visualizing material resources embedded in objects in Amsterdam.
+* ExioVisuals (app - Deprecated): Visualises ExioBase data. This tool has been surpassed by the development of Rama-Scene see: https://www.ramascene.eu/. If you still wish to launch ExioVisuals, see the branch "last-exiovisuals-support".
 * MicroVis: (app): An application to showcase interactive visuals related to small project results.
 * data:  all data used for MicroVis.
 * static, templates: general Django folders.
@@ -18,7 +19,7 @@ on port 8080 deployed with Nginx (via supervisord). CircuMat is based on Rama-sc
 # Getting started
 Pull the repository to your local computer.
 ```
-$ git clone https://github.com/Polariks/polariks_proto_ndvi.git
+$ git clone https://github.com/CMLPlatform/Core.git
 ```
 Install requirement.txt in a Python3.x virtual environment:
 ```
@@ -33,8 +34,6 @@ Run the development server:
 ```
 $ python manage.py runserver
 ```
-
-
 
 
 # Starting MicroVis and PUMA 
