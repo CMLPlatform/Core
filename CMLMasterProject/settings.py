@@ -85,7 +85,6 @@ INSTALLED_APPS = [
     'PUMA',
     'leaflet',
     'djgeojson',
-    'ExioVisuals',
 'bootstrapform',
 'CMLMasterProject',
     #wigtail CMS apps
@@ -213,12 +212,6 @@ MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media')
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
 MEDIA_URL = '/media/'
-#for server!!
-#MEDIA_URL = '/Core/media/'  -> THIS MIGHT NOT BE NEEDED ANYMORE SO USE /media/ DIRECTLY
-#exiovisuals
-PATH_HDF5 = "<mypathtoHDF5>"
-#temp on server
-#PATH_HDF5 = "/home/exiovisuals_user/datahdf5/exiovis/"
 
 #login -> redirect to home
 LOGIN_REDIRECT_URL = '/'

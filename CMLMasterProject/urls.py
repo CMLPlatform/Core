@@ -37,7 +37,6 @@ urlpatterns = [
         'document_root': settings.MEDIA_ROOT,
     }),
 url(r'^research/microvis/', include('MicroVis.urls')),
-    url(r'^exiovisuals/', include('ExioVisuals.urls')),
     url(r'^sign-up/$', views.signup, name='signup'),
     url(r'^cml-sign-up/$', views.cml_signup, name='signup'),
     url(r'^cms-admin/', include(wagtailadmin_urls)),
