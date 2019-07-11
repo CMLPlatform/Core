@@ -60,16 +60,10 @@ CELERY_BROKER_URL = 'amqp://localhost'
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = yamjam()['CMLMasterProject']['django-secret-key']
-AUTHENTICATION_KEY_RESEARCH = yamjam()['CMLMasterProject']['cml-research-key']
-AUTHENTICATION_KEY_STUDENT = yamjam()['CMLMasterProject']['cml-student-key']
-#ON SERVER
-#cfg = yamjam('/home/cml_platform/.yamjam/config.yaml')
-#yam_config = cfg['CMLMasterProject']
-#ON SERVER
-#SECRET_KEY = yam_config['django-secret-key']
-#AUTHENTICATION_KEY_RESEARCH = yam_config['cml-research-key']
-#AUTHENTICATION_KEY_STUDENT = yam_config['cml-student-key']
+SECRET_KEY = 'my_secret'
+AUTHENTICATION_KEY_RESEARCH = 'my_authentication_key'
+AUTHENTICATION_KEY_STUDENT = 'my_authentication_key'
+
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -78,9 +72,7 @@ DEBUG = True
 #DEBUG = yam_config['debug']
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '132.229.201.249']
-#on server
-#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -102,7 +94,7 @@ INSTALLED_APPS = [
 'wagtail.embeds',
 'wagtail.sites',
 'wagtail.users',
-'wagtail.snippets',
+#'wagtail.snippets',
 'wagtail.documents',
 'wagtail.images',
 'wagtail.search',
@@ -117,7 +109,7 @@ INSTALLED_APPS = [
     'MicroVis',
 'widget_tweaks',
     'rest_framework',
-    'snippets.apps.SnippetsConfig',
+# 'snippets.apps.SnippetsConfig',
     'webpack_loader'
 
 ]
@@ -162,19 +154,11 @@ WSGI_APPLICATION = 'CMLMasterProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': yamjam()['CMLMasterProject']['database']['engine'],
-        'NAME': os.path.join(BASE_DIR, yamjam()['CMLMasterProject']['database']['name']),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-#ONSERVER
-'''
-DATABASES = {
-    'default': {
-        'ENGINE': yam_config['database']['engine'],
-        'NAME': os.path.join(BASE_DIR, yam_config['database']['name']),
-    }
-}
-'''
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
@@ -232,7 +216,7 @@ MEDIA_URL = '/media/'
 #for server!!
 #MEDIA_URL = '/Core/media/'  -> THIS MIGHT NOT BE NEEDED ANYMORE SO USE /media/ DIRECTLY
 #exiovisuals
-PATH_HDF5 = "/home/sidney/exiovis_db_original/exiovis/"
+PATH_HDF5 = "<mypathtoHDF5>"
 #temp on server
 #PATH_HDF5 = "/home/exiovisuals_user/datahdf5/exiovis/"
 

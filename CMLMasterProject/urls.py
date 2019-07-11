@@ -29,9 +29,9 @@ urlpatterns = [
     url(r'^logout/$', auth_views.LogoutView, {'next_page': '/'}, name='logout'),
     url(r'^admin/', admin.site.urls),
     url(r'^exploratory/', views.exploratory, name='exploratory'),
-    url(r'^', include('snippets.urls')),
-    url(r'^', include('ramascene.urls')),
-
+    # url(r'^', include('snippets.urls')),
+    # url(r'^', include('ramascene.urls')),
+    url(r'^about/', views.about, name='about'),
     url(r'^puma/', include('PUMA.urls')),
     url(r'^media/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT,
@@ -42,5 +42,5 @@ url(r'^research/microvis/', include('MicroVis.urls')),
     url(r'^cml-sign-up/$', views.cml_signup, name='signup'),
     url(r'^cms-admin/', include(wagtailadmin_urls)),
     url(r'^documents/', include(wagtaildocs_urls)),
-    url(r'^research/', include(wagtail_urls)),
+    # url(r'^research/', include(wagtail_urls)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

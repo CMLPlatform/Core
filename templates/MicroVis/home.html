@@ -1,123 +1,172 @@
-{% extends 'MicroVis/base.html' %}
-
-{% load static %}
-
-
- {% block speciality %}
+{% extends 'MicroVis/base.html' %} {% load static %} {% block speciality %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/styleVis.css' %}"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
-  <script>
-        function deselect(e) {
-  $('.pop').slideFadeToggle(function() {
-    e.removeClass('selected');
-  });
-}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous"> {% endblock %} {% block navibar %}
+<!-- Collect the nav links, forms, and other content for toggling -->
+<ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
 
-$(function() {
-  $('#contact').on('click', function() {
-    if($(this).hasClass('selected')) {
-      deselect($(this));
-    } else {
-      $(this).addClass('selected');
-      $('.pop').slideFadeToggle();
+    <li><a href="/exploratory">Explore</a></li>
+    <li class="active"><a href="#">MicroVis</a></li>
+    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="https://cmlworld.slack.com/">Slack</a></li>
+            <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
+            <li><a href="/about">Contact</a></li>
+        </ul>
+    </li>
+
+</ul>
+{% endblock %} {% block script %}
+<script>
+    function deselect(e) {
+        $('.pop').slideFadeToggle(function() {
+            e.removeClass('selected');
+        });
     }
-    return false;
-  });
 
-  $('.close').on('click', function() {
-    deselect($('#contact'));
-    return false;
-  });
-});
+    $(function() {
+        $('#contact').on('click', function() {
+            if ($(this).hasClass('selected')) {
+                deselect($(this));
+            } else {
+                $(this).addClass('selected');
+                $('.pop').slideFadeToggle();
+            }
+            return false;
+        });
 
-$.fn.slideFadeToggle = function(easing, callback) {
-  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
-};
-    </script>
-    {% endblock %}
+        $('.close').on('click', function() {
+            deselect($('#contact'));
+            return false;
+        });
+    });
 
+    $.fn.slideFadeToggle = function(easing, callback) {
+        return this.animate({
+            opacity: 'toggle',
+            height: 'toggle'
+        }, 'fast', easing, callback);
+    };
+</script>
+{% endblock %} {% block content %}
 
-{% block content %}
-<br><br><br>
-<div class="container-fluid" style="left-margin:0px;">
-<div class="messagepop pop" >
+<div class="container bg-overlay3">
 
-<h4 style="color:#428bca;">Interactive Visualisations - MicroVis</h4>
-    <p>Sets of different interactive visualisation developed at CML</p>
-    <p>Click on any image to view the interactive visualisation</p>
+    <div class="container-fluid" style="left-margin:0px;">
+        <div class="messagepop pop">
 
-    <a class="close" href="/">Cancel</a></p>
+            <h4 style="color:#428bca;">Interactive Visualisations - MicroVis</h4>
+            <p>Sets of different interactive visualisation developed at CML</p>
+
+            <a class="close" href="/">Cancel</a></p>
+
+        </div>
+        <a href="/contact" id="contact">CML IV &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
+
+    </div>
+    <br>
+    <div class="container-fluid">
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-xs-12 col-md-4 ">
+                    <div class="list-group">
+
+                        <a href="fishman" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
+
+                            <h3 ALIGN=center>MFA</h3>
+                            <p ALIGN=center>Material stock and flows (US and Japan)</p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-md-4 ">
+
+                    <div class="list-group">
+                        <a href="fishman2" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
+
+                            <h3 ALIGN=center>MFA</h3>
+                            <p ALIGN=center>Material stock (US)</p>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 ">
+
+                    <div class="list-group">
+                        <a href="tailing" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
+
+                            <h3 ALIGN=center>GIS IV</h3>
+                            <p ALIGN=center>Tailing dam failures</p>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 </div>
-<a href="/contact" id="contact">CML IV &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
-
-</div>
-<br>
-
-<div class="container-fluid">
-
-
-<table class="table table-striped">
-
-
-
-<tbody>
-
-<tr class="listview">
-    <legend>Material flows</legend>
-
-<td>
-<a href="fishman" title="">
-<img src="{% static 'images/usflow.jpg' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-    <td>
-<a href="fishman2" title="">
-<img src="{% static 'images/fishman2.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-
-
-
-
-     </tr>
-</tbody>
-</table>
-    <table class="table table-striped">
-        <tbody>
-<tr class="listview">
-    <legend>GIS IV's</legend>
-    <td>
-<a href="tailing" title="">
-<img src="{% static 'images/tailing.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-</tr>
+{% endblock %} {% block footer %}
 <!--
+<div class="footer" style="background-color:#3e3e3e;">
+<!--footer start from here-->
+<footer>
+    <div class="container">
+        <div class="row">
 
-    <td>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
 
-<a href="xy" title="">
+                    <li><a href="/exploratory"> Explore</a></li>
+                    <li><a href="#">MicroVis</a></li>
+                    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> Wiki</a></li>
+                    <li><a href="/about"> Contact</a></li>
 
-<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-<td>
-<a href="xy" title="">
-<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-<td>
-<a href="xy" title="">
-<img src="{% static 'images/outlfows.png' %}" class="img-responsive voc_list_preview_img" alt="" title=""></a>
-</td>
-</tr>
--->
-</tbody>
+                </ul>
+            </div>
+            <!--
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">LATEST POST</h6>
+        <div class="post">
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+        </div>
+      </div>
+      -->
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+                <blockquote cite="https://cmlworld.slack.com/"><a href="https://cmlworld.slack.com/">Slack</a></blockquote>
 
-</table>
+            </div>
 
+        </div>
+    </div>
+</footer>
 
+<!--footer start from here-->
 
+<div class="copyright">
+    <div class="container">
+        <center>
+            <i>The clients and developers of the CML platform (CORE) are not responsible for any incorrect or incomplete data (about measurements, standards, visualizations etc.) or information on this website.© 2019 - All Rights with CML </i> </center>
 
+    </div>
 </div>
 
-    {% endblock %}
+{% endblock %}

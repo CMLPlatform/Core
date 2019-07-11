@@ -30,7 +30,7 @@ def exploratory(request):
 def about(request):
     context_dict = {}
     username = None
-    if request.user.is_authenticated():
+    if request.user.is_authenticated:
         username = request.user.username
         #special for cml researcher to get info to be used later
         context_dict.update({'username': username})

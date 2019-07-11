@@ -1,136 +1,170 @@
-<!DOCTYPE html>
-{% extends 'CMLMasterProject/baseHome.html' %}
-{% load static %}
-
-{% block title %}Exploratory Tools{% endblock %}
-{% block navibar %}
+<!DOCTYPE html> {% extends 'CMLMasterProject/baseHome.html' %} {% load static %} {% block title %}Exploratory Tools{% endblock %} {% block navibar %}
 <!-- Collect the nav links, forms, and other content for toggling -->
-         <ul class="nav navbar-nav">
-                <li ><a href="/">Home</a></li>
+<ul class="nav navbar-nav">
+    <li><a href="/">Home</a></li>
 
-
-                <li><a href="./">Model</a></li>
-                <li class="active"><a href="./">Explore</a></li>
-                 <li><a href="../research/tools-index/">Links</a></li>
-                <li><a href="../research">Projects</a></li>
-<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
-                 <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+    <li class="active"><a href="./">Explore</a></li>
+    <li><a href="../research/microvis">MicroVis</a></li>
+    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
             <li><a href="https://cmlworld.slack.com/">Slack</a></li>
             <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
-              <li><a href="../about">Contact</a></li>
-          </ul>
-        </li>
+            <li><a href="../about">Contact</a></li>
+        </ul>
+    </li>
 
+</ul>
 
-            </ul>
-
-
-
-{% endblock %}
-
-{% block speciality %}
+{% endblock %} {% block speciality %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-
-<link rel="stylesheet" type="text/css" href="{% static 'css/styleVis.css' %}"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
-  <script>
-        function deselect(e) {
-  $('.pop').slideFadeToggle(function() {
-    e.removeClass('selected');
-  });
-}
-
-$(function() {
-  $('#contact').on('click', function() {
-    if($(this).hasClass('selected')) {
-      deselect($(this));
-    } else {
-      $(this).addClass('selected');
-      $('.pop').slideFadeToggle();
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" crossorigin="anonymous">
+<script>
+    function deselect(e) {
+        $('.pop').slideFadeToggle(function() {
+            e.removeClass('selected');
+        });
     }
-    return false;
-  });
 
-  $('.close').on('click', function() {
-    deselect($('#contact'));
-    return false;
-  });
-});
+    $(function() {
+        $('#contact').on('click', function() {
+            if ($(this).hasClass('selected')) {
+                deselect($(this));
+            } else {
+                $(this).addClass('selected');
+                $('.pop').slideFadeToggle();
+            }
+            return false;
+        });
 
-$.fn.slideFadeToggle = function(easing, callback) {
-  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
-};
-    </script>
-{% endblock %}
+        $('.close').on('click', function() {
+            deselect($('#contact'));
+            return false;
+        });
+    });
 
-{% block content %}
-<br><br><br>
-<div class="container-fluid" style="left-margin:0px;">
-<div class="messagepop pop" >
+    $.fn.slideFadeToggle = function(easing, callback) {
+        return this.animate({
+            opacity: 'toggle',
+            height: 'toggle'
+        }, 'fast', easing, callback);
+    };
+</script>
+{% endblock %} {% block content %}
+<div class="container bg-overlay4">
 
+    <div class="container-fluid" style="left-margin:0px;">
+        <div class="messagepop pop">
 
-    <h4 style="color:#428bca;"><b>Visual Projects</b></h4> <p>"Within CML there are several initiatives that require certain
-    sets of interactive visualisations.</p> <p> A set of dedicated pages and/or tools are developed per research project below."</p>
+            <h4 style="color:#428bca;"><b>Visual Projects</b></h4>
+            <p>"Within CML there are several initiatives that require certain sets of interactive visualisations.</p>
+            <p> A set of dedicated pages and/or tools are developed per research project below."</p>
 
+            <a class="close" href="/">Cancel</a></p>
 
-    <a class="close" href="/">Cancel</a></p>
-
-</div>
-<a href="/contact" id="contact">Explore datasets &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
-
-</div>
-    <br>
-
-<div class="container-fluid">
-
-    <div class="row" >
-
-    <div class="col-xs-12 col-md-4 col-lg-offset-2">
-        <div class="list-group" >
-
-  <a href="../exiovisuals" class="list-group-item " >
-<hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
-
-
-
-   <h3 ALIGN=center>ExioVisuals</h3>
-            <p ALIGN=center>ExioVisuals is an effort to visualize complex Input-Output Analysis results from the Exio database.</p>
-
-  </a>
-</div>
-
+        </div>
+        <a href="/contact" id="contact">Explore datasets &nbsp<span class="glyphicon glyphicon-info-sign" aria-hidden="true" ></span></a>
 
     </div>
-    <div class="col-xs-12 col-md-4 ">
+    <br>
 
+    <div class="container-fluid">
+        <div class="container-fluid">
 
+            <div class="row">
 
+                <div class="col-xs-12 col-md-4 ">
+                    <div class="list-group">
 
+                        <a href="../exiovisuals" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
 
-<div class="list-group" >
-  <a href="../puma" class="list-group-item ">
-<hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
+                            <h3 ALIGN=center>ExioVisuals</h3>
+                            <p ALIGN=center>ExioVisuals is an effort to visualize complex Input-Output Analysis results from the Exio database.</p>
 
+                        </a>
+                    </div>
 
+                </div>
+                <div class="col-xs-12 col-md-4 ">
 
-        <h3 ALIGN=center>The PUMA project</h3>
-        <p ALIGN=center>The PUMA project aims to quantify metals in Amsterdam and visualize them through an interactive map.</p>
+                    <div class="list-group">
+                        <a href="../puma" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
 
-  </a>
+                            <h3 ALIGN=center>The PUMA project</h3>
+                            <p ALIGN=center>The PUMA project aims to quantify metals in Amsterdam and visualize them through an interactive map.</p>
 
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-md-4 ">
+
+                    <div class="list-group">
+                        <a href="https://www.ramascene.eu/" class="list-group-item ">
+                            <hr style="height:7px;border:none;color:#428bca;background-color:#428bca;width:100%;" />
+
+                            <h3 ALIGN=center>RaMa-SCENE</h3>
+                            <p ALIGN=center>Raw MAterials SCENario Efficiency improvement assessment tool and blended learning package.</p>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
+
+{% endblock %} {% block footer %}
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
+
+                    <li><a href="#"> Explore</a></li>
+                    <li><a href="../research/microvis/">MicroVis</a></li>
+                    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> Wiki</a></li>
+                    <li><a href="../about"> Contact</a></li>
+
+                </ul>
+            </div>
+            <!--
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">LATEST POST</h6>
+        <div class="post">
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+          <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+        </div>
+      </div>
+      -->
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+                <blockquote cite="https://cmlworld.slack.com/"><a href="https://cmlworld.slack.com/">Slack</a></blockquote>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!--footer start from here-->
+
+<div class="copyright">
+    <div class="container">
+        <center>
+            <i>The clients and developers of the CML platform (CORE) are not responsible for any incorrect or incomplete data (about measurements, standards, visualizations etc.) or information on this website.© 2019 - All Rights with CML </i> </center>
+
+    </div>
 </div>
-
-
-  </div>
-</div>
-
-<hr>
-{% endblock %}
-
-{% block footer %}
 
 {% endblock %}

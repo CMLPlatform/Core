@@ -1,158 +1,80 @@
-<!doctype html>
-{% extends 'CMLMasterProject/baseHome.html' %}
-{% load static %}
-
-{% block title %}Home{% endblock %}
-{% block navibar %}
+<!doctype html> {% extends 'CMLMasterProject/baseHome.html' %} {% load static %} {% block title %}Home{% endblock %} {% block navibar %}
 <!-- Collect the nav links, forms, and other content for toggling -->
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="./">Home</a></li>
-
-
-                <li><a href="./">Model</a></li>
-                <li><a href="exploratory">Explore</a></li>
-                 <li><a href="research/tools-index/">Links</a></li>
-                <li><a href="research">Projects</a></li>
-<li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
-                 <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+<ul class="nav navbar-nav">
+    <li class="active"><a href="./">Home</a></li>
+    <li><a href="exploratory">Explore</a></li>
+    <li><a href="research/microvis">MicroVis</a></li>
+    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php">Wiki</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
             <li><a href="https://cmlworld.slack.com/">Slack</a></li>
             <li><a href="https://github.com/CMLPlatform/">GitHub</a></li>
-              <li><a href="about">Contact</a></li>
-          </ul>
-        </li>
+            <li><a href="about">Contact</a></li>
+        </ul>
+    </li>
 
+</ul>
 
-            </ul>
-
-
-{% endblock %}
-
-
-{% block content %}
-<br>
-        <div class="alert alert-info" role="alert"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span>&nbsp Core (CML platform) is under development.</div>
-<br>
-{% if messages %}
+{% endblock %} {% block content %} {% if messages %}
 <div class="container-fluid">
     <ul class="messages">
         {% for message in messages %}
-            <a {% if message.tags %} class="{{ message.tags }}"{% endif %}><div class="alert alert-success" role="alert">{{message}}</div></a>
+        <a {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+            <div class="alert alert-success" role="alert">{{message}}</div>
+        </a>
         {% endfor %}
     </ul>
-  </div>
+</div>
 {% endif %}
 <!--
         <div class="alert alert-success" role="alert">{{status}}</div>
  -->
-<br>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" >
-    <div class="item active" >
-        <center>
-      <img src="{% static 'images/quality2.svg' %}" alt="Researchers"></center>
-        <br><br><br><br><br><br><br><br><br>
-      <div class="carousel-caption">
-        <h3 style="color: #3e3e3e;">CML Researchers</h3>
-        <p style="color: #3e3e3e;">As a researcher or student visualize and analyze various datasets</p>
-          <a class="btn btn-primary" href="cml-sign-up" role="button">SIGN UP</a>
+<div class="container bg-overlay">
+    <div class="row ">
 
-      </div>
+        <h1>CORE</h1>
+        <br>
+        <h4>A CML web-app staging & showcase collection</h4>
+        <br>
+        <br>
+
+        <div class="col-sm-4">
+            <h3><b><span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#428bca;">  Explore</span></b></h3> Explore various Industrial Ecology datasets such as EXIOBASE
+            <br>
+            <br>
+            <a href="exploratory" type="button" class="btn btn-success btn-lg">Get Started </a> </div>
+
+        <div class="col-sm-4">
+            <h3><b><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="color:#428bca;">  MicroVis</span></b></h3>Interactive visuals related to project results
+            <br>
+            <br>
+            <a href="research/microvis" type="button" class="btn btn-success btn-lg">Learn More </a> </div>
+
     </div>
-
-    <div class="item">
-         <center>
-      <img src="{% static 'images/decision-making2.svg' %}" alt="Decision-makers"></center>
-        <br><br><br><br><br><br><br><br><br>
-      <div class="carousel-caption" >
-        <h3 style="color: #3e3e3e;">Decision-makers & companies</h3>
-        <p style="color: #3e3e3e;">As a company or decision-maker analyze critical materials</p>
-         <a class="btn btn-primary" href="sign-up" role="button">SIGN UP</a>
-      </div>
-    </div>
-
-
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<hr>
-<div class="container-fluid">
-<div class="container-fluid">
-
- <div class="row">
-          <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-wrench" style="color:#428bca;" aria-hidden="true">  Model</span></b></h3>Advanced analytical tools that allow for scenario modeling <br> [Under construction]</div>
-
-     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#428bca;">  Explore</span></b></h3> Explore various Industrial Ecology datasets such as EXIOBASE  </div>
-     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-globe" aria-hidden="true" style="color:#428bca;"> Links </span></b></h3> Assess recent project developments outside of CML in terms of tooling  </div>
 </div>
 
-</div>
-<br>
-
-<div class="container-fluid">
-
- <div class="row">
-     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-blackboard" aria-hidden="true" style="color:#428bca;">  Projects</span></b></h3>Follow CML project developments</div>
-     <div class="col-sm-4" ><h3><b><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="color:#428bca;"> Wiki</span></b></h3> For more information about the CML institute refer to our CML Wiki <br> [Only accessible by CML affiliates]  </div>
-</div>
-
-</div>
-</div>
-<hr>
-<center>
-    <i>The clients and developers of the CML platform (CORE) are not responsible for any incorrect or incomplete data (about measurements, standards, visualizations etc.) or information on this website. </i>  </center>
-<br>
-    {% endblock %}
-
-{% block footer %}
+{% endblock %} {% block footer %}
 <!--
 <div class="footer" style="background-color:#3e3e3e;">
 <!--footer start from here-->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 paddingtop-bottom2 ">
-        <div class="logofooter"> Core</div>
-        <p>The CML platform was developed for scientific communication purposes and the development of several web-based ICT tools.</p>
-        <p><i class="fa fa-map-pin"></i> 2, Einsteinweg, Leiden - 2333CC, The Netherlands</p>
+    <div class="container">
+        <div class="row">
 
-        <p><i class="fa fa-envelope"></i> E-mail : s.i.niccolson@cml.leidenuniv.nl</p>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
 
-      </div>
-      <div class="col-md-2 col-sm-6 paddingtop-bottom">
-        <h6 class="heading7">RESOURCES</h6>
-        <ul class="footer-ul">
+                    <li><a href="/exploratory"> Explore</a></li>
+                    <li><a href="research/microvis/">MicroVis</a></li>
+                    <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> Wiki</a></li>
+                    <li><a href="about"> Contact</a></li>
 
-          <li><a href="#"> Model</a></li>
-
-            <li><a href="/exploratory"> Explore</a></li>
-
-
-            <li><a href="research/tools-index/"> Links</a></li>
-            <li><a href="research/microvis/"> Projects</a></li>
-            <li><a href="http://cml.liacs.nl/dokuwiki/doku.php"> Wiki</a></li>
-            <li><a href="about"> Contact</a></li>
-
-        </ul>
-      </div>
-        <!--
+                </ul>
+            </div>
+            <!--
       <div class="col-md-3 col-sm-6 paddingtop-bottom">
         <h6 class="heading7">LATEST POST</h6>
         <div class="post">
@@ -162,27 +84,24 @@
         </div>
       </div>
       -->
-      <div class="col-md-3 col-sm-6 paddingtop-bottom">
-            <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
-                  <blockquote cite="https://cmlworld.slack.com/"><a href="https://cmlworld.slack.com/">Slack</a></blockquote>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+                <blockquote cite="https://cmlworld.slack.com/"><a href="https://cmlworld.slack.com/">Slack</a></blockquote>
 
-      </div>
+            </div>
 
+        </div>
     </div>
-  </div>
 </footer>
 
 <!--footer start from here-->
 
 <div class="copyright">
-  <div class="container">
-    <div class="col-md-6">
-      <p>© 2017 - All Rights with CML</p>
+    <div class="container">
+        <center>
+            <i>The clients and developers of the CML platform (CORE) are not responsible for any incorrect or incomplete data (about measurements, standards, visualizations etc.) or information on this website.© 2019 - All Rights with CML </i> </center>
+
     </div>
-
-  </div>
 </div>
 
-
-</div>
 {% endblock %}
