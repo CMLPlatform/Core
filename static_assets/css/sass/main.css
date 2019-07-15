@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic);
+
+
+.Collapsible{
+  background: #778899;
+  border:1px solid #c4c4c4;
+  font-family: 'Roboto', sans-serif;
+color: #ffffff;
+
+}
+.Collapsible__contentOuter{
+background-color: #ebf5ff;
+
+
+}
+.Collapsible__contentInner{
+background-color:  #ebf5ff;
+color: black;
+}
+
+
+.Collapsible__trigger {
+  display: block;
+  font-weight: 400;
+  text-decoration: none;
+  color: grey;
+  position: relative;
+
+
+  padding: 10px;
+
+  color: white;
+
+
+
+}
+
+
+.Collapsible__trigger:after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+transition: transform 300ms;
+
+
+
+
+}
+
+.Collapsible__trigger.is-open{
+color:white;
+background-color:  #2C3940;
+}
+.Collapsible__trigger.is-disabled{
+background-color: 	#d9534f;
+}
+
+.Collapsible__trigger.is-open:after{
+    color:black;
+
+    transform: rotateZ(180deg);
+
+}

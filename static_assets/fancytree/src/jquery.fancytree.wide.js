@@ -148,6 +148,7 @@ $.ui.fancytree.registerExtension({
 
 		// Get/Set a unique Id on the container (if not already exists)
 		containerId = this.$container.uniqueId().attr("id");
+		//containerId = this.$container.attr( 'id' ) || 'ui-selectmenu-' + Math.random().toString( 16 ).slice( 2, 10 );
 		// Generated css rules for some levels (extended on demand)
 		cssText = renderLevelCss(containerId, this._local.maxDepth,
 			this._local.levelOfs, this._local.lineOfs, this._local.measureUnit);

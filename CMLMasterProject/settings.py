@@ -29,8 +29,8 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 #create the actual template link to tell the project were the template is
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 #get the static directory for images etc
-STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
-STATIC_ROOT = os.path.join(STATIC_PATH, 'collectStaticAssets' )
+STATIC_PATH = os.path.join(BASE_DIR, 'static_assets')
+STATIC_ROOT = os.path.join(STATIC_PATH, 'static' )
 STATIC_URL = '/static/'
 #onServer for collectstatic
 #STATIC_ROOT = os.path.join(STATIC_PATH, 'collectStaticAssets' )
