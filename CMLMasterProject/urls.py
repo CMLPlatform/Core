@@ -30,9 +30,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^exploratory/', views.exploratory, name='exploratory'),
     # url(r'^', include('snippets.urls')),
-    # url(r'^', include('ramascene.urls')),
     url(r'^about/', views.about, name='about'),
     url(r'^puma/', include('PUMA.urls')),
+    url(r'^panorama/', include('panorama.urls')),
     url(r'^media/(?P<path>.*)$', serve, {
         'document_root': settings.MEDIA_ROOT,
     }),
