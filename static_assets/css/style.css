@@ -66,7 +66,7 @@ footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', s
   height: 2.5rem;            /* Footer height */
 }
 .bg-overlay {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../static/images/adriel-kloppenburg-TyWBZWsZSSg-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/adriel-kloppenburg-TyWBZWsZSSg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -77,7 +77,7 @@ footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', s
 }
 
 .bg-overlay2 {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../static/images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -87,7 +87,7 @@ footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', s
     padding-top: 50px;
 }
 .bg-overlay3 {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../static/images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -97,7 +97,7 @@ footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', s
     padding-top: 50px;
 }
 .bg-overlay4 {
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../../static/images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -107,7 +107,7 @@ footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', s
     padding-top: 50px;
 }
 .bg-overlay5 {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../../static/images/redcharlie-k2zWqv_yfNM-unsplash.jpg");
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/redcharlie-k2zWqv_yfNM-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

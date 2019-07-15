@@ -30,7 +30,7 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 #get the static directory for images etc
 STATIC_PATH = os.path.join(BASE_DIR, 'static_assets')
-STATIC_ROOT = os.path.join(STATIC_PATH, 'static' )
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 #onServer for collectstatic
 #STATIC_ROOT = os.path.join(STATIC_PATH, 'collectStaticAssets' )
