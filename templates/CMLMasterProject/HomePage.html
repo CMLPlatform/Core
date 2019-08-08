@@ -16,7 +16,13 @@
 
 </ul>
 
-{% endblock %} {% block content %} {% if messages %}
+{% endblock %} {% block content %}
+<!--
+        <div class="alert alert-success" role="alert">{{status}}</div>
+ -->
+
+<div class="container bg-overlay">
+    {% if messages %}
 <div class="container-fluid">
     <ul class="messages">
         {% for message in messages %}
@@ -27,11 +33,6 @@
     </ul>
 </div>
 {% endif %}
-<!--
-        <div class="alert alert-success" role="alert">{{status}}</div>
- -->
-
-<div class="container bg-overlay">
     <div class="row ">
 
         <h1>CORE</h1>

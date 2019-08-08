@@ -8,19 +8,19 @@ import sys
 
 class Command(BaseCommand):
     """
-    Populate database with pre developed csv files residing in python_ini folder
+    Populate database with pre developed csv files residing in GeneralPythonScripts/python_ini folder
     """
 
     def handle(self, *args, **options):
         try:
             project_root_dir = settings.BASE_DIR
-            indicatorData = getfile(os.path.join(project_root_dir, 'python_ini/data/mod_indicators.csv'))
+            indicatorData = getfile(os.path.join(project_root_dir, 'GeneralPythonScripts/python_ini/data/mod_indicators.csv'))
             countryData = getfile(
-                os.path.join(project_root_dir, 'python_ini/data/mod_circumat_regions.csv'))
+                os.path.join(project_root_dir, 'GeneralPythonScripts/python_ini/data/mod_circumat_regions.csv'))
             productData = getfile(
-                os.path.join(project_root_dir, 'python_ini/data/mod_final_productTree_exiovisuals.csv'))
+                os.path.join(project_root_dir, 'GeneralPythonScripts/python_ini/data/mod_final_productTree_exiovisuals.csv'))
             model_productData = getfile(
-                os.path.join(project_root_dir, 'python_ini/data/modelling_mod_final_productTree_exiovisuals.csv'))
+                os.path.join(project_root_dir, 'GeneralPythonScripts/python_ini/data/modelling_mod_final_productTree_exiovisuals.csv'))
 
             populate(indicatorData, "Indicator")
             populate(countryData, "Country")

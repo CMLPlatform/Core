@@ -3,7 +3,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 from CMLMasterProject.forms import SignUpForm
-from CMLMasterProject.settings import AUTHENTICATION_KEY_RESEARCH, AUTHENTICATION_KEY_STUDENT
+from CMLMasterProject.config.base import AUTHENTICATION_KEY_RESEARCH, AUTHENTICATION_KEY_STUDENT
 from django.contrib import messages
 from django.contrib.auth.models import Group
 #this is the first page of the Web-app
@@ -39,7 +39,9 @@ def about(request):
 #default signup method for decisionmakers and companies
 def signup(request):
     if request.method == 'POST':
+
         form = UserCreationForm(request.POST)
+        print(form)
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
@@ -57,6 +59,7 @@ def signup(request):
 def cml_signup(request):
     #sign up for CML members
     if request.method == 'POST':
+
         form = SignUpForm(request.POST)
         #get the form and validate
         if form.is_valid():

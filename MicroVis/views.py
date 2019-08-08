@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from CMLMasterProject.settings import MEDIA_ROOT
+from CMLMasterProject.config.base import MEDIA_ROOT
 import os, json
 
 

@@ -1,0 +1,2062 @@
+{
+  "1": [
+    {
+      "date": "1930-01-01",
+      "MS_timber_hist_jp": 266.740748852,
+      "MS_iron_hist_jp": 9.4263131712,
+      "MS_other_hist_jp": 10.382686259,
+      "MS_minerals_hist_jp": 915.008326473
+    },
+    {
+      "date": "1931-01-01",
+      "MS_timber_hist_jp": 295.166930729,
+      "MS_iron_hist_jp": 11.1132185675,
+      "MS_other_hist_jp": 11.6464657112,
+      "MS_minerals_hist_jp": 1037.3552044571
+    },
+    {
+      "date": "1932-01-01",
+      "MS_timber_hist_jp": 347.1476070354,
+      "MS_iron_hist_jp": 14.0059659743,
+      "MS_other_hist_jp": 13.8658596136,
+      "MS_minerals_hist_jp": 1247.1343418991
+    },
+    {
+      "date": "1933-01-01",
+      "MS_timber_hist_jp": 362.6637059722,
+      "MS_iron_hist_jp": 15.8212460077,
+      "MS_other_hist_jp": 14.6325105449,
+      "MS_minerals_hist_jp": 1335.3960392745
+    },
+    {
+      "date": "1934-01-01",
+      "MS_timber_hist_jp": 344.7856566692,
+      "MS_iron_hist_jp": 15.1275811684,
+      "MS_other_hist_jp": 14.0377964448,
+      "MS_minerals_hist_jp": 1301.7285106789
+    },
+    {
+      "date": "1935-01-01",
+      "MS_timber_hist_jp": 327.9507637829,
+      "MS_iron_hist_jp": 14.555209636,
+      "MS_other_hist_jp": 13.4961708888,
+      "MS_minerals_hist_jp": 1276.0814963768
+    },
+    {
+      "date": "1936-01-01",
+      "MS_timber_hist_jp": 294.852346031,
+      "MS_iron_hist_jp": 13.3099334405,
+      "MS_other_hist_jp": 12.2323807101,
+      "MS_minerals_hist_jp": 1179.586950106
+    },
+    {
+      "date": "1937-01-01",
+      "MS_timber_hist_jp": 291.2365263248,
+      "MS_iron_hist_jp": 13.34387823,
+      "MS_other_hist_jp": 12.1618315018,
+      "MS_minerals_hist_jp": 1195.380657738
+    },
+    {
+      "date": "1938-01-01",
+      "MS_timber_hist_jp": 313.7265310668,
+      "MS_iron_hist_jp": 14.6018002198,
+      "MS_other_hist_jp": 13.1552600544,
+      "MS_minerals_hist_jp": 1311.0160458474
+    },
+    {
+      "date": "1939-01-01",
+      "MS_timber_hist_jp": 303.4079151915,
+      "MS_iron_hist_jp": 14.1647728011,
+      "MS_other_hist_jp": 12.6988542363,
+      "MS_minerals_hist_jp": 1279.2431205003
+    },
+    {
+      "date": "1940-01-01",
+      "MS_timber_hist_jp": 293.3774812716,
+      "MS_iron_hist_jp": 13.7614757103,
+      "MS_other_hist_jp": 12.3055372868,
+      "MS_minerals_hist_jp": 1241.4715815426
+    },
+    {
+      "date": "1941-01-01",
+      "MS_timber_hist_jp": 259.4943502748,
+      "MS_iron_hist_jp": 12.2356224375,
+      "MS_other_hist_jp": 10.8517273178,
+      "MS_minerals_hist_jp": 1097.5060157877
+    },
+    {
+      "date": "1942-01-01",
+      "MS_timber_hist_jp": 223.1640987396,
+      "MS_iron_hist_jp": 10.7613097482,
+      "MS_other_hist_jp": 9.4536988847,
+      "MS_minerals_hist_jp": 941.9895037984
+    },
+    {
+      "date": "1943-01-01",
+      "MS_timber_hist_jp": 195.341366993,
+      "MS_iron_hist_jp": 9.501104997,
+      "MS_other_hist_jp": 8.2457620948,
+      "MS_minerals_hist_jp": 804.1066209168
+    },
+    {
+      "date": "1944-01-01",
+      "MS_timber_hist_jp": 187.9727539271,
+      "MS_iron_hist_jp": 9.2893692549,
+      "MS_other_hist_jp": 7.9131988737,
+      "MS_minerals_hist_jp": 754.0649226489
+    },
+    {
+      "date": "1945-01-01",
+      "MS_timber_hist_jp": 197.8574714492,
+      "MS_iron_hist_jp": 9.9267006871,
+      "MS_other_hist_jp": 8.3292729762,
+      "MS_minerals_hist_jp": 789.0839898773
+    },
+    {
+      "date": "1946-01-01",
+      "MS_timber_hist_jp": 253.2143937615,
+      "MS_iron_hist_jp": 12.6213556205,
+      "MS_other_hist_jp": 10.4980453599,
+      "MS_minerals_hist_jp": 997.3722633209
+    },
+    {
+      "date": "1947-01-01",
+      "MS_timber_hist_jp": 261.8268604575,
+      "MS_iron_hist_jp": 12.974581809,
+      "MS_other_hist_jp": 10.6773462346,
+      "MS_minerals_hist_jp": 1017.9263488042
+    },
+    {
+      "date": "1948-01-01",
+      "MS_timber_hist_jp": 257.3197598007,
+      "MS_iron_hist_jp": 12.775075273,
+      "MS_other_hist_jp": 10.3376594317,
+      "MS_minerals_hist_jp": 992.1965674804
+    },
+    {
+      "date": "1949-01-01",
+      "MS_timber_hist_jp": 262.1049555766,
+      "MS_iron_hist_jp": 13.2447685984,
+      "MS_other_hist_jp": 10.4028112697,
+      "MS_minerals_hist_jp": 1008.3291448011
+    },
+    {
+      "date": "1950-01-01",
+      "MS_timber_hist_jp": 249.2599993155,
+      "MS_iron_hist_jp": 12.711917478,
+      "MS_other_hist_jp": 9.7061441752,
+      "MS_minerals_hist_jp": 955.1506383765
+    },
+    {
+      "date": "1951-01-01",
+      "MS_timber_hist_jp": 242.9422341649,
+      "MS_iron_hist_jp": 12.5922755449,
+      "MS_other_hist_jp": 9.2138858839,
+      "MS_minerals_hist_jp": 925.9204226507
+    },
+    {
+      "date": "1952-01-01",
+      "MS_timber_hist_jp": 244.5922445076,
+      "MS_iron_hist_jp": 13.155019133,
+      "MS_other_hist_jp": 9.1068027915,
+      "MS_minerals_hist_jp": 931.6978853794
+    },
+    {
+      "date": "1953-01-01",
+      "MS_timber_hist_jp": 245.3073562816,
+      "MS_iron_hist_jp": 13.4877014235,
+      "MS_other_hist_jp": 8.9617270048,
+      "MS_minerals_hist_jp": 939.1213899865
+    },
+    {
+      "date": "1954-01-01",
+      "MS_timber_hist_jp": 257.3170685287,
+      "MS_iron_hist_jp": 14.6094413771,
+      "MS_other_hist_jp": 9.2987509534,
+      "MS_minerals_hist_jp": 1005.2337019932
+    },
+    {
+      "date": "1955-01-01",
+      "MS_timber_hist_jp": 250.8909277905,
+      "MS_iron_hist_jp": 14.6501985494,
+      "MS_other_hist_jp": 8.9765745866,
+      "MS_minerals_hist_jp": 992.647642145
+    },
+    {
+      "date": "1956-01-01",
+      "MS_timber_hist_jp": 257.1187670724,
+      "MS_iron_hist_jp": 15.6972859427,
+      "MS_other_hist_jp": 9.1727024576,
+      "MS_minerals_hist_jp": 1035.8153672714
+    },
+    {
+      "date": "1957-01-01",
+      "MS_timber_hist_jp": 263.8890016599,
+      "MS_iron_hist_jp": 16.9298999719,
+      "MS_other_hist_jp": 9.4239961013,
+      "MS_minerals_hist_jp": 1089.6462080359
+    },
+    {
+      "date": "1958-01-01",
+      "MS_timber_hist_jp": 276.8760067894,
+      "MS_iron_hist_jp": 18.4165386572,
+      "MS_other_hist_jp": 9.8858446313,
+      "MS_minerals_hist_jp": 1175.4810735148
+    },
+    {
+      "date": "1959-01-01",
+      "MS_timber_hist_jp": 267.7122879017,
+      "MS_iron_hist_jp": 18.6948085481,
+      "MS_other_hist_jp": 9.6312268101,
+      "MS_minerals_hist_jp": 1176.9701879845
+    },
+    {
+      "date": "1960-01-01",
+      "MS_timber_hist_jp": 271.7164990612,
+      "MS_iron_hist_jp": 20.2535228426,
+      "MS_other_hist_jp": 9.8624413948,
+      "MS_minerals_hist_jp": 1254.2786019743
+    },
+    {
+      "date": "1961-01-01",
+      "MS_timber_hist_jp": 276.0739270336,
+      "MS_iron_hist_jp": 22.3683307451,
+      "MS_other_hist_jp": 10.1313904728,
+      "MS_minerals_hist_jp": 1340.6713562438
+    },
+    {
+      "date": "1962-01-01",
+      "MS_timber_hist_jp": 272.7802387128,
+      "MS_iron_hist_jp": 23.7374324769,
+      "MS_other_hist_jp": 10.032329156,
+      "MS_minerals_hist_jp": 1393.5875208398
+    },
+    {
+      "date": "1963-01-01",
+      "MS_timber_hist_jp": 274.5767048548,
+      "MS_iron_hist_jp": 25.5362830346,
+      "MS_other_hist_jp": 10.0886696341,
+      "MS_minerals_hist_jp": 1467.3540068994
+    },
+    {
+      "date": "1964-01-01",
+      "MS_timber_hist_jp": 271.6140665442,
+      "MS_iron_hist_jp": 27.2862094845,
+      "MS_other_hist_jp": 10.055974877,
+      "MS_minerals_hist_jp": 1526.1642823198
+    },
+    {
+      "date": "1965-01-01",
+      "MS_timber_hist_jp": 267.4439083858,
+      "MS_iron_hist_jp": 28.7261775597,
+      "MS_other_hist_jp": 9.9514067592,
+      "MS_minerals_hist_jp": 1567.8461613656
+    },
+    {
+      "date": "1966-01-01",
+      "MS_timber_hist_jp": 263.6754971635,
+      "MS_iron_hist_jp": 30.3932693697,
+      "MS_other_hist_jp": 9.8681752564,
+      "MS_minerals_hist_jp": 1602.9037767661
+    },
+    {
+      "date": "1967-01-01",
+      "MS_timber_hist_jp": 271.1708175103,
+      "MS_iron_hist_jp": 34.2650010663,
+      "MS_other_hist_jp": 10.3852410602,
+      "MS_minerals_hist_jp": 1726.9477005324
+    },
+    {
+      "date": "1968-01-01",
+      "MS_timber_hist_jp": 272.5098960631,
+      "MS_iron_hist_jp": 37.3044762149,
+      "MS_other_hist_jp": 10.5534999911,
+      "MS_minerals_hist_jp": 1824.4166267724
+    },
+    {
+      "date": "1969-01-01",
+      "MS_timber_hist_jp": 277.4582568929,
+      "MS_iron_hist_jp": 41.3225321517,
+      "MS_other_hist_jp": 10.9236422767,
+      "MS_minerals_hist_jp": 1957.6944095609
+    },
+    {
+      "date": "1970-01-01",
+      "MS_timber_hist_jp": 291.3346138874,
+      "MS_iron_hist_jp": 47.5696859203,
+      "MS_other_hist_jp": 11.7073824247,
+      "MS_minerals_hist_jp": 2166.2574192641
+    },
+    {
+      "date": "1971-01-01",
+      "MS_timber_hist_jp": 295.8919744432,
+      "MS_iron_hist_jp": 52.2818571054,
+      "MS_other_hist_jp": 12.2113301494,
+      "MS_minerals_hist_jp": 2320.3043905629
+    },
+    {
+      "date": "1972-01-01",
+      "MS_timber_hist_jp": 294.1135750162,
+      "MS_iron_hist_jp": 55.336019385,
+      "MS_other_hist_jp": 12.3403784447,
+      "MS_minerals_hist_jp": 2439.5547063127
+    },
+    {
+      "date": "1973-01-01",
+      "MS_timber_hist_jp": 291.6763393999,
+      "MS_iron_hist_jp": 59.0004091024,
+      "MS_other_hist_jp": 12.4261906271,
+      "MS_minerals_hist_jp": 2576.3872340087
+    },
+    {
+      "date": "1974-01-01",
+      "MS_timber_hist_jp": 304.4867566581,
+      "MS_iron_hist_jp": 65.6574791288,
+      "MS_other_hist_jp": 13.2017121247,
+      "MS_minerals_hist_jp": 2841.2585406774
+    },
+    {
+      "date": "1975-01-01",
+      "MS_timber_hist_jp": 314.7155069621,
+      "MS_iron_hist_jp": 71.7823426575,
+      "MS_other_hist_jp": 13.9041213934,
+      "MS_minerals_hist_jp": 3074.2738773439
+    },
+    {
+      "date": "1976-01-01",
+      "MS_timber_hist_jp": 312.0117983638,
+      "MS_iron_hist_jp": 73.4813633371,
+      "MS_other_hist_jp": 13.8426565352,
+      "MS_minerals_hist_jp": 3136.4103674935
+    },
+    {
+      "date": "1977-01-01",
+      "MS_timber_hist_jp": 306.2816512558,
+      "MS_iron_hist_jp": 75.3461865374,
+      "MS_other_hist_jp": 13.8667022485,
+      "MS_minerals_hist_jp": 3219.632514057
+    },
+    {
+      "date": "1978-01-01",
+      "MS_timber_hist_jp": 298.6027148132,
+      "MS_iron_hist_jp": 75.4272168467,
+      "MS_other_hist_jp": 13.6380019533,
+      "MS_minerals_hist_jp": 3278.6870193114
+    },
+    {
+      "date": "1979-01-01",
+      "MS_timber_hist_jp": 297.835360111,
+      "MS_iron_hist_jp": 77.7287619035,
+      "MS_other_hist_jp": 13.7247611188,
+      "MS_minerals_hist_jp": 3404.3394130023
+    },
+    {
+      "date": "1980-01-01",
+      "MS_timber_hist_jp": 305.6250838502,
+      "MS_iron_hist_jp": 82.6706122347,
+      "MS_other_hist_jp": 14.2649469273,
+      "MS_minerals_hist_jp": 3641.4316159546
+    },
+    {
+      "date": "1981-01-01",
+      "MS_timber_hist_jp": 303.9296667068,
+      "MS_iron_hist_jp": 85.0942830981,
+      "MS_other_hist_jp": 14.3907936834,
+      "MS_minerals_hist_jp": 3771.771633122
+    },
+    {
+      "date": "1982-01-01",
+      "MS_timber_hist_jp": 315.8170825371,
+      "MS_iron_hist_jp": 91.0944392836,
+      "MS_other_hist_jp": 15.1225307474,
+      "MS_minerals_hist_jp": 4045.2735447355
+    },
+    {
+      "date": "1983-01-01",
+      "MS_timber_hist_jp": 308.6724332655,
+      "MS_iron_hist_jp": 91.0324791402,
+      "MS_other_hist_jp": 14.9102072041,
+      "MS_minerals_hist_jp": 4072.1401203599
+    },
+    {
+      "date": "1984-01-01",
+      "MS_timber_hist_jp": 292.5990691146,
+      "MS_iron_hist_jp": 88.8855079048,
+      "MS_other_hist_jp": 14.3011275104,
+      "MS_minerals_hist_jp": 3967.8699851218
+    },
+    {
+      "date": "1985-01-01",
+      "MS_timber_hist_jp": 286.4128159595,
+      "MS_iron_hist_jp": 89.2958682125,
+      "MS_other_hist_jp": 14.1475695431,
+      "MS_minerals_hist_jp": 3978.3256939728
+    },
+    {
+      "date": "1986-01-01",
+      "MS_timber_hist_jp": 281.1545622668,
+      "MS_iron_hist_jp": 89.6642107885,
+      "MS_other_hist_jp": 13.9814628163,
+      "MS_minerals_hist_jp": 4002.7261052531
+    },
+    {
+      "date": "1987-01-01",
+      "MS_timber_hist_jp": 276.1168882784,
+      "MS_iron_hist_jp": 89.9298046233,
+      "MS_other_hist_jp": 13.7619543786,
+      "MS_minerals_hist_jp": 4026.2251176171
+    },
+    {
+      "date": "1988-01-01",
+      "MS_timber_hist_jp": 268.9345572507,
+      "MS_iron_hist_jp": 90.1302118964,
+      "MS_other_hist_jp": 13.4856953179,
+      "MS_minerals_hist_jp": 4029.7699498966
+    },
+    {
+      "date": "1989-01-01",
+      "MS_timber_hist_jp": 263.9000978254,
+      "MS_iron_hist_jp": 90.9986186479,
+      "MS_other_hist_jp": 13.3088462991,
+      "MS_minerals_hist_jp": 4056.2286349658
+    },
+    {
+      "date": "1990-01-01",
+      "MS_timber_hist_jp": 262.6636276447,
+      "MS_iron_hist_jp": 93.2823395314,
+      "MS_other_hist_jp": 13.3381496629,
+      "MS_minerals_hist_jp": 4151.3214343106
+    },
+    {
+      "date": "1991-01-01",
+      "MS_timber_hist_jp": 265.9296210084,
+      "MS_iron_hist_jp": 97.3927493896,
+      "MS_other_hist_jp": 13.6326636966,
+      "MS_minerals_hist_jp": 4337.4060457917
+    },
+    {
+      "date": "1992-01-01",
+      "MS_timber_hist_jp": 259.1750114862,
+      "MS_iron_hist_jp": 97.2974071926,
+      "MS_other_hist_jp": 13.4036960737,
+      "MS_minerals_hist_jp": 4362.1776181782
+    },
+    {
+      "date": "1993-01-01",
+      "MS_timber_hist_jp": 254.2389401032,
+      "MS_iron_hist_jp": 97.6078720986,
+      "MS_other_hist_jp": 13.2465002388,
+      "MS_minerals_hist_jp": 4400.0299476993
+    },
+    {
+      "date": "1994-01-01",
+      "MS_timber_hist_jp": 245.7488702546,
+      "MS_iron_hist_jp": 96.5526143373,
+      "MS_other_hist_jp": 12.8905978736,
+      "MS_minerals_hist_jp": 4374.6618319949
+    },
+    {
+      "date": "1995-01-01",
+      "MS_timber_hist_jp": 240.819199879,
+      "MS_iron_hist_jp": 97.0567199554,
+      "MS_other_hist_jp": 12.7476878272,
+      "MS_minerals_hist_jp": 4405.7033361786
+    },
+    {
+      "date": "1996-01-01",
+      "MS_timber_hist_jp": 232.9724198053,
+      "MS_iron_hist_jp": 96.1896927773,
+      "MS_other_hist_jp": 12.4496041639,
+      "MS_minerals_hist_jp": 4382.9276291637
+    },
+    {
+      "date": "1997-01-01",
+      "MS_timber_hist_jp": 223.5278318069,
+      "MS_iron_hist_jp": 94.6833178316,
+      "MS_other_hist_jp": 12.0694142428,
+      "MS_minerals_hist_jp": 4322.485349577
+    },
+    {
+      "date": "1998-01-01",
+      "MS_timber_hist_jp": 213.8187989324,
+      "MS_iron_hist_jp": 92.9016868216,
+      "MS_other_hist_jp": 11.7010388124,
+      "MS_minerals_hist_jp": 4257.6076281291
+    },
+    {
+      "date": "1999-01-01",
+      "MS_timber_hist_jp": 204.1827068423,
+      "MS_iron_hist_jp": 90.8225165397,
+      "MS_other_hist_jp": 11.3153670448,
+      "MS_minerals_hist_jp": 4180.8359723443
+    },
+    {
+      "date": "2000-01-01",
+      "MS_timber_hist_jp": 196.2929364973,
+      "MS_iron_hist_jp": 89.7313689648,
+      "MS_other_hist_jp": 11.0363718201,
+      "MS_minerals_hist_jp": 4135.9599914498
+    },
+    {
+      "date": "2001-01-01",
+      "MS_timber_hist_jp": 193.6945278985,
+      "MS_iron_hist_jp": 90.8528872426,
+      "MS_other_hist_jp": 11.0557775299,
+      "MS_minerals_hist_jp": 4195.8530973823
+    },
+    {
+      "date": "2002-01-01",
+      "MS_timber_hist_jp": 189.3616472261,
+      "MS_iron_hist_jp": 91.0437226036,
+      "MS_other_hist_jp": 10.9671267811,
+      "MS_minerals_hist_jp": 4210.3979972008
+    },
+    {
+      "date": "2003-01-01",
+      "MS_timber_hist_jp": 183.3969507611,
+      "MS_iron_hist_jp": 90.4931485369,
+      "MS_other_hist_jp": 10.7759861562,
+      "MS_minerals_hist_jp": 4177.492319877
+    },
+    {
+      "date": "2004-01-01",
+      "MS_timber_hist_jp": 175.6293151744,
+      "MS_iron_hist_jp": 88.9437545987,
+      "MS_other_hist_jp": 10.4788149883,
+      "MS_minerals_hist_jp": 4094.4997912291
+    },
+    {
+      "date": "2005-01-01",
+      "MS_timber_hist_jp": 168.9092020628,
+      "MS_iron_hist_jp": 87.8291922435,
+      "MS_other_hist_jp": 10.2362461052,
+      "MS_minerals_hist_jp": 4034.7768155397
+    }
+  ],
+  "2": [
+    {
+      "date": "1930-01-01",
+      "GS_timber_hist_jp": 10,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 61,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 4
+    },
+    {
+      "date": "1931-01-01",
+      "GS_timber_hist_jp": 11,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 51,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 4
+    },
+    {
+      "date": "1932-01-01",
+      "GS_timber_hist_jp": 13,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 58,
+      "RS_timber_hist_jp": 6,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1933-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 68,
+      "RS_timber_hist_jp": 6,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1934-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 0,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 68,
+      "RS_timber_hist_jp": 6,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1935-01-01",
+      "GS_timber_hist_jp": 13,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 73,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1936-01-01",
+      "GS_timber_hist_jp": 12,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 68,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1937-01-01",
+      "GS_timber_hist_jp": 13,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 70,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1938-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 73,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1939-01-01",
+      "GS_timber_hist_jp": 18,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 71,
+      "RS_timber_hist_jp": 5,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1940-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 60,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1941-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 53,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1942-01-01",
+      "GS_timber_hist_jp": 10,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 32,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 5
+    },
+    {
+      "date": "1943-01-01",
+      "GS_timber_hist_jp": 12,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 23,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 4
+    },
+    {
+      "date": "1944-01-01",
+      "GS_timber_hist_jp": 10,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 16,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 4
+    },
+    {
+      "date": "1945-01-01",
+      "GS_timber_hist_jp": 5,
+      "GS_iron_hist_jp": 0,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 8,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 5
+    },
+    {
+      "date": "1946-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 0,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 9,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 6
+    },
+    {
+      "date": "1947-01-01",
+      "GS_timber_hist_jp": 9,
+      "GS_iron_hist_jp": 0,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 12,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1948-01-01",
+      "GS_timber_hist_jp": 9,
+      "GS_iron_hist_jp": 0,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 18,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1949-01-01",
+      "GS_timber_hist_jp": 10,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 27,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1950-01-01",
+      "GS_timber_hist_jp": 12,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 35,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1951-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 45,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1952-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 46,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1953-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 56,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 7
+    },
+    {
+      "date": "1954-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 68,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 8
+    },
+    {
+      "date": "1955-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 61,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 8
+    },
+    {
+      "date": "1956-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 70,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 8
+    },
+    {
+      "date": "1957-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 81,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 8
+    },
+    {
+      "date": "1958-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 1,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 83,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1959-01-01",
+      "GS_timber_hist_jp": 13,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 91,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 8
+    },
+    {
+      "date": "1960-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 115,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1961-01-01",
+      "GS_timber_hist_jp": 14,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 124,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1962-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 138,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1963-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 140,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1964-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 148,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1965-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 142,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1966-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 140,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1967-01-01",
+      "GS_timber_hist_jp": 17,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 172,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1968-01-01",
+      "GS_timber_hist_jp": 17,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 185,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1969-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 198,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 9
+    },
+    {
+      "date": "1970-01-01",
+      "GS_timber_hist_jp": 18,
+      "GS_iron_hist_jp": 6,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 222,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 10
+    },
+    {
+      "date": "1971-01-01",
+      "GS_timber_hist_jp": 17,
+      "GS_iron_hist_jp": 6,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 230,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 10
+    },
+    {
+      "date": "1972-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 6,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 246,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 10
+    },
+    {
+      "date": "1973-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 7,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 278,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 10
+    },
+    {
+      "date": "1974-01-01",
+      "GS_timber_hist_jp": 15,
+      "GS_iron_hist_jp": 7,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 268,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 11
+    },
+    {
+      "date": "1975-01-01",
+      "GS_timber_hist_jp": 13,
+      "GS_iron_hist_jp": 6,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 236,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 11
+    },
+    {
+      "date": "1976-01-01",
+      "GS_timber_hist_jp": 16,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 226,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 11
+    },
+    {
+      "date": "1977-01-01",
+      "GS_timber_hist_jp": 11,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 231,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 11
+    },
+    {
+      "date": "1978-01-01",
+      "GS_timber_hist_jp": 12,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 244,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 11
+    },
+    {
+      "date": "1979-01-01",
+      "GS_timber_hist_jp": 12,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 245,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 12
+    },
+    {
+      "date": "1980-01-01",
+      "GS_timber_hist_jp": 11,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 251,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 13
+    },
+    {
+      "date": "1981-01-01",
+      "GS_timber_hist_jp": 9,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 232,
+      "RS_timber_hist_jp": 3,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 13
+    },
+    {
+      "date": "1982-01-01",
+      "GS_timber_hist_jp": 10,
+      "GS_iron_hist_jp": 5,
+      "GS_other_hist_jp": 1,
+      "GS_minerals_hist_jp": 216,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 14
+    },
+    {
+      "date": "1983-01-01",
+      "GS_timber_hist_jp": 9,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 204,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 14
+    },
+    {
+      "date": "1984-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 187,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 14
+    },
+    {
+      "date": "1985-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 173,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 15
+    },
+    {
+      "date": "1986-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 172,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 15
+    },
+    {
+      "date": "1987-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 175,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 16
+    },
+    {
+      "date": "1988-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 182,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 16
+    },
+    {
+      "date": "1989-01-01",
+      "GS_timber_hist_jp": 8,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 178,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 17
+    },
+    {
+      "date": "1990-01-01",
+      "GS_timber_hist_jp": 7,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 183,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 18
+    },
+    {
+      "date": "1991-01-01",
+      "GS_timber_hist_jp": 7,
+      "GS_iron_hist_jp": 4,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 197,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 19
+    },
+    {
+      "date": "1992-01-01",
+      "GS_timber_hist_jp": 6,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 185,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 20
+    },
+    {
+      "date": "1993-01-01",
+      "GS_timber_hist_jp": 6,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 173,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 21
+    },
+    {
+      "date": "1994-01-01",
+      "GS_timber_hist_jp": 5,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 168,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 21
+    },
+    {
+      "date": "1995-01-01",
+      "GS_timber_hist_jp": 5,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 162,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 22
+    },
+    {
+      "date": "1996-01-01",
+      "GS_timber_hist_jp": 5,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 159,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 0,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 23
+    },
+    {
+      "date": "1997-01-01",
+      "GS_timber_hist_jp": 5,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 152,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 24
+    },
+    {
+      "date": "1998-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 136,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 24
+    },
+    {
+      "date": "1999-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 131,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 25
+    },
+    {
+      "date": "2000-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 3,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 130,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 26
+    },
+    {
+      "date": "2001-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 118,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 27
+    },
+    {
+      "date": "2002-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 110,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 28
+    },
+    {
+      "date": "2003-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 100,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 30
+    },
+    {
+      "date": "2004-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 94,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 30
+    },
+    {
+      "date": "2005-01-01",
+      "GS_timber_hist_jp": 3,
+      "GS_iron_hist_jp": 2,
+      "GS_other_hist_jp": 0,
+      "GS_minerals_hist_jp": 95,
+      "RS_timber_hist_jp": 4,
+      "RS_iron_hist_jp": 1,
+      "RS_other_hist_jp": 0,
+      "RS_minerals_hist_jp": 31
+    }
+  ],
+  "3": [
+    {
+      "date": "1930-01-01",
+      "MS_total_hist_jp": 1202
+    },
+    {
+      "date": "1931-01-01",
+      "MS_total_hist_jp": 1355
+    },
+    {
+      "date": "1932-01-01",
+      "MS_total_hist_jp": 1622
+    },
+    {
+      "date": "1933-01-01",
+      "MS_total_hist_jp": 1729
+    },
+    {
+      "date": "1934-01-01",
+      "MS_total_hist_jp": 1676
+    },
+    {
+      "date": "1935-01-01",
+      "MS_total_hist_jp": 1632
+    },
+    {
+      "date": "1936-01-01",
+      "MS_total_hist_jp": 1500
+    },
+    {
+      "date": "1937-01-01",
+      "MS_total_hist_jp": 1512
+    },
+    {
+      "date": "1938-01-01",
+      "MS_total_hist_jp": 1652
+    },
+    {
+      "date": "1939-01-01",
+      "MS_total_hist_jp": 1610
+    },
+    {
+      "date": "1940-01-01",
+      "MS_total_hist_jp": 1561
+    },
+    {
+      "date": "1941-01-01",
+      "MS_total_hist_jp": 1380
+    },
+    {
+      "date": "1942-01-01",
+      "MS_total_hist_jp": 1185
+    },
+    {
+      "date": "1943-01-01",
+      "MS_total_hist_jp": 1017
+    },
+    {
+      "date": "1944-01-01",
+      "MS_total_hist_jp": 959
+    },
+    {
+      "date": "1945-01-01",
+      "MS_total_hist_jp": 1005
+    },
+    {
+      "date": "1946-01-01",
+      "MS_total_hist_jp": 1274
+    },
+    {
+      "date": "1947-01-01",
+      "MS_total_hist_jp": 1303
+    },
+    {
+      "date": "1948-01-01",
+      "MS_total_hist_jp": 1273
+    },
+    {
+      "date": "1949-01-01",
+      "MS_total_hist_jp": 1294
+    },
+    {
+      "date": "1950-01-01",
+      "MS_total_hist_jp": 1227
+    },
+    {
+      "date": "1951-01-01",
+      "MS_total_hist_jp": 1191
+    },
+    {
+      "date": "1952-01-01",
+      "MS_total_hist_jp": 1199
+    },
+    {
+      "date": "1953-01-01",
+      "MS_total_hist_jp": 1207
+    },
+    {
+      "date": "1954-01-01",
+      "MS_total_hist_jp": 1286
+    },
+    {
+      "date": "1955-01-01",
+      "MS_total_hist_jp": 1267
+    },
+    {
+      "date": "1956-01-01",
+      "MS_total_hist_jp": 1318
+    },
+    {
+      "date": "1957-01-01",
+      "MS_total_hist_jp": 1380
+    },
+    {
+      "date": "1958-01-01",
+      "MS_total_hist_jp": 1481
+    },
+    {
+      "date": "1959-01-01",
+      "MS_total_hist_jp": 1473
+    },
+    {
+      "date": "1960-01-01",
+      "MS_total_hist_jp": 1556
+    },
+    {
+      "date": "1961-01-01",
+      "MS_total_hist_jp": 1649
+    },
+    {
+      "date": "1962-01-01",
+      "MS_total_hist_jp": 1700
+    },
+    {
+      "date": "1963-01-01",
+      "MS_total_hist_jp": 1778
+    },
+    {
+      "date": "1964-01-01",
+      "MS_total_hist_jp": 1835
+    },
+    {
+      "date": "1965-01-01",
+      "MS_total_hist_jp": 1874
+    },
+    {
+      "date": "1966-01-01",
+      "MS_total_hist_jp": 1907
+    },
+    {
+      "date": "1967-01-01",
+      "MS_total_hist_jp": 2043
+    },
+    {
+      "date": "1968-01-01",
+      "MS_total_hist_jp": 2145
+    },
+    {
+      "date": "1969-01-01",
+      "MS_total_hist_jp": 2287
+    },
+    {
+      "date": "1970-01-01",
+      "MS_total_hist_jp": 2517
+    },
+    {
+      "date": "1971-01-01",
+      "MS_total_hist_jp": 2681
+    },
+    {
+      "date": "1972-01-01",
+      "MS_total_hist_jp": 2801
+    },
+    {
+      "date": "1973-01-01",
+      "MS_total_hist_jp": 2939
+    },
+    {
+      "date": "1974-01-01",
+      "MS_total_hist_jp": 3225
+    },
+    {
+      "date": "1975-01-01",
+      "MS_total_hist_jp": 3475
+    },
+    {
+      "date": "1976-01-01",
+      "MS_total_hist_jp": 3536
+    },
+    {
+      "date": "1977-01-01",
+      "MS_total_hist_jp": 3615
+    },
+    {
+      "date": "1978-01-01",
+      "MS_total_hist_jp": 3666
+    },
+    {
+      "date": "1979-01-01",
+      "MS_total_hist_jp": 3794
+    },
+    {
+      "date": "1980-01-01",
+      "MS_total_hist_jp": 4044
+    },
+    {
+      "date": "1981-01-01",
+      "MS_total_hist_jp": 4175
+    },
+    {
+      "date": "1982-01-01",
+      "MS_total_hist_jp": 4467
+    },
+    {
+      "date": "1983-01-01",
+      "MS_total_hist_jp": 4487
+    },
+    {
+      "date": "1984-01-01",
+      "MS_total_hist_jp": 4364
+    },
+    {
+      "date": "1985-01-01",
+      "MS_total_hist_jp": 4368
+    },
+    {
+      "date": "1986-01-01",
+      "MS_total_hist_jp": 4388
+    },
+    {
+      "date": "1987-01-01",
+      "MS_total_hist_jp": 4406
+    },
+    {
+      "date": "1988-01-01",
+      "MS_total_hist_jp": 4402
+    },
+    {
+      "date": "1989-01-01",
+      "MS_total_hist_jp": 4424
+    },
+    {
+      "date": "1990-01-01",
+      "MS_total_hist_jp": 4521
+    },
+    {
+      "date": "1991-01-01",
+      "MS_total_hist_jp": 4714
+    },
+    {
+      "date": "1992-01-01",
+      "MS_total_hist_jp": 4732
+    },
+    {
+      "date": "1993-01-01",
+      "MS_total_hist_jp": 4765
+    },
+    {
+      "date": "1994-01-01",
+      "MS_total_hist_jp": 4730
+    },
+    {
+      "date": "1995-01-01",
+      "MS_total_hist_jp": 4756
+    },
+    {
+      "date": "1996-01-01",
+      "MS_total_hist_jp": 4725
+    },
+    {
+      "date": "1997-01-01",
+      "MS_total_hist_jp": 4653
+    },
+    {
+      "date": "1998-01-01",
+      "MS_total_hist_jp": 4576
+    },
+    {
+      "date": "1999-01-01",
+      "MS_total_hist_jp": 4487
+    },
+    {
+      "date": "2000-01-01",
+      "MS_total_hist_jp": 4433
+    },
+    {
+      "date": "2001-01-01",
+      "MS_total_hist_jp": 4491
+    },
+    {
+      "date": "2002-01-01",
+      "MS_total_hist_jp": 4502
+    },
+    {
+      "date": "2003-01-01",
+      "MS_total_hist_jp": 4462
+    },
+    {
+      "date": "2004-01-01",
+      "MS_total_hist_jp": 4370
+    },
+    {
+      "date": "2005-01-01",
+      "MS_total_hist_jp": 4302
+    }
+  ],
+  "4": [
+    {
+      "date": "1930-01-01",
+      "GS_total_hist_jp": 72,
+      "RS_total_hist_jp": 8
+    },
+    {
+      "date": "1931-01-01",
+      "GS_total_hist_jp": 63,
+      "RS_total_hist_jp": 9
+    },
+    {
+      "date": "1932-01-01",
+      "GS_total_hist_jp": 72,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1933-01-01",
+      "GS_total_hist_jp": 84,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1934-01-01",
+      "GS_total_hist_jp": 83,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1935-01-01",
+      "GS_total_hist_jp": 87,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1936-01-01",
+      "GS_total_hist_jp": 81,
+      "RS_total_hist_jp": 10
+    },
+    {
+      "date": "1937-01-01",
+      "GS_total_hist_jp": 84,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1938-01-01",
+      "GS_total_hist_jp": 89,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1939-01-01",
+      "GS_total_hist_jp": 90,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1940-01-01",
+      "GS_total_hist_jp": 78,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1941-01-01",
+      "GS_total_hist_jp": 69,
+      "RS_total_hist_jp": 10
+    },
+    {
+      "date": "1942-01-01",
+      "GS_total_hist_jp": 44,
+      "RS_total_hist_jp": 8
+    },
+    {
+      "date": "1943-01-01",
+      "GS_total_hist_jp": 36,
+      "RS_total_hist_jp": 7
+    },
+    {
+      "date": "1944-01-01",
+      "GS_total_hist_jp": 28,
+      "RS_total_hist_jp": 7
+    },
+    {
+      "date": "1945-01-01",
+      "GS_total_hist_jp": 14,
+      "RS_total_hist_jp": 8
+    },
+    {
+      "date": "1946-01-01",
+      "GS_total_hist_jp": 17,
+      "RS_total_hist_jp": 10
+    },
+    {
+      "date": "1947-01-01",
+      "GS_total_hist_jp": 21,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1948-01-01",
+      "GS_total_hist_jp": 28,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1949-01-01",
+      "GS_total_hist_jp": 38,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1950-01-01",
+      "GS_total_hist_jp": 47,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1951-01-01",
+      "GS_total_hist_jp": 61,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1952-01-01",
+      "GS_total_hist_jp": 61,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1953-01-01",
+      "GS_total_hist_jp": 72,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1954-01-01",
+      "GS_total_hist_jp": 83,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1955-01-01",
+      "GS_total_hist_jp": 77,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1956-01-01",
+      "GS_total_hist_jp": 86,
+      "RS_total_hist_jp": 11
+    },
+    {
+      "date": "1957-01-01",
+      "GS_total_hist_jp": 98,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1958-01-01",
+      "GS_total_hist_jp": 99,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1959-01-01",
+      "GS_total_hist_jp": 107,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1960-01-01",
+      "GS_total_hist_jp": 131,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1961-01-01",
+      "GS_total_hist_jp": 141,
+      "RS_total_hist_jp": 13
+    },
+    {
+      "date": "1962-01-01",
+      "GS_total_hist_jp": 157,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1963-01-01",
+      "GS_total_hist_jp": 160,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1964-01-01",
+      "GS_total_hist_jp": 167,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1965-01-01",
+      "GS_total_hist_jp": 161,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1966-01-01",
+      "GS_total_hist_jp": 160,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1967-01-01",
+      "GS_total_hist_jp": 195,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1968-01-01",
+      "GS_total_hist_jp": 207,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1969-01-01",
+      "GS_total_hist_jp": 220,
+      "RS_total_hist_jp": 12
+    },
+    {
+      "date": "1970-01-01",
+      "GS_total_hist_jp": 247,
+      "RS_total_hist_jp": 13
+    },
+    {
+      "date": "1971-01-01",
+      "GS_total_hist_jp": 253,
+      "RS_total_hist_jp": 13
+    },
+    {
+      "date": "1972-01-01",
+      "GS_total_hist_jp": 269,
+      "RS_total_hist_jp": 13
+    },
+    {
+      "date": "1973-01-01",
+      "GS_total_hist_jp": 302,
+      "RS_total_hist_jp": 13
+    },
+    {
+      "date": "1974-01-01",
+      "GS_total_hist_jp": 291,
+      "RS_total_hist_jp": 14
+    },
+    {
+      "date": "1975-01-01",
+      "GS_total_hist_jp": 256,
+      "RS_total_hist_jp": 15
+    },
+    {
+      "date": "1976-01-01",
+      "GS_total_hist_jp": 249,
+      "RS_total_hist_jp": 15
+    },
+    {
+      "date": "1977-01-01",
+      "GS_total_hist_jp": 248,
+      "RS_total_hist_jp": 15
+    },
+    {
+      "date": "1978-01-01",
+      "GS_total_hist_jp": 261,
+      "RS_total_hist_jp": 15
+    },
+    {
+      "date": "1979-01-01",
+      "GS_total_hist_jp": 263,
+      "RS_total_hist_jp": 15
+    },
+    {
+      "date": "1980-01-01",
+      "GS_total_hist_jp": 268,
+      "RS_total_hist_jp": 16
+    },
+    {
+      "date": "1981-01-01",
+      "GS_total_hist_jp": 246,
+      "RS_total_hist_jp": 17
+    },
+    {
+      "date": "1982-01-01",
+      "GS_total_hist_jp": 231,
+      "RS_total_hist_jp": 18
+    },
+    {
+      "date": "1983-01-01",
+      "GS_total_hist_jp": 218,
+      "RS_total_hist_jp": 18
+    },
+    {
+      "date": "1984-01-01",
+      "GS_total_hist_jp": 200,
+      "RS_total_hist_jp": 18
+    },
+    {
+      "date": "1985-01-01",
+      "GS_total_hist_jp": 186,
+      "RS_total_hist_jp": 19
+    },
+    {
+      "date": "1986-01-01",
+      "GS_total_hist_jp": 184,
+      "RS_total_hist_jp": 19
+    },
+    {
+      "date": "1987-01-01",
+      "GS_total_hist_jp": 187,
+      "RS_total_hist_jp": 20
+    },
+    {
+      "date": "1988-01-01",
+      "GS_total_hist_jp": 195,
+      "RS_total_hist_jp": 20
+    },
+    {
+      "date": "1989-01-01",
+      "GS_total_hist_jp": 190,
+      "RS_total_hist_jp": 21
+    },
+    {
+      "date": "1990-01-01",
+      "GS_total_hist_jp": 194,
+      "RS_total_hist_jp": 22
+    },
+    {
+      "date": "1991-01-01",
+      "GS_total_hist_jp": 209,
+      "RS_total_hist_jp": 24
+    },
+    {
+      "date": "1992-01-01",
+      "GS_total_hist_jp": 194,
+      "RS_total_hist_jp": 24
+    },
+    {
+      "date": "1993-01-01",
+      "GS_total_hist_jp": 182,
+      "RS_total_hist_jp": 25
+    },
+    {
+      "date": "1994-01-01",
+      "GS_total_hist_jp": 177,
+      "RS_total_hist_jp": 26
+    },
+    {
+      "date": "1995-01-01",
+      "GS_total_hist_jp": 170,
+      "RS_total_hist_jp": 27
+    },
+    {
+      "date": "1996-01-01",
+      "GS_total_hist_jp": 168,
+      "RS_total_hist_jp": 28
+    },
+    {
+      "date": "1997-01-01",
+      "GS_total_hist_jp": 160,
+      "RS_total_hist_jp": 28
+    },
+    {
+      "date": "1998-01-01",
+      "GS_total_hist_jp": 143,
+      "RS_total_hist_jp": 29
+    },
+    {
+      "date": "1999-01-01",
+      "GS_total_hist_jp": 137,
+      "RS_total_hist_jp": 29
+    },
+    {
+      "date": "2000-01-01",
+      "GS_total_hist_jp": 136,
+      "RS_total_hist_jp": 30
+    },
+    {
+      "date": "2001-01-01",
+      "GS_total_hist_jp": 124,
+      "RS_total_hist_jp": 32
+    },
+    {
+      "date": "2002-01-01",
+      "GS_total_hist_jp": 115,
+      "RS_total_hist_jp": 33
+    },
+    {
+      "date": "2003-01-01",
+      "GS_total_hist_jp": 106,
+      "RS_total_hist_jp": 34
+    },
+    {
+      "date": "2004-01-01",
+      "GS_total_hist_jp": 100,
+      "RS_total_hist_jp": 35
+    },
+    {
+      "date": "2005-01-01",
+      "GS_total_hist_jp": 100,
+      "RS_total_hist_jp": 36
+    }
+  ]
+}

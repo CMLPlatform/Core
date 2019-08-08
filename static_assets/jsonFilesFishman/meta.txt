@@ -1,0 +1,11 @@
+###Meta-data###
+Inside each JSON files there is a structure like the following:
+
+key 1 : [data containing materials by name and date for MS]
+
+key 2 : [data containing materials by name and date for GAS/RS]
+
+key 3 : [data containing totals by name and date for MS]
+
+key 4 : [data containing totals by name and date for GAS/RS]
+
