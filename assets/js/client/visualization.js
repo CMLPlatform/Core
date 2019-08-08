@@ -12,9 +12,9 @@ class Visualization extends Component {
         this.DETAIL_CONTINENT = 'continent';
         this.DETAIL_COUNTRY = 'country';
 
-        this.TOPOJSON_TOTAL = '../static/total_lvl.json';
-        this.TOPOJSON_CONTINENT = '../static/continent_lvl.json';
-        this.TOPOJSON_COUNTRY = '../static/country_lvl.json';
+        this.TOPOJSON_TOTAL = '../../static/total_lvl.json';
+        this.TOPOJSON_CONTINENT = '../../static/continent_lvl.json';
+        this.TOPOJSON_COUNTRY = '../../static/country_lvl.json';
 
         var topoJson = null;
         switch (props.detailLevel) {

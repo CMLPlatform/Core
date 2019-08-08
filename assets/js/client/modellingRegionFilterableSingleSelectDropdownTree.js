@@ -12,7 +12,7 @@ class ModellingRegionFilterableSingleSelectDropdownTree extends FilterableSingle
 
     componentWillMount() {
         //https://www.papaparse.com/docs#config
-        Papa.parse('../static/modelling_circumat_regions.csv', {
+        Papa.parse('../../static/modelling_circumat_regions.csv', {
             delimiter: '\t',
             // newline
             // quoteChar

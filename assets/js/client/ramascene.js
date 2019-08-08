@@ -456,7 +456,7 @@ class App extends Component {
               <Navbar fluid>
                   <Navbar.Header>
                       <Navbar.Brand>
-                          {/*<Image src="../static/rama-logo-big.svgg"/>*/}
+                          {/*<Image src="../../static/rama-logo-big.svgg"/>*/}
                           CircuMAT
                       </Navbar.Brand>
                        <Navbar.Toggle />
@@ -700,7 +700,7 @@ class App extends Component {
                                 <Panel.Body>
                                     <h5>Manual</h5>
                                     <ul>
-                                    <li><a  href="../static/CIRCUMAT_PLATFORM_USER_GUIDE.pdf">Manual</a></li>
+                                    <li><a  href="../../static/CIRCUMAT_PLATFORM_USER_GUIDE.pdf">Manual</a></li>
                                     </ul>
                                     <h5>CircuMat Data</h5>
                                     <ul>
@@ -732,8 +732,8 @@ class App extends Component {
                             </Panel.Heading>
                             <Panel.Collapse>
                                 <Panel.Body>
-                                    <Image src="../static/partners.png" responsive />
-                                    <Image src="../static/EIT_EU_logos/EU-Flag-2020_100px.png" responsive />
+                                    <Image src="../../static/partners.png" responsive />
+                                    <Image src="../../static/EIT_EU_logos/EU-Flag-2020_100px.png" responsive />
                                 </Panel.Body>
                             </Panel.Collapse>
                         </Panel>
