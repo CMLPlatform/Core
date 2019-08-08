@@ -39,7 +39,7 @@ module.exports = env => {
 
             new webpack.DefinePlugin({
                 'WEBSOCKET_URL': '"ws://127.0.0.1:8000/circumat/"',
-                'AJAX_URL': '"http://127.0.0.1:8000/ajaxhandling/"'
+                'AJAX_URL': '"http://127.0.0.1:8000/cmat/ajaxhandling/"'
             })
         ],
 
