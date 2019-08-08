@@ -1,3 +1,29 @@
 #(ignore sqlite)
 db.sqlite3
 
+# ignore node_modules (use commands to built)
+/node_modules
+
+#ignore bundle created by django (use commands to built)
+/assets/bundles
+
+#(ignore sqlite)
+sqlite3*
+
+#ignore development environment variables
+dev-env.sh
+
+#ignore production environment variables
+prod-env.sh
+
+#ignore logs
+logs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+/log
+
+/virtualenv

@@ -1,0 +1,8 @@
+name	code	global_id	parent_id	local_id	level	identifier	leaf_children_global	leaf_children_local
+Total final consumption	FC	1	0	0	1	FINALCONSUMPTION	#2#3#4#5#6#7	#0#1#2#3#4#5
+Final consumption expenditure by households	FC1	2	1	0	2	FINALCONSUMPTION	None	None
+Final consumption expenditure by non-profit organisations serving households	FC2	3	1	1	2	FINALCONSUMPTION	None	None
+Final consumption expenditure by government	FC3	4	1	2	2	FINALCONSUMPTION	None	None
+Gross fixed capital formation	FC4	5	1	3	2	FINALCONSUMPTION	None	None
+Changes in inventories	FC5	6	1	4	2	FINALCONSUMPTION	None	None
+Changes in valuables	FC6	7	1	5	2	FINALCONSUMPTION	None	None
