@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from CMLMasterProject.config.base import MEDIA_ROOT
+from CMLMasterProject.config.base import STATIC_ROOT
 import os, json
 
 
@@ -54,54 +54,54 @@ def tailing(request):
 
 class fishmanDefView(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/US_json_abs.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/US_json_abs.json')))
 
         return Response(file_)
 
 class fishmanDefView2(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/simple_graph.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/simple_graph.json')))
 
         return Response(file_)
 
 
 class fishman_JP_abs(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/JP_json_abs.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/JP_json_abs.json')))
         return Response(file_)
 
 
 class fishman_US_cap(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/US_json_cap.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/US_json_cap.json')))
         return Response(file_)
 class fishman_JP_cap(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/JP_json_cap.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/JP_json_cap.json')))
         return Response(file_)
 class fishman_US_gdp(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/US_json_gdp.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/US_json_gdp.json')))
         return Response(file_)
 class fishman_JP_gdp(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/JP_json_gdp.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/JP_json_gdp.json')))
         return Response(file_)
 class fishman_US_growth(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/US_json_growth.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/US_json_growth.json')))
         return Response(file_)
 
 class fishman_JP_growth(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/JP_json_growth.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/JP_json_growth.json')))
         return Response(file_)
 
 class fishman_US_percent(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/US_json_percent.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/US_json_percent.json')))
         return Response(file_)
 class fishman_JP_percent(APIView):
     def get(self, request):
-        file_ = json.load(open(os.path.join(MEDIA_ROOT, 'jsonFilesFishman/JP_json_percent.json')))
+        file_ = json.load(open(os.path.join(STATIC_ROOT, 'jsonFilesFishman/JP_json_percent.json')))
         return Response(file_)

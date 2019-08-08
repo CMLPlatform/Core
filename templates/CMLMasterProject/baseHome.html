@@ -48,8 +48,7 @@
           <ul class="nav navbar-nav navbar-right">
                {% if user.is_authenticated %}
  <t style="color:#428bca;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span>  {{ username}} &nbsp;&nbsp;</t>
-              <a href="/logout" style="color:#d9534f">
-  <span class="glyphicon glyphicon-off" aria-hidden="true" > </span> Log-out &nbsp;</a>
+              <a href="{% url "logout" %}?next=/">logout</a>
               <br>
                             <a href="/cms-admin" style="color:#428bca;">
   <span class="glyphicon glyphicon-cog" aria-hidden="true" > </span> Manage pages (staff only) &nbsp;</a>

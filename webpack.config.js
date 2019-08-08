@@ -33,21 +33,20 @@ module.exports = env => {
             }),
             new webpack.DefinePlugin({
                 'process.env': {
-                    'NODE_ENV': JSON.stringify('dev')
+                    'NODE_ENV': JSON.stringify('production')
                 }
             }),
             /* PRODUCTION SETTINGS -> change above to production value if needed
-             new UglifyJsPlugin(),
-             */
-
+            */
+            new UglifyJsPlugin(),
 
             new webpack.DefinePlugin({
-                'WEBSOCKET_URL': '"' + process.env.WS_PROTOCOL + '://' + process.env.WS_HOST + '/ws/ramascene/"',
-                'AJAX_URL': '"' + process.env.PROTOCOL + '://' + process.env.HOST + '/ajaxhandling/"'
+                //'WEBSOCKET_URL': '"' + process.env.WS_PROTOCOL + '://' + process.env.WS_HOST + '/ws/ramascene/"',
+                //'AJAX_URL': '"' + process.env.PROTOCOL + '://' + process.env.HOST + '/ajaxhandling/"'
                 // 'WEBSOCKET_URL': '"ws://ramascene.local/ws/ramascene/"',
                 // 'AJAX_URL': '"http://ramascene.local/ajaxhandling/"'
-                // 'WEBSOCKET_URL': '"ws://cml.liacs.nl:8080/ws/ramascene/"',
-                // 'AJAX_URL': '"http://cml.liacs.nl:8080/ajaxhandling/"'
+                 'WEBSOCKET_URL': '"wss://cml.liacs.nl/circumat/"',
+                'AJAX_URL': '"https://cml.liacs.nl/cmat/ajaxhandling/"'
             })
         ],
 

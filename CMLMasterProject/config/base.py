@@ -195,7 +195,10 @@ USE_TZ = True
 # SECURITY WARNING: keep the secret keys used in production secret!
 AUTHENTICATION_KEY_RESEARCH = 'my_authentication_key'
 AUTHENTICATION_KEY_STUDENT = 'my_authentication_key'
-
+# disable authentication for DRF for now
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': []
+}
 #PUMA CONFIGURATIONS
 LEAFLET_CONFIG = {
 
