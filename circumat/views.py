@@ -17,6 +17,20 @@ def online_databases(request):
     context_dict = {}
     return render(request, 'circumat/online-databases.html', context_dict)
 
+def project_summary(request):
+    context_dict = {}
+    return render(request, 'circumat/project-summary.html', context_dict)
+
+
+def circular_economy(request):
+    context_dict = {}
+    return render(request, 'circumat/circular-economy.html', context_dict)
+
+
+def academic_papers(request):
+    context_dict = {}
+    return render(request, 'circumat/academic-papers.html', context_dict)
+
 def home(request):
     """
     Home page off app.

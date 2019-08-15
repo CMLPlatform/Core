@@ -45,4 +45,4 @@ With the runserver command used you can now visit MicroVis and PUMA:
 # Starting CircuMat
 Follow the link below:
 
-[a relative link](README_circumat.md)
+[starting circumat](README_circumat.md)
