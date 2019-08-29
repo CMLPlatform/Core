@@ -52,9 +52,9 @@ Check the status to make sure everything is running:
 
 > Note: Perform all next steps in the virtualenv and in the rootfolder of the project
 
-### Set the following environment variables (see sample-dev-env.sh):
+### Set the following environment variables or update them (see sample-dev-env.sh):
 ```
-export DJANGO_SETTINGS_MODULE=circumatMasterProject.config.dev
+export DJANGO_SETTINGS_MODULE=CMLMasterProject.config.dev
 export DATASETS_VERSION=[version downloaded e.g. v3]
 export DATASETS_DIR=my/path/to/datasets (make sure that inside this folder is a folder containing the year 2011)
 export OPENBLAS_NUM_THREADS=<adjust according to how many cores you want to use>

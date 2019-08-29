@@ -26,6 +26,15 @@ Install requirement.txt in a Python3.x virtual environment:
 ```
 $ pip install -r requirements.txt 
 ```
+### Set the following environment variables used by Core (see sample-dev-env.sh):
+```
+export DJANGO_SETTINGS_MODULE=CMLMasterProject.config.dev
+export DATASETS_VERSION=v4
+export DATASETS_DIR=/home/
+export OPENBLAS_NUM_THREADS=1
+```
+The last three environment variables are required for CircuMat, See documentation [here](README_circumat.md)
+
 Apply database migrations:
 ```
 $ python manage.py makemigrations {CMLMasterProject,PUMA,panorama,CMS,MicroVis,circumat}
