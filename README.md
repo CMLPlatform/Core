@@ -42,7 +42,7 @@ $ python manage.py migrate
 ```
 Run the development server:
 ```
-$ python manage.py runserver -settings=CMLMasterProject.config.dev
+$ python manage.py runserver --settings=CMLMasterProject.config.dev
 ```
 
 
