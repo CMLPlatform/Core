@@ -19,5 +19,8 @@ urlpatterns = [
         url(r'^fishman-us-growth/$', views.fishman_US_growth.as_view()),
         url(r'^fishman-us-percent/$', views.fishman_US_percent.as_view()),
         url(r'^fishman-default2/$', views.fishmanDefView2.as_view()),
+        url(r'^sandd/$', views.sandd, name='softwaredata'),
+        url(r'^sandd2/$', views.sandd2, name='softwaredata'),
+        url(r'^sandd3/$', views.sandd3, name='softwaredata'),
 
 ]

@@ -40,6 +40,39 @@ def flows_fishman2(request):
     return render(request,'MicroVis/fishman2.html', context_dict)
 
 
+def sandd(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd1.html', context_dict)
+
+def sandd2(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd2.html', context_dict)
+
+def sandd3(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd3.html', context_dict)
+
 def tailing(request):
     context_dict = {}
     username = None
