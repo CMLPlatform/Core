@@ -73,6 +73,17 @@ def sandd3(request):
 
     return render(request,'MicroVis/sandd/sandd3.html', context_dict)
 
+def sandd4(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd4.html', context_dict)
+
 def tailing(request):
     context_dict = {}
     username = None

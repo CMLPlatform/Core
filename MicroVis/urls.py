@@ -22,5 +22,6 @@ urlpatterns = [
         url(r'^sandd/$', views.sandd, name='softwaredata'),
         url(r'^sandd2/$', views.sandd2, name='softwaredata'),
         url(r'^sandd3/$', views.sandd3, name='softwaredata'),
+        url(r'^sandd4/$', views.sandd4, name='softwaredata'),
 
 ]
