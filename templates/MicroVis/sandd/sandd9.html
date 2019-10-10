@@ -1,0 +1,95 @@
+{% extends 'MicroVis/base_pres.html' %}
+{% load static %}
+
+  {% block speciality %}
+
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style_pres.css' %}"/>
+
+
+<style>
+  //button styling
+
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #0d0f59;
+  }
+
+  #button:hover {
+    background-color: #52a552 !important;
+  }
+
+
+</style>
+    {% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="container bg-overlay6" >
+<br>
+
+<div class="container-fluid">
+  <center> <h3 >CML Software & Data <span class="badge">9</span></h3></center><br>
+  <p><a class="btn btn-primary btn-sm" href="../sandd8" role="button" >Previous</a> <a class="btn btn-primary btn-sm" href="#"  disabled role="button" >Next</a></p>
+            <hr>
+
+</div>
+
+<div class="panel panel-default" style="background-color: rgba(255, 255, 255, .9); color:black;">
+    <div class="panel-heading" style="background-color: rgba(255, 255, 255, .9); color:#0d0f59">    <center>
+<h1>Conclusion</h1>
+        </center></div>
+  <div class="panel-body">
+      <div class="container">
+  <h2>
+       We need:
+      </h2>
+           <h3>
+               <li>A consensus on the needs</li>
+       <li>To develop concrete steps</li>
+       <li>Initiate an environment of shared responsibility</li>
+   </h3>
+<center>
+    <img src="{% static 'microvis/_108824273_chimps2.jpg' %}" alt="img"></center>
+<br><br>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<!--footer start from here-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
+
+                    <li><a>Sidney Niccolson | Institute of Environmental Sciences (CML)</a></li>
+                    <li><a>16th of October, 2019</a></li>
+                    <li><a>s.i.niccolson@cml.leidenuniv.nl</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+   {% endblock %}

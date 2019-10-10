@@ -84,6 +84,61 @@ def sandd4(request):
 
     return render(request,'MicroVis/sandd/sandd4.html', context_dict)
 
+def sandd5(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd5.html', context_dict)
+
+def sandd6(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd6.html', context_dict)
+
+def sandd7(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd7.html', context_dict)
+
+def sandd8(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd8.html', context_dict)
+
+def sandd9(request):
+    context_dict = {}
+    username = None
+    if request.user.is_authenticated:
+        username = request.user.username
+        #special for cml researcher to get info to be used later
+        context_dict.update({'username': username})
+
+
+    return render(request,'MicroVis/sandd/sandd9.html', context_dict)
+
 def tailing(request):
     context_dict = {}
     username = None

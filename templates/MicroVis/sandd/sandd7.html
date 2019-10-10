@@ -1,0 +1,130 @@
+{% extends 'MicroVis/base_pres.html' %}
+{% load static %}
+
+  {% block speciality %}
+
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style_pres.css' %}"/>
+
+
+<style>
+  //button styling
+
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #0d0f59;
+  }
+
+  #button:hover {
+    background-color: #52a552 !important;
+  }
+
+
+</style>
+    {% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="container bg-overlay6" >
+<br>
+
+<div class="container-fluid">
+  <center> <h3 >CML Software & Data <span class="badge">7</span></h3></center><br>
+  <p><a class="btn btn-primary btn-sm" href="../sandd6" role="button" >Previous</a> <a class="btn btn-primary btn-sm" href="../sandd8" role="button" >Next</a></p>
+            <hr>
+
+</div>
+
+<div class="panel panel-default" style="background-color: rgba(255, 255, 255, .9); color:black;">
+    <div class="panel-heading" style="background-color: rgba(255, 255, 255, .9); color:#0d0f59">    <center>
+<h1>Oppurtunities</h1>
+        </center></div>
+  <div class="panel-body">
+      <div class="container">
+          <h2>
+              <img src="{% static 'microvis/index.png' %}" height="50" width="150" alt="img">
+          ISSC's new role  </h2>
+                    <hr style="border-top: 1px solid #0d0f59;">
+
+          <h3>
+          <li> Research ICT Compentence Center (operational support)</li>
+              <li>Centre for Digital Scholarship (high-level)</li>
+                   <li>Data stewards forming workgroups </li>
+                            <li>Assist in: <b>Storage, data management, training, pilots, visualisation</b></li>
+
+
+          </h3>
+        <h2>
+            <img src="{% static 'microvis/surfsara-squarelogo-1552466298779.png' %}" height="50" width="50" alt="img">
+        SurfSara services     </center>
+</h2>
+                    <hr style="border-top: 1px solid #0d0f59;">
+
+          <h3>
+        <li> SurfDrive - Internal use</li>
+              <li> ResearchDrive - Focuses on collaborative research</li>
+               <li> Compute environments including Jypter notebook server</li>
+
+              </h3>
+
+
+          <h2>
+              <img src="{% static 'microvis/aws-logo-100584713-primary.idge.jpg.png' %}" height="50" width="80" alt="img">
+          Third-party services  </h2>
+          <hr style="border-top: 1px solid #0d0f59;">
+          <h3>
+          <li> Powerful services that support a wide-range of needs</li>
+
+          <h2>
+              <img src="{% static 'microvis/index2.png' %}" height="50" width="30" alt="img">
+          Increasing IT capacity</h2>
+          <h3>
+                        <hr style="border-top: 1px solid #0d0f59;">
+
+          <li>Kojak.nl - Software engineers in training</li></h3>
+
+
+
+          <br>
+
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<!--footer start from here-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
+
+                    <li><a>Sidney Niccolson | Institute of Environmental Sciences (CML)</a></li>
+                    <li><a>16th of October, 2019</a></li>
+                    <li><a>s.i.niccolson@cml.leidenuniv.nl</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+   {% endblock %}

@@ -1,0 +1,97 @@
+{% extends 'MicroVis/base_pres.html' %}
+{% load static %}
+
+  {% block speciality %}
+
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style_pres.css' %}"/>
+
+
+<style>
+  //button styling
+
+  #button {
+    padding: .5em 1em;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #0d0f59;
+  }
+
+  #button:hover {
+    background-color: #52a552 !important;
+  }
+
+
+</style>
+    {% endblock %}
+
+
+
+{% block content %}
+
+
+<div class="container bg-overlay6" style="min-height: 1800px;">
+<br>
+
+<div class="container-fluid">
+  <center> <h3 >CML Software & Data <span class="badge">6</span></h3></center><br>
+  <p><a class="btn btn-primary btn-sm" href="../sandd5" role="button" >Previous</a> <a class="btn btn-primary btn-sm" href="../sandd7" role="button" >Next</a></p>
+            <hr>
+
+</div>
+
+<div class="panel panel-default" style="background-color: rgba(255, 255, 255, .9); color:black; min-height: 1400px;">
+    <div class="panel-heading" style="background-color: rgba(255, 255, 255, .9); color:#0d0f59">    <center>
+<h1>Survey amongst the S&D group</h1>
+        </center></div>
+  <div class="panel-body">
+      <div class="container">
+          <!--
+      <h3>
+
+        <li>  </li><li>
+          Different needs and requirements on each case</li><li>Endless amount of solutions</li><li>...</li>
+         <br>
+</h3>
+-->
+          <br>
+<iframe width="433.5" height="412.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsz_fQ8T2s7Y9_s_Iesjc-cI_pRJhrQvBT_B1sRmUx3Y7RdD8LYNXI697EOtGDkpXYIidQ25G9lv3u/pubchart?oid=525177024&amp;format=interactive"></iframe>
+     <iframe width="600" height="559" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsz_fQ8T2s7Y9_s_Iesjc-cI_pRJhrQvBT_B1sRmUx3Y7RdD8LYNXI697EOtGDkpXYIidQ25G9lv3u/pubchart?oid=1172481999&amp;format=interactive"></iframe>
+      <iframe width="757.5" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsz_fQ8T2s7Y9_s_Iesjc-cI_pRJhrQvBT_B1sRmUx3Y7RdD8LYNXI697EOtGDkpXYIidQ25G9lv3u/pubchart?oid=465672535&amp;format=interactive"></iframe>
+          <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTsz_fQ8T2s7Y9_s_Iesjc-cI_pRJhrQvBT_B1sRmUx3Y7RdD8LYNXI697EOtGDkpXYIidQ25G9lv3u/pubchart?oid=1023114032&amp;format=interactive"></iframe>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<!--footer start from here-->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">RESOURCES</h6>
+                <ul class="footer-ul">
+
+                    <li><a>Sidney Niccolson | Institute of Environmental Sciences (CML)</a></li>
+                    <li><a>16th of October, 2019</a></li>
+                    <li><a>s.i.niccolson@cml.leidenuniv.nl</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <blockquote cite="https://github.com/CMLPlatform/DjangoPlatform"><a href="https://github.com/CMLPlatform/">GitHub</a></blockquote>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+   {% endblock %}
