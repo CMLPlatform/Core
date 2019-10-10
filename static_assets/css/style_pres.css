@@ -1,0 +1,261 @@
+/*navbar default colors*/
+.navbar-default {
+  background-color: #3e3e3e;
+  background-image: none;
+  background-repeat: no-repeat;
+
+ }
+/*navbar active colors*/
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+
+    color:  	#428bca;
+}
+ .navbar-default .navbar-nav > .active > a,
+
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #e0e0eb;
+
+      border-bottom: 3px solid #428bca;
+
+ }
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color:#323232;
+
+}
+
+
+/*footer*/
+
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+footer { background-color:#3e3e3e; min-height:350px; font-family: 'Open Sans', sans-serif; }
+.footerleft { margin-top:50px; padding:0 36px; }
+.logofooter { margin-bottom:10px; font-size:25px; color:#fff; font-weight:700;}
+
+.footerleft p { color:#fff; font-size:12px !important; font-family: 'Open Sans', sans-serif; margin-bottom:15px;}
+.footerleft p i { width:20px; color:#999;}
+
+
+.paddingtop-bottom {  margin-top:50px;}
+.paddingtop-bottom2 {  margin-top:50px; color:white;}
+.footer-ul { list-style-type:none;  padding-left:0px; margin-left:2px;}
+.footer-ul li { line-height:29px; font-size:12px;}
+.footer-ul li a { color:#a0a3a4; transition: color 0.2s linear 0s, background 0.2s linear 0s; }
+.footer-ul i { margin-right:10px;}
+.footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#ff670f; }
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/adriel-kloppenburg-TyWBZWsZSSg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 1000px;
+    width:100%;
+    padding-top: 50px;
+}
+
+.bg-overlay2 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    width:100%;
+    padding-top: 50px;
+}
+.bg-overlay3 {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/anastasia-dulgier-OKOOGO578eo-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 1000px;
+    width:100%;
+    padding-top: 50px;
+}
+.bg-overlay4 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 1000px;
+    width:100%;
+    padding-top: 50px;
+}
+.bg-overlay5 {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../images/redcharlie-k2zWqv_yfNM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 1000px;
+    width:100%;
+    padding-top: 50px;
+}
+.bg-overlay6 {
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("../images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 1000px;
+    width:100%;
+}
+
+
+ .icon-ul { list-style-type:none !important; margin:0px; padding:0px;}
+ .icon-ul li { line-height:75px; width:100%; float:left;}
+ .icon { float:left; margin-right:5px;}
+
+
+ .copyright { min-height:40px; background-color:#000000;}
+ .copyright p { text-align:left; color:#FFF; padding:10px 0; margin-bottom:0px;}
+ .heading7 { font-size:21px; font-weight:700; color:#d9d6d6; margin-bottom:22px;}
+ .post p { font-size:12px; color:#FFF; line-height:20px;}
+ .post p span { display:block; color:#8f8f8f;}
+ .bottom_ul { list-style-type:none; float:right; margin-bottom:0px;}
+ .bottom_ul li { float:left; line-height:40px;}
+ .bottom_ul li:after { content:"/"; color:#FFF; margin-right:8px; margin-left:8px;}
+ .bottom_ul li a { color:#FFF;  font-size:12px;}
+
+
+ .carousel-indicators li {
+    display: inline-block;
+padding-top:10px
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #e0e0eb;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+padding-top:10px
+    margin: 10px;
+    background-color: #3e3e3e;
+}
+
+
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    display: none;
+}
+/*Spacing general pages*/
+html, body {
+    height: 100%;
+}
+
+
+/*sidebar*/
+.navbar-fixed-left {
+  width: 120px;
+  position: fixed;
+  border-radius: 0;
+
+  height: 100%;
+    background-color: #3e3e3e;
+
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 180px;
+
+  width: 100%;
+
+
+}
+
+/* On using dropdown menu (To right shift popuped) */
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+  margin-top: -50px;
+  margin-left: 140px;
+
+}
+
+
+  tbody {
+    display: block;
+    max-height: 500px;
+
+
+  }
+
+  thead,
+  tbody tr {
+    display: table;
+    width: 100%;
+  }
+
+  thead {
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+
+
+  td:nth-child(1) {
+    width:50%
+  }
+
+   td:nth-child(2) {
+    width:10%
+  }
+  td:nth-child(3) {
+    width:10%
+  }
+  td:nth-child(4) {
+    width:10%
+  }
+  td:nth-child(5) {
+    width:10%
+  }
+
+  .navbar-default .navbar-nav  .dropdown-menu>li>a,   .dropdown-menu2 {
+    background-color: #3e3e3e;
+    color:#b3b3bc;
+  }
+  .navbar-default .navbar-nav  .dropdown-menu>li>a,   .dropdown-menu {
+    background-color: #3e3e3e;
+    color:#b3b3bc;
+  }
+
+  .navbar-default .navbar-nav  .dropdown-menu>li> a:hover {
+    background-color: #3e3e3e;
+    color: 	#428bca;
+  }
+
+
