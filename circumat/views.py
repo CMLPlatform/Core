@@ -5,17 +5,26 @@ from django_celery_results import models
 import json
 from django.views.decorators.csrf import csrf_exempt
 
+
 def home_page(request):
     context_dict = {}
     return render(request, 'circumat/homepage.html', context_dict)
+
+
+def edu_page(request):
+    context_dict = {}
+    return render(request, 'circumat/educational-materials.html', context_dict)
+
 
 def online_tools(request):
     context_dict = {}
     return render(request, 'circumat/online-tools.html', context_dict)
 
+
 def online_databases(request):
     context_dict = {}
     return render(request, 'circumat/online-databases.html', context_dict)
+
 
 def project_summary(request):
     context_dict = {}
@@ -30,6 +39,7 @@ def circular_economy(request):
 def academic_papers(request):
     context_dict = {}
     return render(request, 'circumat/academic-papers.html', context_dict)
+
 
 def home(request):
     """

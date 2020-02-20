@@ -1,0 +1,299 @@
+{% extends 'circumat/baseHome.html' %}
+
+{% load render_bundle from webpack_loader %}
+
+
+{% load static %}
+{% block title %}CircuMat{% endblock %}
+
+
+{% block speciality %}
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="{% static 'css_home/grayscale.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+<!-- Add code to initialize the product tree when the document is loaded: -->
+
+
+{% block content %}
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+    <div class="container">
+        CircuMAT
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../circumat" style="color: black;">Tool </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#about" style="color: black;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#methods" style="color: black;">Methods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#deliverables" style="color: black;">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#" style="color: black;border-bottom: .25rem solid
+                        #1e2d0f;
+                        border-bottom-color:
+                        rgb(30, 45, 15);
+                        border-bottom-style: solid;
+                        border-bottom-width: 0.25rem;">Education
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#contact" style="color: black;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">Introduction Educational Materials</h2>
+                <p class="text-white-50">The aim of CircuMat project is to support the introduction of Circular Economy
+                    concepts to practitioners by developing a set of tools that introduces the fundamentals of
+                    environmental and economic analyses to regional practitioners and gives them the eye openers to
+                    better understand their region, the sectors in order to assess the priority and the potential for
+                    ‘circular’ policies.
+                </p>
+                <p class="text-white-50">
+                    To achieve this, 3 main tools were developed: the REAT tool an online calculation tool that performs
+                    environmentally extended input output analysis in the subnational regions (NUTS 2) of Europe; the
+                    Tools and Databases for Circular Economy tool that introduces available online tools to further
+                    expand the knowledge on Circular Economy; and the Industrial Symbiosis matchmaking tools that
+                    identifies possible uses for wastes as secondary raw materials at regional level.
+                </p>
+                <p class="text-white-50">
+                    Additionally, a set of educational material was developed to allow teaching such complex tools to
+                    practitioners.
+
+                    This report presents a summary of the educational material developed as well as a description of the
+                    practitioners that were subject to the material, through seminars, workshops, lectures and project
+                    work.
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="methods" class="projects-section bg-light">
+    <div class="container">
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7">
+                <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/pic5.jpg' %}" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Educational Materials overview </h4>
+                    <p class="text-black-50 mb-0">
+                        The educational material developed considered the 3 main tools in the CircuMat project. It
+                        included not only an explanation, or exercises around the tools but also the presentation of the
+                        fundamental background knowledge that need to be understood to properly manipulate the CircuMat
+                        tool. All the educational materials were used in the ACE155 Urban Metabolism course of the MSc
+                        program Infrastructure and Environmental Engineering given at Chalmers. Adapted versions were
+                        made for the REAT tool and Industrial Symbiosis Matchmaking tool for the CircuMat workshops:
+                        Building a Regional Circular Economy Identifying regional waste flows as secondary inputs for
+                        the regional economy at TU Delft.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">The REAT tool</h4>
+                            <p class="mb-0 text-white-50">
+                                The REAT tool is based on the concepts of Input-Output and performs economic and
+                                environmental calculations according to the Leontief model in the NUT2 regions of
+                                Europe. To present the tool two lectures were developed: the first on fundamentals of
+                                input-ouput and a simple exercise and the second on multiregional input-output and the
+                                REAT tool. Additionally, a tutorial about the REAT tool was developed and a project work
+                                description, that allowed for further exploration on the topic.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                <br> Sources: <br>
+                                <a style="color:white;" href="../../static/cmat_education/Input-Output_method.pdf">Input-Output
+                                    Methodology
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Input-Output_method_Exercise.xlsx">Input-Output
+                                    Exercises
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Input-Output_and_MRIO_methods.pdf">Input-Output
+                                    & MRIO methods
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Multi-regional_Input-Output_tool.pdf">Multi-regional
+                                    Input-Output tool
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/REAT_tutorial.pdf">REAT tutorial
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Reducing_Resource_Use_project_description.pdf">Reducing
+                                    resource use project description
+                                </a>
+                            </p>
+
+                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                            <h4 class="text-white">The Tools and Databases for Circular Economy tool<br></h4>
+                            <p class="mb-0 text-white-50">
+                                The Tools and Databases for Circular Economy tool is composed of information about
+                                several online services that provide tools and data for several types of methods that
+                                can be used under the Circular Economy concept. For example, MFA, LCA and System
+                                dynamics. To allow for exploration of this set of information a workshop format was
+                                developed which allow for the participants to research on a single tool or database and
+                                afterward present it in class. A brief document was created to guide the discussion.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                <br> Sources: <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Tools_and_databases_for_CE_workshop.pdf">Tools
+                                    and databases for CE workshop
+                                </a>
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 mr-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <div class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-black text-center h-100 project">
+                    <div class="d-flex h-100">
+                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                            <h4 class="text-white">The Industrial Symbiosis matchmaking tool</h4>
+                            <p class="text-white-50 mb-0">
+                                The Industrial Symbiosis matchmaking tool is based on Industrial Symbiosis concept and
+                                for the participants of teaching events a lecture was developed as well as a group
+                                project.
+                            </p>
+                            <p class="mb-0 text-white-50">
+                                <br> Sources: <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Industrial_Symbiosis.pdf">Industrial Symbiosis
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Matchmaking_IS.pdf">Matchmaking IS
+                                </a>
+                                <br>
+                                <a style="color:white;"
+                                   href="../../static/cmat_education/Industrial_Symbiosis_Project_Description.pdf">Industrial Symbiosis Project
+                                    Description
+                                </a>
+                            </p>
+                            <hr class="d-none d-lg-block mb-0 ml-0">
+                        </div>
+                        git a
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+
+    </div>
+</section>
+
+{% endblock %}
+{% block footer %}
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+
+    <div class="container">
+        The clients and developers of the CircuMat application are not responsible for any incorrect or incomplete
+        data (about measurements, standards, visualizations etc.) or information on this website.
+        <br>Copyright &copy; CircuMat 2019
+    </div>
+    <div class="container">
+        Credits <a
+            style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+            href="https://unsplash.com/@jonathanborba?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            target="_blank" rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from Jonathan Borba"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                              viewBox="0 0 32 32"><title>unsplash-logo</title><path
+            d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+            style="display:inline-block;padding:2px 3px">Jonathan Borba</span></a>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+           href="https://unsplash.com/@calvinhanson?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+           target="_blank" rel="noopener noreferrer"
+           title="Download free do whatever you want high-resolution photos from Calvin Hanson"><span
+                style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                  style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                                  viewBox="0 0 32 32"><title>unsplash-logo</title><path
+                d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+                style="display:inline-block;padding:2px 3px">Calvin Hanson</span></a>
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static 'vendor/font-awesome/js/all.js' %}"></script>
+<script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{% static 'js_home/grayscale.min.js' %}"></script>
+{% endblock %}

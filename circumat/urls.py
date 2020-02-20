@@ -4,6 +4,7 @@ import circumat.views as views
 
 urlpatterns = [
     url(r'^$', views.home_page, name='home-page'),
+    url(r'^edu/$', views.edu_page, name='educational-materials'),
     url(r'^online-tools/$', views.online_tools, name='onlineTools'),
     url(r'^online-databases/$', views.online_databases, name='onlineDatabases'),
     url(r'^project-summary/$', views.project_summary, name='projectSummary'),
