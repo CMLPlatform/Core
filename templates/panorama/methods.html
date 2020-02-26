@@ -36,11 +36,11 @@
           <li class="nav-item">
             <a class="nav-link" href="../about">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../methods">Methods</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Deliverables</a>
+            <a class="nav-link" href="#methods">Methods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../services">Deliverables</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education</a>
@@ -64,7 +64,7 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Deliverables
+    <h1 class="mt-4 mb-3">Methods
       <small></small>
     </h1>
 
@@ -72,23 +72,34 @@
       <li class="breadcrumb-item">
         <a href="../">Home</a>
       </li>
-      <li class="breadcrumb-item active">Deliverables</li>
+      <li class="breadcrumb-item active">Methods</li>
     </ol>
 
     <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="{% static 'images/panorama/pan.png' %}" alt="">
+
 
     <div class="row">
             <div class="col-lg-6">
-        <h4>Why PANORAMA?</h4>
-              <p>Many datasets originate from single projects and not from continuously updated and maintained data sources. For example geosurveys on material extraction, H2020 projects on specific materials, etc. Such separate data sets are not consistently linked over the life cycle. Our ambition in this projects is to make crucial advances in showing how such data sets can be harmonized, leading to a physical-economic database.
-              This harmonized database system can be approached from a material, component, product and waste classification perspective, covering the full economy and national plus international trade.
+        <h4>Methods</h4>
+                     <p>
+                  This report presents the methodology and first prototype of the Physical AccouNts Of RAw MAterial stock and flow Information Service (PANORAMA) database. The PANORAMA database seeks to combine extensive data on material flows and stocks and that will be the basis for a web-based information service system to assess current and future bottlenecks in the supply chain related to (critical) raw materials, specifically those that are currently not in the scope of existing tools and databases.
               </p></div>
               <div class="col-lg-6">
-               <h4>Deliverables</h4>
-              <p>
-                Our project aims to realise a prototype in an operational environment. The steps within PANORAMA consists of combining, gap filling and balancing existing data sets. Therefore using and building on database infrastructures that have been developed in the context of projects such as EXIOBASE and PROSUM. We foresee having developed an operational database discerning industry sectors, product flows and stocks, discerning at least 10 materials by product most relevant to other KIC RM projects and societally relevant innovations such as the energy transition and e-mobility, and a web-based information service. The data set should also be capable of trend analyses, providing forecasted data on material (such as CRM) usage for critical technologies for the EU (such as electric vehicles, energy transition technologies and so forth) and their consequence for the future urban mine.
-              </p>
+               <h4>Modules</h4>
+                  <p>The model to generate the PANORAMA database is based on several modules.</p>
+                  <li>
+                      <h6>Composition module </h6>This module assigns material and elemental composition of products, which are harmonized according to various uncertainty scores.
+                        <br><br>
+                  </li>
+                  <li>
+                      <h6>Classification module </h6>This module generates the Panorama classification (PC) system based on the selected elements and materials and the correspondence tables with other classification systems containing the raw data.
+                  <br><br>
+                  </li>
+                  <li>
+                      <h6>Data Module </h6>Here the raw data is harvested, pre-processed, harmonized, and assigned a level of uncertainty.
+                    Final data gaps in the supply-use tables are imputed by disaggregating hybrid Exiobase tables and balanced according to the uncertainty criteria.
+                  </li>
+
 
 
             </div>
@@ -96,6 +107,9 @@
 
 
     </div>
+      <br>
+          <img class="img-fluid rounded mb-4" src="{% static 'images/panorama/methods.png' %}" alt="">
+     <center><sub>Panorama flowchart. Depicts major inputs (labelled red), modules (outlined), procedures (yellow labelled), outputs (rhombus), and related files</sub></center>
 
     <!-- /.row -->
 

@@ -27,33 +27,33 @@
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/panorama">PANORAMA</a>
+      <a class="navbar-brand" href="../../">PANORAMA</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../about">About</a>
+            <a class="nav-link" href="../../about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../methods">Methods</a>
+            <a class="nav-link" href="../../methods">Methods</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Deliverables</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../../services">Deliverables</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="../edu/mfa">Material Flow Analysis</a>
+              <a class="dropdown-item active" href="#">Material Flow Analysis</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../contact">Contact</a>
+            <a class="nav-link" href="../../contact">Contact</a>
           </li>
         </ul>
         <ul class="navbar-nav navbar-right ml-auto">
-          <li><a href="/">
+          <li><a href="../../../">
             <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
         </li></ul>
       </div>
@@ -64,31 +64,32 @@
   <div class="container">
 
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Deliverables
+    <h1 class="mt-4 mb-3">Education
       <small></small>
     </h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-        <a href="../">Home</a>
+        <a href="../../">Home</a>
       </li>
-      <li class="breadcrumb-item active">Deliverables</li>
+      <li class="breadcrumb-item active">Education / MFA</li>
     </ol>
 
     <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="{% static 'images/panorama/pan.png' %}" alt="">
+
 
     <div class="row">
             <div class="col-lg-6">
-        <h4>Why PANORAMA?</h4>
-              <p>Many datasets originate from single projects and not from continuously updated and maintained data sources. For example geosurveys on material extraction, H2020 projects on specific materials, etc. Such separate data sets are not consistently linked over the life cycle. Our ambition in this projects is to make crucial advances in showing how such data sets can be harmonized, leading to a physical-economic database.
-              This harmonized database system can be approached from a material, component, product and waste classification perspective, covering the full economy and national plus international trade.
+        <h4>Educational materials for MFA</h4>
+              <p>
+                Several resources are made available for education purposes. See resources section.
               </p></div>
               <div class="col-lg-6">
-               <h4>Deliverables</h4>
+               <h4>Resources</h4>
               <p>
-                Our project aims to realise a prototype in an operational environment. The steps within PANORAMA consists of combining, gap filling and balancing existing data sets. Therefore using and building on database infrastructures that have been developed in the context of projects such as EXIOBASE and PROSUM. We foresee having developed an operational database discerning industry sectors, product flows and stocks, discerning at least 10 materials by product most relevant to other KIC RM projects and societally relevant innovations such as the energy transition and e-mobility, and a web-based information service. The data set should also be capable of trend analyses, providing forecasted data on material (such as CRM) usage for critical technologies for the EU (such as electric vehicles, energy transition technologies and so forth) and their consequence for the future urban mine.
-              </p>
+                                <a
+                                   href="../../../static/panorama_education/Lecture_MFA_UB 2019.pptx">Lecture MFA 2019 (UB)
+                                </a>              </p>
 
 
             </div>
@@ -96,7 +97,8 @@
 
 
     </div>
-
+    <br><br><br>
+    <img class="img-fluid rounded mb-4" src="{% static 'images/panorama/pan.png' %}" alt="">
     <!-- /.row -->
 
   </div>

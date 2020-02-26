@@ -33,8 +33,17 @@
           <li class="nav-item">
             <a class="nav-link" href="about">About</a>
           </li>
+            <li class="nav-item">
+            <a class="nav-link" href="methods">Methods</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="services">Deliverables</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="edu/mfa">Material Flow Analysis</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact">Contact</a>
@@ -49,26 +58,36 @@
   </nav>
 
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="container" >
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+
+          <div  style="margin-left: 0;" class="col-lg-6">
+              <h1 class="my-4"  >PANORAMA</h1>
+              <p>Physical accounts of raw material stock and flow information service </p>
+
+</div>
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('/static/images/panorama/satelite.png')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>PANORAMA</h3>
-            <p>Physical accounts of raw material stock and flow information service </p>
+              <div id="main-img" />
+     <div class="carousel-caption d-none d-md-block" style="color:#007bff">
+
+            <sub>Annual tantalum (Ta) flows through Denmark in 2011 (metric tonnes)</sub>
           </div>
-        </div>
+
 
     </div>
+    </div>
+    <hr>
+  </div>
   </header>
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container" >
 
-    <h1 class="my-4">PANORAMA</h1>
+
 
     <!-- /.row -->
 
@@ -76,7 +95,7 @@
     <!-- /.row -->
 
     <!-- Features Section -->
-    <div class="row">
+    <div class="row" >
             <div class="col-lg-6">
         <h4>Linking physical and economic data</h4>
 <p>The Sustainable Development Goals (SDGs), the transition to a low-carbon and circular economy, realising resource-efficiency, and ensuring resource supply security are now core goals for most countries in the world. These ambitions require transformations with regard to the economies’ use of natural resources,  and the resulting emissions and waste. For these goals to be realized there is a need for a robust information base regarding the current and future demands the economy has for natural resources. Ideally such an information system links physical and economic information about industry sectors, product flows and stocks, and  material flows and stocks, all a coherent classification that allows using this information in forward looking models. Such an information system would allow for forecasting resource demand, economic implications of resource supply problems, and provide a deep understanding of the societal metabolism of products and materials, including the structure of urban mines. </p>
@@ -139,8 +158,13 @@
         <img class="img-fluid" src="{% static 'images/panorama/ub.png' %}" alt="">
       </div>
 
+            <div class="col-md-4">
+        <img class="img-fluid"   src="{% static 'images/panorama/logo3.png' %}" alt="">
+
+        </div>
+
     </div>
-    <center> <img   src="{% static 'images/panorama/logo3.png' %}"></center>
+
 
 
   </div>
@@ -149,7 +173,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; PANORAMA 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; PANORAMA 2019-2020</p>
       <p class="m-0 text-center text-white"><a href="https://twitter.com/PanoramaProj?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @PanoramaProj</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
            <div class="container">
        <p class="m-0 text-center text-white"> Art credits:
