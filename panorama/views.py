@@ -23,3 +23,7 @@ def methods(request):
 
 def mfa(request):
     return render(request, 'panorama/mfa.html')
+
+
+def school(request):
+    return render(request, 'panorama/summerschool.html')

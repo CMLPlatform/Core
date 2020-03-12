@@ -1,0 +1,200 @@
+{% extends 'circumat/baseHome.html' %}
+
+{% load render_bundle from webpack_loader %}
+
+
+{% load static %}
+{% block title %}CircuMat{% endblock %}
+
+
+{% block speciality %}
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<!-- Custom fonts for this template -->
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="{% static 'css_home/grayscale.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+<!-- Add code to initialize the product tree when the document is loaded: -->
+
+
+{% block content %}
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+
+    <div class="container">
+        CircuMAT
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../circumat" style="color: black;">Tool </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#about" style="color: black;">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#methods" style="color: black;">Methods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#deliverables" style="color: black;">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../edu" style="color: black;">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#" style="color: black;border-bottom: .25rem solid
+                        #1e2d0f;
+                        border-bottom-color:
+                        rgb(30, 45, 15);
+                        border-bottom-style: solid;
+                        border-bottom-width: 0.25rem;">Matchmaking
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="../#contact" style="color: black;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="about-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">Introduction to the Industrial Symbiosis Matchmaking tool</h2>
+                <p class="text-white-50">The European Union has adopted an ambitious package to promote
+                    Circular Economy, aimed at fostering sustainable economic growth, generating new jobs and
+                    reducing environmental impacts. Part of the package establishes clear targets for waste
+                    reduction, including waste re-use and industrial symbiosis (IS). Industrial wastes need to
+                    be accounted and characterized in order to investigate their possible use as feedstock.
+                </p>
+                <p class="text-white-50">
+                    To establish an industrial symbiosis partnership, finding a partner firm for material exchange
+                    requires detailed data at company level. However, industrial waste data is often not available
+                    or may be difficult to obtain, either for confidentiality reasons or because it is time-consuming
+                    to collect. The task becomes even more challenging when the regional
+                    scale is considered, due to the large number of companies that need to be surveyed.
+                    On the other hand, application of
+                    IS at the regional scale has several advantages, including a greater variety of potential customers
+                    that may use the available resources, the provision of the volumes required to achieve economies of
+                    scale, and ensured proximity between companies.
+                </p>
+                <p class="text-white-50">
+                    The Industrial Symbiosis matchmaking tool is a framework that
+                    allows for a quick identification of potential re-uses of selected
+                    wastes given the characteristics of the region that is being studied, and
+                    the priorities practitioners have.
+                    <br>
+                </p>
+                <p class="text-white-50">
+                    The tool for identifying scenarios for industrial waste utilization is intended to be flexible
+                    and possible to adapt to the development priorities established for a given region. The tool
+                    includes 3 main components: the selection of development priorities to focus on, waste selection
+                    and characterization, and the industrial symbiosis identification.
+                    The development priorities are based on the needs and opportunities of the studied region.
+                    These priorities determine which waste types are to be studied. The waste selection
+                    and characterization is made up of 4 steps. In Step 1, a list is produced, where the
+                    specified waste types are expressed in terms of waste categories within the standard waste
+                    nomenclatures. In Step 2, a characterization of wastes produced in the different economic
+                    sectors is made, using waste generation statistics and calculation of waste generation profiles
+                    by sector. Sectors that produce the wastes included in the list from Step 1 are selected for
+                    further analysis. In Step 3, detailed characterization of the waste generation of each industry
+                    within the selected sectors is carried out, allowing a refined selection of industries. Finally,
+                    in step 4, the expected quantities of waste produced by the industries selected in Step 3 are
+                    estimated, based on calculations of the waste intensity for each
+                    industry.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="methods" class="projects-section bg-light">
+ <div class="container">
+         <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7">
+                <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/circumat_matchmaking.svg' %}" alt="">
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <h4>Support materials </h4>
+                    <p class="text-black-50 mb-0">
+                       To apply the tool for specific regions a tutorial was developed as well as support material.<br>
+                        <li><a href="../../static/cmat_education/IS_concepts.pdf">A presentation of Industrial
+                        Symbiosis concepts with examples and exercises</a></li>
+                    <li><a href="../../static/cmat_education/IS_matchmaking_tutorial.pdf">The tutorial for Industrial Symbiosis
+                        matchmaking with examples and step-by-step guide</a></li>
+                     <li><a href="../../static/cmat_education/Waste_Ratios_in_Europe_EWC42.xlsx">The Waste Ratios in Europe
+                         for different industries by type of waste to support calculations</a></li>
+                       <li><a href="../../static/cmat_education/A_method_and_databases_for_estimating_detailed_industrial_waste_generation_at_different_scales.pdf">The paper published
+                           in the Journal of Cleaner Production to expand on the knowledge on the topic</a></li>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+ </div>
+</section>
+
+{% endblock %}
+{% block footer %}
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+
+    <div class="container">
+        The clients and developers of the CircuMat application are not responsible for any incorrect or incomplete
+        data (about measurements, standards, visualizations etc.) or information on this website.
+        <br>Copyright &copy; CircuMat 2019
+    </div>
+    <div class="container">
+        Credits <a
+            style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+            href="https://unsplash.com/@jonathanborba?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            target="_blank" rel="noopener noreferrer"
+            title="Download free do whatever you want high-resolution photos from Jonathan Borba"><span
+            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                              style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                              viewBox="0 0 32 32"><title>unsplash-logo</title><path
+            d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+            style="display:inline-block;padding:2px 3px">Jonathan Borba</span></a>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+           href="https://unsplash.com/@calvinhanson?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+           target="_blank" rel="noopener noreferrer"
+           title="Download free do whatever you want high-resolution photos from Calvin Hanson"><span
+                style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                  style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                                  viewBox="0 0 32 32"><title>unsplash-logo</title><path
+                d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+                style="display:inline-block;padding:2px 3px">Calvin Hanson</span></a>
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- Plugin JavaScript -->
+<script src="{% static 'vendor/font-awesome/js/all.js' %}"></script>
+<script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{% static 'js_home/grayscale.min.js' %}"></script>
+{% endblock %}

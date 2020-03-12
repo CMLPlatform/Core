@@ -16,6 +16,11 @@ def edu_page(request):
     return render(request, 'circumat/educational-materials.html', context_dict)
 
 
+def matchmaking_page(request):
+    context_dict = {}
+    return render(request, 'circumat/matchmaking-tool.html', context_dict)
+
+
 def online_tools(request):
     context_dict = {}
     return render(request, 'circumat/online-tools.html', context_dict)
