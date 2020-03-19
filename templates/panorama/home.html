@@ -4,90 +4,102 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>PANORAMA</title>
+    <title>PANORAMA</title>
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/panorama/bootstrap.min.css' %}"/>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/panorama/bootstrap.min.css' %}"/>
 
-  <!-- Custom styles for this template -->
-  <link rel="stylesheet" type="text/css" href="{% static 'css/panorama/modern-business.css' %}"/>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/panorama/modern-business.css' %}"/>
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/panorama/logo3.png' %}"/>
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/panorama">PANORAMA</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="methods">Methods</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services">Deliverables</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Education</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="edu/mfa">Material Flow Analysis</a>
-                <a class="dropdown-item" href="edu/ss">Summer School 2020</a>
+        <a class="navbar-brand" href="/panorama">PANORAMA</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="methods">Methods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services">Deliverables</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Education</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="edu/mfa">Material Flow Analysis</a>
+                        <a class="dropdown-item" href="edu/ss">Summer School 2020</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">Contact</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li><a href="/">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+
+    <div class="container">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div style="margin-left: 0;" class="col-lg-6">
+                    <a href="https://eitrawmaterials.eu">
+                    <img class="img-fluid" width="250" height="250" src="{% static 'images/panorama/EIT_RM+connecting_cmyk.svg' %}" alt="">
+                    <img class="img-fluid" width="250" height="250" src="{% static 'images/panorama/EU_Flag_Left.svg' %}" alt="">
+                     </a>
+                    <h1 class="my-4">PANORAMA</h1>
+
+                    <h6>Physical accounts of raw material stock and flow information service </h6>
+
+                </div>
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div id="main-img">
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <center><sub style="color: #5fadff">Annual tantalum (Ta) flows through Denmark in 2011 (metric
+                        tonnes)</sub></center>
+
+                </div>
+
+
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact">Contact</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav navbar-right ml-auto">
-          <li><a href="/">
-            <span class="glyphicon glyphicon-home" aria-hidden="true" > Home</span></a>
-        </li></ul>
-      </div>
+        </div>
+        <hr>
     </div>
-  </nav>
+</header>
 
-  <header>
-  <div class="container" >
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-
-          <div  style="margin-left: 0;" class="col-lg-6">
-              <h1 class="my-4"  >PANORAMA</h1>
-              <p>Physical accounts of raw material stock and flow information service </p>
-
-</div>
-        <!-- Slide One - Set the background image for this slide in the line below -->
-              <div id="main-img" />
-     <div class="carousel-caption d-none d-md-block" style="color:#007bff">
-
-            <sub>Annual tantalum (Ta) flows through Denmark in 2011 (metric tonnes)</sub>
-          </div>
-
-
-    </div>
-    </div>
-    <hr>
-  </div>
-  </header>
-
-  <!-- Page Content -->
-  <div class="container" >
-
+<!-- Page Content -->
+<div class="container">
 
 
     <!-- /.row -->
@@ -96,24 +108,43 @@
     <!-- /.row -->
 
     <!-- Features Section -->
-    <div class="row" >
-            <div class="col-lg-6">
-        <h4>Linking physical and economic data</h4>
-<p>The Sustainable Development Goals (SDGs), the transition to a low-carbon and circular economy, realising resource-efficiency, and ensuring resource supply security are now core goals for most countries in the world. These ambitions require transformations with regard to the economies’ use of natural resources,  and the resulting emissions and waste. For these goals to be realized there is a need for a robust information base regarding the current and future demands the economy has for natural resources. Ideally such an information system links physical and economic information about industry sectors, product flows and stocks, and  material flows and stocks, all a coherent classification that allows using this information in forward looking models. Such an information system would allow for forecasting resource demand, economic implications of resource supply problems, and provide a deep understanding of the societal metabolism of products and materials, including the structure of urban mines. </p>
-      </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <h4>Linking physical and economic data</h4>
+            <p>The Sustainable Development Goals (SDGs), the transition to a low-carbon and circular economy, realising
+                resource-efficiency, and ensuring resource supply security are now core goals for most countries in the
+                world. These ambitions require transformations with regard to the economies’ use of natural resources,
+                and the resulting emissions and waste. For these goals to be realized there is a need for a robust
+                information base regarding the current and future demands the economy has for natural resources. Ideally
+                such an information system links physical and economic information about industry sectors, product flows
+                and stocks, and material flows and stocks, all a coherent classification that allows using this
+                information in forward looking models. Such an information system would allow for forecasting resource
+                demand, economic implications of resource supply problems, and provide a deep understanding of the
+                societal metabolism of products and materials, including the structure of urban mines. </p>
+        </div>
 
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="{% static 'images/panorama/panorama.png' %}" alt="">
-      </div>
-            <div class="col-lg-6">
-         <h4>Project Objectives</h4>
-        <ul>
-          <li>There is a clear need to map the full materials chain, and not only to have data on primary and secondary raw materials. The content of specific materials in stocks and flows over the full value chain (intermediates, products, urban mine) must become transparent. The added value / GDP created and number of jobs per step in this chain should be available.</li>
-          <li>In relation, better access to supply chain information is needed. Ideally such supply chains should be geographically specified, in order to address supply chain issues relevant for the EU.</li>
-          <li>Trade of materials, secondary products, and relevant intermediates both nationally and internationally should be specified</li>
-          <li>Such supply chain information should inform material users including designers, if such supply chains are sound and transparent (absence of conflict minerals, EHS problems, and child labor).</li>
-        </ul>
-      </div>
+        <div class="col-lg-6">
+            <img class="img-fluid rounded" src="{% static 'images/panorama/panorama.png' %}" alt="">
+        </div>
+        <div class="col-lg-6">
+            <h4>Project Objectives</h4>
+            <ul>
+                <li>There is a clear need to map the full materials chain, and not only to have data on primary and
+                    secondary raw materials. The content of specific materials in stocks and flows over the full value
+                    chain (intermediates, products, urban mine) must become transparent. The added value / GDP created
+                    and number of jobs per step in this chain should be available.
+                </li>
+                <li>In relation, better access to supply chain information is needed. Ideally such supply chains should
+                    be geographically specified, in order to address supply chain issues relevant for the EU.
+                </li>
+                <li>Trade of materials, secondary products, and relevant intermediates both nationally and
+                    internationally should be specified
+                </li>
+                <li>Such supply chain information should inform material users including designers, if such supply
+                    chains are sound and transparent (absence of conflict minerals, EHS problems, and child labor).
+                </li>
+            </ul>
+        </div>
     </div>
     <!-- /.row -->
 
@@ -121,73 +152,85 @@
 
     <!-- Call to Action Section -->
     <div class="row mb-4">
-      <div class="col-md-8">
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="about">Read more</a>
-      </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-4">
+            <a class="btn btn-lg btn-secondary btn-block" href="about">Read more</a>
+        </div>
     </div>
-        <!-- Our Customers -->
+    <!-- Our Customers -->
     <h2>Our Partners</h2>
     <div class="row">
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="{% static 'images/panorama/leiden.png' %}" alt="">
-      </div>
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <br>
-        <img class="img-fluid" src="{% static 'images/panorama/tno.png' %}" alt="">
-      </div>
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <br>
-        <img class="img-fluid" src="{% static 'images/panorama/Logo_BRGM.png' %}" alt="">
-      </div>
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <br>
-        <img class="img-fluid" src="{% static 'images/panorama/frh.png' %}" alt="">
-      </div>
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <br>
-        <img class="img-fluid" src="{% static 'images/panorama/geus_gb_logo_header.png' %}" alt="">
-      </div>
-      <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="{% static 'images/panorama/ghent.png' %}" alt="">
-      </div>
-            <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="{% static 'images/panorama/unu.png' %}" alt="">
-      </div>
-                  <div class="col-lg-2 col-sm-4 mb-4">
-        <img class="img-fluid" src="{% static 'images/panorama/ub.png' %}" alt="">
-      </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'images/panorama/leiden.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <br>
+            <img class="img-fluid" src="{% static 'images/panorama/tno.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <br>
+            <img class="img-fluid" src="{% static 'images/panorama/Logo_BRGM.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <br>
+            <img class="img-fluid" src="{% static 'images/panorama/frh.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <br>
+            <img class="img-fluid" src="{% static 'images/panorama/geus_gb_logo_header.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'images/panorama/ghent.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'images/panorama/unu.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+            <img class="img-fluid" src="{% static 'images/panorama/ub.png' %}" alt="">
+        </div>
 
-            <div class="col-md-4">
-        <img class="img-fluid"   src="{% static 'images/panorama/logo3.png' %}" alt="">
+        <div class="col-md-4">
+            <img class="img-fluid" src="{% static 'images/panorama/logo3.png' %}" alt="">
 
         </div>
 
     </div>
 
 
+</div>
+<!-- /.container -->
 
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
+<!-- Footer -->
+<footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; PANORAMA 2019-2020</p>
-      <p class="m-0 text-center text-white"><a href="https://twitter.com/PanoramaProj?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @PanoramaProj</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-           <div class="container">
-       <p class="m-0 text-center text-white"> Art credits:
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@spacex?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from SpaceX"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">SpaceX</span></a>
-       </p></div>
+        <p class="m-0 text-center text-white">Copyright &copy; PANORAMA 2019-2020</p>
+        <p class="m-0 text-center text-white"><a href="https://twitter.com/PanoramaProj?ref_src=twsrc%5Etfw"
+                                                 class="twitter-follow-button" data-show-count="false">Follow
+            @PanoramaProj</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        <div class="container">
+            <p class="m-0 text-center text-white"> Art credits:
+                <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+                   href="https://unsplash.com/@spacex?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+                   target="_blank" rel="noopener noreferrer"
+                   title="Download free do whatever you want high-resolution photos from SpaceX"><span
+                        style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                          style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                                                                          viewBox="0 0 32 32"><title>unsplash-logo</title><path
+                        d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span
+                        style="display:inline-block;padding:2px 3px">SpaceX</span></a>
+            </p>
+        </div>
 
-           </div>
+    </div>
     <!-- /.container -->
-  </footer>
+</footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{% static 'js/panorama/jquery.min.js' %}"></script>
-  <script type="text/javascript" src="{% static 'js/panorama/bootstrap.min.js' %}"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="{% static 'js/panorama/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/panorama/bootstrap.min.js' %}"></script>
 
 
 </body>
