@@ -85,7 +85,7 @@ soupsieve==1.9.2
 sqlparse==0.3.0
 terminaltables==3.1.0
 tornado==4.5.3
-Twisted==19.7.0
+Twisted==22.2.0
 txaio==18.8.1
 Unidecode==1.1.1
 urllib3==1.25.3
