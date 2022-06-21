@@ -57,7 +57,7 @@ MarkupSafe==1.1.1
 more-itertools==7.2.0
 msgpack==0.5.4
 msgpack-python==0.5.4
-numpy==1.17.0
+numpy==1.22.0
 olefile==0.46
 packaging==19.1
 pandas==0.24.2
