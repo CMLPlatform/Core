@@ -39,7 +39,7 @@ django-widget-tweaks==1.4.5
 djangorestframework==3.10.2
 docopt==0.6.2
 draftjs-exporter==2.1.6
-flower==0.9.2
+flower==1.2.0
 geographiclib==1.49
 geopy==1.20.0
 gunicorn==19.9.0
