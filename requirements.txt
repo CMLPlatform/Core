@@ -13,7 +13,7 @@ Babel==2.7.0
 beautifulsoup4==4.6.0
 billiard==3.6.0.0
 celery==4.3.0
-certifi==2019.6.16
+certifi==2022.12.7
 cffi==1.12.3
 channels==2.1.5
 channels-redis==2.3.2
